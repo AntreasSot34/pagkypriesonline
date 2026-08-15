@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pagkypries Online — Online Μαθήματα Πληροφορικής & Μαθηματικών Κύπρος</title>
+<meta name="description" content="Online μαθήματα Πληροφορικής και Μαθηματικών για Γυμνάσιο, Λύκειο και Παγκύπριες Εξετάσεις. Από καθηγητή με πτυχίο Πληροφορικής και MSc στην Τεχνητή Νοημοσύνη.">
+<link rel="canonical" href="https://pagkypriesonline.com/">
+<meta name="theme-color" content="#14171C">
+<link rel="icon" href="favicon.png" type="image/png" sizes="64x64">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="el_CY">
+<meta property="og:site_name" content="Pagkypries Online">
+<meta property="og:title" content="Pagkypries Online — Online Μαθήματα Πληροφορικής & Μαθηματικών">
+<meta property="og:description" content="Προετοιμασία για Παγκύπριες Εξετάσεις και σχολικά μαθήματα, online από οπουδήποτε στην Κύπρο.">
+<meta property="og:url" content="https://pagkypriesonline.com/">
+<meta property="og:image" content="https://pagkypriesonline.com/g/g01.webp">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500;600;800;900&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --ink:#14171C;
+  --navy:#1B2A4A;
+  --spring:#54EFA2;
+  --teal:#33CFD3;
+  --cyan:#23BBED;
+  --azure:#2D9AF5;
+  --blue:#0F6FD1;
+  --grad:linear-gradient(100deg,#54EFA2 0%,#33CFD3 48%,#2D9AF5 100%);
+  --grad-deep:linear-gradient(100deg,#08795A 0%,#0A6C77 46%,#0C63C0 100%);
+  --paper:#F4F7FA;
+  --card:#FFFFFF;
+  --line:#DFE5EE;
+  --muted:#59657A;
+  --sans:"Commissioner",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,monospace;
+  --w:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--sans);background:var(--paper);color:var(--ink);
+  line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 24px}
+
+/* ---------- type ---------- */
+h1,h2,h3{line-height:1.06;letter-spacing:-.03em;font-weight:900}
+h1{font-size:clamp(38px,7.2vw,68px)}
+h2{font-size:clamp(29px,4.6vw,45px)}
+h3{font-size:19px;letter-spacing:-.015em;line-height:1.25}
+.eyebrow{
+  font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--blue);display:block;margin-bottom:14px;
+}
+.eyebrow.on-dark{color:var(--spring)}
+.lede{font-size:clamp(17px,2.1vw,20px);color:var(--muted);font-weight:400;max-width:56ch}
+.on-dark .lede,.dark .lede{color:#A6B4C6}
+
+/* ---------- nav ---------- */
+.nav{
+  position:sticky;top:0;z-index:60;background:rgba(244,247,252,.86);
+  backdrop-filter:saturate(160%) blur(14px);border-bottom:1px solid var(--line);
+}
+.nav .inner{display:flex;align-items:center;gap:18px;height:66px;max-width:var(--w);margin:0 auto;padding:0 24px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:900;letter-spacing:-.02em;font-size:18px;white-space:nowrap}
+.mark{width:34px;height:auto;flex:none;display:block}
+.nav ul{display:flex;gap:22px;list-style:none;margin-left:auto;align-items:center}
+.nav ul a{text-decoration:none;font-size:14.5px;font-weight:500;color:var(--muted);white-space:nowrap;transition:color .16s}
+.nav ul a:hover{color:var(--ink)}
+.nav .btn{margin-left:auto}
+.nav ul + .btn{margin-left:0}
+@media(max-width:900px){.nav ul{display:none}}
+@media(max-width:560px){
+  .nav .inner{gap:10px;padding:0 16px}
+  .brand{font-size:15.5px}
+  .mark{width:30px}
+  .nav .btn{font-size:13.5px;padding:9px 13px}
+  .wrap{padding:0 18px}
+  .trust{width:100%;align-items:flex-start;line-height:1.45;padding:11px 15px}
+  .dot{margin-top:6px}
+  .cta-row .btn{flex:1 1 100%;justify-content:center}
+  section{padding:64px 0}
+}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:9px;text-decoration:none;cursor:pointer;
+  font-family:var(--sans);font-size:15px;font-weight:600;letter-spacing:-.01em;
+  padding:12px 21px;border-radius:11px;border:1px solid transparent;
+  transition:transform .14s ease,background .18s,box-shadow .18s;
+}
+.btn:active{transform:translateY(1px)}
+.nav .btn{white-space:nowrap}
+.btn-p{background:var(--blue);color:#fff;box-shadow:0 8px 20px -10px rgba(15,111,209,.7)}
+.btn-p:hover{background:#0C5CB0}
+.btn-g{background:var(--grad-deep);color:#fff;box-shadow:0 10px 26px -12px rgba(12,99,192,.6)}
+.btn-g:hover{filter:brightness(1.06)}
+.btn-o{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-o:hover{border-color:var(--azure);background:#fff}
+.btn-ghost{background:rgba(255,255,255,.09);color:#fff;border-color:rgba(255,255,255,.24)}
+.btn-ghost:hover{background:rgba(255,255,255,.16)}
+
+/* ---------- sections ---------- */
+section{padding:88px 0}
+section[id],header[id]{scroll-margin-top:84px}
+section.dark{background:var(--ink);color:#fff}
+.head{max-width:640px;margin-bottom:44px}
+.head p{margin-top:16px}
+
+/* ---------- hero ---------- */
+.hero{padding:52px 0 20px;position:relative}
+.hero .grid{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:44px;align-items:center}
+.hero h1 span{background:var(--grad-deep);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .lede{margin-top:22px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.trust{
+  display:inline-flex;align-items:center;gap:9px;margin-top:26px;font-size:14px;color:var(--muted);
+  background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-weight:500;
+}
+.trust b{color:var(--ink);font-weight:600}
+.dot{width:7px;height:7px;border-radius:50%;background:#1FB673;flex:none}
+
+.shot{position:relative;width:100%;max-width:372px;margin-left:auto}
+.shot .panel{
+  position:absolute;inset:34px -22px -22px 40px;border-radius:26px;
+  background:var(--grad);z-index:0;
+}
+
+@media(max-width:860px){
+  .hero{padding-top:44px}
+  .hero .grid{grid-template-columns:1fr;gap:34px}
+  .shot{max-width:340px;margin:0 auto 18px}
+  .shot .panel{inset:22px -14px -14px 24px}
+}
+
+
+/* ---------- hero carousel ---------- */
+.carousel{position:relative;z-index:1;border-radius:24px;overflow:hidden;aspect-ratio:1/1;
+  background:#dbe3ee;box-shadow:0 26px 52px -28px rgba(20,23,28,.55)}
+.carousel .slide:first-of-type{position:relative;inset:auto}
+.carousel .slide{position:absolute;inset:0;opacity:0;transform:scale(1.05);
+  transition:opacity .85s ease,transform 1.6s cubic-bezier(.2,.7,.2,1);will-change:opacity,transform}
+.carousel .slide.on{opacity:1;transform:none}
+.carousel img{width:100%;height:100%;object-fit:cover;display:block}
+.carousel .topbar{position:absolute;top:0;left:0;right:0;height:4px;background:var(--grad);z-index:5}
+.carousel .cap{position:absolute;left:0;right:0;bottom:0;z-index:4;
+  padding:48px 92px 15px 16px;color:#fff;font-size:14px;font-weight:600;letter-spacing:-.01em;
+  background:linear-gradient(transparent,rgba(8,12,18,.85));
+  text-shadow:0 1px 3px rgba(0,0,0,.5)}
+.carousel .count{position:absolute;top:14px;left:14px;z-index:5;font-family:var(--mono);font-size:11px;
+  color:#fff;background:rgba(8,12,18,.5);padding:5px 9px;border-radius:7px;backdrop-filter:blur(6px);letter-spacing:.06em}
+.carousel .cnav{position:absolute;top:auto;bottom:13px;right:13px;z-index:6;display:flex;gap:6px;background:none;border:0;backdrop-filter:none}
+.carousel .cnav button{width:34px;height:34px;border-radius:10px;cursor:pointer;
+  border:1px solid rgba(255,255,255,.34);background:rgba(8,12,18,.46);color:#fff;
+  backdrop-filter:blur(8px);font-size:14px;line-height:1;display:grid;place-items:center;
+  transition:background .16s,transform .12s;font-family:var(--sans)}
+.carousel .cnav button:hover{background:rgba(8,12,18,.72)}
+.carousel .cnav button:active{transform:scale(.94)}
+.carousel .prog{position:absolute;left:0;bottom:0;height:3px;width:0;background:var(--grad);z-index:7}
+@media(prefers-reduced-motion:reduce){
+  .carousel .slide{transition:opacity .2s linear;transform:none}
+  .carousel .prog{display:none}
+}
+
+/* ---------- rail (signature) ---------- */
+.rail{position:relative;margin-top:8px}
+.rail::before{
+  content:"";position:absolute;left:0;right:0;top:23px;height:2px;
+  background:linear-gradient(90deg,var(--line) 0 55%,var(--teal) 78%,var(--azure) 100%);
+}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;position:relative}
+.step .pin{
+  width:48px;height:48px;border-radius:14px;background:#fff;border:2px solid var(--line);
+  display:grid;place-items:center;font-family:var(--mono);font-size:14px;font-weight:600;color:var(--navy);
+  position:relative;z-index:2;
+}
+.step:last-child .pin{background:var(--grad);border-color:transparent;color:#08301F}
+.step h3{margin-top:16px}
+.step p{font-size:14.5px;color:var(--muted);margin-top:7px}
+@media(max-width:760px){
+  .rail::before{left:23px;right:auto;top:0;bottom:0;width:2px;height:auto;
+    background:linear-gradient(180deg,var(--line) 0 55%,var(--teal) 78%,var(--azure) 100%)}
+  .steps{grid-template-columns:1fr;gap:26px}
+  .step{display:grid;grid-template-columns:48px 1fr;gap:18px;align-items:start}
+  .step .pin{grid-row:span 3}
+  .step h3{margin-top:11px}
+}
+
+/* ---------- subject cards ---------- */
+.subjects{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:56px}
+.subj{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px}
+.subj .tag{
+  font-family:var(--mono);font-size:11.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+  color:#fff;background:var(--blue);border-radius:6px;padding:4px 9px;display:inline-block;
+}
+.subj.alt .tag{background:var(--ink)}
+.subj h3{font-size:24px;margin:16px 0 6px;letter-spacing:-.025em}
+.subj > p{font-size:15px;color:var(--muted)}
+.levels{list-style:none;margin-top:20px;border-top:1px solid var(--line)}
+.levels li{border-bottom:1px solid var(--line)}
+.levels a{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:13px 2px;text-decoration:none;font-size:15.5px;font-weight:500;transition:padding .16s,color .16s;
+}
+.levels a:hover{padding-left:9px;color:var(--azure)}
+.levels .arw{color:var(--line);font-family:var(--mono);transition:color .16s}
+.levels a:hover .arw{color:var(--azure)}
+@media(max-width:760px){.subjects{grid-template-columns:1fr}}
+
+/* ---------- why ---------- */
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.wc{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;transition:transform .2s,box-shadow .2s}
+.wc:hover{transform:translateY(-3px);box-shadow:0 18px 34px -24px rgba(14,23,41,.45)}
+.wc .ic{width:40px;height:40px;border-radius:11px;background:#E4F6F5;color:#0E7C86;display:grid;place-items:center;font-family:var(--mono);font-weight:600;font-size:15px}
+.wc h3{margin:16px 0 7px}
+.wc p{font-size:14.5px;color:var(--muted)}
+@media(max-width:860px){.why{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.why{grid-template-columns:1fr}}
+
+/* ---------- pagkypries dark ---------- */
+.pk-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start}
+.pk-list{list-style:none;display:grid;gap:2px}
+.pk-list li{border-top:1px solid rgba(255,255,255,.13);padding:15px 0;display:flex;gap:14px;align-items:baseline}
+.pk-list li:last-child{border-bottom:1px solid rgba(255,255,255,.13)}
+.pk-list .n{font-family:var(--mono);font-size:12px;color:var(--spring);flex:none;font-weight:600}
+.pk-list b{font-weight:600;font-size:16px}
+.pk-list span.d{display:block;font-size:14px;color:#A6B4C6;font-weight:400;margin-top:3px}
+@media(max-width:860px){.pk-grid{grid-template-columns:1fr;gap:34px}}
+
+/* ---------- tutor ---------- */
+.tutor{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:36px;display:grid;grid-template-columns:auto 1fr;gap:34px;align-items:center}
+.tutor .ph{width:176px;height:176px;border-radius:22px;background:linear-gradient(160deg,#DFF7EC,#D3E9FB);overflow:hidden;flex:none}
+.tutor .ph img{width:100%;height:100%;object-fit:cover}
+.tutor h3{font-size:27px;letter-spacing:-.025em}
+.tutor .role{font-family:var(--mono);font-size:12.5px;color:#0E7C86;letter-spacing:.06em;margin-top:6px}
+.tutor p.bio{font-size:15.5px;color:var(--muted);margin-top:14px;max-width:54ch}
+.creds{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.creds span{font-size:13px;font-weight:500;background:#F1F5FB;border:1px solid var(--line);border-radius:8px;padding:6px 11px}
+@media(max-width:700px){.tutor{grid-template-columns:1fr;padding:26px;gap:22px}.tutor .ph{width:150px;height:150px}}
+
+
+/* ---------- legacy ---------- */
+.legacy{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:34px}
+.gen{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.gen .img{aspect-ratio:4/3;overflow:hidden;background:#E8EDF4}
+.gen .img img{width:100%;height:100%;object-fit:cover}
+.gen .tx{padding:22px}
+.gen .who{font-family:var(--mono);font-size:11.5px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:#0E7C86}
+.gen h3{margin:9px 0 8px}
+.gen p{font-size:14.8px;color:var(--muted)}
+.gen .yrs{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.gen .yrs span{font-family:var(--mono);font-size:12px;font-weight:600;background:#EEF6F6;border:1px solid #D6E9EA;color:#0E7C86;border-radius:7px;padding:5px 9px}
+.legacy-close{margin-top:24px;font-size:17px;font-weight:600;color:var(--ink);max-width:46ch}
+@media(max-width:760px){.legacy{grid-template-columns:1fr}}
+
+/* ---------- split cta ---------- */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.sc{border-radius:20px;padding:32px;border:1px solid var(--line);background:var(--card)}
+.sc.accent{background:var(--ink);color:#fff;border-color:var(--ink)}
+.sc h3{font-size:23px;letter-spacing:-.025em}
+.sc p{font-size:15px;color:var(--muted);margin:12px 0 22px}
+.sc.accent p{color:#A6B4C6}
+@media(max-width:760px){.split{grid-template-columns:1fr}}
+
+/* ---------- social ---------- */
+.soc{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.soc a{
+  text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:16px;
+  padding:22px;display:block;transition:transform .18s,border-color .18s;
+}
+.soc a:hover{transform:translateY(-3px);border-color:var(--azure)}
+.soc .p{font-weight:600;font-size:16px;display:flex;justify-content:space-between;align-items:center}
+.soc .p::after{content:"↗";color:var(--muted);font-family:var(--mono);font-size:14px}
+.soc .h{font-family:var(--mono);font-size:12.5px;color:var(--muted);margin-top:4px}
+@media(max-width:640px){.soc{grid-template-columns:1fr 1fr}}
+
+/* ---------- faq ---------- */
+.faq{max-width:760px}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:10px;overflow:hidden}
+.faq summary{
+  cursor:pointer;list-style:none;padding:18px 22px;font-weight:600;font-size:16.5px;
+  display:flex;justify-content:space-between;gap:16px;align-items:center;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--mono);color:var(--azure);font-size:20px;font-weight:500;flex:none}
+.faq details[open] summary::after{content:"–"}
+.faq .a{padding:0 22px 20px;font-size:15.5px;color:var(--muted)}
+
+/* ---------- final ---------- */
+.final{background:var(--ink);color:#fff;border-radius:26px;border-top:4px solid transparent;background-image:linear-gradient(var(--ink),var(--ink)),var(--grad);background-origin:border-box;background-clip:padding-box,border-box;padding:clamp(34px,6vw,64px);text-align:center}
+.final h2{max-width:16ch;margin:0 auto}
+.final p{margin:18px auto 30px;max-width:50ch;color:#A6B4C6;font-size:17px}
+.final .cta-row{justify-content:center}
+
+/* ---------- footer ---------- */
+footer{background:var(--ink);color:#9AA6B6;padding:64px 0 30px;font-size:14.5px}
+.fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:36px}
+footer h4{color:#fff;font-size:13px;font-family:var(--mono);letter-spacing:.12em;text-transform:uppercase;font-weight:600;margin-bottom:15px}
+footer ul{list-style:none;display:grid;gap:9px}
+footer a{text-decoration:none;transition:color .16s}
+footer a:hover{color:#fff}
+footer .about{color:#9AA6B6;max-width:34ch;margin-top:14px;font-size:14px}
+.fbot{border-top:1px solid rgba(255,255,255,.12);margin-top:48px;padding-top:22px;display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;font-size:13.5px}
+@media(max-width:860px){.fgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.fgrid{grid-template-columns:1fr}}
+
+
+/* ---------- mail modal ---------- */
+.mm-back{position:fixed;inset:0;z-index:200;background:rgba(10,14,20,.62);backdrop-filter:blur(3px);
+  display:none;align-items:center;justify-content:center;padding:20px;overscroll-behavior:contain}
+.mm-back.open{display:flex}
+.mm{background:var(--card);border-radius:22px;width:100%;max-width:470px;max-height:92vh;overflow:auto;
+  box-shadow:0 30px 70px -20px rgba(10,14,20,.6);animation:mmIn .26s cubic-bezier(.2,.8,.25,1)}
+@keyframes mmIn{from{opacity:0;transform:translateY(14px) scale(.98)}to{opacity:1;transform:none}}
+.mm .top{padding:22px 24px 0;display:flex;justify-content:space-between;align-items:flex-start;gap:14px}
+.mm h3{font-size:23px;letter-spacing:-.025em}
+.mm .sub{font-size:14px;color:var(--muted);padding:6px 24px 0}
+.mm .x{border:0;background:#F0F3F8;width:32px;height:32px;border-radius:9px;cursor:pointer;
+  font-size:17px;line-height:1;color:var(--muted);flex:none}
+.mm .x:hover{background:#E3E9F2;color:var(--ink)}
+.mm .body{padding:18px 24px 24px;display:grid;gap:13px}
+.mm label{display:block;font-size:12.5px;font-weight:700;color:var(--ink);margin-bottom:5px}
+.mm input,.mm select,.mm textarea{
+  width:100%;font-family:var(--sans);font-size:15px;color:var(--ink);background:#F7F9FC;
+  border:1px solid var(--line);border-radius:11px;padding:11px 13px;outline:none;transition:border-color .15s,background .15s}
+.mm input:focus,.mm select:focus,.mm textarea:focus{border-color:var(--azure);background:#fff}
+.mm textarea{min-height:92px;resize:vertical;line-height:1.5}
+.mm .two{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.mm .acts{display:grid;gap:9px;margin-top:4px}
+.mm .acts .btn{justify-content:center;width:100%}
+.mm .addr{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:2px;
+  background:#F4F7FC;border:1px solid var(--line);border-radius:11px;padding:10px 12px;font-size:13.5px}
+.mm .addr span{font-family:var(--mono);font-size:12.5px;color:var(--ink);overflow:hidden;text-overflow:ellipsis}
+.mm .addr button{border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 10px;
+  font-family:var(--sans);font-size:12.5px;font-weight:600;cursor:pointer;color:var(--ink);flex:none}
+.mm .addr button:hover{border-color:var(--azure);color:var(--blue)}
+.mm .hint2{font-size:12px;color:var(--muted);line-height:1.45;margin-top:2px}
+@media(max-width:460px){.mm .two{grid-template-columns:1fr}}
+
+/* ---------- motion ---------- */
+.rv{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+:focus-visible{outline:3px solid var(--azure);outline-offset:3px;border-radius:6px}
+@media(prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important}
+  .rv{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="inner">
+    <a class="brand" href="/"><img class="mark" src="logo-mark.png" width="360" height="318" alt="PagkypriesOnline">Pagkypries Online</a>
+    <ul>
+      <li><a href="#mathimata">Μαθήματα</a></li>
+      <li><a href="#pagkypries">Παγκύπριες</a></li>
+      <li><a href="#kathigitis">Καθηγητής</a></li>
+      <li><a href="#istoria">Ιστορία</a></li>
+      <li><a href="#synergasia">Συνεργασία</a></li>
+      <li><a href="#epikoinonia">Επικοινωνία</a></li>
+    </ul>
+    <a class="btn btn-p" href="https://antreassotiriou.com/eclass/modules/auth/newuser.php" rel="noopener">Κλείσε μάθημα</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap grid">
+    <div>
+      <span class="eyebrow">Online εκπαίδευση · Κύπρος</span>
+      <h1>Προετοιμάσου σωστά.<br><span>Πέτυχε τους στόχους σου.</span></h1>
+      <p class="lede">Online μαθήματα Πληροφορικής και Μαθηματικών για Γυμνάσιο, Λύκειο και Παγκύπριες Εξετάσεις.</p>
+      <div class="cta-row">
+        <a class="btn btn-g" href="https://antreassotiriou.com/eclass/modules/auth/newuser.php" rel="noopener">Κλείσε το πρώτο σου μάθημα</a>
+        <a class="btn btn-o" href="https://antreassotiriou.com/eclass/modules/auth/listfaculties.php" rel="noopener">Δες τα μαθήματα</a>
+      </div>
+      <div class="trust"><span class="dot"></span><span><b>Από οπουδήποτε στην Κύπρο</b> — χωρίς μετακινήσεις</span></div>
+    </div>
+    <div class="shot">
+      <div class="panel"></div>
+      <div class="carousel" id="car" aria-roledescription="carousel" aria-label="Στιγμές από τη διδασκαλία και τη ζωή του Αντρέα Σωτηρίου">
+        <div class="topbar"></div>
+        <figure class="slide on" data-cap="Διάλεξη σε αμφιθέατρο πανεπιστημίου"><img src="g/g01.webp" width="760" height="760" alt="Διάλεξη σε αμφιθέατρο πανεπιστημίου" fetchpriority="high"></figure>
+        <figure class="slide" data-cap="BoC Fintech Hackathon 6.0 — παρουσίαση"><img src="g/g02.webp" width="760" height="760" alt="BoC Fintech Hackathon 6.0 — παρουσίαση"></figure>
+        <figure class="slide" data-cap="Βράβευση — Κυπριακή Ομοσπονδία Πανεπιστημιακού Αθλητισμού"><img data-src="g/g03.webp" width="760" height="760" alt="Βράβευση — Κυπριακή Ομοσπονδία Πανεπιστημιακού Αθλητισμού"></figure>
+        <figure class="slide" data-cap="Αποφοίτηση μεταπτυχιακού"><img data-src="g/g04.webp" width="760" height="760" alt="Αποφοίτηση μεταπτυχιακού"></figure>
+        <figure class="slide" data-cap="Με προσκεκλημένο ομιλητή"><img data-src="g/g05.webp" width="760" height="760" alt="Με προσκεκλημένο ομιλητή"></figure>
+        <figure class="slide" data-cap="Robotex Cyprus"><img data-src="g/g06.webp" width="760" height="760" alt="Robotex Cyprus"></figure>
+        <figure class="slide" data-cap="Επίσκεψη μαθητών σε πανεπιστήμιο"><img data-src="g/g07.webp" width="760" height="760" alt="Επίσκεψη μαθητών σε πανεπιστήμιο"></figure>
+        <figure class="slide" data-cap="Ξενάγηση μαθητών σε πανεπιστήμιο"><img data-src="g/g21.webp" width="760" height="760" alt="Ξενάγηση μαθητών σε πανεπιστήμιο"></figure>
+        <figure class="slide" data-cap="Ομαδική δουλειά σε hackathon"><img data-src="g/g08.webp" width="760" height="760" alt="Ομαδική δουλειά σε hackathon"></figure>
+        <figure class="slide" data-cap="Στο γραφείο"><img data-src="g/g09.webp" width="760" height="760" alt="Στο γραφείο"></figure>
+        <figure class="slide" data-cap="Ακαδημία μπάσκετ για παιδιά"><img data-src="g/g10.webp" width="760" height="760" alt="Ακαδημία μπάσκετ για παιδιά"></figure>
+        <figure class="slide" data-cap="Ακαδημία μπάσκετ — καλοκαιρινό camp"><img data-src="g/g22.webp" width="760" height="760" alt="Ακαδημία μπάσκετ — καλοκαιρινό camp"></figure>
+        <figure class="slide" data-cap="Πανεπιστημιακό πρωτάθλημα μπάσκετ"><img data-src="g/g11.webp" width="760" height="760" alt="Πανεπιστημιακό πρωτάθλημα μπάσκετ"></figure>
+        <figure class="slide" data-cap="Cyprus 3x3 — τελικοί"><img data-src="g/g12.webp" width="760" height="760" alt="Cyprus 3x3 — τελικοί"></figure>
+        <figure class="slide" data-cap="3x3 Parkhood Κεφαλληνίας — απονομή"><img data-src="g/g23.webp" width="760" height="760" alt="3x3 Parkhood Κεφαλληνίας — απονομή"></figure>
+        <figure class="slide" data-cap="Με την ομάδα"><img data-src="g/g13.webp" width="760" height="760" alt="Με την ομάδα"></figure>
+        <figure class="slide" data-cap="Στο γήπεδο της γειτονιάς"><img data-src="g/g14.webp" width="760" height="760" alt="Στο γήπεδο της γειτονιάς"></figure>
+        <figure class="slide" data-cap="Μετά τον αγώνα"><img data-src="g/g15.webp" width="760" height="760" alt="Μετά τον αγώνα"></figure>
+        <figure class="slide" data-cap="Στο γήπεδο"><img data-src="g/g16.webp" width="760" height="760" alt="Στο γήπεδο"></figure>
+        <figure class="slide" data-cap="Μετά την προπόνηση"><img data-src="g/g17.webp" width="760" height="760" alt="Μετά την προπόνηση"></figure>
+        <figure class="slide" data-cap="Στο πανεπιστήμιο"><img data-src="g/g18.webp" width="760" height="760" alt="Στο πανεπιστήμιο"></figure>
+        <figure class="slide" data-cap="Με φοιτητές στην παλιά Λευκωσία"><img data-src="g/g19.webp" width="760" height="760" alt="Με φοιτητές στην παλιά Λευκωσία"></figure>
+        <figure class="slide" data-cap="Φοιτητική εκδήλωση"><img data-src="g/g24.webp" width="760" height="760" alt="Φοιτητική εκδήλωση"></figure>
+        <figure class="slide" data-cap="Με φοιτητές"><img data-src="g/g20.webp" width="760" height="760" alt="Με φοιτητές"></figure>
+        <div class="count" id="carCount">01 / 24</div>
+        <div class="cap" id="carCap">Διάλεξη σε αμφιθέατρο πανεπιστημίου</div>
+        <div class="cnav">
+          <button type="button" id="carPrev" aria-label="Προηγούμενη φωτογραφία">‹</button>
+          <button type="button" id="carNext" aria-label="Επόμενη φωτογραφία">›</button>
+        </div>
+        <div class="prog" id="carProg"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="mathimata">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">Μαθήματα</span>
+      <h2>Μια διαδρομή, τέσσερα στάδια</h2>
+      <p class="lede">Κάθε χρονιά χτίζει πάνω στην προηγούμενη. Όσο πιο νωρίς μπει η βάση, τόσο πιο ήρεμη είναι η Γ' Λυκείου.</p>
+    </div>
+
+    <div class="rail rv">
+      <div class="steps">
+        <div class="step">
+          <div class="pin">Α'</div>
+          <h3>Τα θεμέλια</h3>
+          <p>Πρώτη επαφή με τον προγραμματισμό και τη λογική σκέψη.</p>
+        </div>
+        <div class="step">
+          <div class="pin">Β'</div>
+          <h3>Η κρίσιμη χρονιά</h3>
+          <p>Εδώ χτίζεται ό,τι θα χρειαστείς στη Γ'. Τα κενά κοστίζουν αργότερα.</p>
+        </div>
+        <div class="step">
+          <div class="pin">Γ'</div>
+          <h3>Εξεταστέα ύλη</h3>
+          <p>Πλήρης κάλυψη της ύλης με μεθοδολογία και εξάσκηση.</p>
+        </div>
+        <div class="step">
+          <div class="pin">ΠΕ</div>
+          <h3>Παγκύπριες</h3>
+          <p>Στοχευμένη προετοιμασία σε πραγματικά θέματα εξετάσεων.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="subjects rv">
+      <article class="subj">
+        <span class="tag">Πληροφορική</span>
+        <h3>Πληροφορική Λυκείου</h3>
+        <p>C++, αλγόριθμοι, δομές δεδομένων και ψηφιακή λογική — από την πρώτη γραμμή κώδικα μέχρι το εξεταστικό δοκίμιο.</p>
+        <ul class="levels">
+          <li><a href="#epikoinonia">Πληροφορική Α' Λυκείου <span class="arw">→</span></a></li>
+          <li><a href="#epikoinonia">Πληροφορική Β' Λυκείου <span class="arw">→</span></a></li>
+          <li><a href="#epikoinonia">Πληροφορική Γ' Λυκείου <span class="arw">→</span></a></li>
+          <li><a href="#pagkypries">Προετοιμασία Παγκυπρίων <span class="arw">→</span></a></li>
+        </ul>
+      </article>
+      <article class="subj alt">
+        <span class="tag">Μαθηματικά</span>
+        <h3>Μαθηματικά Γυμνασίου &amp; Λυκείου</h3>
+        <p>Από τα βασικά του Γυμνασίου μέχρι την ύλη κατεύθυνσης — με έμφαση στο «γιατί» και όχι στην απομνημόνευση.</p>
+        <ul class="levels">
+          <li><a href="#epikoinonia">Μαθηματικά Γυμνασίου (Α'–Γ') <span class="arw">→</span></a></li>
+          <li><a href="#epikoinonia">Μαθηματικά Α' Λυκείου <span class="arw">→</span></a></li>
+          <li><a href="#epikoinonia">Μαθηματικά Β' Λυκείου <span class="arw">→</span></a></li>
+          <li><a href="#epikoinonia">Μαθηματικά Γ' Λυκείου <span class="arw">→</span></a></li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">Γιατί εδώ</span>
+      <h2>Τι αλλάζει στο μάθημα</h2>
+    </div>
+    <div class="why rv">
+      <div class="wc"><div class="ic">01</div><h3>Online από οπουδήποτε</h3><p>Μάθημα από το σπίτι, χωρίς χαμένο χρόνο σε μετακινήσεις.</p></div>
+      <div class="wc"><div class="ic">02</div><h3>Εξατομικευμένη προσέγγιση</h3><p>Το μάθημα προσαρμόζεται στις ανάγκες και στο επίπεδο του μαθητή.</p></div>
+      <div class="wc"><div class="ic">03</div><h3>Προετοιμασία με στόχο</h3><p>Οργανωμένη πορεία για σχολικές και Παγκύπριες εξετάσεις.</p></div>
+      <div class="wc"><div class="ic">04</div><h3>Σύγχρονα εργαλεία</h3><p>Ψηφιακά εργαλεία που κάνουν την online διδασκαλία πιο άμεση.</p></div>
+      <div class="wc"><div class="ic">05</div><h3>Υλικό &amp; ασκήσεις</h3><p>Οργανωμένο υλικό, λυμένα θέματα και στοχευμένη εξάσκηση.</p></div>
+      <div class="wc"><div class="ic">06</div><h3>Συνεχής πρόοδος</h3><p>Ο μαθητής ξέρει κάθε φορά τι πάει καλά και ποιο είναι το επόμενο βήμα.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="pagkypries" class="dark">
+  <div class="wrap pk-grid">
+    <div class="rv">
+      <span class="eyebrow on-dark">Παγκύπριες Εξετάσεις</span>
+      <h2>Το σύστημα δεν πρέπει να είναι γρίφος</h2>
+      <p class="lede" style="margin-top:18px">Η αναγωγή, τα πλαίσια, οι βάσεις, οι κατανομές. Τα περισσότερα άγχη γεννιούνται από πράγματα που απλώς δεν έχει εξηγήσει κανείς καθαρά.</p>
+      <div class="cta-row"><a class="btn btn-ghost" href="#epikoinonia">Ρώτησε ό,τι θες</a></div>
+    </div>
+    <ul class="pk-list rv">
+      <li><span class="n">01</span><div><b>Αναγωγή βαθμών</b><span class="d">Πώς ο βαθμός σου γίνεται βαθμός πρόσβασης.</span></div></li>
+      <li><span class="n">02</span><div><b>Πλαίσια πρόσβασης</b><span class="d">Ποια μαθήματα μετράνε για ποιες σχολές.</span></div></li>
+      <li><span class="n">03</span><div><b>Βάσεις εισαγωγής</b><span class="d">Τι δείχνουν πραγματικά τα νούμερα κάθε χρονιάς.</span></div></li>
+      <li><span class="n">04</span><div><b>Α' &amp; Β' Κατανομή</b><span class="d">Γιατί η δεύτερη ευκαιρία είναι αληθινή.</span></div></li>
+      <li><span class="n">05</span><div><b>Παλιά θέματα &amp; λύσεις</b><span class="d">Πλήρως λυμένα, με επεξήγηση βήμα βήμα.</span></div></li>
+      <li><span class="n">06</span><div><b>Εθνοφρουροί</b><span class="d">Τι ισχύει αν κατατάσσεσαι.</span></div></li>
+    </ul>
+  </div>
+</section>
+
+<section id="kathigitis">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">Ο καθηγητής</span>
+      <h2>Ποιος σε διδάσκει</h2>
+    </div>
+    <div class="tutor rv">
+      <div class="ph"><img src="antreas-graduation.webp" width="640" height="640" alt="Ο Αντρέας Σωτηρίου στην αποφοίτησή του από το μεταπτυχιακό στην Τεχνητή Νοημοσύνη" loading="lazy"></div>
+      <div>
+        <h3>Αντρέας Σωτηρίου</h3>
+        <div class="role">Καθηγητής Πληροφορικής</div>
+        <p class="bio">Διδάσκω Πληροφορική σε μαθητές Λυκείου και προετοιμάζω υποψηφίους για τις Παγκύπριες Εξετάσεις. Ο στόχος μου είναι απλός: να καταλαβαίνει ο μαθητής <em>γιατί</em> δουλεύει κάτι, όχι να το αποστηθίζει.</p>
+        <div class="creds">
+          <span>Πτυχίο Πληροφορικής</span>
+          <span>MSc Τεχνητή Νοημοσύνη</span>
+          <span>Παγκύπριες Εξετάσεις</span>
+          <span>Ψηφιακή Ηλεκτρονική</span>
+        </div>
+        <div class="cta-row">
+          <a class="btn btn-o" href="https://antreassotiriou.com" rel="noopener">Προσωπική ιστοσελίδα ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="istoria" style="padding-top:0">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">Η ιστορία πίσω από το θρανίο</span>
+      <h2>Τρεις γενιές στην εκπαίδευση</h2>
+      <p class="lede">Η διδασκαλία δεν ήταν επιλογή καριέρας στο σπίτι μας. Ήταν αυτό που έβλεπα κάθε μέρα, από όσο θυμάμαι τον εαυτό μου.</p>
+    </div>
+    <div class="legacy rv">
+      <article class="gen">
+        <div class="img"><img src="pappoudes.webp" width="900" height="684" style="object-position:38% 55%" alt="Ο παππούς Αντρέας και η γιαγιά Βαθούλα" loading="lazy"></div>
+        <div class="tx">
+          <div class="who">Πρώτη γενιά</div>
+          <h3>Ο παππούς Αντρέας &amp; η γιαγιά Βαθούλα</h3>
+          <p>Ο παππούς από την Αρχιμανδρίτα της Πάφου, η γιαγιά πρόσφυγας από τη Λάπηθο Κερύνειας. Πέρασαν τη ζωή τους σε δημοτικά σχολεία της Κύπρου.</p>
+          <div class="yrs"><span>40 χρόνια δάσκαλοι</span><span>15 χρόνια διευθυντές</span></div>
+        </div>
+      </article>
+      <article class="gen">
+        <div class="img"><img src="goneis.webp" width="760" height="974" style="object-position:50% 10%" alt="Οι γονείς του Αντρέα Σωτηρίου, καθηγητές Πληροφορικής" loading="lazy"></div>
+        <div class="tx">
+          <div class="who">Δεύτερη γενιά</div>
+          <h3>Ο πατέρας &amp; η μητέρα μου</h3>
+          <p>Καθηγητές Πληροφορικής σε δημόσιο γυμνάσιο και λύκειο. Σπούδασαν και οι δύο στην Πάτρα και συνέχισαν με μεταπτυχιακό.</p>
+          <div class="yrs"><span>30 χρόνια καθηγητές</span><span>Πληροφορική</span></div>
+        </div>
+      </article>
+    </div>
+    <p class="legacy-close rv">Είμαι η τρίτη γενιά — και διδάσκω το ίδιο μάθημα με τους γονείς μου.</p>
+  </div>
+</section>
+
+<section id="synergasia" style="padding-top:0">
+  <div class="wrap split">
+    <div class="sc accent rv">
+      <h3>Είσαι καθηγητής;</h3>
+      <p>Χτίζουμε ένα σύγχρονο δίκτυο online εκπαίδευσης στην Κύπρο και αναζητούμε καθηγητές που μοιράζονται το ίδιο πάθος για ποιοτική διδασκαλία.</p>
+      <a class="btn btn-g" href="#epikoinonia">Εκδήλωση ενδιαφέροντος</a>
+    </div>
+    <div class="sc rv">
+      <h3>Γονείς</h3>
+      <p>Θέλετε να συζητήσουμε πρώτα πού βρίσκεται το παιδί σας και τι χρειάζεται; Μιλήστε απευθείας με τον καθηγητή, χωρίς δέσμευση.</p>
+      <a class="btn btn-p" href="#epikoinonia">Μίλησε με τον καθηγητή</a>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">Social</span>
+      <h2>Ακολούθησέ μας</h2>
+    </div>
+    <div class="soc rv">
+      <a href="https://www.instagram.com/pagkypriesonline/" rel="noopener"><div class="p">Instagram</div><div class="h">@pagkypriesonline</div></a>
+      <a href="https://www.youtube.com/@antreassotiriou.Pagkypries" rel="noopener"><div class="p">YouTube</div><div class="h">@antreassotiriou.Pagkypries</div></a>
+      <a href="https://www.facebook.com/profile.php?id=61583083336971" rel="noopener"><div class="p">Facebook</div><div class="h">Pagkypries Online</div></a>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="head rv"><span class="eyebrow">Συχνές ερωτήσεις</span><h2>Ό,τι ρωτούν συνήθως</h2></div>
+    <div class="faq rv">
+      <details><summary>Πώς γίνεται το online μάθημα;</summary><div class="a">Ζωντανά, ένας προς έναν, με κοινή οθόνη και ψηφιακό πίνακα. Χρειάζεσαι μόνο υπολογιστή και σύνδεση στο διαδίκτυο.</div></details>
+      <details><summary>Είναι το online μάθημα το ίδιο αποτελεσματικό;</summary><div class="a">Στην Πληροφορική συχνά είναι καλύτερο: γράφουμε και τρέχουμε κώδικα μαζί, στο ίδιο περιβάλλον που θα δουλέψεις και μόνος σου.</div></details>
+      <details><summary>Από ποια περιοχή της Κύπρου μπορώ να συμμετέχω;</summary><div class="a">Από οπουδήποτε. Δεν υπάρχει μετακίνηση, οπότε η απόσταση δεν παίζει ρόλο.</div></details>
+      <details><summary>Δίνεται υλικό και ασκήσεις;</summary><div class="a">Ναι — σημειώσεις, λυμένα θέματα προηγούμενων εξετάσεων και στοχευμένη εξάσκηση ανά κεφάλαιο.</div></details>
+      <details><summary>Μπορώ να ξεκινήσω με ένα δοκιμαστικό μάθημα;</summary><div class="a">Ναι. Στείλε μήνυμα και κανονίζουμε μια πρώτη συνάντηση για να δούμε πού βρίσκεσαι και τι χρειάζεσαι.</div></details>
+    </div>
+  </div>
+</section>
+
+<section id="epikoinonia" style="padding-top:0">
+  <div class="wrap">
+    <div class="final rv">
+      <h2>Ας ξεκινήσουμε από εκεί που είσαι</h2>
+      <p>Στείλε μήνυμα με την τάξη και το μάθημα που σε ενδιαφέρει. Απαντώ ο ίδιος.</p>
+      <p style="margin-top:-14px;font-size:15px"><a href="https://wa.me/35799833149?text=%CE%93%CE%B5%CE%B9%CE%B1%20%CF%83%CE%B1%CF%82%2C%20%CE%B5%CE%BD%CE%B4%CE%B9%CE%B1%CF%86%CE%AD%CF%81%CE%BF%CE%BC%CE%B1%CE%B9%20%CE%B3%CE%B9%CE%B1%20%CE%BC%CE%B1%CE%B8%CE%AE%CE%BC%CE%B1%CF%84%CE%B1" rel="noopener" style="color:#9FE9C6;text-decoration:none;font-weight:600">+357 99 833149</a></p>
+      <div class="cta-row">
+        <a class="btn btn-g" href="mailto:antreassotiriou96@gmail.com" data-mail>Στείλε email</a>
+        <a class="btn btn-ghost" href="https://wa.me/35799833149?text=%CE%93%CE%B5%CE%B9%CE%B1%20%CF%83%CE%B1%CF%82%2C%20%CE%B5%CE%BD%CE%B4%CE%B9%CE%B1%CF%86%CE%AD%CF%81%CE%BF%CE%BC%CE%B1%CE%B9%20%CE%B3%CE%B9%CE%B1%20%CE%BC%CE%B1%CE%B8%CE%AE%CE%BC%CE%B1%CF%84%CE%B1" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a class="brand" href="/" style="color:#fff"><img class="mark" src="logo-mark.png" width="360" height="318" alt="PagkypriesOnline">Pagkypries Online</a>
+        <p class="about">Σύγχρονη online εκπαίδευση για μαθητές στην Κύπρο.</p>
+      </div>
+      <div><h4>Μαθήματα</h4><ul>
+        <li><a href="#mathimata">Πληροφορική</a></li>
+        <li><a href="#mathimata">Μαθηματικά</a></li>
+        <li><a href="#pagkypries">Παγκύπριες</a></li>
+      </ul></div>
+      <div><h4>Πλατφόρμα</h4><ul>
+        <li><a href="#kathigitis">Καθηγητές</a></li>
+        <li><a href="#synergasia">Συνεργασία</a></li>
+        <li><a href="#epikoinonia">Επικοινωνία</a></li>
+        <li><a href="https://antreassotiriou.com/eclass/modules/auth/newuser.php" rel="noopener">Εγγραφή μαθητή</a></li>
+      </ul></div>
+      <div><h4>Σύνδεσμοι</h4><ul>
+        <li><a href="https://antreassotiriou.com" rel="noopener">AntreasSotiriou.com</a></li>
+        <li><a href="https://www.instagram.com/pagkypriesonline/" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.youtube.com/@antreassotiriou.Pagkypries" rel="noopener">YouTube</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=61583083336971" rel="noopener">Facebook</a></li>
+      </ul></div>
+    </div>
+    <div class="fbot">
+      <span>© <span id="yr">2026</span> Pagkypries Online</span>
+      <span>Λευκωσία, Κύπρος</span>
+    </div>
+  </div>
+</footer>
+
+
+<div class="mm-back" id="mmBack" role="dialog" aria-modal="true" aria-labelledby="mmTitle">
+  <div class="mm">
+    <div class="top">
+      <h3 id="mmTitle">Στείλε μήνυμα</h3>
+      <button class="x" type="button" id="mmClose" aria-label="Κλείσιμο">✕</button>
+    </div>
+    <div class="sub">Συμπλήρωσε τα στοιχεία και διάλεξε πώς θέλεις να το στείλεις.</div>
+    <div class="body">
+      <div>
+        <label for="mmName">Όνομα</label>
+        <input id="mmName" type="text" placeholder="Το όνομά σου" autocomplete="name">
+      </div>
+      <div class="two">
+        <div>
+          <label for="mmClass">Τάξη</label>
+          <select id="mmClass">
+            <option value="">— Διάλεξε —</option>
+            <option>Α' Γυμνασίου</option><option>Β' Γυμνασίου</option><option>Γ' Γυμνασίου</option>
+            <option>Α' Λυκείου</option><option>Β' Λυκείου</option><option>Γ' Λυκείου</option>
+            <option>Άλλο</option>
+          </select>
+        </div>
+        <div>
+          <label for="mmSubj">Μάθημα</label>
+          <select id="mmSubj">
+            <option value="">— Διάλεξε —</option>
+            <option>Πληροφορική</option><option>Μαθηματικά</option>
+            <option>Ψηφιακή Ηλεκτρονική</option><option>Άλλο</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <label for="mmMsg">Μήνυμα</label>
+        <textarea id="mmMsg" placeholder="Πες μου τι χρειάζεσαι — πού δυσκολεύεσαι, τι στόχο έχεις, πότε σε βολεύει."></textarea>
+      </div>
+      <div class="acts">
+        <a class="btn btn-g" id="mmGmail" href="#" rel="noopener">Άνοιγμα στο Gmail</a>
+        <a class="btn btn-o" id="mmMailto" href="#">Άνοιγμα στην εφαρμογή email</a>
+      </div>
+      <div class="addr">
+        <span id="mmAddr">antreassotiriou96@gmail.com</span>
+        <button type="button" id="mmCopy">Αντιγραφή</button>
+      </div>
+      <p class="hint2">Το μήνυμα δεν στέλνεται από τη σελίδα — ανοίγει έτοιμο για να το στείλεις εσύ. Αν βιάζεσαι, το WhatsApp είναι πιο γρήγορο.</p>
+    </div>
+  </div>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"EducationalOrganization",
+  "name":"Pagkypries Online",
+  "url":"https://pagkypriesonline.com/",
+  "logo":"https://pagkypriesonline.com/apple-touch-icon.png",
+  "description":"Online μαθήματα Πληροφορικής και Μαθηματικών για Γυμνάσιο, Λύκειο και Παγκύπριες Εξετάσεις στην Κύπρο.",
+  "areaServed":{"@type":"Country","name":"Cyprus"},
+  "sameAs":[
+    "https://www.instagram.com/pagkypriesonline/",
+    "https://www.youtube.com/@antreassotiriou.Pagkypries",
+    "https://www.facebook.com/profile.php?id=61583083336971",
+    "https://antreassotiriou.com"
+  ],
+  "address":{"@type":"PostalAddress","addressLocality":"Λευκωσία","addressCountry":"CY"},
+  "email":"antreassotiriou96@gmail.com",
+  "telephone":"+35799833149",
+  "employee":{
+    "@type":"Person",
+    "name":"Αντρέας Σωτηρίου",
+    "jobTitle":"Καθηγητής Πληροφορικής",
+    "url":"https://antreassotiriou.com"
+  }
+}
+</script>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+/* ---- mail modal ---- */
+(function(){
+  var back=document.getElementById('mmBack'); if(!back) return;
+  var TO='antreassotiriou96@gmail.com', last=null;
+  var f={name:'mmName',cls:'mmClass',subj:'mmSubj',msg:'mmMsg'};
+  function val(id){ var e=document.getElementById(id); return e? e.value.trim() : ''; }
+  function subject(){
+    var s='Ενδιαφέρομαι για μαθήματα';
+    var a=val(f.subj), c=val(f.cls);
+    if(a) s+=' — '+a;
+    if(c) s+=' ('+c+')';
+    return s;
+  }
+  function bodyTxt(){
+    var L=[];
+    if(val(f.name)) L.push('Όνομα: '+val(f.name));
+    if(val(f.cls))  L.push('Τάξη: '+val(f.cls));
+    if(val(f.subj)) L.push('Μάθημα: '+val(f.subj));
+    if(val(f.msg))  L.push('', val(f.msg));
+    return L.join('\n');
+  }
+  function sync(){
+    var su=encodeURIComponent(subject()), bo=encodeURIComponent(bodyTxt());
+    document.getElementById('mmMailto').href='mailto:'+TO+'?subject='+su+'&body='+bo;
+    document.getElementById('mmGmail').href='https://mail.google.com/mail/?view=cm&fs=1&to='+encodeURIComponent(TO)+'&su='+su+'&body='+bo;
+  }
+  function open(){
+    last=document.activeElement;
+    back.classList.add('open');
+    document.body.style.overflow='hidden';
+    sync();
+    setTimeout(function(){ document.getElementById('mmName').focus(); },60);
+  }
+  function close(){
+    back.classList.remove('open');
+    document.body.style.overflow='';
+    if(last && last.focus) last.focus();
+  }
+  Object.keys(f).forEach(function(k){
+    var e=document.getElementById(f[k]); if(e) e.addEventListener('input',sync);
+    if(e) e.addEventListener('change',sync);
+  });
+  document.getElementById('mmClose').addEventListener('click',close);
+  back.addEventListener('click',function(e){ if(e.target===back) close(); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape' && back.classList.contains('open')) close(); });
+  document.getElementById('mmGmail').addEventListener('click',function(){ setTimeout(close,150); });
+  document.getElementById('mmMailto').addEventListener('click',function(){ setTimeout(close,150); });
+  document.getElementById('mmGmail').setAttribute('target','_blank');
+  document.getElementById('mmCopy').addEventListener('click',function(){
+    var b=this;
+    var done=function(){ b.textContent='Αντιγράφηκε ✓'; setTimeout(function(){ b.textContent='Αντιγραφή'; },1800); };
+    if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(TO).then(done,function(){}); }
+    else { var t=document.createElement('textarea'); t.value=TO; document.body.appendChild(t); t.select();
+           try{ document.execCommand('copy'); done(); }catch(err){} document.body.removeChild(t); }
+  });
+  [].slice.call(document.querySelectorAll('[data-mail]')).forEach(function(el){
+    el.addEventListener('click',function(e){ e.preventDefault(); open(); });
+  });
+})();
+
+
+/* ---- hero carousel ---- */
+(function(){
+  var car=document.getElementById('car'); if(!car) return;
+  var slides=[].slice.call(car.querySelectorAll('.slide'));
+  var cap=document.getElementById('carCap'), cnt=document.getElementById('carCount'), prog=document.getElementById('carProg');
+  var i=0, timer=null, raf=null, t0=0, paused=false;
+  var DUR=4200;
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function pad(n){ return (n<10?'0':'')+n; }
+  function load(n){
+    var im=slides[(n+slides.length)%slides.length].querySelector('img');
+    if(im && im.dataset.src){ im.src=im.dataset.src; delete im.dataset.src; }
+  }
+  function show(n){
+    i=(n+slides.length)%slides.length;
+    slides.forEach(function(s,k){ s.classList.toggle('on', k===i); });
+    cap.textContent=slides[i].dataset.cap;
+    cnt.textContent=pad(i+1)+' / '+pad(slides.length);
+    load(i+1); load(i+2);
+  }
+  function tick(ts){
+    if(!t0) t0=ts;
+    var p=(ts-t0)/DUR;
+    if(prog) prog.style.width=Math.min(p,1)*100+'%';
+    if(p>=1){ t0=0; show(i+1); }
+    raf=requestAnimationFrame(tick);
+  }
+  function start(){ if(reduce||paused||raf) return; t0=0; raf=requestAnimationFrame(tick); }
+  function stop(){ if(raf){ cancelAnimationFrame(raf); raf=null; } t0=0; if(prog) prog.style.width='0'; }
+  function go(d){ stop(); show(i+d); if(!paused) start(); }
+
+  document.getElementById('carPrev').addEventListener('click', function(){ go(-1); });
+  document.getElementById('carNext').addEventListener('click', function(){ go(1); });
+  car.addEventListener('pointerenter', function(){ paused=true; stop(); });
+  car.addEventListener('pointerleave', function(){ paused=false; start(); });
+  car.addEventListener('focusin', function(){ paused=true; stop(); });
+  car.addEventListener('focusout', function(){ paused=false; start(); });
+  car.addEventListener('keydown', function(e){
+    if(e.key==='ArrowLeft'){ go(-1); } else if(e.key==='ArrowRight'){ go(1); }
+  });
+  var sx=null;
+  car.addEventListener('touchstart', function(e){ sx=e.touches[0].clientX; paused=true; stop(); }, {passive:true});
+  car.addEventListener('touchend', function(e){
+    if(sx!==null){
+      var dx=e.changedTouches[0].clientX-sx;
+      if(Math.abs(dx)>40) show(i+(dx<0?1:-1));
+    }
+    sx=null; paused=false; start();
+  }, {passive:true});
+  document.addEventListener('visibilitychange', function(){ document.hidden ? stop() : start(); });
+
+  load(1); load(2); show(0); start();
+})();
+
+(function(){
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.rv').forEach(function(e){ e.classList.add('in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(function(e){ io.observe(e); });
+})();
+</script>
+</body>
+</html>
