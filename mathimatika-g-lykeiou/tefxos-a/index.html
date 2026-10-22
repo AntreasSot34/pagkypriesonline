@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Μαθηματικά Γ΄ Λυκείου ΚΚ — Α΄ Τεύχος | PagkypriesOnline</title>
+<meta name="description" content="Διαδραστική θεωρία και ασκήσεις με λύσεις για τα Μαθηματικά Κοινού Κορμού Γ΄ Λυκείου (Κύπρος), Α΄ Τεύχος: Εφαρμογές Διαφορικού Λογισμού και Αόριστο Ολοκλήρωμα.">
+<link rel="canonical" href="https://pagkypriesonline.com/mathimatika-g-lykeiou/tefxos-a/">
+<meta name="theme-color" content="#14171C">
+<link rel="icon" href="/favicon.png" type="image/png" sizes="64x64">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="el_CY">
+<meta property="og:site_name" content="Pagkypries Online">
+<meta property="og:title" content="Μαθηματικά Γ΄ Λυκείου ΚΚ — Α΄ Τεύχος | PagkypriesOnline">
+<meta property="og:description" content="Διαδραστική θεωρία και ασκήσεις με λύσεις για τα Μαθηματικά Κοινού Κορμού Γ΄ Λυκείου (Κύπρος), Α΄ Τεύχος: Εφαρμογές Διαφορικού Λογισμού και Αόριστο Ολοκλήρωμα.">
+<meta property="og:url" content="https://pagkypriesonline.com/mathimatika-g-lykeiou/tefxos-a/">
+<meta property="og:image" content="https://pagkypriesonline.com/g/g01.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<style>
+:root{
+  --navy:#1B2A4A;--blue:#0F6FD1;--green:#198754;--amber:#C77A0A;--red:#DC3545;--purple:#6F42C1;
+  --ink:#15233f;--muted:#5b6b86;--line:#dce3ef;--bg:#F4F7FA;--card:#fff;--soft:#f5f8fd;
+  --sans:"Commissioner",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;--ink2:#14171C;--grad:linear-gradient(100deg,#54EFA2 0%,#33CFD3 48%,#2D9AF5 100%);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px}
+.top{position:sticky;top:0;z-index:50;background:rgba(244,247,252,.9);backdrop-filter:saturate(160%) blur(14px);border-bottom:1px solid var(--line)}
+.top::before{content:"";display:block;height:3px;background:var(--grad)}
+.top .in{max-width:1180px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:14px;min-height:60px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink2);font-weight:900;letter-spacing:-.02em;font-size:17px;white-space:nowrap}
+.brand img{width:32px;height:auto;display:block}
+.top .crumb{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);border-left:1px solid var(--line);padding-left:14px}
+.top .links{margin-left:auto;display:flex;gap:8px}
+.top .links a{text-decoration:none;font-size:13.5px;font-weight:600;color:var(--ink2);border:1px solid var(--line);background:#fff;border-radius:10px;padding:7px 12px;white-space:nowrap}
+.top .links a:hover{border-color:#2D9AF5;color:var(--blue)}
+.top .links a.home{background:var(--blue);border-color:var(--blue);color:#fff}
+@media(max-width:860px){.top .crumb{display:none}}
+@media(max-width:480px){.brand span{display:none}.top .links a{padding:7px 10px;font-size:13px}}
+#app{max-width:1180px;margin:0 auto;padding:18px 16px 40px;display:grid;grid-template-columns:270px 1fr;gap:20px;align-items:start}
+#nav{position:sticky;top:76px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:10px;max-height:calc(100vh - 90px);overflow:auto}
+.navu{font-size:12px;font-weight:800;color:var(--blue);text-transform:uppercase;letter-spacing:.04em;padding:12px 8px 4px;line-height:1.3}
+.navu small{text-transform:none;letter-spacing:0;color:var(--navy);font-size:13px}
+.navit{display:flex;align-items:center;gap:9px;width:100%;text-align:left;background:none;border:0;border-radius:10px;padding:8px;cursor:pointer;font:inherit;color:var(--ink);font-size:14px;line-height:1.3}
+.navit:hover{background:var(--soft)}.navit.on{background:#e3eefb;font-weight:700}
+.nid{flex:none;min-width:34px;font-weight:800;color:var(--navy);font-size:12.5px}
+.nt{flex:1}
+.ring{flex:none;width:20px;height:20px;border-radius:50%;background:conic-gradient(var(--green) calc(var(--p)*1%),#dfe6f1 0);display:flex;align-items:center;justify-content:center;font-size:11px;color:#fff;font-weight:900;position:relative}
+.ring::before{content:"";position:absolute;inset:3px;border-radius:50%;background:#fff}
+.ring[style*="--p:100"]::before{background:var(--green)}
+.ring{isolation:isolate}.ring::before{z-index:-1}
+#main{min-width:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;margin-bottom:16px;box-shadow:0 10px 30px -22px rgba(27,42,74,.45)}
+h2{color:var(--navy);font-size:24px;line-height:1.2;font-weight:900}
+h3.blk{color:var(--navy);font-size:18px;font-weight:900;margin-bottom:12px}
+.unith{color:var(--navy);font-size:17px;font-weight:900;margin:22px 0 10px}
+.sechead{display:flex;gap:14px;align-items:center;margin:2px 0 14px}
+.sid{display:inline-block;background:var(--navy);color:#fff;font-weight:900;border-radius:8px;padding:2px 9px;font-size:13px}
+.sid.big{font-size:18px;padding:8px 12px;border-radius:12px}
+.muted{color:var(--muted)}.small{font-size:13px}
+.hero p{margin-top:8px}
+.bigprog{display:flex;align-items:center;gap:12px;margin-top:14px;font-weight:700;color:var(--navy);font-size:14px}
+.bar{display:block;flex:1;height:10px;border-radius:99px;background:#e3e9f3;overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--blue),var(--green));border-radius:99px}
+.secgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.seccard{display:flex;flex-direction:column;gap:8px;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;cursor:pointer;font:inherit;color:var(--ink);transition:.15s}
+.seccard:hover{border-color:var(--blue);transform:translateY(-2px);box-shadow:0 10px 24px -18px rgba(46,117,182,.8)}
+.seccard b{color:var(--navy);line-height:1.3}.seccard .bar{flex:none;width:100%}.seccard small{color:var(--muted)}.seccard .sid{align-self:flex-start}
+.howto ul{margin:8px 0 12px 20px}.howto li{margin:4px 0}
+code{font-family:"SF Mono",Consolas,Menlo,monospace;background:#eaf0fb;color:var(--navy);padding:1px 6px;border-radius:5px;font-size:.92em}
+.tbox{border:1px solid var(--line);border-left:5px solid var(--blue);background:var(--soft);border-radius:0 12px 12px 0;padding:12px 16px;margin:10px 0}
+.tbox.tip{border-left-color:var(--green);background:#f1faf4}.tbox.warn{border-left-color:var(--amber);background:#fdf6e9}
+.tbox h4{color:var(--navy);font-size:15.5px;margin-bottom:4px}
+.tbox ul,.tbox ol{margin:4px 0 2px 22px}.tbox li{margin:3px 0}.tbox p{margin:4px 0}
+.katex-display{overflow-x:auto;overflow-y:hidden;padding:2px 0}
+#main .katex{max-width:100%;position:relative}
+#main :not(.katex-display) > .katex{display:inline-block;overflow-x:auto;overflow-y:hidden;vertical-align:middle;padding:1px 0}
+.wctl label{min-width:0;max-width:100%}
+.tblwrap{overflow-x:auto}
+table.vt{border-collapse:collapse;margin:8px 0;font-size:14px;white-space:nowrap}
+table.vt th,table.vt td{border:1px solid #c9d3e4;padding:4px 10px;text-align:center}table.vt th{background:#eaf1fb}
+/* widgets */
+.wctl{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;margin-bottom:10px;font-size:14px;font-weight:600;color:var(--navy)}
+.wctl label{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.wctl select{max-width:100%;min-width:0;font:inherit;font-weight:600;padding:6px 10px;border-radius:9px;border:1px solid var(--line);background:#fff;color:var(--navy)}
+input[type=range]{accent-color:var(--blue);width:170px;max-width:60vw}
+.cap{font-size:13px;color:var(--muted);margin:6px 0 2px}
+.t1{color:var(--blue)}.t2{color:var(--purple)}.t3{color:var(--amber)}
+.wout{margin-top:10px;font-size:14.5px;background:var(--soft);border-radius:10px;padding:10px 12px}
+.ok{color:var(--green)}.bad{color:var(--red)}
+.two{display:grid;grid-template-columns:1fr 1.6fr;gap:12px;align-items:center}
+.plot{width:100%;height:auto;display:block;background:#fff;border:1px solid var(--line);border-radius:12px;touch-action:pan-y}
+.plot .grid line{stroke:#edf1f7}.plot .tick{font-size:11px;fill:#8a97ad;font-family:var(--sans)}
+.plot .axis{stroke:var(--navy);stroke-width:1.4}
+.plot .curve{fill:none;stroke-width:3;stroke-linejoin:round;stroke-linecap:round}
+.c1{stroke:var(--blue)}.c2{stroke:var(--purple)}.c3{stroke:var(--amber)}.cfam{stroke:#c5cfdf;stroke-width:1.8!important}
+.plot .band.pos{fill:rgba(25,135,84,.09)}.plot .band.neg{fill:rgba(220,53,69,.08)}
+.plot .dot{stroke:#fff;stroke-width:2}.d1{fill:var(--blue)}.d2{fill:var(--navy)}.d3{fill:var(--amber)}.dmax{fill:var(--green)}.dmin{fill:var(--red)}.dinf{fill:var(--purple)}
+.plot .lbl{font-size:12.5px;font-weight:800;font-family:var(--sans)}.lbl.dmax{fill:var(--green)}.lbl.dmin{fill:var(--red)}.lbl.dinf{fill:var(--purple)}.lbl.d2,.lbl.d3,.lbl.d1{fill:var(--navy)}
+.plot .guide{stroke:#9aa8bf;stroke-dasharray:4 4}.plot .tangent{stroke:var(--red);stroke-width:2;stroke-dasharray:7 5}
+.plot .sheet{fill:#f3e7cf;stroke:#c9a86a}.plot .cut{fill:#fff;stroke:var(--red);stroke-dasharray:4 3}.plot .base{fill:#dbe8f8;stroke:var(--blue)}
+/* exercises */
+.ex{border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:12px 0;background:#fff;transition:border-color .2s}
+.ex.solved{border-color:#a9dcbf;background:#fbfefc}
+.exh{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.exn{font-weight:900;color:var(--navy)}
+.lvl{font-size:11.5px;font-weight:800;padding:2px 9px;border-radius:99px}
+.l1{background:#e7f6ee;color:var(--green)}.l2{background:#fdf1dd;color:var(--amber)}.l3{background:#fdeaec;color:var(--red)}
+.tick-ok{margin-left:auto;color:var(--green);font-weight:800;font-size:13px}
+.exq{margin-bottom:10px}
+.opt{display:flex;gap:10px;align-items:flex-start;padding:9px 12px;border:1px solid var(--line);border-radius:10px;margin:6px 0;cursor:pointer;background:#fff}
+.opt:hover{border-color:var(--blue)}.opt input{margin-top:5px;accent-color:var(--blue)}
+.opt.right{border-color:var(--green);background:#eef9f2}.opt.wrong{border-color:var(--red);background:#fdf0f1}
+.fields{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px 14px}
+.fld{display:flex;flex-direction:column;gap:3px;font-size:13.5px;color:var(--muted);font-weight:600}
+.fld.wide{max-width:560px}
+.fld input{font:inherit;font-size:16px;padding:9px 12px;border:1.5px solid var(--line);border-radius:10px;color:var(--ink);background:#fff;width:100%}
+.fld input:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(46,117,182,.15)}
+.fld input.right{border-color:var(--green);background:#f1faf4}.fld input.wrong{border-color:var(--red);background:#fdf3f4}
+.preview{font-size:12.5px;margin-top:4px;min-height:1em}.warnc{color:var(--amber)}
+.exbar{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.btn{font:inherit;font-size:14px;font-weight:700;border-radius:10px;padding:8px 14px;cursor:pointer;border:1.5px solid transparent;transition:.15s}
+.btn.primary{background:var(--blue);color:#fff}.btn.primary:hover{background:#245f94}
+.btn.ghost{background:#fff;color:var(--navy);border-color:var(--line)}.btn.ghost:hover{border-color:var(--blue)}
+.btn.small{font-size:13px;padding:6px 11px}
+.fb{margin-top:10px;font-weight:700;min-height:0}.fb:empty{display:none}
+.okc{color:var(--green)}.badc{color:var(--red)}
+.hint,.sol{margin-top:10px;padding:10px 14px;border-radius:10px;font-size:15px}
+.hint{background:#fff8e8;border:1px solid #f0d9a8}.sol{background:#f1faf4;border:1px solid #bfe6cf}
+.hidden{display:none}
+.solgraph{margin-top:10px;max-width:520px}
+.gen{border:2px dashed #b8cbe6}.gen .newg{margin-top:4px}
+.pager{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:6px}
+.chips{gap:6px}.chip{font:inherit;font-size:14px;font-weight:700;border:1.5px solid var(--line);background:#fff;color:var(--navy);border-radius:99px;padding:5px 12px;cursor:pointer}
+.chip.on{background:var(--blue);border-color:var(--blue);color:#fff}
+.wctl.col{flex-direction:column;align-items:flex-start;gap:6px}
+.plot .vnum{font-size:17px;font-weight:900;fill:var(--navy);text-anchor:middle;font-family:var(--sans)}
+.pills{display:flex;flex-wrap:wrap;gap:5px;margin:6px 0}.pills span{font-family:"SF Mono",Consolas,monospace;font-size:13px;background:#eef3fb;border:1px solid var(--line);border-radius:7px;padding:2px 7px;color:var(--navy)}
+.pills span.pm{background:var(--amber);color:#fff;border-color:var(--amber)}.pills span.pl1{background:#e3eefb}.pills span.pl2{background:#efe8fb}
+.dice{display:flex;align-items:center;gap:10px;margin:4px 0 8px;font-size:14px}
+.plot .theo{stroke:var(--red);stroke-width:2.5}.plot .whisk{stroke:var(--navy);stroke-width:2}.plot .medl{stroke:var(--red);stroke-width:3}
+.plot .sol-e{fill:none;stroke:var(--navy);stroke-width:2}.plot .sol-eb{fill:none;stroke:var(--navy);stroke-width:1.5;stroke-dasharray:5 4;opacity:.6}
+.plot .axisrot{stroke:var(--red);stroke-width:1.5;stroke-dasharray:8 5}.plot .gen2d{fill:rgba(46,117,182,.22);stroke:var(--blue);stroke-width:2}
+table.t2 input{width:72px;font:inherit;padding:4px 6px;border:1px solid var(--line);border-radius:7px;text-align:center}
+.sform{font-size:15px;line-height:2}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:24px 16px 34px}
+footer b{color:var(--navy)}footer a{color:var(--blue);font-weight:700;text-decoration:none}
+@media (max-width:860px){
+  #app{grid-template-columns:1fr;padding-top:10px}
+  #nav{position:static;display:flex;overflow-x:auto;gap:6px;padding:8px;max-height:none;scrollbar-width:thin}
+  .navu{display:none}
+  .navit{flex:none;width:auto;white-space:nowrap;border:1px solid var(--line);padding:6px 10px}
+  .navit .nt{display:none}.navit .nid{min-width:0}
+  .two{grid-template-columns:1fr}
+  .card{padding:16px}
+  h2{font-size:21px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="top"><div class="in">
+  <a class="brand" href="/"><img src="/logo-mark.png" width="240" height="212" alt="PagkypriesOnline"><span>Pagkypries Online</span></a>
+  <div class="crumb">Μαθηματικά ΚΚ · Γ΄ Λυκείου · Α΄ Τεύχος</div>
+  <nav class="links" aria-label="Σύνδεσμοι"><a href="/mathimatika-g-lykeiou/tefxos-b/">Β΄ Τεύχος →</a><a class="home" href="/#yliko">← Αρχική</a></nav>
+</div></header>
+<div id="app"><nav id="nav" aria-label="Παράγραφοι"></nav><main id="main"><p class="muted">Φόρτωση…</p></main></div>
+<footer><b>Pagkypries Online</b> · Αντρέας Σωτηρίου · <a href="/">pagkypriesonline.com</a> · <a href="/#epikoinonia">Θέλεις ιδιαίτερο μάθημα;</a><br>
+Πρωτότυπο εκπαιδευτικό υλικό που ακολουθεί τη δομή του βιβλίου «Μαθηματικά Γ΄ Λυκείου Κοινού Κορμού, Α΄ Τεύχος» (ΥΑΠ, 2019).</footer>
+<script>
+const R = String.raw;
+const CONFIG = {
+  storeKey: "pagk-gkk-tefxos-a-v1",
+  heroTitle: "Μαθηματικά Κοινού Κορμού Γ΄ Λυκείου — Α΄ Τεύχος",
+  tefxos: "Α΄ τεύχους",
+  howto: `<ul><li>Κλάσματα: <code>5/2</code> · δεκαδικά: <code>2,5</code> ή <code>2.5</code> · ρίζες: <code>√3/3</code> ή <code>sqrt(3)/3</code></li>
+    <li>Δυνάμεις: <code>x^3</code> ή <code>x³</code> · γινόμενα: <code>2x</code>, <code>3x^2</code>, <code>(2/3)x^(3/2)</code></li>
+    <li>Στα ολοκληρώματα το <code>+ c</code> είναι προαιρετικό — η σελίδα ελέγχει παραγωγίζοντας την απάντησή σου!</li></ul>`
+};
+
+/* Τύποι άσκησης:
+   mc     : options[], correct (index)
+   fields : fields[{label, ans, tol?}]  — αριθμητικές απαντήσεις (δέχεται κλάσματα, √, π)
+   expr   : ref (έκφραση ως προς x) — ισοδύναμη έκφραση
+   anti   : f (ολοκληρωτέα) — ελέγχεται F' = f, οποιαδήποτε σταθερά
+   ivp    : f, x0, y0 — F' = f και F(x0) = y0
+   pos    : true όταν η έκφραση ορίζεται μόνο για x>0
+*/
+
+const UNITS = [
+  { id: 1, title: "Ενότητα 1 · Εφαρμογές του Διαφορικού Λογισμού" },
+  { id: 2, title: "Ενότητα 2 · Αόριστο Ολοκλήρωμα" }
+];
+
+const SECTIONS = [
+/* ───────────────────────────── 1.1 ───────────────────────────── */
+{
+  id: "1.1", unit: 1, title: "Μονοτονία – Ακρότατα (Ορισμοί)",
+  book: "Α΄ Τεύχος §1.1 · Δραστηριότητες σελ. 14, 20, 26",
+  theory: R`
+<div class="tbox"><h4>Μονοτονία</h4>
+<p>Μια συνάρτηση $f$ λέγεται <b>γνησίως αύξουσα</b> σε ένα διάστημα $\Delta$ αν για οποιαδήποτε $x_1, x_2 \in \Delta$:</p>
+$$x_1 < x_2 \;\Rightarrow\; f(x_1) < f(x_2)$$
+<p>Δηλαδή όσο μεγαλώνει το $x$, μεγαλώνει και το $f(x)$ — η γραφική παράσταση «ανεβαίνει» από αριστερά προς τα δεξιά.</p>
+<p><b>Γνησίως φθίνουσα</b>: $x_1 < x_2 \Rightarrow f(x_1) > f(x_2)$ (η γραφική «κατεβαίνει»). <b>Σταθερή</b>: $f(x_1) = f(x_2)$ για όλα τα $x_1, x_2$.</p></div>
+
+<div class="tbox"><h4>Ακρότατα</h4>
+<p><b>Ολικό μέγιστο</b> στο $x_0$: $f(x) \le f(x_0)$ για <u>κάθε</u> $x$ του πεδίου ορισμού. <b>Ολικό ελάχιστο</b>: $f(x) \ge f(x_0)$ για κάθε $x$.</p>
+<p><b>Τοπικό μέγιστο / ελάχιστο</b>: η ίδια ανισότητα ισχύει μόνο «κοντά» στο $x_0$ (σε ένα μικρό διάστημα γύρω του).</p>
+<p>Κάθε ολικό ακρότατο είναι και τοπικό — το αντίστροφο δεν ισχύει. Μάλιστα ένα τοπικό μέγιστο μπορεί να είναι <b>μικρότερο</b> από ένα τοπικό ελάχιστο!</p></div>
+
+<div class="tbox tip"><h4>Κόλπο χωρίς παραγώγους</h4>
+<p>Για τετραγωνική συνάρτηση, συμπλήρωσε τετράγωνο:</p>
+$$f(x) = x^2 - 4x + 7 = (x-2)^2 + 3 \ge 3$$
+<p>Αφού $(x-2)^2 \ge 0$, η $f$ έχει <b>ολικό ελάχιστο</b> $f(2) = 3$.</p></div>
+
+<div class="tbox warn"><h4>Σε κλειστό διάστημα $[\alpha, \beta]$</h4>
+<p>Τα ολικά ακρότατα μπορεί να βρίσκονται και στα <b>άκρα</b> $\alpha$, $\beta$. Πάντα ελέγχουμε και τις τιμές $f(\alpha)$, $f(\beta)$.</p></div>`,
+  widget: "mono",
+  exercises: [
+    { level: 1, type: "mc", q: R`Η συνάρτηση $f(x) = -3x + 2$, $x \in \mathbb{R}$, είναι:`,
+      options: ["γνησίως αύξουσα στο ℝ", "γνησίως φθίνουσα στο ℝ", "σταθερή στο ℝ", "ούτε αύξουσα ούτε φθίνουσα"], correct: 1,
+      hint: R`Πάρε $x_1 < x_2$. Πολλαπλασιάζοντας με $-3$ η ανισότητα <b>αλλάζει φορά</b>.`,
+      sol: R`Για $x_1 < x_2$: $-3x_1 > -3x_2 \Rightarrow -3x_1 + 2 > -3x_2 + 2 \Rightarrow f(x_1) > f(x_2)$. Άρα <b>γνησίως φθίνουσα</b>. (Γενικά η $y = \alpha x + \beta$ με $\alpha < 0$ είναι γνησίως φθίνουσα.)` },
+    { level: 1, type: "fields", q: R`Δίνεται $f(x) = (x-2)^2 + 1$. Να βρείτε το ολικό ελάχιστο της $f$.`,
+      fields: [{ label: "στο x =", ans: 2 }, { label: "ελάχιστη τιμή =", ans: 1 }],
+      hint: R`Πότε μηδενίζεται το $(x-2)^2$;`,
+      sol: R`Επειδή $(x-2)^2 \ge 0$ για κάθε $x$, έχουμε $f(x) \ge 1 = f(2)$. Άρα ολικό ελάχιστο <b>$f(2) = 1$</b>.` },
+    { level: 1, type: "fields", q: R`Να βρείτε το ολικό μέγιστο της $f(x) = -x^2 + 6x - 5$.`,
+      fields: [{ label: "στο x =", ans: 3 }, { label: "μέγιστη τιμή =", ans: 4 }],
+      hint: R`Βγάλε το $-$ κοινό παράγοντα και συμπλήρωσε τετράγωνο: $-(x^2 - 6x) - 5$.`,
+      sol: R`$f(x) = -(x^2 - 6x + 9) + 9 - 5 = -(x-3)^2 + 4 \le 4$. Άρα ολικό μέγιστο <b>$f(3) = 4$</b>.` },
+    { level: 2, type: "fields", q: R`Η $f$ είναι γνησίως αύξουσα στο $\mathbb{R}$ και ισχύει $f(2\alpha - 1) < f(5)$. Να βρείτε για ποια $\alpha$ ισχύει: $\alpha < \;?$`,
+      fields: [{ label: "α <", ans: 3 }],
+      hint: R`Σε γνησίως αύξουσα συνάρτηση, η ανισότητα των τιμών μεταφέρεται στα $x$ <b>με την ίδια φορά</b>.`,
+      sol: R`Αφού η $f$ είναι γνησίως αύξουσα: $f(2\alpha-1) < f(5) \Leftrightarrow 2\alpha - 1 < 5 \Leftrightarrow \alpha < 3$.` },
+    { level: 2, type: "fields", q: R`Δίνεται $f(x) = x^2 - 4x$ με πεδίο ορισμού το $[-1, 5]$. Να βρείτε τα ολικά ακρότατα.`,
+      fields: [{ label: "ολικό ελάχιστο: τιμή =", ans: -4 }, { label: "στο x =", ans: 2 }, { label: "ολικό μέγιστο: τιμή =", ans: 5 }],
+      hint: R`$f(x) = (x-2)^2 - 4$. Το μέγιστο σε κλειστό διάστημα ψάξ' το στα <b>άκρα</b>.`,
+      sol: R`$f(x) = (x-2)^2 - 4 \ge -4$, άρα ολικό ελάχιστο $f(2) = -4$.<br>Στα άκρα: $f(-1) = 1 + 4 = 5$ και $f(5) = 25 - 20 = 5$. Άρα ολικό μέγιστο <b>5</b>, που το παίρνει στα $x = -1$ και $x = 5$.` },
+    { level: 3, type: "mc", q: R`Ποια πρόταση είναι <b>σωστή</b>;`,
+      options: ["Κάθε τοπικό μέγιστο είναι μεγαλύτερο από κάθε τοπικό ελάχιστο.", "Μια συνάρτηση μπορεί να έχει τοπικό μέγιστο μικρότερο από ένα τοπικό ελάχιστο της.", "Κάθε τοπικό ακρότατο είναι και ολικό.", "Μια συνάρτηση έχει το πολύ ένα τοπικό ελάχιστο."], correct: 1,
+      hint: R`«Τοπικό» σημαίνει ότι συγκρίνουμε μόνο με τα κοντινά σημεία. Φαντάσου ένα βουνό χαμηλά και μια κοιλάδα ψηλά στο ίδιο γράφημα.`,
+      sol: R`Το τοπικό μέγιστο συγκρίνεται μόνο με γειτονικές τιμές. Ένας «χαμηλός λόφος» αριστερά μπορεί να είναι πιο κάτω από μια «ψηλή κοιλάδα» δεξιά. Άρα η (β) είναι σωστή. Οι άλλες είναι λανθασμένες.` }
+  ]
+},
+
+/* ───────────────────────────── 1.2 ───────────────────────────── */
+{
+  id: "1.2", unit: 1, title: "Μονοτονία – Ακρότατα (Θεωρήματα)",
+  book: "Α΄ Τεύχος §1.2 · Δραστηριότητες σελ. 36",
+  theory: R`
+<div class="tbox"><h4>Μονοτονία με την παράγωγο</h4>
+<p>Αν σε ένα διάστημα $\Delta$ ισχύει:</p>
+<ul><li>$f'(x) > 0$ για κάθε εσωτερικό $x$ ⇒ η $f$ είναι <b>γνησίως αύξουσα</b> στο $\Delta$</li>
+<li>$f'(x) < 0$ ⇒ <b>γνησίως φθίνουσα</b></li>
+<li>$f'(x) = 0$ για κάθε $x$ ⇒ <b>σταθερή</b></li></ul></div>
+
+<div class="tbox"><h4>Κρίσιμα σημεία & Θεώρημα Fermat</h4>
+<p>Αν η $f$ έχει τοπικό ακρότατο σε εσωτερικό σημείο $x_0$ και είναι παραγωγίσιμη εκεί, τότε $f'(x_0) = 0$.</p>
+<p>Οι ρίζες της $f'$ λέγονται <b>κρίσιμα σημεία</b>: είναι οι <i>υποψήφιες</i> θέσεις ακροτάτων.</p></div>
+
+<div class="tbox warn"><h4>⚠ Το αντίστροφο ΔΕΝ ισχύει</h4>
+<p>$f(x) = x^3$: $f'(0) = 0$, αλλά $f'(x) = 3x^2 \ge 0$ και από τις δύο μεριές, άρα η $f$ είναι γνησίως αύξουσα και το $0$ <b>δεν</b> είναι θέση ακροτάτου.</p></div>
+
+<div class="tbox tip"><h4>Μέθοδος (κριτήριο πρώτης παραγώγου)</h4>
+<ol><li>Βρίσκω $f'(x)$ και λύνω $f'(x) = 0$.</li>
+<li>Φτιάχνω πίνακα προσήμων της $f'$.</li>
+<li>$+ \to -$: <b>τοπικό μέγιστο</b> · $- \to +$: <b>τοπικό ελάχιστο</b> · χωρίς αλλαγή: όχι ακρότατο.</li>
+<li>Σε κλειστό $[\alpha,\beta]$: συγκρίνω τις τιμές στα κρίσιμα σημεία <b>και</b> στα άκρα.</li></ol></div>`,
+  widget: "deriv",
+  gen: "g12",
+  exercises: [
+    { level: 1, type: "fields", q: R`Να βρείτε το κρίσιμο σημείο και το ακρότατο της $f(x) = x^2 - 6x + 1$.`,
+      fields: [{ label: "κρίσιμο σημείο x =", ans: 3 }, { label: "τιμή ακροτάτου =", ans: -8 }],
+      hint: R`$f'(x) = 2x - 6$.`,
+      sol: R`$f'(x) = 2x - 6 = 0 \Leftrightarrow x = 3$. Για $x<3$: $f'<0$, για $x>3$: $f'>0$ ⇒ ελάχιστο $f(3) = 9 - 18 + 1 = -8$.` },
+    { level: 1, type: "fields", q: R`Να βρείτε τα τοπικά ακρότατα της $f(x) = x^3 - 12x$.`,
+      fields: [{ label: "τοπ. μέγιστο στο x =", ans: -2 }, { label: "τιμή =", ans: 16 }, { label: "τοπ. ελάχιστο στο x =", ans: 2 }, { label: "τιμή =", ans: -16 }],
+      hint: R`$f'(x) = 3x^2 - 12 = 3(x-2)(x+2)$. Πρόσημα: $+,\,-,\,+$.`,
+      sol: R`$f'(x) = 3(x-2)(x+2)$, ρίζες $\pm 2$. Πρόσημο $f'$: $+$ στο $(-\infty,-2)$, $-$ στο $(-2,2)$, $+$ στο $(2,\infty)$.<br>Τοπικό μέγιστο $f(-2) = -8 + 24 = 16$, τοπικό ελάχιστο $f(2) = 8 - 24 = -16$.` },
+    { level: 2, type: "fields", q: R`Να βρείτε τα τοπικά ακρότατα της $f(x) = -2x^3 + 3x^2 + 12x - 4$.`,
+      fields: [{ label: "τοπ. ελάχιστο στο x =", ans: -1 }, { label: "τιμή =", ans: -11 }, { label: "τοπ. μέγιστο στο x =", ans: 2 }, { label: "τιμή =", ans: 16 }],
+      hint: R`$f'(x) = -6x^2 + 6x + 12 = -6(x-2)(x+1)$. Προσοχή: αρνητικός συντελεστής ⇒ πρόσημα $-,\,+,\,-$.`,
+      sol: R`$f'(x) = -6(x^2 - x - 2) = -6(x-2)(x+1)$. Πρόσημα: $-$ στο $(-\infty,-1)$, $+$ στο $(-1,2)$, $-$ στο $(2,\infty)$.<br>Τοπικό ελάχιστο $f(-1) = 2 + 3 - 12 - 4 = -11$, τοπικό μέγιστο $f(2) = -16 + 12 + 24 - 4 = 16$.` },
+    { level: 2, type: "mc", q: R`Για τη συνάρτηση $f(x) = x^3 + 3x$ ισχύει:`,
+      options: ["Έχει τοπικό μέγιστο στο 0", "Έχει δύο τοπικά ακρότατα", "Είναι γνησίως αύξουσα στο ℝ και δεν έχει ακρότατα", "Είναι γνησίως φθίνουσα στο ℝ"], correct: 2,
+      hint: R`Μπορεί ποτέ το $3x^2 + 3$ να γίνει $0$;`,
+      sol: R`$f'(x) = 3x^2 + 3 > 0$ για κάθε $x$ (άθροισμα μη αρνητικού και θετικού). Άρα η $f$ είναι <b>γνησίως αύξουσα στο ℝ</b> και, αφού η $f'$ δεν μηδενίζεται, δεν έχει ακρότατα.` },
+    { level: 2, type: "fields", q: R`Να βρείτε τα ολικά ακρότατα της $f(x) = x^3 - 3x$ στο διάστημα $[0, 2]$.`,
+      fields: [{ label: "ολικό ελάχιστο =", ans: -2 }, { label: "ολικό μέγιστο =", ans: 2 }],
+      hint: R`Κρίσιμα σημεία: $x = \pm 1$ — κράτα μόνο όσα ανήκουν στο $[0,2]$. Σύγκρινε με τα άκρα.`,
+      sol: R`$f'(x) = 3x^2 - 3 = 0 \Leftrightarrow x = \pm 1$. Μέσα στο $[0,2]$ μόνο το $x = 1$.<br>Τιμές: $f(0) = 0$, $f(1) = -2$, $f(2) = 8 - 6 = 2$.<br>Ολικό ελάχιστο <b>$-2$</b> (στο $x=1$), ολικό μέγιστο <b>$2$</b> (στο $x=2$, δηλαδή σε άκρο!).` },
+    { level: 3, type: "fields", q: R`Η $f(x) = x^3 + \alpha x^2 + \beta x + 1$ έχει τοπικά ακρότατα στα $x = 1$ και $x = 3$. Να βρείτε τα $\alpha, \beta$.`,
+      fields: [{ label: "α =", ans: -6 }, { label: "β =", ans: 9 }],
+      hint: R`Η $f'(x) = 3x^2 + 2\alpha x + \beta$ έχει ρίζες $1$ και $3$, άρα $f'(x) = 3(x-1)(x-3)$.`,
+      sol: R`Αφού $f'(1) = f'(3) = 0$ και ο μεγιστοβάθμιος συντελεστής της $f'$ είναι $3$: $f'(x) = 3(x-1)(x-3) = 3x^2 - 12x + 9$.<br>Συγκρίνοντας με $3x^2 + 2\alpha x + \beta$: $2\alpha = -12 \Rightarrow \alpha = -6$ και $\beta = 9$. (Οι ρίζες είναι απλές, άρα η $f'$ αλλάζει πρόσημο ⇒ είναι πράγματι ακρότατα.)` },
+    { level: 3, type: "mc", q: R`Για $f(x) = x^3 - kx^2 + 3x$ βρίσκουμε ότι $f'(1) = 0$ όταν $k = 3$. Τότε το $x = 1$ είναι:`,
+      options: ["θέση τοπικού μεγίστου", "θέση τοπικού ελαχίστου", "όχι θέση ακροτάτου"], correct: 2,
+      hint: R`Για $k = 3$: $f'(x) = 3x^2 - 6x + 3$. Παραγοντοποίησέ την.`,
+      sol: R`$f'(x) = 3(x^2 - 2x + 1) = 3(x-1)^2 \ge 0$. Η $f'$ <b>δεν αλλάζει πρόσημο</b> στο 1, άρα η $f$ είναι γνησίως αύξουσα και το $x=1$ <b>δεν</b> είναι θέση ακροτάτου. Παγίδα: το $f'(x_0)=0$ δεν αρκεί!` }
+  ]
+},
+
+/* ───────────────────────────── 1.3 ───────────────────────────── */
+{
+  id: "1.3", unit: 1, title: "Κυρτότητα – Σημεία καμπής",
+  book: "Α΄ Τεύχος §1.3 · Δραστηριότητες σελ. 44",
+  theory: R`
+<div class="tbox"><h4>Κυρτή – Κοίλη</h4>
+<p>Η $f$ είναι <b>κυρτή</b> (ή <b>στρέφει τα κοίλα άνω</b>, σχήμα $\cup$) σε ένα διάστημα αν η $f'$ είναι γνησίως αύξουσα εκεί — οι κλίσεις των εφαπτομένων μεγαλώνουν.</p>
+<p>Η $f$ είναι <b>κοίλη</b> (ή <b>στρέφει τα κοίλα κάτω</b>, σχήμα $\cap$) αν η $f'$ είναι γνησίως φθίνουσα.</p>
+<p>Γεωμετρικά: κυρτή ⇒ η γραφική βρίσκεται <b>πάνω</b> από τις εφαπτομένες της· κοίλη ⇒ <b>κάτω</b>.</p></div>
+
+<div class="tbox"><h4>Κριτήριο δεύτερης παραγώγου</h4>
+<ul><li>$f''(x) > 0$ στο διάστημα ⇒ <b>κυρτή</b> ($\cup$)</li>
+<li>$f''(x) < 0$ στο διάστημα ⇒ <b>κοίλη</b> ($\cap$)</li></ul></div>
+
+<div class="tbox"><h4>Σημείο καμπής</h4>
+<p>Το σημείο $(x_0, f(x_0))$ είναι <b>σημείο καμπής</b> αν η $f$ <b>αλλάζει κυρτότητα</b> εκατέρωθεν του $x_0$. Για πολυωνυμική συνάρτηση τότε $f''(x_0) = 0$.</p></div>
+
+<div class="tbox warn"><h4>⚠ Ούτε εδώ αρκεί το $f''(x_0)=0$</h4>
+<p>$f(x) = x^4$: $f''(x) = 12x^2$, $f''(0) = 0$, αλλά $f'' \ge 0$ και από τις δύο μεριές ⇒ κυρτή παντού, το $(0,0)$ <b>δεν</b> είναι σημείο καμπής.</p></div>`,
+  widget: "convex",
+  exercises: [
+    { level: 1, type: "fields", q: R`Να βρείτε το σημείο καμπής της $f(x) = x^3 - 3x^2 + 2$.`,
+      fields: [{ label: "x₀ =", ans: 1 }, { label: "f(x₀) =", ans: 0 }],
+      hint: R`$f''(x) = 6x - 6$.`,
+      sol: R`$f'(x) = 3x^2 - 6x$, $f''(x) = 6x - 6 = 0 \Leftrightarrow x = 1$. Για $x<1$: $f''<0$ (κοίλη), για $x>1$: $f''>0$ (κυρτή). Αλλάζει κυρτότητα ⇒ σημείο καμπής <b>$(1, 0)$</b>, αφού $f(1) = 1 - 3 + 2 = 0$.` },
+    { level: 1, type: "mc", q: R`Η $f(x) = -x^3 + 6x^2$ είναι <b>κυρτή</b> στο διάστημα:`,
+      options: ["$(-\\infty, 2]$", "$[2, +\\infty)$", "$(-\\infty, 0]$", "σε όλο το ℝ"], correct: 0,
+      hint: R`$f''(x) = -6x + 12$. Πότε είναι θετική;`,
+      sol: R`$f''(x) = -6x + 12 > 0 \Leftrightarrow x < 2$. Άρα κυρτή στο $(-\infty, 2]$ και κοίλη στο $[2, +\infty)$. Σημείο καμπής $(2, f(2)) = (2, 16)$.` },
+    { level: 2, type: "fields", q: R`Να βρείτε τα σημεία καμπής της $f(x) = x^4 - 24x^2 + 5$.`,
+      fields: [{ label: "θετική τετμημένη x₀ =", ans: 2 }, { label: "f(x₀) =", ans: -75 }],
+      hint: R`$f''(x) = 12x^2 - 48 = 12(x-2)(x+2)$. Λόγω συμμετρίας τα σημεία έχουν την ίδια τεταγμένη.`,
+      sol: R`$f''(x) = 12(x^2 - 4)$, ρίζες $\pm 2$, πρόσημα $+,\,-,\,+$ ⇒ αλλάζει κυρτότητα και στα δύο.<br>$f(\pm 2) = 16 - 96 + 5 = -75$. Σημεία καμπής <b>$(-2, -75)$</b> και <b>$(2, -75)$</b>.` },
+    { level: 2, type: "fields", q: R`Να βρείτε τα σημεία καμπής της $f(x) = x^4 - 4x^3$. Δώστε το σημείο με τη <b>μεγαλύτερη</b> τετμημένη.`,
+      fields: [{ label: "x₀ =", ans: 2 }, { label: "f(x₀) =", ans: -16 }],
+      hint: R`$f''(x) = 12x^2 - 24x = 12x(x-2)$.`,
+      sol: R`$f''(x) = 12x(x-2)$: πρόσημα $+,\,-,\,+$ ⇒ σημεία καμπής στα $x = 0$ και $x = 2$.<br>$f(0) = 0$, $f(2) = 16 - 32 = -16$. Σημεία καμπής $(0,0)$ και <b>$(2,-16)$</b>.` },
+    { level: 2, type: "mc", q: R`Για τη $f(x) = x^4$, το σημείο $(0, 0)$:`,
+      options: ["είναι σημείο καμπής, γιατί $f''(0) = 0$", "δεν είναι σημείο καμπής", "είναι τοπικό μέγιστο"], correct: 1,
+      hint: R`Κοίτα το πρόσημο της $f'' = 12x^2$ αριστερά και δεξιά του 0.`,
+      sol: R`$f''(x) = 12x^2 \ge 0$ και από τις δύο μεριές ⇒ η $f$ είναι κυρτή παντού, <b>δεν</b> αλλάζει κυρτότητα. Άρα το $(0,0)$ δεν είναι σημείο καμπής (είναι μάλιστα ολικό ελάχιστο).` },
+    { level: 3, type: "fields", q: R`Η $f(x) = x^3 + \alpha x^2 + \beta x$ έχει σημείο καμπής το $(1, -1)$. Να βρείτε τα $\alpha, \beta$.`,
+      fields: [{ label: "α =", ans: -3 }, { label: "β =", ans: 1 }],
+      hint: R`Δύο συνθήκες: $f''(1) = 0$ και $f(1) = -1$.`,
+      sol: R`$f''(x) = 6x + 2\alpha$, $f''(1) = 0 \Rightarrow 6 + 2\alpha = 0 \Rightarrow \alpha = -3$.<br>$f(1) = -1 \Rightarrow 1 - 3 + \beta = -1 \Rightarrow \beta = 1$. (Η $f'' = 6x - 6$ αλλάζει πρόσημο στο 1 ✓.)` }
+  ]
+},
+
+/* ───────────────────────────── 1.4 ───────────────────────────── */
+{
+  id: "1.4", unit: 1, title: "Μελέτη συνάρτησης – Γραφική παράσταση",
+  book: "Α΄ Τεύχος §1.4 · Δραστηριότητες σελ. 47",
+  theory: R`
+<div class="tbox"><h4>Τα βήματα της μελέτης</h4>
+<ol><li><b>Πεδίο ορισμού</b> (πολυώνυμο: $\mathbb{R}$) και <b>τομές με τους άξονες</b>: $x = 0$ δίνει την τομή με τον άξονα $y$· $f(x) = 0$ τις τομές με τον άξονα $x$.</li>
+<li><b>$f'$</b> → διαστήματα μονοτονίας και τοπικά ακρότατα.</li>
+<li><b>$f''$</b> → κυρτότητα και σημεία καμπής.</li>
+<li><b>Συμπεριφορά στα άκρα</b>: οριακές τιμές για $x \to \pm\infty$.</li>
+<li><b>Συγκεντρωτικός πίνακας</b> και σχεδίαση.</li></ol></div>
+
+<div class="tbox tip"><h4>Όρια στο $\pm\infty$ — μόνο ο μεγιστοβάθμιος όρος μετράει</h4>
+$$\lim_{x\to\pm\infty}(\alpha_\nu x^\nu + \dots + \alpha_0) = \lim_{x\to\pm\infty} \alpha_\nu x^\nu$$
+<p>Π.χ. $\lim_{x\to -\infty}(-2x^3 + x) = \lim_{x\to-\infty}(-2x^3) = +\infty$.</p></div>
+
+<div class="tbox"><h4>Παράδειγμα πίνακα: $f(x) = x^3 - 3x + 2$</h4>
+<div class="tblwrap"><table class="vt"><tr><th>$x$</th><td>$-\infty$</td><td>$-1$</td><td></td><td>$0$</td><td></td><td>$1$</td><td>$+\infty$</td></tr>
+<tr><th>$f'$</th><td></td><td>$+\;\;0$</td><td>$-$</td><td>$-$</td><td>$-$</td><td>$0\;\;+$</td><td></td></tr>
+<tr><th>$f''$</th><td></td><td>$-$</td><td>$-$</td><td>$0$</td><td>$+$</td><td>$+$</td><td></td></tr>
+<tr><th>$f$</th><td>$-\infty$</td><td>μέγ. $4$</td><td>↘</td><td>καμπή $2$</td><td>↘</td><td>ελάχ. $0$</td><td>$+\infty$</td></tr></table></div>
+<p>Δοκίμασε τη γεννήτρια πιο κάτω: κάθε φορά νέα συνάρτηση για πλήρη μελέτη!</p></div>`,
+  widget: null,
+  gen: "g14",
+  exercises: [
+    { level: 1, type: "mc", q: R`Πόσο είναι το $\displaystyle\lim_{x\to -\infty}(-2x^3 + x)$;`,
+      options: ["$-\\infty$", "$+\\infty$", "$0$", "$-2$"], correct: 1,
+      hint: R`Κράτα μόνο το $-2x^3$. Τι πρόσημο έχει το $x^3$ όταν $x \to -\infty$;`,
+      sol: R`$\lim_{x\to-\infty}(-2x^3) $: το $x^3 \to -\infty$ και πολλαπλασιάζεται με $-2$ ⇒ <b>$+\infty$</b>.` },
+    { level: 2, type: "fields", q: R`Μελέτη της $f(x) = x^3 - 3x^2$. Συμπληρώστε:`,
+      fields: [{ label: "τομή με x (εκτός του 0): x =", ans: 3 }, { label: "τοπ. μέγιστο: f =", ans: 0 }, { label: "τοπ. ελάχιστο στο x =", ans: 2 }, { label: "τοπ. ελάχιστο: f =", ans: -4 }, { label: "σημείο καμπής: x =", ans: 1 }, { label: "σημείο καμπής: f =", ans: -2 }],
+      hint: R`$f(x) = x^2(x-3)$, $f'(x) = 3x(x-2)$, $f''(x) = 6x - 6$.`,
+      sol: R`<b>Τομές:</b> $f(x) = x^2(x-3) = 0 \Rightarrow x = 0$ (διπλή — εφάπτεται) ή $x = 3$.<br><b>Μονοτονία:</b> $f'(x) = 3x(x-2)$: $+,-,+$ ⇒ τοπ. μέγιστο $f(0)=0$, τοπ. ελάχιστο $f(2) = 8 - 12 = -4$.<br><b>Κυρτότητα:</b> $f''(x) = 6x - 6$ ⇒ κοίλη στο $(-\infty,1]$, κυρτή στο $[1,\infty)$, καμπή $(1, -2)$.<br><b>Άκρα:</b> $-\infty$ στο $-\infty$, $+\infty$ στο $+\infty$.`, graph: "x^3-3x^2" },
+    { level: 2, type: "fields", q: R`Μελέτη της $f(x) = -x^3 + 3x + 2$. Συμπληρώστε:`,
+      fields: [{ label: "τομή με y: f(0) =", ans: 2 }, { label: "τοπ. ελάχιστο: f =", ans: 0 }, { label: "τοπ. μέγιστο στο x =", ans: 1 }, { label: "τοπ. μέγιστο: f =", ans: 4 }, { label: "lim όταν x→−∞ (γράψε 1 για +∞, −1 για −∞)", ans: 1 }],
+      hint: R`$f'(x) = -3x^2 + 3 = -3(x-1)(x+1)$: πρόσημα $-,+,-$. Παραγοντοποίηση: $f(x) = -(x-2)(x+1)^2$.`,
+      sol: R`$f(0) = 2$. $f'(x) = -3(x-1)(x+1)$: $-,+,-$ ⇒ τοπ. ελάχιστο $f(-1) = 1 - 3 + 2 = 0$, τοπ. μέγιστο $f(1) = -1 + 3 + 2 = 4$.<br>$f''(x) = -6x$ ⇒ καμπή $(0, 2)$. Τομές με $x$: $f(x) = -(x-2)(x+1)^2$ ⇒ $x = 2$ και $x = -1$ (εφάπτεται).<br>$\lim_{x\to-\infty}(-x^3) = +\infty$, $\lim_{x\to+\infty}(-x^3) = -\infty$.`, graph: "-x^3+3x+2" },
+    { level: 3, type: "fields", q: R`Μελέτη της $f(x) = x^4 - 2x^2 + 1$. Να βρείτε το τοπικό μέγιστο και την τεταγμένη των σημείων καμπής.`,
+      fields: [{ label: "τοπ. μέγιστο: f =", ans: 1 }, { label: "τοπ. ελάχιστα: f =", ans: 0 }, { label: "τετμημένη καμπής (θετική) x₀ =", ans: "sqrt(3)/3" }, { label: "τεταγμένη καμπής f(x₀) =", ans: "4/9" }],
+      hint: R`$f(x) = (x^2-1)^2$, $f'(x) = 4x(x-1)(x+1)$, $f''(x) = 12x^2 - 4$. Μπορείς να γράψεις $\sqrt{3}/3$ ως <code>√3/3</code> ή <code>sqrt(3)/3</code>.`,
+      sol: R`$f'(x) = 4x^3 - 4x = 4x(x-1)(x+1)$: $-,+,-,+$ ⇒ τοπ. ελάχιστα $f(\pm1) = 0$, τοπ. μέγιστο $f(0) = 1$.<br>$f''(x) = 12x^2 - 4 = 0 \Leftrightarrow x^2 = \tfrac13 \Leftrightarrow x = \pm\tfrac{\sqrt3}{3}$, πρόσημα $+,-,+$.<br>$f(\pm\tfrac{\sqrt3}{3}) = (\tfrac13 - 1)^2 = \tfrac49$. Σημεία καμπής $\left(\pm\tfrac{\sqrt3}{3}, \tfrac49\right)$.`, graph: "x^4-2x^2+1" }
+  ]
+},
+
+/* ───────────────────────────── 1.5 ───────────────────────────── */
+{
+  id: "1.5", unit: 1, title: "Προβλήματα βελτιστοποίησης",
+  book: "Α΄ Τεύχος §1.5 · Δραστηριότητες σελ. 57 · Ενότητας σελ. 58",
+  theory: R`
+<div class="tbox tip"><h4>Μέθοδος σε 5 βήματα</h4>
+<ol><li>Ονομάζω τις μεταβλητές και βρίσκω τη <b>σχέση που τις συνδέει</b> (π.χ. σταθερή περίμετρος).</li>
+<li>Γράφω την ποσότητα που θέλω να μεγιστοποιήσω/ελαχιστοποιήσω ως συνάρτηση <b>μίας</b> μεταβλητής.</li>
+<li>Γράφω το <b>πεδίο ορισμού</b> από το νόημα του προβλήματος (μήκη $>0$ κ.λπ.).</li>
+<li>Λύνω $f'(x) = 0$, κρατώ μόνο τις ρίζες μέσα στο πεδίο, ελέγχω με πίνακα προσήμων.</li>
+<li>Απαντώ <b>σε αυτό που ρωτήθηκε</b>, με μονάδες.</li></ol></div>
+
+<div class="tbox"><h4>Παράδειγμα</h4>
+<p>Δύο αριθμοί έχουν άθροισμα $20$. Ποιο είναι το μέγιστο γινόμενό τους;</p>
+<p>$x + y = 20 \Rightarrow y = 20 - x$, $P(x) = x(20 - x) = 20x - x^2$.<br>
+$P'(x) = 20 - 2x = 0 \Leftrightarrow x = 10$, πρόσημα $+\to-$ ⇒ μέγιστο $P(10) = 100$.</p></div>
+
+<div class="tbox"><h4>Κέρδος = Έσοδα − Κόστος</h4>
+<p>Στα οικονομικά προβλήματα: $P(x) = E(x) - K(x)$, όπου $x$ οι μονάδες προϊόντος.</p></div>`,
+  widget: "box",
+  exercises: [
+    { level: 1, type: "fields", q: R`Δύο αριθμοί έχουν άθροισμα $30$. Να βρείτε το μέγιστο δυνατό γινόμενό τους.`,
+      fields: [{ label: "μέγιστο γινόμενο =", ans: 225 }],
+      hint: R`$P(x) = x(30 - x)$.`,
+      sol: R`$P(x) = 30x - x^2$, $P'(x) = 30 - 2x = 0 \Leftrightarrow x = 15$, άρα $y = 15$ και $P = 225$.` },
+    { level: 1, type: "fields", q: R`Μια μπάλα ρίχνεται προς τα πάνω και το ύψος της μετά από $t$ δευτερόλεπτα είναι $h(t) = -5t^2 + 20t + 1$ (μέτρα). Πότε φτάνει στο μέγιστο ύψος και ποιο είναι αυτό;`,
+      fields: [{ label: "t (s) =", ans: 2 }, { label: "μέγιστο ύψος (m) =", ans: 21 }],
+      hint: R`$h'(t) = -10t + 20$.`,
+      sol: R`$h'(t) = -10t + 20 = 0 \Leftrightarrow t = 2$ s ($+\to-$, μέγιστο). $h(2) = -20 + 40 + 1 = 21$ m.` },
+    { level: 2, type: "fields", q: R`Ένας αγρότης έχει $120$ m συρματόπλεγμα και θέλει να περιφράξει ορθογώνιο χωράφι δίπλα σε ποτάμι (η πλευρά του ποταμού δεν χρειάζεται φράχτη). Ποιο είναι το μέγιστο εμβαδόν;`,
+      fields: [{ label: "κάθετη στο ποτάμι πλευρά x (m) =", ans: 30 }, { label: "μέγιστο εμβαδόν (m²) =", ans: 1800 }],
+      hint: R`Δύο πλευρές $x$ και μία $120 - 2x$. $E(x) = x(120 - 2x)$, $0 < x < 60$.`,
+      sol: R`$E(x) = 120x - 2x^2$, $E'(x) = 120 - 4x = 0 \Leftrightarrow x = 30$ ($+\to-$). Διαστάσεις $30 \times 60$, μέγιστο εμβαδόν <b>$1800$ m²</b>.` },
+    { level: 2, type: "fields", q: R`Το ημερήσιο κόστος παραγωγής $x$ προϊόντων είναι $K(x) = x^2 + 20x + 100$ ευρώ και κάθε προϊόν πωλείται $100$ €. Πόσα προϊόντα δίνουν μέγιστο κέρδος;`,
+      fields: [{ label: "x =", ans: 40 }, { label: "μέγιστο κέρδος (€) =", ans: 1500 }],
+      hint: R`$P(x) = E(x) - K(x) = 100x - (x^2 + 20x + 100)$.`,
+      sol: R`$P(x) = -x^2 + 80x - 100$, $P'(x) = -2x + 80 = 0 \Leftrightarrow x = 40$. $P(40) = -1600 + 3200 - 100 = 1500$ €.` },
+    { level: 2, type: "fields", q: R`Δύο αριθμοί έχουν άθροισμα $10$. Να βρείτε την <b>ελάχιστη</b> τιμή του αθροίσματος των τετραγώνων τους.`,
+      fields: [{ label: "ελάχιστο x² + y² =", ans: 50 }],
+      hint: R`$S(x) = x^2 + (10-x)^2$.`,
+      sol: R`$S(x) = 2x^2 - 20x + 100$, $S'(x) = 4x - 20 = 0 \Leftrightarrow x = 5$ ($-\to+$, ελάχιστο). $S(5) = 25 + 25 = 50$.` },
+    { level: 3, type: "fields", q: R`Από ορθογώνιο χαρτόνι διαστάσεων $16 \times 10$ cm κόβουμε τετράγωνα πλευράς $x$ από τις γωνίες και φτιάχνουμε κουτί χωρίς καπάκι. Για ποιο $x$ ο όγκος γίνεται μέγιστος;`,
+      fields: [{ label: "x (cm) =", ans: 2 }, { label: "μέγιστος όγκος (cm³) =", ans: 144 }],
+      hint: R`$V(x) = x(16-2x)(10-2x)$ με $0 < x < 5$. $V'(x) = 4(3x-20)(x-2)$.`,
+      sol: R`$V(x) = 4x^3 - 52x^2 + 160x$, $V'(x) = 12x^2 - 104x + 160 = 4(3x - 20)(x - 2)$.<br>Ρίζες $x = 2$ και $x = \tfrac{20}{3}$ (απορρίπτεται: $>5$). Πρόσημα στο $(0,5)$: $+\to-$ στο 2 ⇒ μέγιστο.<br>$V(2) = 2 \cdot 12 \cdot 6 = $ <b>$144$ cm³</b>.` }
+  ]
+},
+
+/* ───────────────────────────── 2.2 ───────────────────────────── */
+{
+  id: "2.1–2.2", unit: 2, title: "Ορισμός αόριστου ολοκληρώματος",
+  book: "Α΄ Τεύχος §2.1–2.2 · Δραστηριότητες σελ. 67",
+  theory: R`
+<div class="tbox"><h4>Η «ανάποδη» της παραγώγισης</h4>
+<p>Μια συνάρτηση $F$ λέγεται <b>αντιπαράγωγος</b> της $f$ σε ένα διάστημα αν $F'(x) = f(x)$ για κάθε $x$ του διαστήματος.</p>
+<p>Π.χ. η $F(x) = x^2$ είναι αντιπαράγωγος της $f(x) = 2x$, γιατί $(x^2)' = 2x$. Το ίδιο όμως ισχύει και για τις $x^2 + 5$, $x^2 - 7$, ...</p></div>
+
+<div class="tbox"><h4>Αόριστο ολοκλήρωμα</h4>
+<p>Αν $F$ είναι μια αντιπαράγωγος της $f$, τότε <b>όλες</b> οι αντιπαράγωγοι είναι οι $F(x) + c$, $c \in \mathbb{R}$. Γράφουμε:</p>
+$$\int f(x)\,dx = F(x) + c$$
+<p>Το $c$ λέγεται <b>σταθερά ολοκλήρωσης</b>. Γεωμετρικά: μια <b>οικογένεια καμπυλών</b>, μετατοπισμένων κατακόρυφα η μία από την άλλη.</p></div>
+
+<div class="tbox tip"><h4>Πάντα μπορείς να ελέγξεις!</h4>
+<p>Παραγώγισε το αποτέλεσμά σου: αν βγει η αρχική συνάρτηση, είναι σωστό. Έτσι ελέγχει και η σελίδα τις απαντήσεις σου.</p></div>`,
+  widget: "family",
+  exercises: [
+    { level: 1, type: "mc", q: R`Ποια συνάρτηση είναι αντιπαράγωγος της $f(x) = 2x$;`,
+      options: ["$F(x) = 2$", "$F(x) = x^2 + 5$", "$F(x) = 2x^2$", "$F(x) = x^2 + 2x$"], correct: 1,
+      hint: R`Παραγώγισε κάθε επιλογή.`,
+      sol: R`$(x^2 + 5)' = 2x$ ✓. Οι άλλες δίνουν $0$, $4x$ και $2x + 2$.` },
+    { level: 1, type: "anti", f: "3x^2", q: R`Να βρείτε το $\displaystyle\int 3x^2\,dx$. <span class="muted">(Μπορείς να γράψεις και το $+c$ ή να το παραλείψεις.)</span>`,
+      hint: R`Ποια συνάρτηση έχει παράγωγο $3x^2$;`,
+      sol: R`$(x^3)' = 3x^2$, άρα $\int 3x^2\,dx = x^3 + c$.` },
+    { level: 1, type: "fields", q: R`Οι αντιπαράγωγοι της $f(x) = 3x^2$ είναι $F(x) = x^3 + c$. Να βρείτε το $c$ ώστε η γραφική της $F$ να διέρχεται από το $(1, 4)$.`,
+      fields: [{ label: "c =", ans: 3 }],
+      hint: R`$F(1) = 4$.`,
+      sol: R`$F(1) = 1 + c = 4 \Rightarrow c = 3$, άρα $F(x) = x^3 + 3$.` },
+    { level: 2, type: "mc", q: R`Αν $F$ και $G$ είναι δύο αντιπαράγωγοι της ίδιας συνάρτησης $f$ σε ένα διάστημα, τότε:`,
+      options: ["$F = G$ οπωσδήποτε", "$F - G$ είναι σταθερή συνάρτηση", "$F + G = f$", "$F \\cdot G = c$"], correct: 1,
+      hint: R`Παραγώγισε τη $F - G$.`,
+      sol: R`$(F - G)' = F' - G' = f - f = 0$, άρα η $F - G$ είναι σταθερή: $F(x) = G(x) + c$.` },
+    { level: 2, type: "expr", ref: "6x^2-2", q: R`Αν $\displaystyle\int f(x)\,dx = 2x^3 - 2x + c$, να βρείτε την $f(x)$.`,
+      hint: R`Η $f$ είναι η <b>παράγωγος</b> του αποτελέσματος.`,
+      sol: R`$f(x) = (2x^3 - 2x + c)' = 6x^2 - 2$.` }
+  ]
+},
+
+/* ───────────────────────────── 2.3 ───────────────────────────── */
+{
+  id: "2.3", unit: 2, title: "Κανόνες ολοκλήρωσης",
+  book: "Α΄ Τεύχος §2.3 · Δραστηριότητες σελ. 72",
+  theory: R`
+<div class="tbox"><h4>Βασικά ολοκληρώματα</h4>
+$$\int k\,dx = kx + c \qquad \int x^{a}\,dx = \frac{x^{a+1}}{a+1} + c,\;\; a \ne -1$$
+<p>Ο κανόνας της δύναμης: <b>ανεβάζω τον εκθέτη κατά 1 και διαιρώ με τον νέο εκθέτη</b>. Ισχύει και για αρνητικούς ή κλασματικούς εκθέτες (όπου ορίζεται η δύναμη):</p>
+$$\int \frac{1}{x^2}dx = \int x^{-2}dx = \frac{x^{-1}}{-1} = -\frac1x + c, \qquad \int \sqrt{x}\,dx = \int x^{1/2}dx = \frac{2}{3}x\sqrt{x} + c$$</div>
+
+<div class="tbox"><h4>Ιδιότητες</h4>
+$$\int \lambda f(x)\,dx = \lambda\int f(x)\,dx \qquad \int \big(f(x) \pm g(x)\big)dx = \int f(x)\,dx \pm \int g(x)\,dx$$
+<p>Δηλαδή ολοκληρώνουμε <b>όρο προς όρο</b> και οι σταθερές «βγαίνουν έξω».</p></div>
+
+<div class="tbox warn"><h4>⚠ Γινόμενο; Πρώτα πράξεις!</h4>
+<p>Δεν υπάρχει κανόνας «ολοκλήρωμα γινομένου = γινόμενο ολοκληρωμάτων». Κάνε πρώτα τις πράξεις: $\int (x+2)(x-3)\,dx = \int (x^2 - x - 6)\,dx$.</p></div>
+
+<div class="tbox tip"><h4>Πώς να γράφεις απαντήσεις εδώ</h4>
+<p><code>x^3/3 - 2x</code> · <code>-1/x</code> · <code>2/3 x^(3/2)</code> ή <code>(2/3)x√x</code> · <code>6sqrt(x)</code>. Το <code>+c</code> είναι προαιρετικό.</p></div>`,
+  widget: null,
+  gen: "g23",
+  exercises: [
+    { level: 1, type: "anti", f: "4x^3-6x+5", q: R`$\displaystyle\int (4x^3 - 6x + 5)\,dx$`,
+      hint: R`Όρο προς όρο: $\int 4x^3 = x^4$, ...`,
+      sol: R`$= 4\cdot\frac{x^4}{4} - 6\cdot\frac{x^2}{2} + 5x + c = x^4 - 3x^2 + 5x + c$.` },
+    { level: 2, type: "anti", f: "(x+2)(x-3)", q: R`$\displaystyle\int (x+2)(x-3)\,dx$`,
+      hint: R`Πρώτα πολλαπλασιασμός: $(x+2)(x-3) = x^2 - x - 6$.`,
+      sol: R`$\int (x^2 - x - 6)\,dx = \frac{x^3}{3} - \frac{x^2}{2} - 6x + c$.` },
+    { level: 2, type: "anti", f: "(x^2-1)^2", q: R`$\displaystyle\int (x^2 - 1)^2\,dx$`,
+      hint: R`Ανάπτυξε: $(x^2-1)^2 = x^4 - 2x^2 + 1$.`,
+      sol: R`$\int (x^4 - 2x^2 + 1)\,dx = \frac{x^5}{5} - \frac{2x^3}{3} + x + c$.` },
+    { level: 2, type: "anti", f: "1/x^2", pos: true, q: R`$\displaystyle\int \frac{1}{x^2}\,dx,\quad x > 0$`,
+      hint: R`Γράψε $\frac{1}{x^2} = x^{-2}$ και εφάρμοσε τον κανόνα της δύναμης με $a = -2$.`,
+      sol: R`$\int x^{-2}\,dx = \frac{x^{-1}}{-1} + c = -\frac{1}{x} + c$.` },
+    { level: 2, type: "anti", f: "sqrt(x)", pos: true, q: R`$\displaystyle\int \sqrt{x}\,dx,\quad x > 0$`,
+      hint: R`$\sqrt{x} = x^{1/2}$, νέος εκθέτης $\frac32$.`,
+      sol: R`$\int x^{1/2}\,dx = \frac{x^{3/2}}{3/2} + c = \frac{2}{3}x^{3/2} + c = \frac23 x\sqrt{x} + c$.` },
+    { level: 3, type: "anti", f: "3/sqrt(x)+2x", pos: true, q: R`$\displaystyle\int \left(\frac{3}{\sqrt{x}} + 2x\right)dx,\quad x > 0$`,
+      hint: R`$\frac{3}{\sqrt x} = 3x^{-1/2}$. Νέος εκθέτης $\frac12$.`,
+      sol: R`$\int 3x^{-1/2}\,dx = 3\cdot\frac{x^{1/2}}{1/2} = 6\sqrt{x}$. Άρα το ολοκλήρωμα είναι $6\sqrt{x} + x^2 + c$.` }
+  ]
+},
+
+/* ───────────────────────────── 2.4 ───────────────────────────── */
+{
+  id: "2.4", unit: 2, title: "Εφαρμογές αόριστων ολοκληρωμάτων",
+  book: "Α΄ Τεύχος §2.4 · Δραστηριότητες σελ. 77 · Ενότητας σελ. 78",
+  theory: R`
+<div class="tbox"><h4>Προβλήματα αρχικών τιμών</h4>
+<p>Γνωρίζουμε την <b>παράγωγο</b> $f'(x)$ και μια <b>αρχική συνθήκη</b> (π.χ. ότι η γραφική περνά από ένα σημείο). Ζητάμε την ίδια την $f$.</p>
+<ol><li>Ολοκληρώνω: $f(x) = \int f'(x)\,dx = F(x) + c$.</li>
+<li>Βάζω τη συνθήκη για να βρω το $c$.</li></ol></div>
+
+<div class="tbox"><h4>Παράδειγμα</h4>
+<p>$f'(x) = 6x^2 - 2$ και $f(1) = 5$.<br>
+$f(x) = 2x^3 - 2x + c$, $\;f(1) = 2 - 2 + c = 5 \Rightarrow c = 5$. Άρα $f(x) = 2x^3 - 2x + 5$.</p></div>
+
+<div class="tbox tip"><h4>Λεξικό προβλημάτων</h4>
+<ul><li>«Η <b>κλίση της καμπύλης</b> σε κάθε σημείο είναι ...» ⇒ δίνεται η $f'(x)$.</li>
+<li>«Τοπικό ακρότατο στο $x_0$» ⇒ $f'(x_0) = 0$.</li>
+<li><b>Οριακό κόστος</b> $K'(x)$ ⇒ ολοκληρώνω για το κόστος· τα <b>πάγια έξοδα</b> είναι το $K(0)$.</li>
+<li><b>Ταχύτητα</b> $v(t) = s'(t)$ ⇒ ολοκληρώνω για τη θέση $s(t)$.</li>
+<li>Αν δίνεται $f''$: ολοκληρώνω <b>δύο φορές</b> → δύο σταθερές, χρειάζομαι δύο συνθήκες.</li></ul></div>`,
+  widget: "family2",
+  exercises: [
+    { level: 1, type: "ivp", f: "6x^2-2", x0: 1, y0: 5, q: R`Να βρείτε τη συνάρτηση $f$ με $f'(x) = 6x^2 - 2$ και $f(1) = 5$. Γράψτε την $f(x)$:`,
+      hint: R`$f(x) = 2x^3 - 2x + c$. Βάλε $x = 1$.`,
+      sol: R`$f(x) = 2x^3 - 2x + c$, $f(1) = c = 5$ ⇒ $f(x) = 2x^3 - 2x + 5$.` },
+    { level: 1, type: "ivp", f: "2x+3", x0: 0, y0: -1, q: R`Η κλίση μιας καμπύλης σε κάθε σημείο της $(x, y)$ είναι $2x + 3$ και η καμπύλη διέρχεται από το $(0, -1)$. Να βρείτε την εξίσωσή της $y = f(x)$:`,
+      hint: R`Κλίση = παράγωγος, άρα $f'(x) = 2x + 3$.`,
+      sol: R`$f(x) = x^2 + 3x + c$, $f(0) = c = -1$ ⇒ $f(x) = x^2 + 3x - 1$.` },
+    { level: 2, type: "expr", ref: "x^3-3x+2", q: R`Για μια συνάρτηση ισχύει $f''(x) = 6x$, $f'(0) = -3$ και $f(0) = 2$. Να βρείτε την $f(x)$:`,
+      hint: R`Πρώτα $f'(x) = 3x^2 + c_1$ με $f'(0) = -3$. Μετά ολοκληρώνεις ξανά.`,
+      sol: R`$f'(x) = \int 6x\,dx = 3x^2 + c_1$, $f'(0) = c_1 = -3$ ⇒ $f'(x) = 3x^2 - 3$.<br>$f(x) = x^3 - 3x + c_2$, $f(0) = c_2 = 2$ ⇒ $f(x) = x^3 - 3x + 2$.` },
+    { level: 2, type: "fields", q: R`Μια βιοτεχνία έχει οριακό κόστος $K'(x) = 10x + 20$ (€ ανά μονάδα) και πάγια έξοδα $3000$ €, δηλαδή $K(0) = 3000$. Να βρείτε το συνολικό κόστος για $x = 10$ μονάδες.`,
+      fields: [{ label: "K(10) (€) =", ans: 3700 }],
+      hint: R`$K(x) = 5x^2 + 20x + c$ με $K(0) = 3000$.`,
+      sol: R`$K(x) = \int (10x + 20)\,dx = 5x^2 + 20x + c$, $K(0) = c = 3000$.<br>$K(10) = 500 + 200 + 3000 = $ <b>$3700$ €</b>.` },
+    { level: 2, type: "fields", q: R`Ένα σώμα κινείται με ταχύτητα $v(t) = 3t^2 + 2$ (m/s) και τη χρονική στιγμή $t = 0$ βρίσκεται στη θέση $s(0) = 0$. Πού βρίσκεται τη στιγμή $t = 2$ s;`,
+      fields: [{ label: "s(2) (m) =", ans: 12 }],
+      hint: R`$s(t) = \int v(t)\,dt$.`,
+      sol: R`$s(t) = t^3 + 2t + c$, $s(0) = c = 0$. $s(2) = 8 + 4 = $ <b>$12$ m</b>.` },
+    { level: 3, type: "fields", q: R`Η $f$ έχει $f'(x) = 3x^2 + \alpha x$ και παρουσιάζει τοπικό ακρότατο στο σημείο $(1, 2)$. Να βρείτε το $\alpha$ και το $f(0)$.`,
+      fields: [{ label: "α =", ans: -3 }, { label: "f(0) =", ans: "5/2" }],
+      hint: R`Ακρότατο στο $x=1$ ⇒ $f'(1) = 0$. Μετά $f(x) = x^3 + \frac{\alpha}{2}x^2 + c$ με $f(1) = 2$.`,
+      sol: R`$f'(1) = 3 + \alpha = 0 \Rightarrow \alpha = -3$.<br>$f(x) = x^3 - \frac32 x^2 + c$, $f(1) = 1 - \frac32 + c = 2 \Rightarrow c = \frac52$.<br>Άρα $f(0) = c = \frac52 = 2{,}5$. (Έλεγχος: $f'(x) = 3x(x-1)$ αλλάζει πρόσημο στο 1 ✓.)` }
+  ]
+}
+];
+
+</script>
+<script>
+/* ================= Widgets ================= */
+const WIDGETS = {
+  mono(box) {
+    const funcs = [
+      { n: "x² − 2x", f: x => x * x - 2 * x, a: -2, b: 4 },
+      { n: "−x² + 4", f: x => -x * x + 4, a: -3, b: 3 },
+      { n: "x³ − 3x", f: x => x ** 3 - 3 * x, a: -2.5, b: 2.5 },
+      { n: "−0,5x + 2", f: x => -0.5 * x + 2, a: -3, b: 4 }];
+    box.innerHTML = `<div class="wctl"><label>Συνάρτηση <select class="fs">${funcs.map((q, i) => `<option value="${i}">f(x) = ${q.n}</option>`).join("")}</select></label>
+      <label>x₁ <input type="range" class="r1" step="0.05"></label><label>x₂ <input type="range" class="r2" step="0.05"></label></div>
+      <div class="pl"></div><div class="wout"></div>`;
+    const sel = $(".fs", box), r1 = $(".r1", box), r2 = $(".r2", box), out = $(".wout", box);
+    function setRange() { const q = funcs[sel.value]; for (const r of [r1, r2]) { r.min = q.a; r.max = q.b; } r1.value = q.a + (q.b - q.a) * 0.25; r2.value = q.a + (q.b - q.a) * 0.6; draw(); }
+    function draw() {
+      const q = funcs[sel.value], x1 = +r1.value, x2 = +r2.value, [lo, hi] = fitY(q.f, q.a, q.b);
+      const P = makePlot($(".pl", box), { xmin: q.a, xmax: q.b, ymin: lo, ymax: hi, H: 300 });
+      P.curve(q.f, "c1");
+      for (const [x, c, l] of [[x1, "d2", "x₁"], [x2, "d3", "x₂"]]) { P.seg(x, 0, x, q.f(x), "guide"); P.seg(q.a, q.f(x), x, q.f(x), "guide"); P.dot(x, q.f(x), c, l); }
+      const y1 = q.f(x1), y2 = q.f(x2), L = Math.min(x1, x2), Rr = Math.max(x1, x2), yl = q.f(L), yr = q.f(Rr);
+      const rel = Math.abs(yl - yr) < 1e-9 ? "=" : yl < yr ? "<" : ">";
+      const verdict = rel === "<" ? '<b class="ok">ανεβαίνει</b> (αύξουσα συμπεριφορά)' : rel === ">" ? '<b class="bad">κατεβαίνει</b> (φθίνουσα συμπεριφορά)' : "ίδιες τιμές";
+      out.innerHTML = `Για ${fmt(L)} &lt; ${fmt(Rr)}: f(${fmt(L)}) = ${fmt(yl)} ${rel} f(${fmt(Rr)}) = ${fmt(yr)} → μεταξύ των δύο σημείων η γραφική ${verdict}.<br><span class="muted">Για να είναι γνησίως αύξουσα σε διάστημα, αυτό πρέπει να ισχύει για <b>κάθε</b> ζεύγος σημείων του. Δοκίμασε την x² − 2x με x₁ = −1 και x₂ = 3!</span>`;
+    }
+    sel.onchange = setRange; r1.oninput = r2.oninput = draw; setRange();
+  },
+
+  deriv(box) {
+    box.innerHTML = `<div class="wctl"><label>f(x) = a·x³ + b·x² + c·x</label>
+      <label>a <input type="range" class="ra" min="-1" max="1" step="0.25" value="1"><span class="va"></span></label>
+      <label>b <input type="range" class="rb" min="-3" max="3" step="0.5" value="0"><span class="vb"></span></label>
+      <label>c <input type="range" class="rc" min="-6" max="6" step="0.5" value="-3"><span class="vc"></span></label></div>
+      <div class="cap">Γραφική της <b class="t1">f</b> — πράσινο: η f ανεβαίνει, κόκκινο: κατεβαίνει</div><div class="pl p1"></div>
+      <div class="cap">Γραφική της <b class="t2">f′</b> — πάνω από τον άξονα ⇔ πράσινο</div><div class="pl p2"></div><div class="wout"></div>`;
+    const ra = $(".ra", box), rb = $(".rb", box), rc = $(".rc", box), out = $(".wout", box);
+    function draw() {
+      const a = +ra.value, b = +rb.value, c = +rc.value;
+      $(".va", box).textContent = fmt(a); $(".vb", box).textContent = fmt(b); $(".vc", box).textContent = fmt(c);
+      const f = x => a * x ** 3 + b * x * x + c * x, fp = x => 3 * a * x * x + 2 * b * x + c, A = -3.5, B = 3.5;
+      const rts = roots(fp, A, B).filter(r => Math.abs(fp(r - 0.01) * fp(r + 0.01)) > 0 || true);
+      const cuts = [A, ...rts, B];
+      const [lo, hi] = fitY(f, A, B, 0.12), [lo2, hi2] = fitY(fp, A, B, 0.12, [0]);
+      const P1 = makePlot($(".p1", box), { xmin: A, xmax: B, ymin: Math.max(lo, -20), ymax: Math.min(hi, 20), H: 230 });
+      const P2 = makePlot($(".p2", box), { xmin: A, xmax: B, ymin: Math.max(lo2, -25), ymax: Math.min(hi2, 25), H: 170 });
+      for (let i = 0; i < cuts.length - 1; i++) { const m = (cuts[i] + cuts[i + 1]) / 2, s = fp(m); if (Math.abs(s) < 1e-12) continue; const cls = s > 0 ? "pos" : "neg"; P1.band(cuts[i], cuts[i + 1], cls); P2.band(cuts[i], cuts[i + 1], cls); }
+      P1.curve(f, "c1"); P2.curve(fp, "c2");
+      const msgs = [];
+      for (const r of rts) {
+        const l = fp(r - 0.02), rr = fp(r + 0.02);
+        P2.dot(r, 0, "d3");
+        if (l > 0 && rr < 0) { P1.dot(r, f(r), "dmax", "μέγ."); msgs.push(`τοπ. μέγιστο στο x ≈ ${fmt(r)}`); }
+        else if (l < 0 && rr > 0) { P1.dot(r, f(r), "dmin", "ελάχ.", 6, 16); msgs.push(`τοπ. ελάχιστο στο x ≈ ${fmt(r)}`); }
+        else { P1.dot(r, f(r), "d3", "όχι ακρότατο"); msgs.push(`f′(${fmt(r)}) = 0 χωρίς αλλαγή προσήμου → όχι ακρότατο`); }
+      }
+      out.innerHTML = msgs.length ? msgs.join(" · ") : "Η f′ δεν αλλάζει πρόσημο → η f είναι γνησίως μονότονη, χωρίς ακρότατα.";
+      out.innerHTML += `<br><span class="muted">Δοκίμασε a = 1, b = 0, c = 0 (η f(x) = x³): η f′ αγγίζει τον άξονα αλλά δεν τον περνά.</span>`;
+    }
+    ra.oninput = rb.oninput = rc.oninput = draw; draw();
+  },
+
+  convex(box) {
+    const funcs = [
+      { n: "x³ − 3x", f: x => x ** 3 - 3 * x, a: -2.5, b: 2.5 },
+      { n: "x⁴ − 4x³", f: x => x ** 4 - 4 * x ** 3, a: -1.5, b: 4.2 },
+      { n: "−x³ + 6x²", f: x => -(x ** 3) + 6 * x * x, a: -1.5, b: 5.5 },
+      { n: "x⁴", f: x => x ** 4, a: -1.6, b: 1.6 }];
+    box.innerHTML = `<div class="wctl"><label>Συνάρτηση <select class="fs">${funcs.map((q, i) => `<option value="${i}">f(x) = ${q.n}</option>`).join("")}</select></label>
+      <label>Σημείο επαφής x₀ <input type="range" class="r0" step="0.02"></label></div>
+      <div class="cap"><b class="t1">μπλε</b>: κυρτή (στρέφει τα κοίλα άνω ∪) · <b class="t3">πορτοκαλί</b>: κοίλη (∩) · μωβ: σημεία καμπής</div>
+      <div class="pl"></div><div class="wout"></div>`;
+    const sel = $(".fs", box), r0 = $(".r0", box), out = $(".wout", box);
+    function setR() { const q = funcs[sel.value]; r0.min = q.a; r0.max = q.b; r0.value = (q.a + q.b) / 2 - 0.4; draw(); }
+    function draw() {
+      const q = funcs[sel.value], x0 = +r0.value, f = q.f, [lo, hi] = fitY(f, q.a, q.b);
+      const P = makePlot($(".pl", box), { xmin: q.a, xmax: q.b, ymin: lo, ymax: hi, H: 300 });
+      const f2 = x => D2(f, x), cuts = [q.a, ...roots(f2, q.a, q.b), q.b];
+      for (let i = 0; i < cuts.length - 1; i++) { const m = (cuts[i] + cuts[i + 1]) / 2; P.curve(f, f2(m) >= 0 ? "c1" : "c3", cuts[i], cuts[i + 1]); }
+      for (const r of cuts.slice(1, -1)) { if (f2(r - 0.05) * f2(r + 0.05) < 0) P.dot(r, f(r), "dinf", "καμπή"); }
+      const m = D(f, x0), y0 = f(x0); P.seg(x0 - 10, y0 - 10 * m, x0 + 10, y0 + 10 * m, "tangent"); P.dot(x0, y0, "d2");
+      const s = f2(x0);
+      out.innerHTML = `f″(${fmt(x0)}) ≈ ${fmt(s)} → ${Math.abs(s) < 0.05 ? "σχεδόν 0 (υποψήφιο σημείο καμπής)" : s > 0 ? '<b class="t1">κυρτή</b>: η καμπύλη είναι <b>πάνω</b> από την εφαπτομένη' : '<b class="t3">κοίλη</b>: η καμπύλη είναι <b>κάτω</b> από την εφαπτομένη'}. Κλίση εφαπτομένης f′(x₀) ≈ ${fmt(m)}.`;
+    }
+    sel.onchange = setR; r0.oninput = draw; setR();
+  },
+
+  box(box) {
+    box.innerHTML = `<div class="wctl"><label>Κόβουμε τετράγωνα πλευράς x = <b class="vx"></b> cm από χαρτόνι 12 × 12 cm <input type="range" class="rx" min="0.2" max="5.8" step="0.1" value="1"></label></div>
+      <div class="two"><div class="net"></div><div class="pl"></div></div><div class="wout"></div>`;
+    const rx = $(".rx", box), out = $(".wout", box), V = x => x * (12 - 2 * x) ** 2;
+    function draw() {
+      const x = +rx.value; $(".vx", box).textContent = fmt(x);
+      const S = 200, k = S / 12, c = x * k;
+      $(".net", box).innerHTML = `<svg viewBox="-10 -10 ${S + 20} ${S + 20}" class="plot"><rect x="0" y="0" width="${S}" height="${S}" class="sheet"/>
+        ${[[0, 0], [S - c, 0], [0, S - c], [S - c, S - c]].map(([a, b]) => `<rect x="${a}" y="${b}" width="${c}" height="${c}" class="cut"/>`).join("")}
+        <rect x="${c}" y="${c}" width="${S - 2 * c}" height="${S - 2 * c}" class="base"/>
+        <text x="${S / 2}" y="${S / 2 + 5}" text-anchor="middle" class="lbl">βάση ${fmt(12 - 2 * x)}×${fmt(12 - 2 * x)}</text></svg>`;
+      const P = makePlot($(".pl", box), { xmin: 0, xmax: 6.2, ymin: -12, ymax: 165, H: 240, W: 360, ystep: 25 });
+      P.curve(V, "c1", 0, 6); P.seg(x, 0, x, V(x), "guide"); P.dot(x, V(x), "d2", `V = ${fmt(V(x))}`); P.dot(2, 128, "dmax", "", 0, 0);
+      out.innerHTML = `V(x) = x(12 − 2x)² = <b>${fmt(V(x))} cm³</b>. ${Math.abs(x - 2) < 0.051 ? '<b class="ok">Μέγιστος όγκος! V′(2) = 0</b>' : "Βρες με το slider το x που δίνει τον μεγαλύτερο όγκο — μετά επιβεβαίωσέ το με V′(x) = 0."}`;
+    }
+    rx.oninput = draw; draw();
+  },
+
+  family(box, cfg) {
+    cfg = cfg || { name: "f(x) = 2x", F: x => x * x, Fs: "x²", pt: [1, 3], cAns: 2, a: -3, b: 3, ylo: -6, yhi: 12 };
+    box.innerHTML = `<div class="wctl"><label>${cfg.name} · αντιπαράγωγοι F(x) = ${cfg.Fs} + c</label>
+      <label>c = <b class="vc"></b> <input type="range" class="rc" min="-5" max="5" step="0.5" value="0"></label></div>
+      <div class="pl"></div><div class="wout"></div>`;
+    const rc = $(".rc", box), out = $(".wout", box);
+    function draw() {
+      const c = +rc.value; $(".vc", box).textContent = fmt(c);
+      const P = makePlot($(".pl", box), { xmin: cfg.a, xmax: cfg.b, ymin: cfg.ylo, ymax: cfg.yhi, H: 300 });
+      for (let k = -4; k <= 4; k += 2) P.curve(x => cfg.F(x) + k, "cfam");
+      P.curve(x => cfg.F(x) + c, "c1");
+      const hit = Math.abs(cfg.F(cfg.pt[0]) + c - cfg.pt[1]) < 1e-9;
+      P.dot(cfg.pt[0], cfg.pt[1], hit ? "dmin" : "d3", `(${cfg.pt[0]}, ${cfg.pt[1]})`);
+      out.innerHTML = hit ? `<b class="ok">Η καμπύλη περνά από το (${cfg.pt[0]}, ${cfg.pt[1]})!</b> Άρα c = ${fmt(c)} και F(x) = ${cfg.Fs} ${c >= 0 ? "+" : "−"} ${fmt(Math.abs(c))}.` :
+        `Όλες οι γκρι καμπύλες έχουν <b>την ίδια παράγωγο</b> — διαφέρουν μόνο κατά μια κατακόρυφη μετατόπιση. Βρες το c ώστε η μπλε καμπύλη να περνά από το σημείο (${cfg.pt[0]}, ${cfg.pt[1]}).`;
+    }
+    rc.oninput = draw; draw();
+  },
+  family2(box) { WIDGETS.family(box, { name: "f′(x) = 3x² − 3", F: x => x ** 3 - 3 * x, Fs: "x³ − 3x", pt: [0, 2], a: -2.6, b: 2.6, ylo: -7, yhi: 9 }); }
+};
+
+/* ================= Γεννήτριες εξάσκησης ================= */
+function texPoly(cs) { // cs: [[coef, power], ...] → LaTeX
+  let s = "";
+  for (const [c, p] of cs) {
+    if (c === 0) continue;
+    const sign = c < 0 ? "-" : (s ? "+" : ""), a = Math.abs(c);
+    const coef = (a === 1 && p !== 0) ? "" : (Number.isInteger(a) ? a : a.toString());
+    const v = p === 0 ? "" : p === 1 ? "x" : `x^{${p}}`;
+    s += ` ${sign} ${coef}${v}`;
+  }
+  return s.trim() || "0";
+}
+function plainPoly(cs) { return cs.filter(([c]) => c !== 0).map(([c, p]) => `${c >= 0 ? "+" : "-"}${Math.abs(c)}${p ? "*x^" + p : ""}`).join("") || "0"; }
+
+function cubicGen() {
+  // f'(x) = 3s(x−p)(x−q), p<q, p+q άρτιο ⇒ ακέραιοι συντελεστές
+  let p, q; do { p = ri(-3, 2); q = ri(p + 1, 4); } while ((p + q) % 2);
+  const s = Math.random() < 0.7 ? 1 : -1, d = ri(-4, 4);
+  const c3 = s, c2 = -s * 3 * (p + q) / 2, c1 = s * 3 * p * q;
+  const f = x => c3 * x ** 3 + c2 * x * x + c1 * x + d, m = (p + q) / 2;
+  return { p, q, s, d, f, m, tex: texPoly([[c3, 3], [c2, 2], [c1, 1], [d, 0]]),
+    maxX: s > 0 ? p : q, minX: s > 0 ? q : p };
+}
+
+const GENS = {
+  g12: { title: "Γεννήτρια εξάσκησης — τοπικά ακρότατα", make() {
+    const g = cubicGen();
+    return { q: R`Να βρείτε τα τοπικά ακρότατα της $f(x) = ${g.tex}$.`,
+      fields: [{ label: "τοπ. μέγιστο στο x =", ans: g.maxX }, { label: "τιμή =", ans: g.f(g.maxX) }, { label: "τοπ. ελάχιστο στο x =", ans: g.minX }, { label: "τιμή =", ans: g.f(g.minX) }],
+      sol: R`$f'(x) = ${g.s > 0 ? "" : "-"}3(x ${g.p >= 0 ? "-" : "+"} ${Math.abs(g.p)})(x ${g.q >= 0 ? "-" : "+"} ${Math.abs(g.q)})$, ρίζες $${g.p}$ και $${g.q}$, πρόσημα $${g.s > 0 ? "+,\\,-,\\,+" : "-,\\,+,\\,-"}$.<br>Τοπικό μέγιστο $f(${g.maxX}) = ${g.f(g.maxX)}$, τοπικό ελάχιστο $f(${g.minX}) = ${g.f(g.minX)}$.`, graph: g.f };
+  } },
+  g14: { title: "Γεννήτρια — πλήρης μελέτη πολυωνυμικής", make() {
+    const g = cubicGen();
+    return { q: R`Να μελετήσετε τη συνάρτηση $f(x) = ${g.tex}$ και να συμπληρώσετε:`,
+      fields: [{ label: "τομή με y: f(0) =", ans: g.d }, { label: "τοπ. μέγιστο στο x =", ans: g.maxX }, { label: "τοπ. μέγιστο: f =", ans: g.f(g.maxX) }, { label: "τοπ. ελάχιστο στο x =", ans: g.minX }, { label: "τοπ. ελάχιστο: f =", ans: g.f(g.minX) }, { label: "σημείο καμπής: x =", ans: g.m }, { label: "σημείο καμπής: f =", ans: g.f(g.m) }],
+      sol: R`$f(0) = ${g.d}$. $f'(x) = ${g.s > 0 ? "" : "-"}3(x ${g.p >= 0 ? "-" : "+"} ${Math.abs(g.p)})(x ${g.q >= 0 ? "-" : "+"} ${Math.abs(g.q)})$ ⇒ τοπ. μέγιστο $(${g.maxX}, ${g.f(g.maxX)})$, τοπ. ελάχιστο $(${g.minX}, ${g.f(g.minX)})$.<br>$f''(x) = ${6 * g.s}x ${-3 * g.s * (g.p + g.q) >= 0 ? "+" : "-"} ${Math.abs(3 * g.s * (g.p + g.q))}$ = 0 στο $x = ${g.m}$ ⇒ σημείο καμπής $(${g.m}, ${g.f(g.m)})$ (πάντα στο μέσο των δύο κρίσιμων σημείων!).<br>Άκρα: $\lim_{x\to+\infty} f(x) = ${g.s > 0 ? "+" : "-"}\infty$, $\lim_{x\to-\infty} f(x) = ${g.s > 0 ? "-" : "+"}\infty$.`, graph: g.f };
+  } },
+  g23: { title: "Γεννήτρια — ολοκλήρωση πολυωνύμων", make() {
+    const n = ri(2, 3), used = new Set(), terms = [];
+    while (terms.length < n) { const p = ri(0, 4); if (used.has(p)) continue; used.add(p); const k = ri(1, 4) * (Math.random() < 0.3 ? -1 : 1); terms.push([k * (p + 1), p]); }
+    terms.sort((a, b) => b[1] - a[1]);
+    const anti = terms.map(([c, p]) => [c / (p + 1), p + 1]);
+    return { q: R`$\displaystyle\int \left(${texPoly(terms)}\right)dx$`, type: "anti", f: plainPoly(terms),
+      sol: R`Όρο προς όρο, με $\int x^a dx = \frac{x^{a+1}}{a+1}$: $\;${texPoly(anti)} + c$.` };
+  } }
+};
+
+
+</script>
+<script>
+/* ================= Parser: μαθηματική έκφραση → συνάρτηση του x ================= */
+const MathParse = (() => {
+  function normalize(s) {
+    return String(s)
+      .replace(/[−–—]/g, "-").replace(/[·×∙⋅]/g, "*").replace(/÷/g, "/")
+      .replace(/√/g, "sqrt").replace(/π/g, "pi")
+      .replace(/²/g, "^2").replace(/³/g, "^3").replace(/⁴/g, "^4").replace(/⁵/g, "^5")
+      .replace(/(\d),(\d)/g, "$1.$2")
+      .replace(/^\s*(y|f\s*\(\s*x\s*\)|F\s*\(\s*x\s*\))\s*=\s*/i, "")
+      .replace(/\s+/g, "");
+  }
+  function tokenize(s) {
+    const t = []; let i = 0;
+    while (i < s.length) {
+      const ch = s[i];
+      if (/[0-9.]/.test(ch)) { let j = i; while (j < s.length && /[0-9.]/.test(s[j])) j++; t.push({ k: "n", v: parseFloat(s.slice(i, j)) }); i = j; }
+      else if (/[a-zA-Z]/.test(ch)) {
+        let j = i; while (j < s.length && /[a-zA-Z]/.test(s[j])) j++;
+        let w = s.slice(i, j).toLowerCase();
+        // σπάσε π.χ. "xsqrt" ή "cx"
+        while (w.length) {
+          if (w.startsWith("sqrt")) { t.push({ k: "f", v: "sqrt" }); w = w.slice(4); }
+          else if (w.startsWith("pi")) { t.push({ k: "n", v: Math.PI }); w = w.slice(2); }
+          else if (w[0] === "x" || w[0] === "t") { t.push({ k: "x" }); w = w.slice(1); }
+          else if (w[0] === "c") { t.push({ k: "n", v: 0 }); w = w.slice(1); }
+          else throw new Error("Άγνωστο σύμβολο: " + w[0]);
+        }
+        i = j;
+      }
+      else if ("+-*/^()".includes(ch)) { t.push({ k: ch }); i++; }
+      else throw new Error("Άγνωστο σύμβολο: " + ch);
+    }
+    return t;
+  }
+  function parse(src) {
+    const toks = tokenize(normalize(src)); let p = 0;
+    const peek = () => toks[p], eat = k => { if (toks[p] && toks[p].k === k) return toks[p++]; throw new Error("Συντακτικό λάθος"); };
+    function expr() { let a = term(); while (peek() && (peek().k === "+" || peek().k === "-")) { const op = toks[p++].k, l = a, r = term(); a = op === "+" ? x => l(x) + r(x) : x => l(x) - r(x); } return a; }
+    function startsAtom(t) { return t && (t.k === "n" || t.k === "x" || t.k === "f" || t.k === "("); }
+    function term() {
+      let a = unary();
+      for (;;) {
+        const t = peek();
+        if (t && (t.k === "*" || t.k === "/")) { p++; const l = a, r = unary(); a = t.k === "*" ? x => l(x) * r(x) : x => l(x) / r(x); }
+        else if (startsAtom(t)) { const l = a, r = power(); a = x => l(x) * r(x); }
+        else break;
+      }
+      return a;
+    }
+    function unary() { const t = peek(); if (t && t.k === "-") { p++; const u = unary(); return x => -u(x); } if (t && t.k === "+") { p++; return unary(); } return power(); }
+    function power() { const b = atom(); if (peek() && peek().k === "^") { p++; const e = unary(); return x => Math.pow(b(x), e(x)); } return b; }
+    function atom() {
+      const t = peek(); if (!t) throw new Error("Ελλιπής έκφραση");
+      if (t.k === "n") { p++; const v = t.v; return () => v; }
+      if (t.k === "x") { p++; return x => x; }
+      if (t.k === "f") { p++; const a = peek() && peek().k === "(" ? (eat("("), (() => { const e = expr(); eat(")"); return e; })()) : power(); return x => Math.sqrt(a(x)); }
+      if (t.k === "(") { p++; const e = expr(); eat(")"); return e; }
+      throw new Error("Συντακτικό λάθος");
+    }
+    const f = expr(); if (p < toks.length) throw new Error("Συντακτικό λάθος");
+    return f;
+  }
+  return { parse };
+})();
+
+const close = (a, b, rel = 1e-6) => Math.abs(a - b) <= rel * Math.max(1, Math.abs(b));
+const PTS = [-2.3, -1.4, -0.6, 0.7, 1.3, 2.1, 3.2];
+const PPTS = [0.4, 0.9, 1.6, 2.5, 3.7];
+
+function checkExpr(student, ref, pos) {
+  const S = MathParse.parse(student), Rf = MathParse.parse(ref);
+  let n = 0;
+  for (const x of pos ? PPTS : PTS) { const a = S(x), b = Rf(x); if (!isFinite(b)) continue; if (!isFinite(a) || !close(a, b, 1e-6)) return false; n++; }
+  return n >= 3;
+}
+function checkAnti(student, f, pos, x0, y0) {
+  const F = MathParse.parse(student), g = MathParse.parse(f), h = 1e-4;
+  let n = 0;
+  for (const x of pos ? PPTS : PTS) {
+    const want = g(x); if (!isFinite(want)) continue;
+    const d = (F(x + h) - F(x - h)) / (2 * h);
+    if (!isFinite(d) || !close(d, want, 1e-4)) return false; n++;
+  }
+  if (n < 3) return false;
+  if (x0 !== undefined) return close(F(x0), y0, 1e-6);
+  return true;
+}
+function numVal(s) { const v = MathParse.parse(s)(NaN); return v; }
+
+/* ================= Πρόοδος (localStorage, προαιρετικό) ================= */
+const STORE_KEY = CONFIG.storeKey;
+let PROG = {};
+try { PROG = JSON.parse(localStorage.getItem(STORE_KEY) || "{}") || {}; } catch (e) { PROG = {}; }
+function saveProg() { try { localStorage.setItem(STORE_KEY, JSON.stringify(PROG)); } catch (e) {} }
+const exKey = (sid, i) => sid + "#" + i;
+function secDone(s) { return s.exercises.filter((_, i) => PROG[exKey(s.id, i)]).length; }
+
+/* ================= Βοηθητικά ================= */
+const $ = (sel, el = document) => el.querySelector(sel);
+const h = (tag, attrs = {}, html = "") => { const e = document.createElement(tag); for (const k in attrs) { if (k === "class") e.className = attrs[k]; else if (k.startsWith("on")) e.addEventListener(k.slice(2), attrs[k]); else e.setAttribute(k, attrs[k]); } if (html) e.innerHTML = html; return e; };
+function typeset(el) { if (window.renderMathInElement) renderMathInElement(el, { delimiters: [{ left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false }], throwOnError: false }); }
+const LVL = { 1: ["Βασική", "l1"], 2: ["Μέτρια", "l2"], 3: ["Απαιτητική", "l3"] };
+const fmt = v => { const r = Math.round(v * 100) / 100; return (Object.is(r, -0) ? 0 : r).toLocaleString("el-GR", { maximumFractionDigits: 2 }); };
+const ri = (a, b) => a + Math.floor(Math.random() * (b - a + 1));
+
+/* ================= SVG plotter ================= */
+const NS = "http://www.w3.org/2000/svg";
+function svgEl(tag, attrs) { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); return e; }
+function makePlot(container, o) {
+  const W = o.W || 560, H = o.H || 320;
+  const svg = svgEl("svg", { viewBox: `0 0 ${W} ${H}`, class: "plot", role: "img" });
+  container.innerHTML = ""; container.appendChild(svg);
+  const P = { svg, W, H, ...o };
+  P.sx = x => (x - P.xmin) / (P.xmax - P.xmin) * W;
+  P.sy = y => H - (y - P.ymin) / (P.ymax - P.ymin) * H;
+  P.ix = px => P.xmin + px / W * (P.xmax - P.xmin);
+  P.layer = svgEl("g", {}); P.top = svgEl("g", {});
+  const grid = svgEl("g", { class: "grid" });
+  const step = o.xstep || 1, ystep = o.ystep || niceStep(P.ymax - P.ymin);
+  for (let x = Math.ceil(P.xmin / step) * step; x <= P.xmax; x += step) {
+    grid.appendChild(svgEl("line", { x1: P.sx(x), x2: P.sx(x), y1: 0, y2: H }));
+    if (Math.abs(x) > 1e-9) { const t = svgEl("text", { x: P.sx(x), y: Math.min(H - 4, Math.max(12, P.sy(0) + 14)), "text-anchor": "middle", class: "tick" }); t.textContent = fmt(x); grid.appendChild(t); }
+  }
+  for (let y = Math.ceil(P.ymin / ystep) * ystep; y <= P.ymax; y += ystep) {
+    grid.appendChild(svgEl("line", { x1: 0, x2: W, y1: P.sy(y), y2: P.sy(y) }));
+    if (Math.abs(y) > 1e-9) { const t = svgEl("text", { x: Math.min(W - 4, Math.max(4, P.sx(0) - 5)), y: P.sy(y) + 4, "text-anchor": P.sx(0) < 30 ? "start" : "end", class: "tick" }); t.textContent = fmt(y); grid.appendChild(t); }
+  }
+  svg.appendChild(grid);
+  if (P.ymin < 0 && P.ymax > 0) svg.appendChild(svgEl("line", { x1: 0, x2: W, y1: P.sy(0), y2: P.sy(0), class: "axis" }));
+  if (P.xmin < 0 && P.xmax > 0) svg.appendChild(svgEl("line", { x1: P.sx(0), x2: P.sx(0), y1: 0, y2: H, class: "axis" }));
+  svg.appendChild(P.layer); svg.appendChild(P.top);
+  P.clear = () => { P.layer.innerHTML = ""; P.top.innerHTML = ""; };
+  P.curve = (f, cls = "c1", a = P.xmin, b = P.xmax, layer = P.layer) => {
+    let d = "", pen = false; const n = 400;
+    for (let i = 0; i <= n; i++) {
+      const x = a + (b - a) * i / n, y = f(x);
+      if (!isFinite(y) || y < P.ymin - (P.ymax - P.ymin) || y > P.ymax + (P.ymax - P.ymin)) { pen = false; continue; }
+      d += (pen ? "L" : "M") + P.sx(x).toFixed(1) + "," + P.sy(y).toFixed(1); pen = true;
+    }
+    const e = svgEl("path", { d, class: "curve " + cls }); layer.appendChild(e); return e;
+  };
+  P.dot = (x, y, cls = "d1", label, dx = 6, dy = -8) => {
+    P.top.appendChild(svgEl("circle", { cx: P.sx(x), cy: P.sy(y), r: 5, class: "dot " + cls }));
+    if (label) { const t = svgEl("text", { x: P.sx(x) + dx, y: P.sy(y) + dy, class: "lbl " + cls, "text-anchor": dx < 0 ? "end" : "start" }); t.textContent = label; P.top.appendChild(t); }
+  };
+  P.band = (a, b, cls) => P.layer.insertBefore(svgEl("rect", { x: P.sx(a), y: 0, width: Math.max(0, P.sx(b) - P.sx(a)), height: H, class: "band " + cls }), P.layer.firstChild);
+  P.seg = (x1, y1, x2, y2, cls) => P.top.appendChild(svgEl("line", { x1: P.sx(x1), y1: P.sy(y1), x2: P.sx(x2), y2: P.sy(y2), class: cls }));
+  return P;
+}
+function niceStep(span) { const r = span / 8, p = Math.pow(10, Math.floor(Math.log10(r))), m = r / p; return (m < 1.5 ? 1 : m < 3.5 ? 2 : m < 7.5 ? 5 : 10) * p; }
+function fitY(f, a, b, pad = 0.15, extra = []) {
+  let lo = Infinity, hi = -Infinity;
+  for (let i = 0; i <= 200; i++) { const y = f(a + (b - a) * i / 200); if (isFinite(y)) { lo = Math.min(lo, y); hi = Math.max(hi, y); } }
+  for (const y of extra) { lo = Math.min(lo, y); hi = Math.max(hi, y); }
+  const s = Math.max(hi - lo, 1); return [lo - s * pad, hi + s * pad];
+}
+function roots(f, a, b) { const r = []; const n = 800; let px = a, py = f(a); for (let i = 1; i <= n; i++) { const x = a + (b - a) * i / n, y = f(x); if (py === 0) r.push(px); else if (py * y < 0) { let l = px, hgh = x; for (let k = 0; k < 50; k++) { const m = (l + hgh) / 2; if (f(l) * f(m) <= 0) hgh = m; else l = m; } r.push((l + hgh) / 2); } px = x; py = y; } return r.filter((v, i, arr) => i === 0 || Math.abs(v - arr[i - 1]) > 1e-6); }
+const D = (f, x, e = 1e-4) => (f(x + e) - f(x - e)) / (2 * e);
+const D2 = (f, x, e = 1e-3) => (f(x + e) - 2 * f(x) + f(x - e)) / (e * e);
+
+/* ================= Κάρτα άσκησης ================= */
+function exerciseCard(ex, opts) {
+  const { title, onSolved, solved } = opts;
+  const card = h("div", { class: "ex" + (solved ? " solved" : "") });
+  const lv = LVL[ex.level] || null;
+  card.innerHTML = `<div class="exh"><span class="exn">${title}</span>${lv ? `<span class="lvl ${lv[1]}">${lv[0]}</span>` : ""}<span class="tick-ok">${solved ? "✓ Λυμένη" : ""}</span></div><div class="exq">${ex.q}</div>`;
+  const body = h("div", { class: "exb" });
+  const type = ex.type || (ex.fields ? "fields" : "mc");
+  let inputs = [];
+  if (type === "mc") {
+    const name = "mc" + Math.random().toString(36).slice(2);
+    ex.options.forEach((o, i) => { const l = h("label", { class: "opt" }, `<input type="radio" name="${name}" value="${i}"><span>${o}</span>`); body.appendChild(l); });
+  } else if (type === "fields") {
+    const g = h("div", { class: "fields" });
+    ex.fields.forEach(fd => { const l = h("label", { class: "fld" }, `<span>${fd.label}</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false">`); g.appendChild(l); inputs.push($("input", l)); });
+    body.appendChild(g);
+  } else {
+    const l = h("label", { class: "fld wide" }, `<span>${type === "expr" || type === "ivp" ? "f(x) =" : "Απάντηση:"}</span><input type="text" autocomplete="off" spellcheck="false" placeholder="π.χ. x^3/3 - 2x + 1">`);
+    body.appendChild(l); inputs.push($("input", l));
+    body.appendChild(h("div", { class: "preview muted" }));
+    inputs[0].addEventListener("input", () => { const pv = $(".preview", body); try { MathParse.parse(inputs[0].value); pv.textContent = inputs[0].value ? "✓ συντακτικά σωστή έκφραση" : ""; pv.className = "preview muted"; } catch (e) { pv.textContent = inputs[0].value ? "⚠ " + e.message : ""; pv.className = "preview warnc"; } });
+  }
+  const bar = h("div", { class: "exbar" });
+  const bCheck = h("button", { class: "btn primary" }, "Έλεγχος");
+  const bHint = h("button", { class: "btn ghost" }, "💡 Υπόδειξη");
+  const bSol = h("button", { class: "btn ghost" }, "📖 Λύση");
+  const fb = h("div", { class: "fb", "aria-live": "polite" });
+  const hint = h("div", { class: "hint hidden" }, ex.hint ? "<b>Υπόδειξη:</b> " + ex.hint : "");
+  const sol = h("div", { class: "sol hidden" }, "<b>Λύση:</b> " + ex.sol);
+  bar.append(bCheck); if (ex.hint) bar.append(bHint); bar.append(bSol);
+  body.append(bar, fb, hint, sol);
+  card.appendChild(body);
+  let tries = 0;
+  bHint.onclick = () => { hint.classList.toggle("hidden"); typeset(hint); };
+  bSol.onclick = () => {
+    sol.classList.toggle("hidden");
+    if (!sol.dataset.r) { sol.dataset.r = 1; typeset(sol); if (ex.graph) { const pl = h("div", { class: "pl solgraph" }); sol.appendChild(pl); drawGraph(pl, ex.graph); } }
+  };
+  bCheck.onclick = () => {
+    tries++; let ok = false;
+    try {
+      if (type === "mc") {
+        const sel = $("input:checked", body); if (!sel) { fb.className = "fb warnc"; fb.textContent = "Διάλεξε μια απάντηση."; return; }
+        ok = +sel.value === ex.correct;
+        body.querySelectorAll(".opt").forEach((o, i) => { o.classList.remove("right", "wrong"); if (i === +sel.value) o.classList.add(ok ? "right" : "wrong"); });
+      } else if (type === "fields") {
+        let all = true, empty = false;
+        ex.fields.forEach((fd, i) => {
+          const inp = inputs[i]; inp.classList.remove("right", "wrong");
+          if (!inp.value.trim()) { empty = true; all = false; return; }
+          let good = false; try { const want = typeof fd.ans === "string" ? numVal(fd.ans) : fd.ans; good = close(numVal(inp.value), want, fd.tol || 1e-6); } catch (e) { good = false; }
+          inp.classList.add(good ? "right" : "wrong"); if (!good) all = false;
+        });
+        ok = all; if (empty && !ok) { fb.className = "fb warnc"; fb.textContent = "Συμπλήρωσε όλα τα πεδία."; return; }
+      } else {
+        const v = inputs[0].value; if (!v.trim()) { fb.className = "fb warnc"; fb.textContent = "Γράψε την απάντησή σου."; return; }
+        if (type === "expr") ok = checkExpr(v, ex.ref, ex.pos);
+        else if (type === "anti") ok = checkAnti(v, ex.f, ex.pos);
+        else if (type === "ivp") ok = checkAnti(v, ex.f, ex.pos, ex.x0, ex.y0);
+        inputs[0].classList.remove("right", "wrong"); inputs[0].classList.add(ok ? "right" : "wrong");
+        if (!ok && type === "ivp") { try { if (checkAnti(v, ex.f, ex.pos)) { fb.className = "fb warnc"; fb.innerHTML = "Σχεδόν! Η παράγωγος είναι σωστή, αλλά δεν ικανοποιείται η αρχική συνθήκη — έλεγξε τη σταθερά c."; return; } } catch (e) {} }
+      }
+    } catch (e) { fb.className = "fb warnc"; fb.textContent = "Δεν μπορώ να διαβάσω την απάντηση: " + e.message; return; }
+    if (ok) {
+      fb.className = "fb okc"; fb.innerHTML = ["Σωστά! 🎉", "Μπράβο, σωστό!", "Τέλεια!"][tries % 3] + (tries > 1 ? ` <span class="muted">(${tries}η προσπάθεια)</span>` : "");
+      card.classList.add("solved"); $(".tick-ok", card).textContent = "✓ Λυμένη"; onSolved && onSolved();
+    } else {
+      fb.className = "fb badc"; fb.innerHTML = tries >= 2 && ex.hint && hint.classList.contains("hidden") ? "Όχι ακόμα. Δες την υπόδειξη!" : "Όχι ακόμα — ξαναπροσπάθησε.";
+    }
+  };
+  card.addEventListener("keydown", e => { if (e.key === "Enter" && e.target.tagName === "INPUT" && e.target.type === "text") bCheck.click(); });
+  return card;
+}
+function drawGraph(pl, g) {
+  const f = typeof g === "function" ? g : MathParse.parse(g);
+  const ex = roots(x => D(f, x), -6, 6); let a = -3, b = 3;
+  if (ex.length) { a = Math.min(...ex) - 1.8; b = Math.max(...ex) + 1.8; }
+  const [lo, hi] = fitY(f, a, b, 0.15);
+  const P = makePlot(pl, { xmin: a, xmax: b, ymin: lo, ymax: hi, H: 260 });
+  P.curve(f, "c1");
+  for (const r of ex) { const s1 = D(f, r - 0.02), s2 = D(f, r + 0.02); if (s1 * s2 < 0) P.dot(r, f(r), s1 > 0 ? "dmax" : "dmin", `(${fmt(r)}, ${fmt(f(r))})`, 6, s1 > 0 ? -8 : 18); }
+  for (const r of roots(x => D2(f, x), a, b)) if (D2(f, r - 0.05) * D2(f, r + 0.05) < 0) P.dot(r, f(r), "dinf", "καμπή");
+}
+
+/* ================= Σελίδες ================= */
+let CURRENT = null;
+function renderNav() {
+  const nav = $("#nav"); nav.innerHTML = "";
+  nav.appendChild(h("button", { class: "navit" + (CURRENT === "home" ? " on" : ""), onclick: () => go("home") }, `<span class="nid">⌂</span><span class="nt">Αρχική & πρόοδος</span>`));
+  for (const u of UNITS) {
+    nav.appendChild(h("div", { class: "navu" }, u.title.replace(" · ", "<br><small>") + "</small>"));
+    for (const s of SECTIONS.filter(s => s.unit === u.id)) {
+      const d = secDone(s), n = s.exercises.length, pct = Math.round(d / n * 100);
+      nav.appendChild(h("button", { class: "navit" + (CURRENT === s.id ? " on" : ""), onclick: () => go(s.id) },
+        `<span class="nid">${s.id}</span><span class="nt">${s.title}</span><span class="ring" style="--p:${pct}" title="${d}/${n}">${d === n ? "✓" : ""}</span>`));
+    }
+  }
+}
+function go(id, scroll = true) {
+  CURRENT = id; renderNav();
+  const main = $("#main"); main.innerHTML = "";
+  if (id === "home") renderHome(main); else renderSection(main, SECTIONS.find(s => s.id === id));
+  typeset(main);
+  try { history.replaceState(null, "", "#" + encodeURIComponent(id)); } catch (e) {}
+  if (scroll) { const top = $("#app").getBoundingClientRect().top + window.scrollY - 76; window.scrollTo({ top: Math.max(0, top), behavior: "smooth" }); }
+}
+function renderHome(main) {
+  const total = SECTIONS.reduce((a, s) => a + s.exercises.length, 0), done = SECTIONS.reduce((a, s) => a + secDone(s), 0);
+  main.appendChild(h("section", { class: "card hero" }, `<h2>${CONFIG.heroTitle}</h2>
+    <p>Διαδραστική θεωρία, γραφήματα που κινούνται και ασκήσεις με <b>άμεσο έλεγχο</b>, υποδείξεις και πλήρεις λύσεις για όλη την ύλη του ${CONFIG.tefxos}.</p>
+    <div class="bigprog"><div class="bar"><i style="width:${total ? done / total * 100 : 0}%"></i></div><span>${done} / ${total} ασκήσεις λυμένες</span></div>
+    <p class="muted small">Η πρόοδος αποθηκεύεται μόνο σε αυτή τη συσκευή.</p>`));
+  for (const u of UNITS) {
+    const grid = h("div", { class: "secgrid" });
+    for (const s of SECTIONS.filter(s => s.unit === u.id)) {
+      const d = secDone(s), n = s.exercises.length;
+      grid.appendChild(h("button", { class: "seccard", onclick: () => go(s.id) }, `<span class="sid">${s.id}</span><b>${s.title}</b><span class="bar"><i style="width:${d / n * 100}%"></i></span><small>${d}/${n} ασκήσεις${s.widget ? " · διαδραστικό γράφημα" : ""}${s.gen ? " · γεννήτρια" : ""}</small>`));
+    }
+    main.appendChild(h("h3", { class: "unith" }, u.title)); main.appendChild(grid);
+  }
+  main.appendChild(h("section", { class: "card howto" }, `<h3>Πώς γράφω απαντήσεις;</h3>
+    ${CONFIG.howto}
+    <button class="btn ghost small" id="resetp">Μηδενισμός προόδου</button>`));
+  $("#resetp", main).onclick = () => { if (confirm("Να διαγραφεί η πρόοδός σου σε αυτή τη συσκευή;")) { PROG = {}; saveProg(); go("home", false); } };
+}
+function renderSection(main, s) {
+  const idx = SECTIONS.indexOf(s);
+  main.appendChild(h("div", { class: "sechead" }, `<span class="sid big">${s.id}</span><div><h2>${s.title}</h2><div class="muted small">📘 ${s.book}</div></div>`));
+  const th = h("section", { class: "card" }, `<h3 class="blk">Θεωρία</h3>${s.theory}`);
+  main.appendChild(th);
+  if (s.widget) { const w = h("section", { class: "card widget" }, `<h3 class="blk">Πειραματίσου</h3><div class="wbody"></div>`); main.appendChild(w); WIDGETS[s.widget]($(".wbody", w)); }
+  const exs = h("section", { class: "card" }, `<h3 class="blk">Ασκήσεις <span class="muted small">— ${secDone(s)}/${s.exercises.length} λυμένες</span></h3>`);
+  s.exercises.forEach((ex, i) => exs.appendChild(exerciseCard(ex, { title: `Άσκηση ${i + 1}`, solved: !!PROG[exKey(s.id, i)], onSolved: () => { PROG[exKey(s.id, i)] = 1; saveProg(); renderNav(); $(".blk .muted", exs).textContent = `— ${secDone(s)}/${s.exercises.length} λυμένες`; } })));
+  main.appendChild(exs);
+  if (s.gen) {
+    const G = GENS[s.gen], gs = h("section", { class: "card gen" }, `<h3 class="blk">♾️ ${G.title}</h3><p class="muted small">Κάθε φορά καινούργια άσκηση — εξάσκηση χωρίς τέλος.</p><div class="gslot"></div><button class="btn primary newg">Νέα άσκηση ↻</button>`);
+    main.appendChild(gs);
+    let count = 0;
+    const fresh = () => { count++; const slot = $(".gslot", gs); slot.innerHTML = ""; const ex = G.make(); slot.appendChild(exerciseCard(ex, { title: `Εξάσκηση #${count}` })); typeset(slot); };
+    $(".newg", gs).onclick = fresh; fresh();
+  }
+  const nav = h("div", { class: "pager" });
+  if (idx > 0) nav.appendChild(h("button", { class: "btn ghost", onclick: () => go(SECTIONS[idx - 1].id) }, `← ${SECTIONS[idx - 1].id} ${SECTIONS[idx - 1].title}`)); else nav.appendChild(h("span"));
+  if (idx < SECTIONS.length - 1) nav.appendChild(h("button", { class: "btn primary", onclick: () => go(SECTIONS[idx + 1].id) }, `${SECTIONS[idx + 1].id} ${SECTIONS[idx + 1].title} →`));
+  main.appendChild(nav);
+}
+
+function boot() {
+  let start = "home";
+  try { const hsh = decodeURIComponent(location.hash.slice(1)); if (hsh && (hsh === "home" || SECTIONS.some(s => s.id === hsh))) start = hsh; } catch (e) {}
+  go(start, false);
+}
+if (window.renderMathInElement) boot(); else window.addEventListener("load", boot);
+
+</script>
+</body>
+</html>
