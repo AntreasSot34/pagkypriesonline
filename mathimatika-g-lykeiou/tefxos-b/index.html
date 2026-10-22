@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Μαθηματικά Γ΄ Λυκείου ΚΚ — Β΄ Τεύχος | PagkypriesOnline</title>
+<meta name="description" content="Διαδραστική θεωρία και ασκήσεις με λύσεις για τα Μαθηματικά Κοινού Κορμού Γ΄ Λυκείου (Κύπρος), Β΄ Τεύχος: Συνδυαστική, Πιθανότητες, Στατιστική, Στερεομετρία.">
+<link rel="canonical" href="https://pagkypriesonline.com/mathimatika-g-lykeiou/tefxos-b/">
+<meta name="theme-color" content="#14171C">
+<link rel="icon" href="/favicon.png" type="image/png" sizes="64x64">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="el_CY">
+<meta property="og:site_name" content="Pagkypries Online">
+<meta property="og:title" content="Μαθηματικά Γ΄ Λυκείου ΚΚ — Β΄ Τεύχος | PagkypriesOnline">
+<meta property="og:description" content="Διαδραστική θεωρία και ασκήσεις με λύσεις για τα Μαθηματικά Κοινού Κορμού Γ΄ Λυκείου (Κύπρος), Β΄ Τεύχος: Συνδυαστική, Πιθανότητες, Στατιστική, Στερεομετρία.">
+<meta property="og:url" content="https://pagkypriesonline.com/mathimatika-g-lykeiou/tefxos-b/">
+<meta property="og:image" content="https://pagkypriesonline.com/g/g01.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<style>
+:root{
+  --navy:#1B2A4A;--blue:#0F6FD1;--green:#198754;--amber:#C77A0A;--red:#DC3545;--purple:#6F42C1;
+  --ink:#15233f;--muted:#5b6b86;--line:#dce3ef;--bg:#F4F7FA;--card:#fff;--soft:#f5f8fd;
+  --sans:"Commissioner",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;--ink2:#14171C;--grad:linear-gradient(100deg,#54EFA2 0%,#33CFD3 48%,#2D9AF5 100%);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px}
+.top{position:sticky;top:0;z-index:50;background:rgba(244,247,252,.9);backdrop-filter:saturate(160%) blur(14px);border-bottom:1px solid var(--line)}
+.top::before{content:"";display:block;height:3px;background:var(--grad)}
+.top .in{max-width:1180px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:14px;min-height:60px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink2);font-weight:900;letter-spacing:-.02em;font-size:17px;white-space:nowrap}
+.brand img{width:32px;height:auto;display:block}
+.top .crumb{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);border-left:1px solid var(--line);padding-left:14px}
+.top .links{margin-left:auto;display:flex;gap:8px}
+.top .links a{text-decoration:none;font-size:13.5px;font-weight:600;color:var(--ink2);border:1px solid var(--line);background:#fff;border-radius:10px;padding:7px 12px;white-space:nowrap}
+.top .links a:hover{border-color:#2D9AF5;color:var(--blue)}
+.top .links a.home{background:var(--blue);border-color:var(--blue);color:#fff}
+@media(max-width:860px){.top .crumb{display:none}}
+@media(max-width:480px){.brand span{display:none}.top .links a{padding:7px 10px;font-size:13px}}
+#app{max-width:1180px;margin:0 auto;padding:18px 16px 40px;display:grid;grid-template-columns:270px 1fr;gap:20px;align-items:start}
+#nav{position:sticky;top:76px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:10px;max-height:calc(100vh - 90px);overflow:auto}
+.navu{font-size:12px;font-weight:800;color:var(--blue);text-transform:uppercase;letter-spacing:.04em;padding:12px 8px 4px;line-height:1.3}
+.navu small{text-transform:none;letter-spacing:0;color:var(--navy);font-size:13px}
+.navit{display:flex;align-items:center;gap:9px;width:100%;text-align:left;background:none;border:0;border-radius:10px;padding:8px;cursor:pointer;font:inherit;color:var(--ink);font-size:14px;line-height:1.3}
+.navit:hover{background:var(--soft)}.navit.on{background:#e3eefb;font-weight:700}
+.nid{flex:none;min-width:34px;font-weight:800;color:var(--navy);font-size:12.5px}
+.nt{flex:1}
+.ring{flex:none;width:20px;height:20px;border-radius:50%;background:conic-gradient(var(--green) calc(var(--p)*1%),#dfe6f1 0);display:flex;align-items:center;justify-content:center;font-size:11px;color:#fff;font-weight:900;position:relative}
+.ring::before{content:"";position:absolute;inset:3px;border-radius:50%;background:#fff}
+.ring[style*="--p:100"]::before{background:var(--green)}
+.ring{isolation:isolate}.ring::before{z-index:-1}
+#main{min-width:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;margin-bottom:16px;box-shadow:0 10px 30px -22px rgba(27,42,74,.45)}
+h2{color:var(--navy);font-size:24px;line-height:1.2;font-weight:900}
+h3.blk{color:var(--navy);font-size:18px;font-weight:900;margin-bottom:12px}
+.unith{color:var(--navy);font-size:17px;font-weight:900;margin:22px 0 10px}
+.sechead{display:flex;gap:14px;align-items:center;margin:2px 0 14px}
+.sid{display:inline-block;background:var(--navy);color:#fff;font-weight:900;border-radius:8px;padding:2px 9px;font-size:13px}
+.sid.big{font-size:18px;padding:8px 12px;border-radius:12px}
+.muted{color:var(--muted)}.small{font-size:13px}
+.hero p{margin-top:8px}
+.bigprog{display:flex;align-items:center;gap:12px;margin-top:14px;font-weight:700;color:var(--navy);font-size:14px}
+.bar{display:block;flex:1;height:10px;border-radius:99px;background:#e3e9f3;overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--blue),var(--green));border-radius:99px}
+.secgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.seccard{display:flex;flex-direction:column;gap:8px;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;cursor:pointer;font:inherit;color:var(--ink);transition:.15s}
+.seccard:hover{border-color:var(--blue);transform:translateY(-2px);box-shadow:0 10px 24px -18px rgba(46,117,182,.8)}
+.seccard b{color:var(--navy);line-height:1.3}.seccard .bar{flex:none;width:100%}.seccard small{color:var(--muted)}.seccard .sid{align-self:flex-start}
+.howto ul{margin:8px 0 12px 20px}.howto li{margin:4px 0}
+code{font-family:"SF Mono",Consolas,Menlo,monospace;background:#eaf0fb;color:var(--navy);padding:1px 6px;border-radius:5px;font-size:.92em}
+.tbox{border:1px solid var(--line);border-left:5px solid var(--blue);background:var(--soft);border-radius:0 12px 12px 0;padding:12px 16px;margin:10px 0}
+.tbox.tip{border-left-color:var(--green);background:#f1faf4}.tbox.warn{border-left-color:var(--amber);background:#fdf6e9}
+.tbox h4{color:var(--navy);font-size:15.5px;margin-bottom:4px}
+.tbox ul,.tbox ol{margin:4px 0 2px 22px}.tbox li{margin:3px 0}.tbox p{margin:4px 0}
+.katex-display{overflow-x:auto;overflow-y:hidden;padding:2px 0}
+#main .katex{max-width:100%;position:relative}
+#main :not(.katex-display) > .katex{display:inline-block;overflow-x:auto;overflow-y:hidden;vertical-align:middle;padding:1px 0}
+.wctl label{min-width:0;max-width:100%}
+.tblwrap{overflow-x:auto}
+table.vt{border-collapse:collapse;margin:8px 0;font-size:14px;white-space:nowrap}
+table.vt th,table.vt td{border:1px solid #c9d3e4;padding:4px 10px;text-align:center}table.vt th{background:#eaf1fb}
+/* widgets */
+.wctl{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;margin-bottom:10px;font-size:14px;font-weight:600;color:var(--navy)}
+.wctl label{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.wctl select{max-width:100%;min-width:0;font:inherit;font-weight:600;padding:6px 10px;border-radius:9px;border:1px solid var(--line);background:#fff;color:var(--navy)}
+input[type=range]{accent-color:var(--blue);width:170px;max-width:60vw}
+.cap{font-size:13px;color:var(--muted);margin:6px 0 2px}
+.t1{color:var(--blue)}.t2{color:var(--purple)}.t3{color:var(--amber)}
+.wout{margin-top:10px;font-size:14.5px;background:var(--soft);border-radius:10px;padding:10px 12px}
+.ok{color:var(--green)}.bad{color:var(--red)}
+.two{display:grid;grid-template-columns:1fr 1.6fr;gap:12px;align-items:center}
+.plot{width:100%;height:auto;display:block;background:#fff;border:1px solid var(--line);border-radius:12px;touch-action:pan-y}
+.plot .grid line{stroke:#edf1f7}.plot .tick{font-size:11px;fill:#8a97ad;font-family:var(--sans)}
+.plot .axis{stroke:var(--navy);stroke-width:1.4}
+.plot .curve{fill:none;stroke-width:3;stroke-linejoin:round;stroke-linecap:round}
+.c1{stroke:var(--blue)}.c2{stroke:var(--purple)}.c3{stroke:var(--amber)}.cfam{stroke:#c5cfdf;stroke-width:1.8!important}
+.plot .band.pos{fill:rgba(25,135,84,.09)}.plot .band.neg{fill:rgba(220,53,69,.08)}
+.plot .dot{stroke:#fff;stroke-width:2}.d1{fill:var(--blue)}.d2{fill:var(--navy)}.d3{fill:var(--amber)}.dmax{fill:var(--green)}.dmin{fill:var(--red)}.dinf{fill:var(--purple)}
+.plot .lbl{font-size:12.5px;font-weight:800;font-family:var(--sans)}.lbl.dmax{fill:var(--green)}.lbl.dmin{fill:var(--red)}.lbl.dinf{fill:var(--purple)}.lbl.d2,.lbl.d3,.lbl.d1{fill:var(--navy)}
+.plot .guide{stroke:#9aa8bf;stroke-dasharray:4 4}.plot .tangent{stroke:var(--red);stroke-width:2;stroke-dasharray:7 5}
+.plot .sheet{fill:#f3e7cf;stroke:#c9a86a}.plot .cut{fill:#fff;stroke:var(--red);stroke-dasharray:4 3}.plot .base{fill:#dbe8f8;stroke:var(--blue)}
+/* exercises */
+.ex{border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:12px 0;background:#fff;transition:border-color .2s}
+.ex.solved{border-color:#a9dcbf;background:#fbfefc}
+.exh{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.exn{font-weight:900;color:var(--navy)}
+.lvl{font-size:11.5px;font-weight:800;padding:2px 9px;border-radius:99px}
+.l1{background:#e7f6ee;color:var(--green)}.l2{background:#fdf1dd;color:var(--amber)}.l3{background:#fdeaec;color:var(--red)}
+.tick-ok{margin-left:auto;color:var(--green);font-weight:800;font-size:13px}
+.exq{margin-bottom:10px}
+.opt{display:flex;gap:10px;align-items:flex-start;padding:9px 12px;border:1px solid var(--line);border-radius:10px;margin:6px 0;cursor:pointer;background:#fff}
+.opt:hover{border-color:var(--blue)}.opt input{margin-top:5px;accent-color:var(--blue)}
+.opt.right{border-color:var(--green);background:#eef9f2}.opt.wrong{border-color:var(--red);background:#fdf0f1}
+.fields{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px 14px}
+.fld{display:flex;flex-direction:column;gap:3px;font-size:13.5px;color:var(--muted);font-weight:600}
+.fld.wide{max-width:560px}
+.fld input{font:inherit;font-size:16px;padding:9px 12px;border:1.5px solid var(--line);border-radius:10px;color:var(--ink);background:#fff;width:100%}
+.fld input:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(46,117,182,.15)}
+.fld input.right{border-color:var(--green);background:#f1faf4}.fld input.wrong{border-color:var(--red);background:#fdf3f4}
+.preview{font-size:12.5px;margin-top:4px;min-height:1em}.warnc{color:var(--amber)}
+.exbar{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.btn{font:inherit;font-size:14px;font-weight:700;border-radius:10px;padding:8px 14px;cursor:pointer;border:1.5px solid transparent;transition:.15s}
+.btn.primary{background:var(--blue);color:#fff}.btn.primary:hover{background:#245f94}
+.btn.ghost{background:#fff;color:var(--navy);border-color:var(--line)}.btn.ghost:hover{border-color:var(--blue)}
+.btn.small{font-size:13px;padding:6px 11px}
+.fb{margin-top:10px;font-weight:700;min-height:0}.fb:empty{display:none}
+.okc{color:var(--green)}.badc{color:var(--red)}
+.hint,.sol{margin-top:10px;padding:10px 14px;border-radius:10px;font-size:15px}
+.hint{background:#fff8e8;border:1px solid #f0d9a8}.sol{background:#f1faf4;border:1px solid #bfe6cf}
+.hidden{display:none}
+.solgraph{margin-top:10px;max-width:520px}
+.gen{border:2px dashed #b8cbe6}.gen .newg{margin-top:4px}
+.pager{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:6px}
+.chips{gap:6px}.chip{font:inherit;font-size:14px;font-weight:700;border:1.5px solid var(--line);background:#fff;color:var(--navy);border-radius:99px;padding:5px 12px;cursor:pointer}
+.chip.on{background:var(--blue);border-color:var(--blue);color:#fff}
+.wctl.col{flex-direction:column;align-items:flex-start;gap:6px}
+.plot .vnum{font-size:17px;font-weight:900;fill:var(--navy);text-anchor:middle;font-family:var(--sans)}
+.pills{display:flex;flex-wrap:wrap;gap:5px;margin:6px 0}.pills span{font-family:"SF Mono",Consolas,monospace;font-size:13px;background:#eef3fb;border:1px solid var(--line);border-radius:7px;padding:2px 7px;color:var(--navy)}
+.pills span.pm{background:var(--amber);color:#fff;border-color:var(--amber)}.pills span.pl1{background:#e3eefb}.pills span.pl2{background:#efe8fb}
+.dice{display:flex;align-items:center;gap:10px;margin:4px 0 8px;font-size:14px}
+.plot .theo{stroke:var(--red);stroke-width:2.5}.plot .whisk{stroke:var(--navy);stroke-width:2}.plot .medl{stroke:var(--red);stroke-width:3}
+.plot .sol-e{fill:none;stroke:var(--navy);stroke-width:2}.plot .sol-eb{fill:none;stroke:var(--navy);stroke-width:1.5;stroke-dasharray:5 4;opacity:.6}
+.plot .axisrot{stroke:var(--red);stroke-width:1.5;stroke-dasharray:8 5}.plot .gen2d{fill:rgba(46,117,182,.22);stroke:var(--blue);stroke-width:2}
+table.t2 input{width:72px;font:inherit;padding:4px 6px;border:1px solid var(--line);border-radius:7px;text-align:center}
+.sform{font-size:15px;line-height:2}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:24px 16px 34px}
+footer b{color:var(--navy)}footer a{color:var(--blue);font-weight:700;text-decoration:none}
+@media (max-width:860px){
+  #app{grid-template-columns:1fr;padding-top:10px}
+  #nav{position:static;display:flex;overflow-x:auto;gap:6px;padding:8px;max-height:none;scrollbar-width:thin}
+  .navu{display:none}
+  .navit{flex:none;width:auto;white-space:nowrap;border:1px solid var(--line);padding:6px 10px}
+  .navit .nt{display:none}.navit .nid{min-width:0}
+  .two{grid-template-columns:1fr}
+  .card{padding:16px}
+  h2{font-size:21px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="top"><div class="in">
+  <a class="brand" href="/"><img src="/logo-mark.png" width="240" height="212" alt="PagkypriesOnline"><span>Pagkypries Online</span></a>
+  <div class="crumb">Μαθηματικά ΚΚ · Γ΄ Λυκείου · Β΄ Τεύχος</div>
+  <nav class="links" aria-label="Σύνδεσμοι"><a href="/mathimatika-g-lykeiou/tefxos-a/">← Α΄ Τεύχος</a><a class="home" href="/#yliko">← Αρχική</a></nav>
+</div></header>
+<div id="app"><nav id="nav" aria-label="Παράγραφοι"></nav><main id="main"><p class="muted">Φόρτωση…</p></main></div>
+<footer><b>Pagkypries Online</b> · Αντρέας Σωτηρίου · <a href="/">pagkypriesonline.com</a> · <a href="/#epikoinonia">Θέλεις ιδιαίτερο μάθημα;</a><br>
+Πρωτότυπο εκπαιδευτικό υλικό που ακολουθεί τη δομή του βιβλίου «Μαθηματικά Γ΄ Λυκείου Κοινού Κορμού, Β΄ Τεύχος» (ΥΑΠ, 2019).</footer>
+<script>
+const R = String.raw;
+const CONFIG = {
+  storeKey: "pagk-gkk-tefxos-b-v1",
+  heroTitle: "Μαθηματικά Κοινού Κορμού Γ΄ Λυκείου — Β΄ Τεύχος",
+  tefxos: "Β΄ τεύχους",
+  howto: `<ul><li>Κλάσματα: <code>2/15</code> · δεκαδικά: <code>0,75</code> ή <code>0.75</code> — μια πιθανότητα μπορείς να τη γράψεις όπως θέλεις</li>
+    <li>Με π: <code>45π</code>, <code>45pi</code> ή <code>500π/3</code> · ρίζες: <code>√8</code> ή <code>sqrt(8)</code></li>
+    <li>Μεγάλοι αριθμοί χωρίς τελείες: <code>5040</code> · μπορείς να γράψεις και πράξεις, π.χ. <code>6*5*4</code></li></ul>`
+};
+
+const UNITS = [
+  { id: 3, title: "Ενότητα 3 · Σύνολα – Συνδυαστική – Πιθανότητες" },
+  { id: 4, title: "Ενότητα 4 · Στατιστική" },
+  { id: 5, title: "Ενότητα 5 · Στερεομετρία" }
+];
+
+const SECTIONS = [
+/* ───────────────────────────── 3.1–3.3 ───────────────────────────── */
+{
+  id: "3.1–3.3", unit: 3, title: "Σύνολα – Αρχή Εγκλεισμού–Αποκλεισμού",
+  book: "Β΄ Τεύχος §3.1–3.3 · Δραστηριότητες σελ. 14",
+  theory: R`
+<div class="tbox"><h4>Πράξεις συνόλων</h4>
+<p>Σε ένα βασικό σύνολο $\Omega$, για υποσύνολα $A, B$:</p>
+<ul><li><b>Ένωση</b> $A \cup B$: στοιχεία που ανήκουν στο $A$ <b>ή</b> στο $B$ (ή και στα δύο)</li>
+<li><b>Τομή</b> $A \cap B$: στοιχεία που ανήκουν <b>και</b> στα δύο</li>
+<li><b>Διαφορά</b> $A - B$: στοιχεία του $A$ που <b>δεν</b> ανήκουν στο $B$</li>
+<li><b>Συμπλήρωμα</b> $A'$: στοιχεία του $\Omega$ που δεν ανήκουν στο $A$</li></ul></div>
+
+<div class="tbox"><h4>Ιδιότητες</h4>
+<p>Αντιμεταθετική και προσεταιριστική για $\cup$, $\cap$ · Επιμεριστική: $A \cap (B \cup \Gamma) = (A \cap B) \cup (A \cap \Gamma)$</p>
+<p><b>Νόμοι De Morgan:</b> $\;(A \cup B)' = A' \cap B'\;$ και $\;(A \cap B)' = A' \cup B'$</p>
+<p>Επίσης: $A - B = A \cap B'$.</p></div>
+
+<div class="tbox tip"><h4>Αρχή Εγκλεισμού – Αποκλεισμού</h4>
+<p>Με $\nu(A)$ συμβολίζουμε το πλήθος των στοιχείων του $A$.</p>
+$$\nu(A \cup B) = \nu(A) + \nu(B) - \nu(A \cap B)$$
+<p>Αφαιρούμε την τομή γιατί τη μετρήσαμε <b>δύο φορές</b>. Για τρία σύνολα:</p>
+$$\nu(A \cup B \cup \Gamma) = \nu(A) + \nu(B) + \nu(\Gamma) - \nu(A\cap B) - \nu(A \cap \Gamma) - \nu(B \cap \Gamma) + \nu(A \cap B \cap \Gamma)$$</div>`,
+  widget: "venn",
+  exercises: [
+    { level: 1, type: "fields", q: R`Δίνονται $\Omega = \{1,2,\dots,8\}$, $A = \{1,2,3,4\}$ και $B = \{3,4,5,6\}$. Να βρείτε:`,
+      fields: [{ label: "ν(A ∪ B) =", ans: 6 }, { label: "ν(A ∩ B) =", ans: 2 }, { label: "ν(A′) =", ans: 4 }, { label: "ν(A − B) =", ans: 2 }],
+      hint: R`Γράψε τα σύνολα: $A \cup B = \{1,\dots,6\}$, $A \cap B = \{3,4\}$.`,
+      sol: R`$A \cup B = \{1,2,3,4,5,6\}$ (6 στοιχεία), $A \cap B = \{3,4\}$ (2), $A' = \{5,6,7,8\}$ (4), $A - B = \{1,2\}$ (2).` },
+    { level: 1, type: "mc", q: R`Το σύνολο $(A \cup B)'$ είναι ίσο με:`,
+      options: ["$A' \\cup B'$", "$A' \\cap B'$", "$A \\cap B$", "$A - B$"], correct: 1,
+      hint: R`Νόμος De Morgan: το συμπλήρωμα «γυρίζει» την ένωση σε τομή.`,
+      sol: R`Από τον νόμο De Morgan: $(A \cup B)' = A' \cap B'$ — τα στοιχεία που δεν ανήκουν ούτε στο $A$ ούτε στο $B$.` },
+    { level: 1, type: "fields", q: R`Σε μια τάξη $30$ μαθητών, $18$ παίζουν ποδόσφαιρο, $12$ μπάσκετ και $5$ και τα δύο. Πόσοι παίζουν τουλάχιστον ένα άθλημα και πόσοι κανένα;`,
+      fields: [{ label: "τουλάχιστον ένα =", ans: 25 }, { label: "κανένα =", ans: 5 }],
+      hint: R`$\nu(\Pi \cup M) = 18 + 12 - 5$.`,
+      sol: R`$\nu(\Pi \cup M) = 18 + 12 - 5 = 25$. Κανένα: $30 - 25 = 5$.` },
+    { level: 2, type: "fields", q: R`Αν $\nu(A) = 10$ και $\nu(A \cap B) = 4$, πόσο είναι το $\nu(A - B)$;`,
+      fields: [{ label: "ν(A − B) =", ans: 6 }],
+      hint: R`Το $A$ χωρίζεται σε δύο κομμάτια: $A - B$ και $A \cap B$.`,
+      sol: R`$\nu(A) = \nu(A - B) + \nu(A \cap B) \Rightarrow \nu(A - B) = 10 - 4 = 6$.` },
+    { level: 2, type: "fields", q: R`Πόσοι από τους αριθμούς $1, 2, \dots, 100$ διαιρούνται με το $2$ <b>ή</b> με το $3$;`,
+      fields: [{ label: "πλήθος =", ans: 67 }],
+      hint: R`Πολλαπλάσια του 2: 50, του 3: 33. Και των δύο = πολλαπλάσια του 6.`,
+      sol: R`$\nu(A) = 50$, $\nu(B) = 33$, $\nu(A \cap B) = 16$ (πολλαπλάσια του 6, αφού $6 \cdot 16 = 96$).<br>$\nu(A \cup B) = 50 + 33 - 16 = 67$.` },
+    { level: 3, type: "fields", q: R`Σε σχολείο $40$ μαθητών: $25$ μαθαίνουν Αγγλικά, $15$ Γαλλικά, $10$ Γερμανικά, $8$ Αγγλικά και Γαλλικά, $5$ Αγγλικά και Γερμανικά, $4$ Γαλλικά και Γερμανικά και $3$ και τις τρεις γλώσσες.`,
+      fields: [{ label: "τουλάχιστον μία γλώσσα =", ans: 36 }, { label: "καμία γλώσσα =", ans: 4 }, { label: "μόνο Αγγλικά =", ans: 15 }],
+      hint: R`Τύπος για τρία σύνολα. Για «μόνο Αγγλικά» σχεδίασε διάγραμμα Venn ξεκινώντας από το κέντρο (3).`,
+      sol: R`$\nu(A \cup \Gamma \cup \Delta) = 25 + 15 + 10 - 8 - 5 - 4 + 3 = 36$, άρα καμία: $40 - 36 = 4$.<br>Μόνο Αγγλικά: $25 - 8 - 5 + 3 = 15$ (αφαιρούμε τις δύο τομές, αλλά το κέντρο αφαιρέθηκε δύο φορές, οπότε το ξαναπροσθέτουμε).` }
+  ]
+},
+
+/* ───────────────────────────── 3.4 ───────────────────────────── */
+{
+  id: "3.4", unit: 3, title: "Εισαγωγή στη Συνδυαστική",
+  book: "Β΄ Τεύχος §3.4 · Δραστηριότητες σελ. 21",
+  theory: R`
+<div class="tbox"><h4>Αρχή του Αθροίσματος («ή»)</h4>
+<p>Αν μια επιλογή μπορεί να γίνει <b>είτε</b> με έναν από $\mu$ τρόπους <b>είτε</b> με έναν από $\nu$ άλλους τρόπους (χωρίς κοινούς), τότε υπάρχουν $\mu + \nu$ τρόποι.</p></div>
+<div class="tbox"><h4>Πολλαπλασιαστική Αρχή («και μετά»)</h4>
+<p>Αν μια διαδικασία γίνεται σε <b>φάσεις</b> — η 1η με $\nu_1$ τρόπους, η 2η με $\nu_2$ τρόπους, ..., η κ-οστή με $\nu_\kappa$ τρόπους — τότε συνολικά υπάρχουν</p>
+$$\nu_1 \cdot \nu_2 \cdot \ldots \cdot \nu_\kappa \text{ τρόποι.}$$</div>
+<div class="tbox tip"><h4>Μέθοδος «κουτάκια»</h4>
+<p>Σχεδίασε ένα κουτάκι για κάθε θέση και γράψε μέσα πόσες επιλογές έχει. Ξεκίνα από τη θέση με τον <b>περιορισμό</b> (π.χ. το πρώτο ψηφίο δεν μπορεί να είναι 0, ο αριθμός να είναι άρτιος).</p>
+<p>Τριψήφιοι με ψηφία $1$–$5$ χωρίς επανάληψη: $\boxed{5}\boxed{4}\boxed{3} = 60$.</p></div>`,
+  widget: "tree",
+  exercises: [
+    { level: 1, type: "fields", q: R`Ένα εστιατόριο έχει $3$ ορεκτικά, $4$ κυρίως πιάτα και $2$ επιδόρπια. Πόσα διαφορετικά γεύματα (ένα από το καθένα) μπορούμε να παραγγείλουμε;`,
+      fields: [{ label: "γεύματα =", ans: 24 }], hint: R`Τρεις φάσεις ⇒ πολλαπλασιαστική αρχή.`,
+      sol: R`$3 \cdot 4 \cdot 2 = 24$.` },
+    { level: 1, type: "fields", q: R`Ένας μαθητής πρέπει να διαλέξει <b>μία</b> εργασία: μία από $4$ εργασίες Γεωμετρίας ή μία από $5$ εργασίες Στατιστικής. Με πόσους τρόπους;`,
+      fields: [{ label: "τρόποι =", ans: 9 }], hint: R`«ή» ⇒ αρχή του αθροίσματος.`,
+      sol: R`Η επιλογή είναι <b>είτε</b> Γεωμετρίας <b>είτε</b> Στατιστικής: $4 + 5 = 9$ (όχι $4 \cdot 5$!).` },
+    { level: 2, type: "fields", q: R`Πόσοι τριψήφιοι αριθμοί σχηματίζονται με τα ψηφία $1, 2, 3, 4, 5$:`,
+      fields: [{ label: "με επανάληψη ψηφίων =", ans: 125 }, { label: "χωρίς επανάληψη =", ans: 60 }],
+      hint: R`Με επανάληψη κάθε θέση έχει 5 επιλογές. Χωρίς επανάληψη: 5, 4, 3.`,
+      sol: R`Με επανάληψη: $5 \cdot 5 \cdot 5 = 125$. Χωρίς: $5 \cdot 4 \cdot 3 = 60$.` },
+    { level: 2, type: "fields", q: R`Ένας κωδικός αποτελείται από $3$ γράμματα από το σύνολο $\{A, B, \Gamma\}$ (επιτρέπεται επανάληψη) και ακολουθούν $2$ ψηφία ($0$–$9$). Πόσοι κωδικοί υπάρχουν;`,
+      fields: [{ label: "κωδικοί =", ans: 2700 }], hint: R`5 κουτάκια: 3, 3, 3, 10, 10.`,
+      sol: R`$3 \cdot 3 \cdot 3 \cdot 10 \cdot 10 = 27 \cdot 100 = 2700$.` },
+    { level: 3, type: "fields", q: R`Πόσοι <b>άρτιοι</b> τριψήφιοι αριθμοί με <b>διαφορετικά</b> ψηφία υπάρχουν (ψηφία $0$–$9$);`,
+      fields: [{ label: "πλήθος =", ans: 328 }],
+      hint: R`Χώρισε σε περιπτώσεις: τελευταίο ψηφίο $0$ ή τελευταίο ψηφίο $2,4,6,8$ (τότε το πρώτο δεν μπορεί να είναι 0).`,
+      sol: R`<b>Τελειώνει σε 0:</b> πρώτο ψηφίο 9 επιλογές, μεσαίο 8 ⇒ $9 \cdot 8 = 72$.<br><b>Τελειώνει σε 2,4,6,8:</b> τελευταίο 4 επιλογές, πρώτο 8 (όχι 0, όχι το τελευταίο), μεσαίο 8 ⇒ $4 \cdot 8 \cdot 8 = 256$.<br>Σύνολο (αρχή αθροίσματος): $72 + 256 = 328$.` }
+  ]
+},
+
+/* ───────────────────────────── 3.5 ───────────────────────────── */
+{
+  id: "3.5", unit: 3, title: "Μεταθέσεις",
+  book: "Β΄ Τεύχος §3.5 · Δραστηριότητες σελ. 32",
+  theory: R`
+<div class="tbox"><h4>Παραγοντικό</h4>
+$$\nu! = 1 \cdot 2 \cdot 3 \cdot \ldots \cdot \nu, \qquad 0! = 1$$
+<p>Π.χ. $5! = 120$. Χρήσιμο: $\frac{7!}{5!} = 7 \cdot 6 = 42$.</p></div>
+<div class="tbox"><h4>Απλές μεταθέσεις</h4>
+<p>Τρόποι να τοποθετήσουμε $\nu$ <b>διαφορετικά</b> αντικείμενα <b>σε σειρά</b>:</p>$$M_\nu = \nu!$$</div>
+<div class="tbox"><h4>Κυκλικές μεταθέσεις</h4>
+<p>Σε <b>κύκλο</b> (π.χ. στρογγυλό τραπέζι) δεν υπάρχει «πρώτη θέση» — κάθε κυκλική διάταξη αντιστοιχεί σε $\nu$ απλές:</p>$$K_\nu = (\nu - 1)!$$</div>
+<div class="tbox"><h4>Επαναληπτικές μεταθέσεις</h4>
+<p>Αν από τα $\nu$ αντικείμενα τα $\kappa_1$ είναι ίδια μεταξύ τους, τα $\kappa_2$ ίδια μεταξύ τους κ.ο.κ.:</p>
+$$M^{\nu}_{\kappa_1, \kappa_2, \ldots} = \frac{\nu!}{\kappa_1! \cdot \kappa_2! \cdot \ldots}$$
+<p>Π.χ. αναγραμματισμοί της λέξης ΚΑΚΑΟ: $\frac{5!}{2!\,2!} = 30$ (δύο Κ, δύο Α).</p></div>
+<div class="tbox tip"><h4>«Μαζί» = ένα πακέτο</h4><p>Αν κάποια αντικείμενα πρέπει να είναι <b>συνεχόμενα</b>, τα κάνουμε ένα «πακέτο»: μεταθέτουμε τα πακέτα και μετά τα στοιχεία μέσα στο πακέτο.</p></div>`,
+  widget: "comb",
+  gen: "gcomb",
+  exercises: [
+    { level: 1, type: "fields", q: R`Με πόσους τρόπους μπορούμε να τοποθετήσουμε $5$ διαφορετικά βιβλία σε ένα ράφι; Και πόσο κάνει το $\frac{7!}{5!}$;`,
+      fields: [{ label: "τρόποι =", ans: 120 }, { label: "7!/5! =", ans: 42 }], hint: R`$M_5 = 5!$`,
+      sol: R`$M_5 = 5! = 120$. $\;\frac{7!}{5!} = \frac{7 \cdot 6 \cdot 5!}{5!} = 42$.` },
+    { level: 1, type: "fields", q: R`Με πόσους τρόπους μπορούν $6$ φίλοι να καθίσουν σε ένα <b>στρογγυλό</b> τραπέζι;`,
+      fields: [{ label: "τρόποι =", ans: 120 }], hint: R`Κυκλικές μεταθέσεις: $K_6 = 5!$`,
+      sol: R`$K_6 = (6-1)! = 5! = 120$.` },
+    { level: 2, type: "fields", q: R`Πόσοι είναι οι αναγραμματισμοί της λέξης <b>ΜΑΘΗΜΑ</b>;`,
+      fields: [{ label: "αναγραμματισμοί =", ans: 180 }], hint: R`6 γράμματα: το Μ δύο φορές, το Α δύο φορές.`,
+      sol: R`$M^6_{2,2} = \frac{6!}{2!\,2!} = \frac{720}{4} = 180$.` },
+    { level: 2, type: "fields", q: R`Για τη λέξη <b>ΛΕΜΟΝΙ</b> (όλα τα γράμματα διαφορετικά) να βρείτε το πλήθος των αναγραμματισμών και πόσοι από αυτούς αρχίζουν από Λ.`,
+      fields: [{ label: "όλοι =", ans: 720 }, { label: "αρχίζουν από Λ =", ans: 120 }],
+      hint: R`Αν το Λ «κλειδώσει» στην πρώτη θέση, μένουν 5 γράμματα.`,
+      sol: R`Όλοι: $6! = 720$. Με Λ πρώτο: $1 \cdot 5! = 120$.` },
+    { level: 2, type: "fields", q: R`$4$ αγόρια και $3$ κορίτσια θα σταθούν σε σειρά για φωτογραφία, έτσι ώστε τα κορίτσια να είναι σε <b>συνεχόμενες</b> θέσεις. Με πόσους τρόπους;`,
+      fields: [{ label: "τρόποι =", ans: 720 }],
+      hint: R`Τα 3 κορίτσια = 1 πακέτο. Πόσα «αντικείμενα» έχουμε τότε;`,
+      sol: R`Πακέτο κοριτσιών + 4 αγόρια = 5 αντικείμενα: $5!$ τρόποι. Μέσα στο πακέτο: $3!$.<br>Σύνολο $5! \cdot 3! = 120 \cdot 6 = 720$.` },
+    { level: 3, type: "fields", q: R`$5$ άτομα κάθονται σε στρογγυλό τραπέζι. Με πόσους τρόπους, αν δύο συγκεκριμένα άτομα (Άννα και Βασίλης) πρέπει να κάθονται <b>δίπλα</b>;`,
+      fields: [{ label: "τρόποι =", ans: 12 }],
+      hint: R`Άννα–Βασίλης = πακέτο ⇒ 4 «αντικείμενα» σε κύκλο. Το πακέτο έχει και εσωτερική σειρά!`,
+      sol: R`4 αντικείμενα σε κύκλο: $K_4 = 3! = 6$. Μέσα στο πακέτο: $2! = 2$ (ΑΒ ή ΒΑ). Σύνολο $6 \cdot 2 = 12$.` }
+  ]
+},
+
+/* ───────────────────────────── 3.6 ───────────────────────────── */
+{
+  id: "3.6", unit: 3, title: "Διατάξεις",
+  book: "Β΄ Τεύχος §3.6 · Δραστηριότητες σελ. 41",
+  theory: R`
+<div class="tbox"><h4>Απλές διατάξεις</h4>
+<p>Διαλέγουμε $\kappa$ από $\nu$ διαφορετικά αντικείμενα και τα βάζουμε <b>σε σειρά</b> — η <b>σειρά μετράει</b> ($AB \ne BA$):</p>
+$$\Delta^{\nu}_{\kappa} = \frac{\nu!}{(\nu - \kappa)!} = \underbrace{\nu(\nu-1)\cdots(\nu-\kappa+1)}_{\kappa \text{ παράγοντες}}$$
+<p>Π.χ. πρόεδρος, γραμματέας, ταμίας από 7 άτομα: $\Delta^7_3 = 7 \cdot 6 \cdot 5 = 210$. Για $\kappa = \nu$ παίρνουμε τις μεταθέσεις: $\Delta^\nu_\nu = \nu!$.</p></div>
+<div class="tbox"><h4>Επαναληπτικές διατάξεις</h4>
+<p>Κάθε στοιχείο μπορεί να <b>επαναληφθεί</b> (π.χ. ψηφία ενός PIN, ζαριές): κάθε μία από τις $\kappa$ θέσεις έχει $\nu$ επιλογές:</p>
+$$\nu \cdot \nu \cdot \ldots \cdot \nu = \nu^{\kappa}$$
+<p>Εδώ μπορεί και $\kappa > \nu$ (π.χ. 4ψήφιοι με ψηφία μόνο 1 και 2: $2^4 = 16$).</p></div>
+<div class="tbox tip"><h4>Πότε διάταξη;</h4><p>Ρώτα: «αν αλλάξω τη σειρά, παίρνω <b>διαφορετικό</b> αποτέλεσμα;» Αν <b>ναι</b> ⇒ διάταξη. Αν <b>όχι</b> (π.χ. επιτροπή χωρίς ρόλους) ⇒ συνδυασμός (επόμενη παράγραφος).</p></div>`,
+  widget: "comb",
+  gen: "gcomb",
+  exercises: [
+    { level: 1, type: "fields", q: R`Από $7$ μέλη ενός συλλόγου εκλέγονται πρόεδρος, γραμματέας και ταμίας. Με πόσους τρόπους;`,
+      fields: [{ label: "τρόποι =", ans: 210 }], hint: R`Οι ρόλοι είναι διαφορετικοί ⇒ μετράει η σειρά.`,
+      sol: R`$\Delta^7_3 = 7 \cdot 6 \cdot 5 = 210$.` },
+    { level: 1, type: "fields", q: R`Σε αγώνα $8$ δρομέων απονέμονται χρυσό, ασημένιο και χάλκινο μετάλλιο. Πόσα διαφορετικά βάθρα υπάρχουν; Και πόσα αποτελέσματα έχουμε αν ρίξουμε ένα ζάρι $3$ φορές;`,
+      fields: [{ label: "βάθρα =", ans: 336 }, { label: "αποτελέσματα ζαριού =", ans: 216 }],
+      hint: R`Βάθρο: $\Delta^8_3$. Ζάρι: επαναληπτική διάταξη $6^3$.`,
+      sol: R`$\Delta^8_3 = 8 \cdot 7 \cdot 6 = 336$. Ζάρι: κάθε ρίψη 6 αποτελέσματα, με επανάληψη: $6^3 = 216$.` },
+    { level: 2, type: "fields", q: R`Ένας κωδικός (PIN) έχει $4$ ψηφία από $0$ έως $9$. Πόσοι κωδικοί υπάρχουν:`,
+      fields: [{ label: "με επανάληψη =", ans: 10000 }, { label: "χωρίς επανάληψη =", ans: 5040 }],
+      hint: R`Με επανάληψη: $10^4$. Χωρίς: $\Delta^{10}_4$.`,
+      sol: R`Με επανάληψη: $10^4 = 10000$. Χωρίς επανάληψη: $\Delta^{10}_4 = 10 \cdot 9 \cdot 8 \cdot 7 = 5040$.` },
+    { level: 2, type: "fields", q: R`Να λύσετε την εξίσωση $\Delta^{\nu}_{2} = 20$, $\nu \ge 2$.`,
+      fields: [{ label: "ν =", ans: 5 }],
+      hint: R`$\Delta^\nu_2 = \nu(\nu - 1)$.`,
+      sol: R`$\nu(\nu-1) = 20 \Leftrightarrow \nu^2 - \nu - 20 = 0 \Leftrightarrow (\nu - 5)(\nu + 4) = 0$. Δεκτή η $\nu = 5$ ($\nu = -4$ απορρίπτεται).` },
+    { level: 3, type: "fields", q: R`Πόσοι τετραψήφιοι αριθμοί με <b>διαφορετικά</b> ψηφία από το σύνολο $\{1,2,3,4,5,6\}$ είναι <b>μεγαλύτεροι από 5000</b>;`,
+      fields: [{ label: "πλήθος =", ans: 120 }],
+      hint: R`Το πρώτο ψηφίο πρέπει να είναι 5 ή 6. Τα άλλα 3 από τα υπόλοιπα 5.`,
+      sol: R`Πρώτο ψηφίο: 2 επιλογές (5 ή 6). Τα υπόλοιπα 3 ψηφία: διάταξη των 5 που μένουν ανά 3, $\Delta^5_3 = 60$.<br>Σύνολο $2 \cdot 60 = 120$.` }
+  ]
+},
+
+/* ───────────────────────────── 3.7 ───────────────────────────── */
+{
+  id: "3.7", unit: 3, title: "Συνδυασμοί",
+  book: "Β΄ Τεύχος §3.7 · Δραστηριότητες σελ. 46",
+  theory: R`
+<div class="tbox"><h4>Συνδυασμοί των $\nu$ ανά $\kappa$</h4>
+<p>Διαλέγουμε μια <b>ομάδα</b> $\kappa$ αντικειμένων από $\nu$ διαφορετικά — η σειρά <b>δεν</b> μετράει:</p>
+$$\binom{\nu}{\kappa} = \frac{\nu!}{\kappa!\,(\nu - \kappa)!} = \frac{\Delta^\nu_\kappa}{\kappa!}$$
+<p>Διαιρούμε με $\kappa!$ γιατί κάθε ομάδα «μετρήθηκε» $\kappa!$ φορές στις διατάξεις.</p></div>
+<div class="tbox"><h4>Ιδιότητες</h4>
+$$\binom{\nu}{0} = \binom{\nu}{\nu} = 1, \qquad \binom{\nu}{1} = \nu, \qquad \binom{\nu}{\kappa} = \binom{\nu}{\nu - \kappa}$$
+<p>Η τελευταία γλιτώνει πράξεις: $\binom{20}{18} = \binom{20}{2} = \frac{20 \cdot 19}{2} = 190$.</p></div>
+<div class="tbox tip"><h4>«Τουλάχιστον ένα» → συμπλήρωμα</h4>
+<p>Αντί να μετρήσεις όλες τις περιπτώσεις με 1, 2, 3, ... στοιχεία, μέτρα <b>όλες</b> τις ομάδες και αφαίρεσε αυτές με <b>κανένα</b>.</p></div>`,
+  widget: "comb",
+  gen: "gcomb",
+  exercises: [
+    { level: 1, type: "fields", q: R`Με πόσους τρόπους επιλέγεται επιτροπή $3$ ατόμων από $10$; Και πόσο κάνει το $\binom{20}{18}$;`,
+      fields: [{ label: "επιτροπές =", ans: 120 }, { label: "C(20,18) =", ans: 190 }],
+      hint: R`Επιτροπή χωρίς ρόλους ⇒ συνδυασμός. Για το δεύτερο: $\binom{20}{18} = \binom{20}{2}$.`,
+      sol: R`$\binom{10}{3} = \frac{10 \cdot 9 \cdot 8}{3!} = \frac{720}{6} = 120$. $\;\binom{20}{18} = \binom{20}{2} = 190$.` },
+    { level: 1, type: "fields", q: R`Σε μια συνάντηση $8$ ατόμων ο καθένας δίνει χειραψία σε όλους τους άλλους. Πόσες χειραψίες γίνονται;`,
+      fields: [{ label: "χειραψίες =", ans: 28 }],
+      hint: R`Κάθε χειραψία = ζευγάρι ατόμων (η σειρά δεν μετράει).`,
+      sol: R`$\binom{8}{2} = \frac{8 \cdot 7}{2} = 28$.` },
+    { level: 2, type: "fields", q: R`Από $6$ άνδρες και $5$ γυναίκες σχηματίζεται επιτροπή με $2$ άνδρες και $3$ γυναίκες. Με πόσους τρόπους;`,
+      fields: [{ label: "τρόποι =", ans: 150 }],
+      hint: R`Δύο φάσεις: διαλέγω άνδρες ΚΑΙ μετά γυναίκες ⇒ πολλαπλασιάζω.`,
+      sol: R`$\binom{6}{2} \cdot \binom{5}{3} = 15 \cdot 10 = 150$.` },
+    { level: 2, type: "fields", q: R`Να λύσετε την εξίσωση $\binom{\nu}{2} = 45$.`,
+      fields: [{ label: "ν =", ans: 10 }],
+      hint: R`$\binom{\nu}{2} = \frac{\nu(\nu-1)}{2}$.`,
+      sol: R`$\frac{\nu(\nu-1)}{2} = 45 \Leftrightarrow \nu^2 - \nu - 90 = 0 \Leftrightarrow (\nu-10)(\nu+9) = 0 \Rightarrow \nu = 10$.` },
+    { level: 2, type: "fields", q: R`Ένα διαγώνισμα έχει $12$ ερωτήσεις και ο μαθητής πρέπει να απαντήσει σε $8$, από τις οποίες οι $3$ πρώτες είναι <b>υποχρεωτικές</b>. Με πόσους τρόπους μπορεί να διαλέξει;`,
+      fields: [{ label: "τρόποι =", ans: 126 }],
+      hint: R`Οι 3 υποχρεωτικές «κλειδώνουν». Μένουν να διαλέξει 5 από τις 9 υπόλοιπες.`,
+      sol: R`$\binom{9}{5} = \binom{9}{4} = \frac{9 \cdot 8 \cdot 7 \cdot 6}{24} = 126$.` },
+    { level: 3, type: "fields", q: R`Από $5$ άνδρες και $4$ γυναίκες επιλέγεται επιτροπή $4$ ατόμων με <b>τουλάχιστον μία</b> γυναίκα. Με πόσους τρόπους;`,
+      fields: [{ label: "τρόποι =", ans: 121 }],
+      hint: R`Όλες οι επιτροπές μείον αυτές με <b>μόνο</b> άνδρες.`,
+      sol: R`Όλες: $\binom{9}{4} = 126$. Χωρίς γυναίκα (μόνο άνδρες): $\binom{5}{4} = 5$.<br>Άρα $126 - 5 = 121$.` }
+  ]
+},
+
+/* ───────────────────────────── 3.8 ───────────────────────────── */
+{
+  id: "3.8", unit: 3, title: "Η έννοια της Πιθανότητας",
+  book: "Β΄ Τεύχος §3.8 · Δραστηριότητες σελ. 57, 63",
+  theory: R`
+<div class="tbox"><h4>Βασικές έννοιες</h4>
+<ul><li><b>Πείραμα τύχης</b>: δεν μπορούμε να προβλέψουμε το αποτέλεσμα (ρίψη ζαριού).</li>
+<li><b>Δειγματικός χώρος</b> $\Omega$: το σύνολο όλων των δυνατών αποτελεσμάτων. Για ένα ζάρι $\Omega = \{1,\dots,6\}$, για δύο ζάρια $\nu(\Omega) = 36$.</li>
+<li><b>Ενδεχόμενο</b>: κάθε υποσύνολο του $\Omega$. <b>Ασυμβίβαστα</b>: $A \cap B = \varnothing$ (δεν πραγματοποιούνται μαζί).</li></ul></div>
+<div class="tbox"><h4>Κλασικός ορισμός</h4>
+<p>Αν όλα τα αποτελέσματα είναι <b>ισοπίθανα</b>:</p>
+$$P(A) = \frac{\nu(A)}{\nu(\Omega)} = \frac{\text{ευνοϊκές περιπτώσεις}}{\text{δυνατές περιπτώσεις}}$$</div>
+<div class="tbox"><h4>Ιδιότητες (αξιωματικός ορισμός)</h4>
+<p>$0 \le P(A) \le 1$, $\;P(\Omega) = 1$, $\;P(\varnothing) = 0$</p>
+<p>$P(A') = 1 - P(A)$ &nbsp;·&nbsp; $P(A \cup B) = P(A) + P(B) - P(A \cap B)$</p>
+<p>Για ασυμβίβαστα: $P(A \cup B) = P(A) + P(B)$.</p></div>
+<div class="tbox tip"><h4>Συνδυαστική + Πιθανότητες</h4><p>Όταν τα $\nu(A)$ και $\nu(\Omega)$ είναι μεγάλα, τα μετράμε με μεταθέσεις, διατάξεις ή συνδυασμούς.</p></div>`,
+  widget: "dice",
+  gen: "gdice",
+  exercises: [
+    { level: 1, type: "fields", q: R`Ρίχνουμε ένα ζάρι. Ποια η πιθανότητα να φέρουμε άρτιο αριθμό; Και ποια η πιθανότητα να φέρουμε αριθμό μεγαλύτερο του 4;`,
+      fields: [{ label: "P(άρτιος) =", ans: "1/2" }, { label: "P(>4) =", ans: "1/3" }],
+      hint: R`Άρτιοι: $\{2,4,6\}$. Μεγαλύτεροι του 4: $\{5,6\}$.`,
+      sol: R`$P(A) = \frac36 = \frac12$, $\;P(B) = \frac26 = \frac13$.` },
+    { level: 1, type: "fields", q: R`Ρίχνουμε δύο ζάρια. Ποια η πιθανότητα το άθροισμα να είναι $7$;`,
+      fields: [{ label: "P =", ans: "1/6" }],
+      hint: R`$\nu(\Omega) = 36$. Ζευγάρια με άθροισμα 7: $(1,6), (2,5), \dots$`,
+      sol: R`Ευνοϊκά: $(1,6),(2,5),(3,4),(4,3),(5,2),(6,1)$ — 6 περιπτώσεις. $P = \frac{6}{36} = \frac16$.` },
+    { level: 2, type: "fields", q: R`Ρίχνουμε δύο ζάρια. Ποια η πιθανότητα το άθροισμα να είναι <b>τουλάχιστον 10</b>;`,
+      fields: [{ label: "P =", ans: "1/6" }],
+      hint: R`Άθροισμα 10: 3 τρόποι, 11: 2 τρόποι, 12: 1 τρόπος.`,
+      sol: R`$\nu(A) = 3 + 2 + 1 = 6$, άρα $P(A) = \frac{6}{36} = \frac16$.` },
+    { level: 2, type: "fields", q: R`Αν $P(A) = 0{,}5$, $P(B) = 0{,}4$ και $P(A \cap B) = 0{,}2$, να βρείτε:`,
+      fields: [{ label: "P(A ∪ B) =", ans: 0.7 }, { label: "P(A′) =", ans: 0.5 }, { label: "P(κανένα από τα δύο) =", ans: 0.3 }],
+      hint: R`«Κανένα» $= (A \cup B)'$.`,
+      sol: R`$P(A \cup B) = 0{,}5 + 0{,}4 - 0{,}2 = 0{,}7$. $\;P(A') = 1 - 0{,}5 = 0{,}5$. $\;P((A \cup B)') = 1 - 0{,}7 = 0{,}3$.` },
+    { level: 2, type: "fields", q: R`Ρίχνουμε τρία νομίσματα. Ποια η πιθανότητα να φέρουμε <b>τουλάχιστον μία</b> κορώνα;`,
+      fields: [{ label: "P =", ans: "7/8" }],
+      hint: R`Συμπλήρωμα: «καμία κορώνα» = ΓΓΓ.`,
+      sol: R`$\nu(\Omega) = 2^3 = 8$. $P(\text{καμία κορώνα}) = \frac18$, άρα $P = 1 - \frac18 = \frac78$.` },
+    { level: 3, type: "fields", q: R`Ένα κουτί έχει $4$ άσπρες και $6$ μαύρες μπάλες. Παίρνουμε τυχαία $2$ μπάλες μαζί. Ποια η πιθανότητα να είναι και οι δύο άσπρες;`,
+      fields: [{ label: "P =", ans: "2/15" }],
+      hint: R`$\nu(\Omega) = \binom{10}{2}$, $\nu(A) = \binom{4}{2}$.`,
+      sol: R`$P = \frac{\binom42}{\binom{10}{2}} = \frac{6}{45} = \frac{2}{15}$.` },
+    { level: 3, type: "fields", q: R`Γράφουμε τυχαία έναν αναγραμματισμό της λέξης <b>ΜΑΘΗΜΑ</b>. Ποια η πιθανότητα να αρχίζει από Μ;`,
+      fields: [{ label: "P =", ans: "1/3" }],
+      hint: R`Όλοι: $\frac{6!}{2!\,2!} = 180$. Με Μ πρώτο μένουν ΑΘΗΜΑ (δύο Α).`,
+      sol: R`Με Μ πρώτο: $\frac{5!}{2!} = 60$. $\;P = \frac{60}{180} = \frac13$. (Λογικό: 2 από τα 6 γράμματα είναι Μ.)` }
+  ]
+},
+
+/* ───────────────────────────── 3.9 ───────────────────────────── */
+{
+  id: "3.9", unit: 3, title: "Πιθανότητες συνδυασμένων ενδεχομένων",
+  book: "Β΄ Τεύχος §3.9 · Δραστηριότητες σελ. 70, 75 · Ενότητας σελ. 76",
+  theory: R`
+<div class="tbox"><h4>Δεσμευμένη (υπό συνθήκη) πιθανότητα</h4>
+<p>Η πιθανότητα του $A$ <b>δεδομένου ότι</b> έχει πραγματοποιηθεί το $B$ ($P(B) > 0$):</p>
+$$P(A \mid B) = \frac{P(A \cap B)}{P(B)}$$
+<p>Ουσιαστικά ο δειγματικός χώρος «μικραίνει» στο $B$. Από τον τύπο: $\;P(A \cap B) = P(B) \cdot P(A \mid B)$.</p></div>
+<div class="tbox"><h4>Ανεξάρτητα ενδεχόμενα</h4>
+<p>Τα $A, B$ είναι <b>ανεξάρτητα</b> όταν η πραγματοποίηση του ενός δεν επηρεάζει την πιθανότητα του άλλου:</p>
+$$P(A \cap B) = P(A) \cdot P(B) \quad\Leftrightarrow\quad P(A \mid B) = P(A)$$</div>
+<div class="tbox warn"><h4>⚠ Με ή χωρίς επανάθεση;</h4>
+<p><b>Με επανάθεση</b> ⇒ οι επιλογές είναι ανεξάρτητες (ίδιες πιθανότητες κάθε φορά). <b>Χωρίς επανάθεση</b> ⇒ η δεύτερη πιθανότητα αλλάζει: π.χ. $\frac{8}{13} \cdot \frac{7}{12}$.</p>
+<p>Επίσης: ασυμβίβαστα ≠ ανεξάρτητα! Δύο ασυμβίβαστα ενδεχόμενα με θετικές πιθανότητες <b>δεν</b> είναι ποτέ ανεξάρτητα.</p></div>`,
+  widget: "table2",
+  exercises: [
+    { level: 1, type: "fields", q: R`Αν $P(A \cap B) = 0{,}12$ και $P(B) = 0{,}4$, να βρείτε την $P(A \mid B)$.`,
+      fields: [{ label: "P(A|B) =", ans: 0.3 }], hint: R`Ορισμός της δεσμευμένης.`,
+      sol: R`$P(A \mid B) = \frac{0{,}12}{0{,}4} = 0{,}3$.` },
+    { level: 1, type: "fields", q: R`Ρίχνουμε ένα ζάρι και μας λένε ότι ήρθε <b>άρτιος</b> αριθμός. Ποια η πιθανότητα να είναι $6$;`,
+      fields: [{ label: "P =", ans: "1/3" }],
+      hint: R`Ο νέος δειγματικός χώρος είναι $\{2,4,6\}$.`,
+      sol: R`$P(\{6\} \mid \text{άρτιος}) = \frac{1/6}{3/6} = \frac13$.` },
+    { level: 2, type: "fields", q: R`Ένα κουτί έχει $8$ μαύρες και $5$ άσπρες μπάλες. Παίρνουμε δύο μπάλες τη μία μετά την άλλη. Ποια η πιθανότητα να είναι και οι δύο μαύρες:`,
+      fields: [{ label: "χωρίς επανάθεση =", ans: "14/39" }, { label: "με επανάθεση =", ans: "64/169" }],
+      hint: R`$P(M_1 \cap M_2) = P(M_1) \cdot P(M_2 \mid M_1)$.`,
+      sol: R`Χωρίς επανάθεση: $\frac{8}{13} \cdot \frac{7}{12} = \frac{56}{156} = \frac{14}{39}$.<br>Με επανάθεση (ανεξάρτητα): $\left(\frac{8}{13}\right)^2 = \frac{64}{169}$.` },
+    { level: 2, type: "fields", q: R`Τα $A$ και $B$ είναι <b>ανεξάρτητα</b> με $P(A) = 0{,}3$ και $P(B) = 0{,}5$. Να βρείτε:`,
+      fields: [{ label: "P(A ∩ B) =", ans: 0.15 }, { label: "P(A ∪ B) =", ans: 0.65 }],
+      hint: R`Ανεξάρτητα ⇒ $P(A \cap B) = P(A)P(B)$.`,
+      sol: R`$P(A \cap B) = 0{,}3 \cdot 0{,}5 = 0{,}15$. $\;P(A \cup B) = 0{,}3 + 0{,}5 - 0{,}15 = 0{,}65$.` },
+    { level: 3, type: "fields", q: R`Σε σχολείο $100$ μαθητών υπάρχουν $60$ κορίτσια και $40$ αγόρια. Μουσικό όργανο παίζουν $30$ κορίτσια και $10$ αγόρια. Επιλέγουμε τυχαία έναν μαθητή.`,
+      fields: [{ label: "P(όργανο | κορίτσι) =", ans: 0.5 }, { label: "P(κορίτσι | όργανο) =", ans: 0.75 }, { label: "P(όργανο) =", ans: 0.4 }],
+      hint: R`Για το $P(\text{κορίτσι} \mid \text{όργανο})$ ο νέος «κόσμος» είναι οι 40 που παίζουν όργανο.`,
+      sol: R`$P(O \mid K) = \frac{30}{60} = 0{,}5$. $\;P(K \mid O) = \frac{30}{40} = 0{,}75$. $\;P(O) = \frac{40}{100} = 0{,}4$.<br>Αφού $P(O \mid K) = 0{,}5 \ne 0{,}4 = P(O)$, τα ενδεχόμενα <b>δεν είναι ανεξάρτητα</b>: τα κορίτσια παίζουν όργανο συχνότερα.` },
+    { level: 3, type: "fields", q: R`Ένας σκοπευτής πετυχαίνει τον στόχο με πιθανότητα $0{,}8$ σε κάθε βολή, ανεξάρτητα. Ρίχνει $3$ βολές. Ποια η πιθανότητα να πετύχει τον στόχο τουλάχιστον μία φορά;`,
+      fields: [{ label: "P =", ans: 0.992 }],
+      hint: R`Συμπλήρωμα: «αστοχεί και τις 3» με πιθανότητα $0{,}2^3$.`,
+      sol: R`$P(\text{καμία επιτυχία}) = 0{,}2 \cdot 0{,}2 \cdot 0{,}2 = 0{,}008$. Άρα $P = 1 - 0{,}008 = 0{,}992$.` }
+  ]
+},
+
+/* ───────────────────────────── 4.1–4.2 ───────────────────────────── */
+{
+  id: "4.1–4.2", unit: 4, title: "Μέτρα θέσης & διασποράς – Τεταρτημόρια",
+  book: "Β΄ Τεύχος §4.1–4.2 · Δραστηριότητες σελ. 87",
+  theory: R`
+<div class="tbox"><h4>Επανάληψη</h4>
+<ul><li><b>Μέση τιμή</b>: $\bar{x} = \frac{x_1 + x_2 + \dots + x_\nu}{\nu}$ · <b>Επικρατούσα</b>: η τιμή με τη μεγαλύτερη συχνότητα.</li>
+<li><b>Διάμεσος</b> $Q_2$: σε διατεταγμένα δεδομένα, η μεσαία τιμή (ν περιττός) ή το ημιάθροισμα των δύο μεσαίων (ν άρτιος).</li>
+<li><b>Εύρος</b> = μέγιστη − ελάχιστη τιμή.</li>
+<li><b>Διασπορά</b> $s^2 = \frac{(x_1 - \bar x)^2 + \dots + (x_\nu - \bar x)^2}{\nu}$ · <b>Τυπική απόκλιση</b> $s = \sqrt{s^2}$.</li></ul></div>
+<div class="tbox"><h4>Τεταρτημόρια (μέθοδος του βιβλίου)</h4>
+<ol><li>Κατατάσσουμε τα δεδομένα σε αύξουσα σειρά και βρίσκουμε τη διάμεσο $Q_2$.</li>
+<li>Αν το πλήθος είναι <b>περιττό</b>, <b>αφαιρούμε</b> τη διάμεσο από τα δεδομένα.</li>
+<li>$Q_1$ = διάμεσος του <b>πρώτου μισού</b>, $\;Q_3$ = διάμεσος του <b>δεύτερου μισού</b>.</li></ol></div>
+<div class="tbox tip"><h4>Ενδοτεταρτημοριακό εύρος</h4>
+$$IQR = Q_3 - Q_1$$
+<p>Περιλαμβάνει το «μεσαίο» 50% των παρατηρήσεων και — σε αντίθεση με το εύρος και την τυπική απόκλιση — <b>δεν επηρεάζεται από ακραίες τιμές</b>.</p></div>`,
+  widget: "quart",
+  gen: "gquart",
+  exercises: [
+    { level: 1, type: "fields", q: R`Για τα δεδομένα $2, 4, 6, 8, 10$ να βρείτε τη μέση τιμή, τη διασπορά και την τυπική απόκλιση.`,
+      fields: [{ label: "x̄ =", ans: 6 }, { label: "s² =", ans: 8 }, { label: "s (2 δεκαδικά ή √) =", ans: "sqrt(8)", tol: 0.003 }],
+      hint: R`Αποκλίσεις από τη μέση τιμή: $-4, -2, 0, 2, 4$.`,
+      sol: R`$\bar x = \frac{30}{5} = 6$. $\;s^2 = \frac{16 + 4 + 0 + 4 + 16}{5} = 8$. $\;s = \sqrt8 = 2\sqrt2 \approx 2{,}83$.` },
+    { level: 1, type: "mc", q: R`Ποιο μέτρο διασποράς <b>δεν</b> επηρεάζεται από ακραίες τιμές;`,
+      options: ["Το εύρος", "Η τυπική απόκλιση", "Το ενδοτεταρτημοριακό εύρος", "Η διασπορά"], correct: 2,
+      hint: R`Ποιο μέτρο κοιτάζει μόνο το «μεσαίο» 50%;`,
+      sol: R`Το $IQR = Q_3 - Q_1$ αγνοεί το κατώτερο και το ανώτερο 25% των τιμών, άρα δεν επηρεάζεται από ακραίες τιμές.` },
+    { level: 2, type: "fields", q: R`Δεδομένα ($\nu = 9$): <b>3, 7, 8, 5, 12, 14, 21, 13, 18</b>. Να βρείτε:`,
+      fields: [{ label: "Q₂ (διάμεσος) =", ans: 12 }, { label: "Q₁ =", ans: 6 }, { label: "Q₃ =", ans: 16 }, { label: "IQR =", ans: 10 }],
+      hint: R`Διάταξη: $3, 5, 7, 8, \mathbf{12}, 13, 14, 18, 21$. Περιττό πλήθος ⇒ αφαιρούμε το 12.`,
+      sol: R`Διατεταγμένα: $3, 5, 7, 8, \mathbf{12}, 13, 14, 18, 21$ ⇒ $Q_2 = 12$.<br>Πρώτο μισό $3, 5, 7, 8$ ⇒ $Q_1 = \frac{5+7}{2} = 6$. Δεύτερο μισό $13, 14, 18, 21$ ⇒ $Q_3 = \frac{14+18}{2} = 16$.<br>$IQR = 16 - 6 = 10$.` },
+    { level: 2, type: "fields", q: R`Δεδομένα ($\nu = 8$): <b>2, 4, 4, 5, 7, 9, 10, 12</b>. Να βρείτε:`,
+      fields: [{ label: "Q₂ =", ans: 6 }, { label: "Q₁ =", ans: 4 }, { label: "Q₃ =", ans: 9.5 }, { label: "IQR =", ans: 5.5 }],
+      hint: R`Άρτιο πλήθος: τα μισά είναι $2,4,4,5$ και $7,9,10,12$.`,
+      sol: R`$Q_2 = \frac{5+7}{2} = 6$. $\;Q_1 = \frac{4+4}{2} = 4$. $\;Q_3 = \frac{9+10}{2} = 9{,}5$. $\;IQR = 5{,}5$.` },
+    { level: 2, type: "fields", q: R`Οι βαθμοί $11$ μαθητών: <b>15, 22, 8, 19, 30, 11, 25, 17, 13, 28, 20</b>. Να βρείτε:`,
+      fields: [{ label: "Q₂ =", ans: 19 }, { label: "Q₁ =", ans: 13 }, { label: "Q₃ =", ans: 25 }, { label: "IQR =", ans: 12 }],
+      hint: R`Διάταξη: $8, 11, 13, 15, 17, \mathbf{19}, 20, 22, 25, 28, 30$.`,
+      sol: R`$Q_2 = 19$ (6η τιμή). Αφαιρώντας τη: πρώτο μισό $8, 11, \mathbf{13}, 15, 17$ ⇒ $Q_1 = 13$· δεύτερο μισό $20, 22, \mathbf{25}, 28, 30$ ⇒ $Q_3 = 25$. $\;IQR = 12$.` },
+    { level: 2, type: "fields", q: R`Η μέση τιμή $5$ αριθμών είναι $12$. Προσθέτουμε έναν έκτο αριθμό και η νέα μέση τιμή γίνεται $13$. Ποιος είναι ο αριθμός;`,
+      fields: [{ label: "αριθμός =", ans: 18 }],
+      hint: R`Άθροισμα πριν: $5 \cdot 12$. Άθροισμα μετά: $6 \cdot 13$.`,
+      sol: R`$6 \cdot 13 - 5 \cdot 12 = 78 - 60 = 18$.` }
+  ]
+},
+
+/* ───────────────────────────── 4.3 ───────────────────────────── */
+{
+  id: "4.3", unit: 4, title: "Συσχέτιση – Συντελεστής συσχέτισης",
+  book: "Β΄ Τεύχος §4.3 · Δραστηριότητες σελ. 100 · Ενότητας σελ. 102",
+  theory: R`
+<div class="tbox"><h4>Διάγραμμα διασποράς</h4>
+<p>Σημειώνουμε τα ζεύγη $(x_i, y_i)$ στο επίπεδο. Αν τα σημεία «ακολουθούν» μια ευθεία:</p>
+<ul><li><b>Θετική</b> συσχέτιση: όσο αυξάνεται το $x$, αυξάνεται και το $y$ (ανεβαίνει).</li>
+<li><b>Αρνητική</b>: όσο αυξάνεται το $x$, μειώνεται το $y$.</li>
+<li><b>Ισχυρή</b> / <b>ασθενής</b>: τα σημεία είναι κοντά / μακριά από την ευθεία· <b>τέλεια</b>: όλα πάνω της.</li></ul></div>
+<div class="tbox"><h4>Συντελεστής συσχέτισης $r$</h4>
+$$r = \frac{\Sigma_{xy} - \nu\,\bar x\,\bar y}{\nu\, s_x\, s_y}, \qquad \Sigma_{xy} = x_1 y_1 + x_2 y_2 + \dots + x_\nu y_\nu$$
+<p>όπου $s_x, s_y$ οι τυπικές αποκλίσεις. Πάντα $-1 \le r \le 1$ και δεν έχει μονάδες.</p>
+<ul><li>$r = 1$ / $r = -1$: τέλεια θετική / αρνητική γραμμική συσχέτιση · $r = 0$: καμία γραμμική.</li>
+<li>$r > 0{,}7$: ένδειξη <b>ισχυρής θετικής</b> · $-1 \le r \le -0{,}7$: <b>ισχυρής αρνητικής</b>.</li></ul></div>
+<div class="tbox warn"><h4>⚠ Συσχέτιση ≠ αιτία</h4>
+<p>Ισχυρή συσχέτιση δεν σημαίνει ότι το ένα <b>προκαλεί</b> το άλλο — μπορεί και τα δύο να εξαρτώνται από έναν τρίτο παράγοντα.</p></div>`,
+  widget: "scatter",
+  exercises: [
+    { level: 1, type: "mc", q: R`Για δύο μεταβλητές βρέθηκε $r = -0{,}95$. Αυτό σημαίνει:`,
+      options: ["ασθενή θετική συσχέτιση", "ισχυρή αρνητική γραμμική συσχέτιση", "καμία συσχέτιση", "ότι έγινε λάθος στις πράξεις"], correct: 1,
+      hint: R`Πρόσημο ⇒ φορά, απόλυτη τιμή ⇒ ισχύς.`,
+      sol: R`Αρνητικό πρόσημο ⇒ όσο αυξάνεται το $x$ μειώνεται το $y$. $|r| = 0{,}95$ κοντά στο 1 ⇒ <b>ισχυρή αρνητική</b>.` },
+    { level: 1, type: "mc", q: R`Ποια τιμή <b>δεν</b> μπορεί να είναι συντελεστής συσχέτισης;`,
+      options: ["$r = 0$", "$r = -1$", "$r = 0{,}99$", "$r = 1{,}2$"], correct: 3,
+      hint: R`Σε ποιο διάστημα ανήκει πάντα το $r$;`,
+      sol: R`Πάντα $-1 \le r \le 1$, άρα το $1{,}2$ είναι αδύνατο.` },
+    { level: 1, type: "fields", q: R`Για τα ζεύγη $(1,3), (2,5), (3,7), (4,9)$ πόσος είναι ο συντελεστής συσχέτισης;`,
+      fields: [{ label: "r =", ans: 1 }],
+      hint: R`Κοίτα αν τα σημεία βρίσκονται σε ευθεία: $y = 2x + 1$;`,
+      sol: R`Όλα τα σημεία ικανοποιούν $y = 2x + 1$ (ευθεία με θετική κλίση) ⇒ τέλεια θετική συσχέτιση, $r = 1$.` },
+    { level: 2, type: "fields", q: R`Να υπολογίσετε τον $r$ για $x$: $1, 2, 3, 4, 5$ και $y$: $2, 4, 5, 4, 5$ (στρογγυλοποίηση 2 δεκαδικών).`,
+      fields: [{ label: "x̄ =", ans: 3 }, { label: "ȳ =", ans: 4 }, { label: "Σxy =", ans: 66 }, { label: "r ≈", ans: 0.7746, tol: 0.008 }],
+      hint: R`$s_x = \sqrt{2}$, $s_y = \sqrt{1{,}2}$.`,
+      sol: R`$\bar x = 3$, $\bar y = 4$, $\Sigma_{xy} = 2 + 8 + 15 + 16 + 25 = 66$.<br>$s_x^2 = \frac{4+1+0+1+4}{5} = 2$, $\;s_y^2 = \frac{4+0+1+0+1}{5} = 1{,}2$.<br>$r = \frac{66 - 5 \cdot 3 \cdot 4}{5 \sqrt{2}\sqrt{1{,}2}} = \frac{6}{7{,}746} \approx 0{,}77$ ⇒ ισχυρή θετική (πάνω από $0{,}7$).` },
+    { level: 2, type: "fields", q: R`Ώρες μελέτης $x$: $1, 2, 3, 4, 5, 6$ και βαθμός $y$: $9, 11, 12, 14, 15, 18$. Να υπολογίσετε τον $r$ (2 δεκαδικά).`,
+      fields: [{ label: "Σxy =", ans: 306 }, { label: "r ≈", ans: 0.989, tol: 0.008 }],
+      hint: R`$\bar x = 3{,}5$, $\bar y = \frac{79}{6}$, $s_x \approx 1{,}708$, $s_y \approx 2{,}911$.`,
+      sol: R`$\Sigma_{xy} = 9 + 22 + 36 + 56 + 75 + 108 = 306$, $\bar x = 3{,}5$, $\bar y = \frac{79}{6} \approx 13{,}17$.<br>$s_x \approx 1{,}708$, $s_y \approx 2{,}911$. $\;r = \frac{306 - 6 \cdot 3{,}5 \cdot \frac{79}{6}}{6 \cdot 1{,}708 \cdot 2{,}911} = \frac{29{,}5}{29{,}83} \approx 0{,}99$ ⇒ πολύ ισχυρή θετική.` },
+    { level: 3, type: "mc", q: R`Σε μια πόλη βρέθηκε $r = 0{,}85$ μεταξύ των πωλήσεων παγωτού και του αριθμού πνιγμών ανά μήνα. Ποιο συμπέρασμα είναι σωστό;`,
+      options: ["Το παγωτό προκαλεί πνιγμούς", "Υπάρχει ισχυρή θετική συσχέτιση, πιθανότατα λόγω τρίτου παράγοντα (ζέστη/καλοκαίρι)", "Δεν υπάρχει συσχέτιση", "Οι πνιγμοί αυξάνουν τις πωλήσεις παγωτού"], correct: 1,
+      hint: R`Τι αυξάνεται το καλοκαίρι;`,
+      sol: R`Το $r = 0{,}85$ δείχνει ισχυρή θετική γραμμική συσχέτιση, όχι αιτιότητα. Και τα δύο αυξάνονται τους ζεστούς μήνες (περισσότερο κολύμπι, περισσότερο παγωτό).` }
+  ]
+},
+
+/* ───────────────────────────── 5.1–5.2 (α) ───────────────────────────── */
+{
+  id: "5.1–5.2α", unit: 5, title: "Κύλινδρος – Κώνος",
+  book: "Β΄ Τεύχος §5.1, 5.2.1–5.2.2 · Δραστηριότητες σελ. 113",
+  theory: R`
+<div class="tbox"><h4>Στερεά από περιστροφή</h4>
+<p>Όταν ένα επίπεδο σχήμα κάνει πλήρη περιστροφή γύρω από έναν <b>άξονα</b>, παράγεται στερεό. Ορθογώνιο ⇒ <b>κύλινδρος</b>, ορθογώνιο τρίγωνο (γύρω από κάθετη πλευρά) ⇒ <b>κώνος</b>.</p></div>
+<div class="tbox"><h4>Κύλινδρος (ακτίνα $R$, ύψος $\upsilon$)</h4>
+$$E_\kappa = 2\pi R\upsilon, \qquad E_{o\lambda} = 2\pi R\upsilon + 2\pi R^2 = 2\pi R(R + \upsilon), \qquad V = \pi R^2 \upsilon$$
+<p>$E_\kappa$: κυρτή (παράπλευρη) επιφάνεια — «ξετυλίγεται» σε ορθογώνιο $2\pi R \times \upsilon$.</p></div>
+<div class="tbox"><h4>Κώνος (ακτίνα $R$, ύψος $\upsilon$, γενέτειρα $\lambda$)</h4>
+$$\lambda^2 = R^2 + \upsilon^2, \qquad E_\kappa = \pi R\lambda, \qquad E_{o\lambda} = \pi R(R + \lambda), \qquad V = \frac{1}{3}\pi R^2 \upsilon$$
+<p>Ο κώνος έχει το $\frac13$ του όγκου του κυλίνδρου με ίδια βάση και ύψος.</p></div>
+<div class="tbox tip"><h4>Απαντήσεις με π</h4><p>Γράφε τα αποτελέσματα ως πολλαπλάσια του $\pi$, π.χ. <code>45π</code> ή <code>45pi</code>.</p></div>`,
+  widget: "solid",
+  gen: "gsolid",
+  exercises: [
+    { level: 1, type: "fields", q: R`Κύλινδρος με $R = 3$ cm και $\upsilon = 5$ cm. Να βρείτε:`,
+      fields: [{ label: "E_κ (cm²) =", ans: "30pi" }, { label: "E_ολ (cm²) =", ans: "48pi" }, { label: "V (cm³) =", ans: "45pi" }],
+      hint: R`$E_\kappa = 2\pi R\upsilon$, $V = \pi R^2\upsilon$.`,
+      sol: R`$E_\kappa = 2\pi \cdot 3 \cdot 5 = 30\pi$. $\;E_{o\lambda} = 30\pi + 2\pi \cdot 9 = 48\pi$. $\;V = \pi \cdot 9 \cdot 5 = 45\pi$ cm³.` },
+    { level: 1, type: "fields", q: R`Κώνος με $R = 3$ cm και $\upsilon = 4$ cm. Να βρείτε:`,
+      fields: [{ label: "λ (cm) =", ans: 5 }, { label: "E_κ =", ans: "15pi" }, { label: "E_ολ =", ans: "24pi" }, { label: "V =", ans: "12pi" }],
+      hint: R`Πυθαγόρειο: $\lambda^2 = 9 + 16$.`,
+      sol: R`$\lambda = \sqrt{9 + 16} = 5$. $\;E_\kappa = \pi \cdot 3 \cdot 5 = 15\pi$. $\;E_{o\lambda} = 15\pi + 9\pi = 24\pi$. $\;V = \frac13 \pi \cdot 9 \cdot 4 = 12\pi$.` },
+    { level: 2, type: "fields", q: R`Ένας κύλινδρος έχει όγκο $72\pi$ cm³ και ακτίνα $3$ cm. Πόσο είναι το ύψος του;`,
+      fields: [{ label: "υ (cm) =", ans: 8 }],
+      hint: R`$\pi \cdot 3^2 \cdot \upsilon = 72\pi$.`,
+      sol: R`$9\pi\upsilon = 72\pi \Rightarrow \upsilon = 8$ cm.` },
+    { level: 2, type: "fields", q: R`Ορθογώνιο με πλευρές $4$ cm και $6$ cm περιστρέφεται γύρω από την πλευρά των $6$ cm. Ποιος είναι ο όγκος του στερεού;`,
+      fields: [{ label: "V (cm³) =", ans: "96pi" }],
+      hint: R`Η πλευρά-άξονας γίνεται ύψος, η άλλη ακτίνα.`,
+      sol: R`Προκύπτει κύλινδρος με $\upsilon = 6$, $R = 4$: $V = \pi \cdot 16 \cdot 6 = 96\pi$ cm³.` },
+    { level: 2, type: "mc", q: R`Αν <b>διπλασιάσουμε την ακτίνα</b> ενός κυλίνδρου (ίδιο ύψος), ο όγκος:`,
+      options: ["διπλασιάζεται", "τετραπλασιάζεται", "οκταπλασιάζεται", "μένει ίδιος"], correct: 1,
+      hint: R`Στον τύπο το $R$ είναι στο τετράγωνο.`,
+      sol: R`$V' = \pi (2R)^2 \upsilon = 4\pi R^2\upsilon = 4V$ — τετραπλασιάζεται.` },
+    { level: 3, type: "fields", q: R`Κώνος έχει $E_\kappa = 65\pi$ cm² και ακτίνα $R = 5$ cm. Να βρείτε τη γενέτειρα, το ύψος και τον όγκο.`,
+      fields: [{ label: "λ =", ans: 13 }, { label: "υ =", ans: 12 }, { label: "V =", ans: "100pi" }],
+      hint: R`$\pi \cdot 5 \cdot \lambda = 65\pi$. Μετά Πυθαγόρειο για το $\upsilon$.`,
+      sol: R`$5\lambda = 65 \Rightarrow \lambda = 13$. $\;\upsilon = \sqrt{169 - 25} = 12$. $\;V = \frac13 \pi \cdot 25 \cdot 12 = 100\pi$ cm³.` }
+  ]
+},
+
+/* ───────────────────────────── 5.2 (β) ───────────────────────────── */
+{
+  id: "5.2β", unit: 5, title: "Κόλουρος κώνος – Σφαίρα – Περιστροφή",
+  book: "Β΄ Τεύχος §5.2.3–5.2.5 · Δραστηριότητες σελ. 121 · Ενότητας σελ. 122",
+  theory: R`
+<div class="tbox"><h4>Κόλουρος κώνος (ακτίνες $R$, $\rho$, ύψος $\upsilon$, γενέτειρα $\lambda$)</h4>
+<p>Προκύπτει από περιστροφή <b>ορθογωνίου τραπεζίου</b> γύρω από την πλευρά που είναι κάθετη στις βάσεις.</p>
+$$\lambda^2 = \upsilon^2 + (R - \rho)^2, \qquad E_\kappa = \pi(R + \rho)\lambda, \qquad E_{o\lambda} = E_\kappa + \pi R^2 + \pi\rho^2$$
+$$V = \frac{\pi\upsilon}{3}\left(R^2 + R\rho + \rho^2\right)$$</div>
+<div class="tbox"><h4>Σφαίρα (ακτίνα $R$)</h4>
+<p>Προκύπτει από περιστροφή κύκλου γύρω από μια διάμετρό του.</p>
+$$E = 4\pi R^2, \qquad V = \frac{4}{3}\pi R^3$$</div>
+<div class="tbox tip"><h4>Περιστροφή σχημάτων</h4>
+<p>Βήμα 1: εντόπισε ποια πλευρά είναι ο <b>άξονας</b> (γίνεται ύψος). Βήμα 2: οι πλευρές κάθετες στον άξονα γίνονται <b>ακτίνες</b>. Βήμα 3: σύνθετα σχήματα → άθροισμα/διαφορά στερεών.</p></div>`,
+  widget: "solid",
+  gen: "gsolid",
+  exercises: [
+    { level: 1, type: "fields", q: R`Σφαίρα με ακτίνα $R = 3$ cm. Να βρείτε το εμβαδόν της επιφάνειας και τον όγκο.`,
+      fields: [{ label: "E (cm²) =", ans: "36pi" }, { label: "V (cm³) =", ans: "36pi" }],
+      hint: R`$E = 4\pi R^2$, $V = \frac43\pi R^3$.`,
+      sol: R`$E = 4\pi \cdot 9 = 36\pi$. $\;V = \frac43 \pi \cdot 27 = 36\pi$. (Για $R = 3$ οι αριθμοί συμπίπτουν — οι μονάδες όχι!)` },
+    { level: 2, type: "fields", q: R`Μια σφαίρα έχει εμβαδόν επιφάνειας $100\pi$ cm². Να βρείτε την ακτίνα και τον όγκο της.`,
+      fields: [{ label: "R =", ans: 5 }, { label: "V =", ans: "500pi/3" }],
+      hint: R`$4\pi R^2 = 100\pi$.`,
+      sol: R`$R^2 = 25 \Rightarrow R = 5$. $\;V = \frac43 \pi \cdot 125 = \frac{500\pi}{3}$ cm³.` },
+    { level: 2, type: "fields", q: R`Κόλουρος κώνος με $R = 6$ cm, $\rho = 3$ cm και $\upsilon = 4$ cm. Να βρείτε:`,
+      fields: [{ label: "λ =", ans: 5 }, { label: "E_κ =", ans: "45pi" }, { label: "V =", ans: "84pi" }],
+      hint: R`$\lambda^2 = 4^2 + (6-3)^2$.`,
+      sol: R`$\lambda = \sqrt{16 + 9} = 5$. $\;E_\kappa = \pi(6 + 3) \cdot 5 = 45\pi$.<br>$V = \frac{4\pi}{3}(36 + 18 + 9) = \frac{4\pi}{3} \cdot 63 = 84\pi$ cm³.` },
+    { level: 2, type: "fields", q: R`Ορθογώνιο τρίγωνο με κάθετες πλευρές $6$ cm και $8$ cm περιστρέφεται γύρω από την πλευρά των $8$ cm. Να βρείτε τη γενέτειρα και τον όγκο του στερεού.`,
+      fields: [{ label: "λ =", ans: 10 }, { label: "V =", ans: "96pi" }],
+      hint: R`Κώνος με $\upsilon = 8$ (ο άξονας) και $R = 6$.`,
+      sol: R`Κώνος: $\upsilon = 8$, $R = 6$, $\lambda = \sqrt{36 + 64} = 10$ (η υποτείνουσα). $\;V = \frac13 \pi \cdot 36 \cdot 8 = 96\pi$ cm³.` },
+    { level: 3, type: "fields", q: R`Ορθογώνιο τραπέζιο έχει βάσεις $5$ cm και $2$ cm και ύψος (την κάθετη πλευρά) $4$ cm. Περιστρέφεται γύρω από την κάθετη πλευρά. Να βρείτε τη γενέτειρα και τον όγκο.`,
+      fields: [{ label: "λ =", ans: 5 }, { label: "V =", ans: "52pi" }],
+      hint: R`Κόλουρος κώνος με $R = 5$, $\rho = 2$, $\upsilon = 4$.`,
+      sol: R`$\lambda = \sqrt{16 + (5-2)^2} = 5$. $\;V = \frac{4\pi}{3}(25 + 10 + 4) = \frac{4\pi}{3} \cdot 39 = 52\pi$ cm³.` },
+    { level: 3, type: "fields", q: R`Κυλινδρικό δοχείο με $R = 3$ cm και $\upsilon = 10$ cm είναι γεμάτο νερό. Βυθίζουμε μια μπάλα ακτίνας $3$ cm. Πόσο νερό χύνεται και πόσο μένει στο δοχείο;`,
+      fields: [{ label: "χύνεται (cm³) =", ans: "36pi" }, { label: "μένει (cm³) =", ans: "54pi" }],
+      hint: R`Χύνεται όσο ο όγκος της μπάλας (χωράει ακριβώς: διάμετρος 6).`,
+      sol: R`Χύνεται $V_\sigma = \frac43\pi \cdot 27 = 36\pi$. Δοχείο: $V_\kappa = \pi \cdot 9 \cdot 10 = 90\pi$. Μένει $90\pi - 36\pi = 54\pi$ cm³.` }
+  ]
+}
+];
+
+</script>
+<script>
+/* ================= Βοηθητικά Β΄ τεύχους ================= */
+const fact = n => { let r = 1; for (let i = 2; i <= n; i++) r *= i; return r; };
+const nPk = (n, k) => k > n ? 0 : fact(n) / fact(n - k);
+const nCk = (n, k) => k > n ? 0 : Math.round(fact(n) / (fact(k) * fact(n - k)));
+const gcd = (a, b) => { a = Math.abs(a); b = Math.abs(b); while (b) [a, b] = [b, a % b]; return a || 1; };
+const frac = (a, b) => { const g = gcd(a, b); return [a / g, b / g]; };
+const fracS = (a, b) => { const [p, q] = frac(a, b); return q === 1 ? `${p}` : `${p}/${q}`; };
+const fracT = (a, b) => { const [p, q] = frac(a, b); return q === 1 ? `${p}` : `\\frac{${p}}{${q}}`; };
+const piT = (a, b = 1) => { const [p, q] = frac(a, b); return q === 1 ? `${p}\\pi` : `\\frac{${p}\\pi}{${q}}`; };
+const median = arr => { const n = arr.length, m = Math.floor(n / 2); return n % 2 ? arr[m] : (arr[m - 1] + arr[m]) / 2; };
+function quartiles(data) {
+  const d = [...data].sort((a, b) => a - b), n = d.length;
+  const lo = d.slice(0, Math.floor(n / 2)), hi = d.slice(Math.ceil(n / 2));
+  return { d, lo, hi, q1: median(lo), q2: median(d), q3: median(hi) };
+}
+function stats(xs) { const n = xs.length, m = xs.reduce((a, b) => a + b, 0) / n, v = xs.reduce((a, x) => a + (x - m) ** 2, 0) / n; return { n, m, v, s: Math.sqrt(v) }; }
+function corr(xs, ys) {
+  const n = xs.length, X = stats(xs), Y = stats(ys), sxy = xs.reduce((a, x, i) => a + x * ys[i], 0);
+  return { r: (sxy - n * X.m * Y.m) / (n * X.s * Y.s), sxy, X, Y };
+}
+function rLabel(r) {
+  if (!isFinite(r)) return "δεν ορίζεται (σταθερή μεταβλητή)";
+  const a = Math.abs(r);
+  if (a > 0.9999) return r > 0 ? "τέλεια θετική" : "τέλεια αρνητική";
+  if (a < 0.05) return "μηδενική (καμία γραμμική)";
+  if (a > 0.7) return r > 0 ? "ισχυρή θετική" : "ισχυρή αρνητική";
+  return r > 0 ? "ασθενής θετική" : "ασθενής αρνητική";
+}
+const LET = ["Α", "Β", "Γ", "Δ", "Ε", "Ζ", "Η", "Θ"];
+
+/* ================= Widgets ================= */
+const WIDGETS = {
+  venn(box) {
+    const ops = [
+      ["A ∪ B", [1, 1, 1, 0]], ["A ∩ B", [0, 1, 0, 0]], ["A − B", [1, 0, 0, 0]], ["B − A", [0, 0, 1, 0]],
+      ["A′", [0, 0, 1, 1]], ["(A ∪ B)′", [0, 0, 0, 1]], ["(A ∩ B)′", [1, 0, 1, 1]], ["A′ ∪ B′", [1, 0, 1, 1]], ["A′ ∩ B′", [0, 0, 0, 1]]];
+    box.innerHTML = `<div class="wctl chips">${ops.map((o, i) => `<button class="chip" data-i="${i}">${o[0]}</button>`).join("")}</div>
+      <div class="two"><div class="vsvg"></div><div>
+      <div class="wctl col"><label>ν(Ω) <input type="range" class="rO" min="10" max="60" value="40"><b class="vO"></b></label>
+      <label>ν(A) <input type="range" class="rA" min="0" max="30" value="18"><b class="vA"></b></label>
+      <label>ν(B) <input type="range" class="rB" min="0" max="30" value="12"><b class="vB"></b></label>
+      <label>ν(A∩B) <input type="range" class="rX" min="0" max="30" value="5"><b class="vX"></b></label></div></div></div><div class="wout"></div>`;
+    let cur = 0;
+    const g = (c) => $(c, box);
+    function draw() {
+      let O = +g(".rO").value, A = +g(".rA").value, B = +g(".rB").value, X = +g(".rX").value;
+      X = Math.min(X, A, B); g(".rX").value = X;
+      if (A + B - X > O) { O = A + B - X; g(".rO").value = O; }
+      [["O", O], ["A", A], ["B", B], ["X", X]].forEach(([k, v]) => g(".v" + k).textContent = v);
+      const cnt = [A - X, X, B - X, O - (A + B - X)], on = ops[cur][1], uid = "v" + Math.random().toString(36).slice(2, 7);
+      const reg = i => on[i] ? "var(--blue)" : "transparent";
+      g(".vsvg").innerHTML = `<svg viewBox="0 0 320 210" class="plot"><defs>
+        <clipPath id="${uid}a"><circle cx="125" cy="108" r="70"/></clipPath>
+        <mask id="${uid}nb"><rect width="320" height="210" fill="#fff"/><circle cx="195" cy="108" r="70" fill="#000"/></mask>
+        <mask id="${uid}na"><rect width="320" height="210" fill="#fff"/><circle cx="125" cy="108" r="70" fill="#000"/></mask>
+        <mask id="${uid}no"><rect width="320" height="210" fill="#fff"/><circle cx="125" cy="108" r="70" fill="#000"/><circle cx="195" cy="108" r="70" fill="#000"/></mask></defs>
+        <rect x="6" y="6" width="308" height="198" rx="10" fill="${reg(3)}" fill-opacity=".28" mask="url(#${uid}no)" stroke="var(--navy)"/>
+        <circle cx="125" cy="108" r="70" fill="${reg(0)}" fill-opacity=".38" mask="url(#${uid}nb)"/>
+        <circle cx="195" cy="108" r="70" fill="${reg(2)}" fill-opacity=".38" mask="url(#${uid}na)"/>
+        <circle cx="195" cy="108" r="70" fill="${reg(1)}" fill-opacity=".55" clip-path="url(#${uid}a)"/>
+        <circle cx="125" cy="108" r="70" fill="none" stroke="var(--navy)" stroke-width="2"/><circle cx="195" cy="108" r="70" fill="none" stroke="var(--navy)" stroke-width="2"/>
+        <text x="70" y="45" class="lbl d2">A</text><text x="243" y="45" class="lbl d2">B</text><text x="20" y="28" class="lbl d2">Ω</text>
+        <text x="95" y="113" class="vnum">${cnt[0]}</text><text x="160" y="113" class="vnum">${cnt[1]}</text><text x="225" y="113" class="vnum">${cnt[2]}</text><text x="280" y="190" class="vnum">${cnt[3]}</text></svg>`;
+      const val = cnt.reduce((a, c, i) => a + (on[i] ? c : 0), 0);
+      g(".wout").innerHTML = `<b>${ops[cur][0]}</b>: ν = <b>${val}</b> &nbsp;·&nbsp; Αρχή εγκλεισμού–αποκλεισμού: ν(A ∪ B) = ${A} + ${B} − ${X} = <b>${A + B - X}</b>
+        <br><span class="muted">Σύγκρινε (A ∪ B)′ με A′ ∩ B′ και (A ∩ B)′ με A′ ∪ B′ — νόμοι De Morgan!</span>`;
+      box.querySelectorAll(".chip").forEach((c, i) => c.classList.toggle("on", i === cur));
+    }
+    box.querySelectorAll(".chip").forEach(c => c.onclick = () => { cur = +c.dataset.i; draw(); });
+    box.querySelectorAll("input").forEach(i => i.oninput = draw); draw();
+  },
+
+  tree(box) {
+    box.innerHTML = `<div class="wctl"><label>Φάση 1 (π.χ. ορεκτικά) <input type="range" class="s1" min="1" max="4" value="3"><b class="v1"></b></label>
+      <label>Φάση 2 (κυρίως) <input type="range" class="s2" min="1" max="4" value="2"><b class="v2"></b></label>
+      <label>Φάση 3 (επιδόρπια) <input type="range" class="s3" min="1" max="3" value="2"><b class="v3"></b></label></div>
+      <div class="tsvg"></div><div class="wout"></div>`;
+    function draw() {
+      const n = [1, 2, 3].map(i => +$(".s" + i, box).value); n.forEach((v, i) => $(".v" + (i + 1), box).textContent = v);
+      const leaves = n[0] * n[1] * n[2], W = 640, H = Math.max(160, leaves * 11 + 20), cols = [30, 200, 380, 560];
+      let s = `<svg viewBox="0 0 ${W} ${H}" class="plot">`;
+      const ly = i => 10 + (i + 0.5) * (H - 20) / leaves;
+      let leaf = 0;
+      (function walk(level, y0, path) {
+        if (level === 3) { s += `<circle cx="${cols[3]}" cy="${y0}" r="3.5" class="dot dmin"/>` + (leaves <= 24 ? `<text x="${cols[3] + 8}" y="${y0 + 4}" class="tick">${path}</text>` : ""); return; }
+        const span = n.slice(level + 1).reduce((a, b) => a * b, 1);
+        for (let k = 0; k < n[level]; k++) {
+          const start = leaf, yc = (ly(start) + ly(start + span - 1)) / 2;
+          s += `<line x1="${cols[level]}" y1="${y0}" x2="${cols[level + 1]}" y2="${yc}" stroke="${["#2E75B6", "#6F42C1", "#C77A0A"][level]}" stroke-width="1.6"/>`;
+          if (level === 2) { walk(3, yc, path + "ε" + (k + 1)); leaf++; } else walk(level + 1, yc, path + ["α", "κ"][level] + (k + 1) + "·");
+        }
+      })(0, H / 2, "");
+      s += `<circle cx="${cols[0]}" cy="${H / 2}" r="5" class="dot d2"/></svg>`;
+      $(".tsvg", box).innerHTML = s;
+      $(".wout", box).innerHTML = `Κάθε «κλαδί» από την αρχή ως το τέλος είναι ένα γεύμα. Τελικά σημεία: <b>${n[0]} · ${n[1]} · ${n[2]} = ${leaves}</b> — πολλαπλασιαστική αρχή!`;
+    }
+    box.querySelectorAll("input").forEach(i => i.oninput = draw); draw();
+  },
+
+  comb(box) {
+    const T = [
+      ["perm", "Μεταθέσεις Μ_ν = ν!"], ["circ", "Κυκλικές Κ_ν = (ν−1)!"], ["arr", "Διατάξεις Δ^ν_κ"],
+      ["rarr", "Επαναληπτικές διατάξεις ν^κ"], ["comb", "Συνδυασμοί C(ν, κ)"], ["word", "Αναγραμματισμοί λέξης"]];
+    box.innerHTML = `<div class="wctl"><label>Είδος <select class="ty">${T.map(t => `<option value="${t[0]}">${t[1]}</option>`).join("")}</select></label>
+      <label class="nl">ν <input type="range" class="rn" min="1" max="8" value="4"><b class="vn"></b></label>
+      <label class="kl">κ <input type="range" class="rk" min="0" max="8" value="2"><b class="vk"></b></label>
+      <label class="wl">λέξη <input type="text" class="wd" value="ΚΑΚΑΟ" maxlength="9" style="width:120px;font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--line)"></label></div>
+      <div class="cform"></div><div class="clist"></div>`;
+    const ty = $(".ty", box), rn = $(".rn", box), rk = $(".rk", box), wd = $(".wd", box);
+    function gen(items, k, rep, ordered) {
+      const out = [];
+      (function rec(cur, start, used) {
+        if (out.length > 400) return;
+        if (cur.length === k) { out.push(cur.join("")); return; }
+        for (let i = ordered ? 0 : start; i < items.length; i++) {
+          if (!rep && used[i]) continue;
+          used[i] = true; rec([...cur, items[i]], rep ? i : i + 1, used); used[i] = false;
+        }
+      })([], 0, []);
+      return out;
+    }
+    function draw() {
+      const t = ty.value, n = +rn.value; rk.max = t === "rarr" ? 5 : n; let k = Math.min(+rk.value, +rk.max); rk.value = k;
+      $(".vn", box).textContent = n; $(".vk", box).textContent = k;
+      $(".kl", box).style.display = ["arr", "rarr", "comb"].includes(t) ? "" : "none";
+      $(".nl", box).style.display = t === "word" ? "none" : ""; $(".wl", box).style.display = t === "word" ? "" : "none";
+      const items = LET.slice(0, n); let tex = "", val = 0, list = [], note = "";
+      if (t === "perm") { val = fact(n); tex = `M_{${n}} = ${n}! = ${val}`; list = gen(items, n, false, true); note = "Κάθε σειρά είναι διαφορετική."; }
+      if (t === "circ") { val = fact(n - 1); tex = `K_{${n}} = (${n}-1)! = ${n - 1}! = ${val}`; list = gen(items.slice(1), n - 1, false, true).map(s => items[0] + s); note = `Κρατάμε το ${items[0]} «σταθερό» (σε κύκλο δεν υπάρχει πρώτη θέση) και μεταθέτουμε τα υπόλοιπα.`; }
+      if (t === "arr") { val = nPk(n, k); tex = `\\Delta^{${n}}_{${k}} = \\frac{${n}!}{(${n}-${k})!} = ${val}`; list = gen(items, k, false, true); note = "Η σειρά μετράει: ΑΒ ≠ ΒΑ."; }
+      if (t === "rarr") { val = n ** k; tex = `${n}^{${k}} = ${val}`; list = gen(items, k, true, true); note = "Κάθε θέση έχει ν επιλογές — επιτρέπεται επανάληψη."; }
+      if (t === "comb") { val = nCk(n, k); tex = `\\binom{${n}}{${k}} = \\frac{${n}!}{${k}!\\,(${n}-${k})!} = ${val}`; list = gen(items, k, false, false); note = "Η σειρά δεν μετράει: {Α,Β} = {Β,Α}."; }
+      if (t === "word") {
+        const w = (wd.value || "Α").toUpperCase().replace(/[^Α-ΩA-ZΆΈΉΊΌΎΏ]/g, "").slice(0, 9) || "Α";
+        const c = {}; for (const ch of w) c[ch] = (c[ch] || 0) + 1;
+        const reps = Object.values(c).filter(v => v > 1);
+        val = fact(w.length) / reps.reduce((a, v) => a * fact(v), 1);
+        tex = reps.length ? `\\frac{${w.length}!}{${reps.map(v => v + "!").join("\\,")}} = ${val}` : `${w.length}! = ${val}`;
+        const seen = new Set(); (function rec(cur, rest) { if (seen.size > 400) return; if (!rest.length) { seen.add(cur); return; } const tried = new Set(); for (let i = 0; i < rest.length; i++) { if (tried.has(rest[i])) continue; tried.add(rest[i]); rec(cur + rest[i], rest.slice(0, i) + rest.slice(i + 1)); } })("", w);
+        list = [...seen]; note = reps.length ? "Τα ίδια γράμματα δεν δίνουν νέο αναγραμματισμό όταν ανταλλάσσονται μεταξύ τους." : "Όλα τα γράμματα διαφορετικά ⇒ απλές μεταθέσεις.";
+      }
+      $(".cform", box).innerHTML = `<div class="wout" style="margin-top:0">$$${tex}$$<span class="muted">${note}</span></div>`;
+      const show = list.slice(0, 120);
+      $(".clist", box).innerHTML = val <= 400 ? `<div class="cap">Όλες οι περιπτώσεις (${list.length}${list.length > show.length ? ", εμφανίζονται οι πρώτες 120" : ""}):</div><div class="pills">${show.map(s => `<span>${s || "∅"}</span>`).join("")}</div>` : `<div class="cap">Πάρα πολλές περιπτώσεις για να εμφανιστούν (${val.toLocaleString("el-GR")}) — γι' αυτό χρειαζόμαστε τύπους!</div>`;
+      typeset(box);
+    }
+    ty.onchange = rn.oninput = rk.oninput = wd.oninput = draw; draw();
+  },
+
+  dice(box) {
+    box.innerHTML = `<div class="wctl"><label>Ενδεχόμενο: άθροισμα = <select class="ts">${[2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map(s => `<option ${s === 7 ? "selected" : ""}>${s}</option>`).join("")}</select></label>
+      <button class="btn primary small" data-n="1">Ρίξε 1</button><button class="btn ghost small" data-n="100">+100</button><button class="btn ghost small" data-n="1000">+1000</button><button class="btn ghost small rs">Μηδενισμός</button></div>
+      <div class="dlast"></div><div class="pl"></div><div class="wout"></div>`;
+    let cnt = Array(13).fill(0), N = 0, last = null;
+    const pips = v => ({ 1: [[1, 1]], 2: [[0, 0], [2, 2]], 3: [[0, 0], [1, 1], [2, 2]], 4: [[0, 0], [2, 0], [0, 2], [2, 2]], 5: [[0, 0], [2, 0], [1, 1], [0, 2], [2, 2]], 6: [[0, 0], [0, 1], [0, 2], [2, 0], [2, 1], [2, 2]] })[v];
+    const die = v => `<svg viewBox="0 0 60 60" width="46" height="46"><rect x="3" y="3" width="54" height="54" rx="10" fill="#fff" stroke="var(--navy)" stroke-width="2.5"/>${pips(v).map(([c, r]) => `<circle cx="${15 + c * 15}" cy="${15 + r * 15}" r="5" fill="var(--navy)"/>`).join("")}</svg>`;
+    function roll(k) { for (let i = 0; i < k; i++) { const a = ri(1, 6), b = ri(1, 6); cnt[a + b]++; N++; last = [a, b]; } draw(); }
+    function draw() {
+      const s = +$(".ts", box).value, ways = 6 - Math.abs(s - 7);
+      $(".dlast", box).innerHTML = last ? `<div class="dice">${die(last[0])}${die(last[1])}<span>άθροισμα <b>${last[0] + last[1]}</b></span></div>` : "";
+      const P = makePlot($(".pl", box), { xmin: 1.4, xmax: 12.6, ymin: 0, ymax: 0.22, H: 230, ystep: 0.05 });
+      for (let v = 2; v <= 12; v++) {
+        const th = (6 - Math.abs(v - 7)) / 36, fr = N ? cnt[v] / N : 0;
+        P.layer.appendChild(svgEl("rect", { x: P.sx(v - 0.38), y: P.sy(fr), width: P.sx(v + 0.38) - P.sx(v - 0.38), height: Math.max(0, P.sy(0) - P.sy(fr)), fill: v === s ? "var(--amber)" : "var(--blue)", opacity: 0.8 }));
+        P.seg(v - 0.42, th, v + 0.42, th, "theo");
+      }
+      $(".wout", box).innerHTML = `Ρίψεις: <b>${N}</b> · Σχετική συχνότητα «άθροισμα ${s}»: <b>${N ? fmt(cnt[s] / N * 100) : 0}%</b> · Θεωρητική πιθανότητα: <b>${ways}/36 ≈ ${fmt(ways / 36 * 100)}%</b>
+        <br><span class="muted">Οι μπάρες είναι οι συχνότητες, οι κόκκινες γραμμές οι πιθανότητες. Με πολλές ρίψεις πλησιάζουν μεταξύ τους — νόμος των μεγάλων αριθμών.</span>`;
+    }
+    box.querySelectorAll("button[data-n]").forEach(b => b.onclick = () => roll(+b.dataset.n));
+    $(".rs", box).onclick = () => { cnt = Array(13).fill(0); N = 0; last = null; draw(); };
+    $(".ts", box).onchange = draw; draw();
+  },
+
+  table2(box) {
+    box.innerHTML = `<div class="cap">Συμπλήρωσε τον πίνακα πλήθους (π.χ. 100 μαθητές). A = «παίζει όργανο», B = «κορίτσι».</div>
+      <div class="tblwrap"><table class="vt t2"><tr><th></th><th>B (κορίτσι)</th><th>B′ (αγόρι)</th><th>Σύνολο</th></tr>
+      <tr><th>A (όργανο)</th><td><input class="c11" value="30"></td><td><input class="c12" value="10"></td><td class="s1"></td></tr>
+      <tr><th>A′ (όχι)</th><td><input class="c21" value="30"></td><td><input class="c22" value="30"></td><td class="s2"></td></tr>
+      <tr><th>Σύνολο</th><td class="t1"></td><td class="t2c"></td><td class="tt"></td></tr></table></div>
+      <div class="wout"></div>`;
+    function draw() {
+      const v = ["c11", "c12", "c21", "c22"].map(c => Math.max(0, Math.round(+$("." + c, box).value || 0)));
+      const [a, b, c, d] = v, N = a + b + c + d;
+      $(".s1", box).textContent = a + b; $(".s2", box).textContent = c + d; $(".t1", box).textContent = a + c; $(".t2c", box).textContent = b + d; $(".tt", box).textContent = N;
+      if (!N || !(a + c)) { $(".wout", box).textContent = "Βάλε θετικούς αριθμούς."; return; }
+      const PA = (a + b) / N, PB = (a + c) / N, PAB = a / N, PAgB = a / (a + c);
+      const ind = Math.abs(PAB - PA * PB) < 1e-9;
+      $(".wout", box).innerHTML = `P(A) = ${fracS(a + b, N)} ≈ ${fmt(PA)} · P(B) = ${fracS(a + c, N)} · P(A ∩ B) = ${fracS(a, N)}
+        <br><b>P(A | B) = ${a}/${a + c} ≈ ${fmt(PAgB)}</b> — μετράμε μόνο μέσα στη στήλη B.
+        <br>P(A)·P(B) ≈ ${fmt(PA * PB)} ${ind ? "= P(A∩B) ⇒ <b class='ok'>ανεξάρτητα</b>" : "≠ P(A∩B) ⇒ <b class='bad'>όχι ανεξάρτητα</b>"}
+        <br><span class="muted">Δοκίμασε 20, 20, 30, 30: τότε P(A|B) = P(A) και τα ενδεχόμενα γίνονται ανεξάρτητα.</span>`;
+    }
+    box.querySelectorAll("input").forEach(i => { i.type = "number"; i.min = 0; i.oninput = draw; }); draw();
+  },
+
+  quart(box) {
+    box.innerHTML = `<div class="wctl"><label style="flex:1">Δεδομένα (χωρισμένα με κόμμα · δεκαδικά με τελεία)<input type="text" class="qd" value="181, 210, 193, 197, 196, 205, 189, 204, 193, 199, 205, 187" style="width:100%;font:inherit;font-weight:400;padding:8px 10px;border-radius:9px;border:1px solid var(--line)"></label></div>
+      <div class="qsorted"></div><div class="pl"></div><div class="wout"></div>`;
+    function draw() {
+      const data = $(".qd", box).value.split(/[\s,;]+/).map(s => parseFloat(s)).filter(Number.isFinite);
+      if (data.length < 4) { $(".wout", box).textContent = "Δώσε τουλάχιστον 4 τιμές."; return; }
+      const Q = quartiles(data), S = stats(data), n = Q.d.length, odd = n % 2;
+      $(".qsorted", box).innerHTML = `<div class="cap">Διατεταγμένα (ν = ${n}${odd ? ", περιττό ⇒ η διάμεσος εξαιρείται από τα μισά" : ", άρτιο"}):</div><div class="pills">${Q.d.map((v, i) => `<span class="${odd && i === (n - 1) / 2 ? "pm" : i < n / 2 ? "pl1" : "pl2"}">${fmt(v)}</span>`).join("")}</div>`;
+      const lo = Q.d[0], hi = Q.d[n - 1], pad = (hi - lo) * 0.08 || 1;
+      const P = makePlot($(".pl", box), { xmin: lo - pad, xmax: hi + pad, ymin: 0, ymax: 4, H: 150, xstep: niceStep(hi - lo + 2 * pad) * 1.0, ystep: 10 });
+      const y = 2, sq = (x1, x2) => P.layer.appendChild(svgEl("rect", { x: P.sx(x1), y: P.sy(y + 0.9), width: P.sx(x2) - P.sx(x1), height: P.sy(y - 0.9) - P.sy(y + 0.9), fill: "rgba(46,117,182,.15)", stroke: "var(--blue)", "stroke-width": 2 }));
+      sq(Q.q1, Q.q3); P.seg(lo, y, Q.q1, y, "whisk"); P.seg(Q.q3, y, hi, y, "whisk"); P.seg(Q.q2, y - 0.9, Q.q2, y + 0.9, "medl");
+      for (const [v, l] of [[Q.q1, "Q₁"], [Q.q2, "Q₂"], [Q.q3, "Q₃"]]) { const t = svgEl("text", { x: P.sx(v), y: P.sy(y + 1.25), "text-anchor": "middle", class: "lbl d2" }); t.textContent = l; P.top.appendChild(t); }
+      P.dot(lo, y, "d2"); P.dot(hi, y, "d2");
+      $(".wout", box).innerHTML = `Q₁ = <b>${fmt(Q.q1)}</b> · Q₂ (διάμεσος) = <b>${fmt(Q.q2)}</b> · Q₃ = <b>${fmt(Q.q3)}</b> · IQR = <b>${fmt(Q.q3 - Q.q1)}</b>
+        <br>x̄ = ${fmt(S.m)} · s = ${fmt(S.s)} · εύρος = ${fmt(hi - lo)}
+        <br><span class="muted">Πρόσθεσε μια ακραία τιμή (π.χ. 400): το εύρος και η s αλλάζουν πολύ, το IQR ελάχιστα!</span>`;
+    }
+    $(".qd", box).oninput = draw; draw();
+  },
+
+  scatter(box) {
+    box.innerHTML = `<div class="wctl"><label>Ισχύς/φορά (θεωρητικό ρ) <input type="range" class="rr" min="-1" max="1" step="0.05" value="0.8"><b class="vr"></b></label>
+      <button class="btn ghost small nw">Νέο δείγμα ↻</button>
+      <label>ή δικά σου δεδομένα: <select class="ps"><option value="">— τυχαίο δείγμα —</option><option value="b">Μαθηματικά–Φυσική (12 μαθητές)</option><option value="c">x: 1..5, y: 2,4,5,4,5</option><option value="d">ώρες μελέτης–βαθμός</option></select></label></div>
+      <div class="pl"></div><div class="wout"></div>`;
+    const presets = { b: [[10, 8], [14, 13], [17, 16], [12, 13], [15, 15], [16, 16], [20, 19], [18, 19], [10, 12], [13, 13], [12, 10], [11, 14]], c: [[1, 2], [2, 4], [3, 5], [4, 4], [5, 5]], d: [[1, 9], [2, 11], [3, 12], [4, 14], [5, 15], [6, 18]] };
+    let pts = [];
+    const gauss = () => { let u = 0, v = 0; while (!u) u = Math.random(); v = Math.random(); return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v); };
+    function sample() { const rho = +$(".rr", box).value; pts = []; for (let i = 0; i < 25; i++) { const z1 = gauss(), z2 = gauss(); pts.push([10 + 3 * z1, 10 + 3 * (rho * z1 + Math.sqrt(Math.max(0, 1 - rho * rho)) * z2)]); } }
+    function draw() {
+      $(".vr", box).textContent = fmt(+$(".rr", box).value);
+      const ps = $(".ps", box).value, P0 = ps ? presets[ps] : pts;
+      const xs = P0.map(p => p[0]), ys = P0.map(p => p[1]), C = corr(xs, ys);
+      const xl = Math.min(...xs), xh = Math.max(...xs), yl = Math.min(...ys), yh = Math.max(...ys), px = (xh - xl) * 0.12 + 0.5, py = (yh - yl) * 0.12 + 0.5;
+      const P = makePlot($(".pl", box), { xmin: xl - px, xmax: xh + px, ymin: yl - py, ymax: yh + py, H: 300, xstep: niceStep(xh - xl + 2 * px) });
+      const b = C.r * C.Y.s / C.X.s, a = C.Y.m - b * C.X.m;
+      if (isFinite(b)) P.curve(x => a + b * x, "c3");
+      for (const [x, y] of P0) P.dot(x, y, "d1");
+      $(".wout", box).innerHTML = `ν = ${xs.length} · x̄ = ${fmt(C.X.m)} · ȳ = ${fmt(C.Y.m)} · Σxy = ${fmt(C.sxy)} · s<sub>x</sub> = ${fmt(C.X.s)} · s<sub>y</sub> = ${fmt(C.Y.s)}
+        <br><b>r ≈ ${C.r.toLocaleString("el-GR", { minimumFractionDigits: 3, maximumFractionDigits: 3 })}</b> → ${rLabel(C.r)} γραμμική συσχέτιση${ps === "b" ? " (όπως στο Παράδειγμα 3 του βιβλίου: r ≈ 0,89)" : ""}
+        <br><span class="muted">Μετακίνησε τον δείκτη προς το 1, το 0 και το −1 και παρατήρησε πώς «μαζεύονται» τα σημεία γύρω από την ευθεία.</span>`;
+    }
+    $(".rr", box).oninput = () => { $(".ps", box).value = ""; sample(); draw(); };
+    $(".nw", box).onclick = () => { $(".ps", box).value = ""; sample(); draw(); };
+    $(".ps", box).onchange = draw; sample(); draw();
+  },
+
+  solid(box) {
+    box.innerHTML = `<div class="wctl"><label>Στερεό <select class="sh"><option value="cyl">Κύλινδρος (περιστροφή ορθογωνίου)</option><option value="cone">Κώνος (περιστροφή ορθ. τριγώνου)</option><option value="fr">Κόλουρος κώνος (περιστροφή ορθ. τραπεζίου)</option><option value="sph">Σφαίρα (περιστροφή κύκλου)</option></select></label>
+      <label>R <input type="range" class="rR" min="1" max="6" value="3"><b class="vR"></b></label>
+      <label class="ul">υ <input type="range" class="rU" min="1" max="10" value="4"><b class="vU"></b></label>
+      <label class="rl">ρ <input type="range" class="rP" min="1" max="5" value="1"><b class="vP"></b></label>
+      <label>περιστροφή <input type="range" class="rot" min="0" max="100" value="100"></label></div>
+      <div class="two"><div class="ssvg"></div><div class="wout sform" style="margin-top:0"></div></div>`;
+    function draw() {
+      const sh = $(".sh", box).value; if (sh === "fr" && +$(".rR", box).value < 2) $(".rR", box).value = 2; const R = +$(".rR", box).value, U = +$(".rU", box).value, rot = +$(".rot", box).value / 100;
+      $(".rP", box).max = Math.max(1, R - 1); const rho = Math.min(+$(".rP", box).value, R - 1 || 1); $(".rP", box).value = rho;
+      $(".vR", box).textContent = R; $(".vU", box).textContent = U; $(".vP", box).textContent = rho;
+      $(".ul", box).style.display = sh === "sph" ? "none" : ""; $(".rl", box).style.display = sh === "fr" ? "" : "none";
+      const k = 20, cx = 160, H = sh === "sph" ? 2 * R : U, top = 30, base = top + H * k + (sh === "sph" ? 0 : 0), W = 320, VH = Math.max(H * k + 70, 2 * R * k + 70);
+      const ell = (y, r, dashedBack) => r <= 0 ? "" : `<path d="M ${cx - r * k} ${y} A ${r * k} ${r * k * 0.28} 0 0 0 ${cx + r * k} ${y}" class="sol-e"/><path d="M ${cx - r * k} ${y} A ${r * k} ${r * k * 0.28} 0 0 1 ${cx + r * k} ${y}" class="${dashedBack ? "sol-eb" : "sol-e"}"/>`;
+      const rx = r => r * k * rot; // how far the revolution has "swept" visually
+      let s = `<svg viewBox="0 0 ${W} ${VH}" class="plot"><line x1="${cx}" y1="8" x2="${cx}" y2="${VH - 8}" class="axisrot"/>`;
+      let gen2d = "", body = "";
+      if (sh === "cyl") { body = `<path d="M ${cx - rx(R)} ${top} L ${cx - rx(R)} ${base} M ${cx + rx(R)} ${top} L ${cx + rx(R)} ${base}" class="sol-e"/>${ell(top, R * rot, false)}${ell(base, R * rot, true)}`; gen2d = `<rect x="${cx}" y="${top}" width="${R * k}" height="${U * k}" class="gen2d"/>`; }
+      if (sh === "cone") { body = `<path d="M ${cx} ${top} L ${cx - rx(R)} ${base} M ${cx} ${top} L ${cx + rx(R)} ${base}" class="sol-e"/>${ell(base, R * rot, true)}`; gen2d = `<path d="M ${cx} ${top} L ${cx + R * k} ${base} L ${cx} ${base} Z" class="gen2d"/>`; }
+      if (sh === "fr") { body = `<path d="M ${cx - rx(rho)} ${top} L ${cx - rx(R)} ${base} M ${cx + rx(rho)} ${top} L ${cx + rx(R)} ${base}" class="sol-e"/>${ell(top, rho * rot, false)}${ell(base, R * rot, true)}`; gen2d = `<path d="M ${cx} ${top} L ${cx + rho * k} ${top} L ${cx + R * k} ${base} L ${cx} ${base} Z" class="gen2d"/>`; }
+      if (sh === "sph") { const cy = top + R * k; body = `<ellipse cx="${cx}" cy="${cy}" rx="${rx(R)}" ry="${R * k}" class="sol-e"/>${ell(cy, R * rot, true)}`; gen2d = `<path d="M ${cx} ${top} A ${R * k} ${R * k} 0 0 1 ${cx} ${top + 2 * R * k} Z" class="gen2d"/>`; }
+      s += gen2d + body + `<text x="${cx + 6}" y="${VH - 12}" class="tick">άξονας</text></svg>`;
+      $(".ssvg", box).innerHTML = s;
+      const sq = Math.sqrt;
+      let rows = [];
+      if (sh === "cyl") rows = [["E_\\kappa = 2\\pi R\\upsilon", 2 * R * U], ["E_{o\\lambda} = 2\\pi R(R+\\upsilon)", 2 * R * (R + U)], ["V = \\pi R^2\\upsilon", R * R * U]];
+      if (sh === "cone") { const L = sq(R * R + U * U); rows = [["\\lambda = \\sqrt{R^2+\\upsilon^2}", null, L], ["E_\\kappa = \\pi R\\lambda", R * L], ["E_{o\\lambda} = \\pi R(R+\\lambda)", R * (R + L)], ["V = \\tfrac13\\pi R^2\\upsilon", [R * R * U, 3]]]; }
+      if (sh === "fr") { const L = sq(U * U + (R - rho) ** 2); rows = [["\\lambda = \\sqrt{\\upsilon^2+(R-\\rho)^2}", null, L], ["E_\\kappa = \\pi(R+\\rho)\\lambda", (R + rho) * L], ["E_{o\\lambda} = E_\\kappa + \\pi R^2 + \\pi\\rho^2", (R + rho) * L + R * R + rho * rho], ["V = \\tfrac{\\pi\\upsilon}{3}(R^2+R\\rho+\\rho^2)", [U * (R * R + R * rho + rho * rho), 3]]]; }
+      if (sh === "sph") rows = [["E = 4\\pi R^2", 4 * R * R], ["V = \\tfrac43\\pi R^3", [4 * R ** 3, 3]]];
+      $(".sform", box).innerHTML = rows.map(([f, c, plain]) => {
+        if (c === null) return `$${f} ${Number.isInteger(plain) ? "= " + plain : "\\approx " + fmt(plain).replace(",", "{,}")}$`;
+        if (Array.isArray(c)) return `$${f} = ${piT(c[0], c[1])} \\approx ${fmt(Math.PI * c[0] / c[1]).replace(",", "{,}")}$`;
+        return `$${f} ${Number.isInteger(c) ? "= " + c + "\\pi" : "\\approx " + fmt(c).replace(",", "{,}") + "\\pi"} \\approx ${fmt(Math.PI * c).replace(",", "{,}")}$`;
+      }).join("<br>") + `<br><span class="muted">Το σκιασμένο σχήμα περιστρέφεται γύρω από τον άξονα και «γεννά» το στερεό.</span>`;
+      typeset($(".sform", box));
+    }
+    box.querySelectorAll("input,select").forEach(i => i.oninput = i.onchange = draw); draw();
+  }
+};
+
+/* ================= Γεννήτριες ================= */
+const GENS = {
+  gcomb: { title: "Γεννήτρια — μέτρησε τους τρόπους", make() {
+    const t = ri(0, 4);
+    if (t === 0) { const n = ri(4, 7); return { q: R`Με πόσους τρόπους μπορούν $${n}$ μαθητές να σταθούν σε <b>σειρά</b>;`, fields: [{ label: "τρόποι =", ans: fact(n) }], sol: R`Μεταθέσεις: $M_{${n}} = ${n}! = ${fact(n)}$.` }; }
+    if (t === 1) { const n = ri(4, 8); return { q: R`Με πόσους τρόπους μπορούν $${n}$ φίλοι να καθίσουν σε <b>στρογγυλό</b> τραπέζι;`, fields: [{ label: "τρόποι =", ans: fact(n - 1) }], sol: R`Κυκλικές μεταθέσεις: $K_{${n}} = ${n - 1}! = ${fact(n - 1)}$.` }; }
+    if (t === 2) { const n = ri(5, 10), k = ri(2, 3), roles = k === 2 ? "πρόεδρος και αντιπρόεδρος" : "πρόεδρος, γραμματέας και ταμίας"; return { q: R`Από $${n}$ άτομα εκλέγονται ${roles}. Με πόσους τρόπους;`, fields: [{ label: "τρόποι =", ans: nPk(n, k) }], sol: R`Διαφορετικοί ρόλοι ⇒ η σειρά μετράει: $\Delta^{${n}}_{${k}} = ${Array.from({ length: k }, (_, i) => n - i).join("\\cdot")} = ${nPk(n, k)}$.` }; }
+    if (t === 3) { const n = ri(6, 12), k = ri(2, 4); return { q: R`Με πόσους τρόπους επιλέγεται ομάδα $${k}$ ατόμων από $${n}$ (χωρίς ρόλους);`, fields: [{ label: "τρόποι =", ans: nCk(n, k) }], sol: R`Η σειρά δεν μετράει ⇒ συνδυασμοί: $\binom{${n}}{${k}} = \frac{${Array.from({ length: k }, (_, i) => n - i).join("\\cdot")}}{${k}!} = ${nCk(n, k)}$.` }; }
+    const n = ri(2, 5), k = ri(3, 4); return { q: R`Πόσοι κωδικοί $${k}$ θέσεων σχηματίζονται με τα ψηφία $${Array.from({ length: n }, (_, i) => i + 1).join(",")}$, αν επιτρέπεται <b>επανάληψη</b>;`, fields: [{ label: "κωδικοί =", ans: n ** k }], sol: R`Επαναληπτικές διατάξεις: κάθε θέση έχει $${n}$ επιλογές ⇒ $${n}^{${k}} = ${n ** k}$.` };
+  } },
+  gdice: { title: "Γεννήτρια — πιθανότητες με δύο ζάρια", make() {
+    const t = ri(0, 3); let name, test;
+    if (t === 0) { const s = ri(3, 11); name = R`το άθροισμα να είναι $${s}$`; test = (a, b) => a + b === s; }
+    if (t === 1) { const s = ri(4, 9); name = R`το άθροισμα να είναι <b>το πολύ</b> $${s}$`; test = (a, b) => a + b <= s; }
+    if (t === 2) { name = "να έρθουν <b>ίδιοι</b> αριθμοί"; test = (a, b) => a === b; }
+    if (t === 3) { const v = ri(1, 6); name = R`να έρθει <b>τουλάχιστον ένα</b> $${v}$`; test = (a, b) => a === v || b === v; }
+    let m = 0; const fav = []; for (let a = 1; a <= 6; a++) for (let b = 1; b <= 6; b++) if (test(a, b)) { m++; fav.push(`(${a},${b})`); }
+    return { q: R`Ρίχνουμε δύο ζάρια. Ποια η πιθανότητα ${name};`, fields: [{ label: "P =", ans: fracS(m, 36) }],
+      sol: R`$\nu(\Omega) = 36$. Ευνοϊκά (${m}): ${fav.join(", ")}.<br>$P = \frac{${m}}{36} = ${fracT(m, 36)}$.` };
+  } },
+  gquart: { title: "Γεννήτρια — τεταρτημόρια", make() {
+    const n = ri(7, 12), data = Array.from({ length: n }, () => ri(1, 40)), Q = quartiles(data);
+    const odd = n % 2, show = arr => arr.join(",\\ ");
+    return { q: R`Δεδομένα ($\nu = ${n}$): <b>${data.join(", ")}</b>. Να βρείτε τα τεταρτημόρια και το ενδοτεταρτημοριακό εύρος.`,
+      fields: [{ label: "Q₁ =", ans: Q.q1 }, { label: "Q₂ =", ans: Q.q2 }, { label: "Q₃ =", ans: Q.q3 }, { label: "IQR =", ans: Q.q3 - Q.q1 }],
+      sol: R`Διατεταγμένα: $${show(Q.d)}$. ${odd ? R`Περιττό πλήθος ⇒ $Q_2 = ${Q.q2}$ (μεσαία τιμή), την αφαιρούμε.` : R`Άρτιο πλήθος ⇒ $Q_2 = ${String(Q.q2).replace(".", "{,}")}$.`}<br>Πρώτο μισό $${show(Q.lo)}$ ⇒ $Q_1 = ${String(Q.q1).replace(".", "{,}")}$. Δεύτερο μισό $${show(Q.hi)}$ ⇒ $Q_3 = ${String(Q.q3).replace(".", "{,}")}$.<br>$IQR = ${String(Q.q3 - Q.q1).replace(".", "{,}")}$.` };
+  } },
+  gsolid: { title: "Γεννήτρια — εμβαδά & όγκοι", make() {
+    const t = ri(0, 2);
+    if (t === 0) { const R0 = ri(2, 6), U = ri(2, 10); return { q: R`Κύλινδρος με $R = ${R0}$ cm και $\upsilon = ${U}$ cm. Να βρείτε την ολική επιφάνεια και τον όγκο (σε π).`, fields: [{ label: "E_ολ =", ans: `${2 * R0 * (R0 + U)}pi` }, { label: "V =", ans: `${R0 * R0 * U}pi` }], sol: R`$E_{o\lambda} = 2\pi \cdot ${R0}(${R0} + ${U}) = ${2 * R0 * (R0 + U)}\pi$, $\;V = \pi \cdot ${R0 * R0} \cdot ${U} = ${R0 * R0 * U}\pi$.` }; }
+    if (t === 1) { const tr = [[3, 4, 5], [6, 8, 10], [5, 12, 13], [8, 6, 10], [4, 3, 5], [9, 12, 15]][ri(0, 5)], [R0, U, L] = tr; return { q: R`Κώνος με $R = ${R0}$ cm και $\upsilon = ${U}$ cm. Να βρείτε τη γενέτειρα, την κυρτή επιφάνεια και τον όγκο.`, fields: [{ label: "λ =", ans: L }, { label: "E_κ =", ans: `${R0 * L}pi` }, { label: "V =", ans: `${R0 * R0 * U}pi/3` }], sol: R`$\lambda = \sqrt{${R0 * R0} + ${U * U}} = ${L}$, $\;E_\kappa = \pi \cdot ${R0} \cdot ${L} = ${R0 * L}\pi$, $\;V = \frac13\pi \cdot ${R0 * R0} \cdot ${U} = ${piT(R0 * R0 * U, 3)}$.` }; }
+    const R0 = ri(1, 6); return { q: R`Σφαίρα με $R = ${R0}$ cm. Να βρείτε το εμβαδόν της επιφάνειας και τον όγκο.`, fields: [{ label: "E =", ans: `${4 * R0 * R0}pi` }, { label: "V =", ans: `${4 * R0 ** 3}pi/3` }], sol: R`$E = 4\pi \cdot ${R0 * R0} = ${4 * R0 * R0}\pi$, $\;V = \frac43\pi \cdot ${R0 ** 3} = ${piT(4 * R0 ** 3, 3)}$.` };
+  } }
+};
+
+</script>
+<script>
+/* ================= Parser: μαθηματική έκφραση → συνάρτηση του x ================= */
+const MathParse = (() => {
+  function normalize(s) {
+    return String(s)
+      .replace(/[−–—]/g, "-").replace(/[·×∙⋅]/g, "*").replace(/÷/g, "/")
+      .replace(/√/g, "sqrt").replace(/π/g, "pi")
+      .replace(/²/g, "^2").replace(/³/g, "^3").replace(/⁴/g, "^4").replace(/⁵/g, "^5")
+      .replace(/(\d),(\d)/g, "$1.$2")
+      .replace(/^\s*(y|f\s*\(\s*x\s*\)|F\s*\(\s*x\s*\))\s*=\s*/i, "")
+      .replace(/\s+/g, "");
+  }
+  function tokenize(s) {
+    const t = []; let i = 0;
+    while (i < s.length) {
+      const ch = s[i];
+      if (/[0-9.]/.test(ch)) { let j = i; while (j < s.length && /[0-9.]/.test(s[j])) j++; t.push({ k: "n", v: parseFloat(s.slice(i, j)) }); i = j; }
+      else if (/[a-zA-Z]/.test(ch)) {
+        let j = i; while (j < s.length && /[a-zA-Z]/.test(s[j])) j++;
+        let w = s.slice(i, j).toLowerCase();
+        // σπάσε π.χ. "xsqrt" ή "cx"
+        while (w.length) {
+          if (w.startsWith("sqrt")) { t.push({ k: "f", v: "sqrt" }); w = w.slice(4); }
+          else if (w.startsWith("pi")) { t.push({ k: "n", v: Math.PI }); w = w.slice(2); }
+          else if (w[0] === "x" || w[0] === "t") { t.push({ k: "x" }); w = w.slice(1); }
+          else if (w[0] === "c") { t.push({ k: "n", v: 0 }); w = w.slice(1); }
+          else throw new Error("Άγνωστο σύμβολο: " + w[0]);
+        }
+        i = j;
+      }
+      else if ("+-*/^()".includes(ch)) { t.push({ k: ch }); i++; }
+      else throw new Error("Άγνωστο σύμβολο: " + ch);
+    }
+    return t;
+  }
+  function parse(src) {
+    const toks = tokenize(normalize(src)); let p = 0;
+    const peek = () => toks[p], eat = k => { if (toks[p] && toks[p].k === k) return toks[p++]; throw new Error("Συντακτικό λάθος"); };
+    function expr() { let a = term(); while (peek() && (peek().k === "+" || peek().k === "-")) { const op = toks[p++].k, l = a, r = term(); a = op === "+" ? x => l(x) + r(x) : x => l(x) - r(x); } return a; }
+    function startsAtom(t) { return t && (t.k === "n" || t.k === "x" || t.k === "f" || t.k === "("); }
+    function term() {
+      let a = unary();
+      for (;;) {
+        const t = peek();
+        if (t && (t.k === "*" || t.k === "/")) { p++; const l = a, r = unary(); a = t.k === "*" ? x => l(x) * r(x) : x => l(x) / r(x); }
+        else if (startsAtom(t)) { const l = a, r = power(); a = x => l(x) * r(x); }
+        else break;
+      }
+      return a;
+    }
+    function unary() { const t = peek(); if (t && t.k === "-") { p++; const u = unary(); return x => -u(x); } if (t && t.k === "+") { p++; return unary(); } return power(); }
+    function power() { const b = atom(); if (peek() && peek().k === "^") { p++; const e = unary(); return x => Math.pow(b(x), e(x)); } return b; }
+    function atom() {
+      const t = peek(); if (!t) throw new Error("Ελλιπής έκφραση");
+      if (t.k === "n") { p++; const v = t.v; return () => v; }
+      if (t.k === "x") { p++; return x => x; }
+      if (t.k === "f") { p++; const a = peek() && peek().k === "(" ? (eat("("), (() => { const e = expr(); eat(")"); return e; })()) : power(); return x => Math.sqrt(a(x)); }
+      if (t.k === "(") { p++; const e = expr(); eat(")"); return e; }
+      throw new Error("Συντακτικό λάθος");
+    }
+    const f = expr(); if (p < toks.length) throw new Error("Συντακτικό λάθος");
+    return f;
+  }
+  return { parse };
+})();
+
+const close = (a, b, rel = 1e-6) => Math.abs(a - b) <= rel * Math.max(1, Math.abs(b));
+const PTS = [-2.3, -1.4, -0.6, 0.7, 1.3, 2.1, 3.2];
+const PPTS = [0.4, 0.9, 1.6, 2.5, 3.7];
+
+function checkExpr(student, ref, pos) {
+  const S = MathParse.parse(student), Rf = MathParse.parse(ref);
+  let n = 0;
+  for (const x of pos ? PPTS : PTS) { const a = S(x), b = Rf(x); if (!isFinite(b)) continue; if (!isFinite(a) || !close(a, b, 1e-6)) return false; n++; }
+  return n >= 3;
+}
+function checkAnti(student, f, pos, x0, y0) {
+  const F = MathParse.parse(student), g = MathParse.parse(f), h = 1e-4;
+  let n = 0;
+  for (const x of pos ? PPTS : PTS) {
+    const want = g(x); if (!isFinite(want)) continue;
+    const d = (F(x + h) - F(x - h)) / (2 * h);
+    if (!isFinite(d) || !close(d, want, 1e-4)) return false; n++;
+  }
+  if (n < 3) return false;
+  if (x0 !== undefined) return close(F(x0), y0, 1e-6);
+  return true;
+}
+function numVal(s) { const v = MathParse.parse(s)(NaN); return v; }
+
+/* ================= Πρόοδος (localStorage, προαιρετικό) ================= */
+const STORE_KEY = CONFIG.storeKey;
+let PROG = {};
+try { PROG = JSON.parse(localStorage.getItem(STORE_KEY) || "{}") || {}; } catch (e) { PROG = {}; }
+function saveProg() { try { localStorage.setItem(STORE_KEY, JSON.stringify(PROG)); } catch (e) {} }
+const exKey = (sid, i) => sid + "#" + i;
+function secDone(s) { return s.exercises.filter((_, i) => PROG[exKey(s.id, i)]).length; }
+
+/* ================= Βοηθητικά ================= */
+const $ = (sel, el = document) => el.querySelector(sel);
+const h = (tag, attrs = {}, html = "") => { const e = document.createElement(tag); for (const k in attrs) { if (k === "class") e.className = attrs[k]; else if (k.startsWith("on")) e.addEventListener(k.slice(2), attrs[k]); else e.setAttribute(k, attrs[k]); } if (html) e.innerHTML = html; return e; };
+function typeset(el) { if (window.renderMathInElement) renderMathInElement(el, { delimiters: [{ left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false }], throwOnError: false }); }
+const LVL = { 1: ["Βασική", "l1"], 2: ["Μέτρια", "l2"], 3: ["Απαιτητική", "l3"] };
+const fmt = v => { const r = Math.round(v * 100) / 100; return (Object.is(r, -0) ? 0 : r).toLocaleString("el-GR", { maximumFractionDigits: 2 }); };
+const ri = (a, b) => a + Math.floor(Math.random() * (b - a + 1));
+
+/* ================= SVG plotter ================= */
+const NS = "http://www.w3.org/2000/svg";
+function svgEl(tag, attrs) { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); return e; }
+function makePlot(container, o) {
+  const W = o.W || 560, H = o.H || 320;
+  const svg = svgEl("svg", { viewBox: `0 0 ${W} ${H}`, class: "plot", role: "img" });
+  container.innerHTML = ""; container.appendChild(svg);
+  const P = { svg, W, H, ...o };
+  P.sx = x => (x - P.xmin) / (P.xmax - P.xmin) * W;
+  P.sy = y => H - (y - P.ymin) / (P.ymax - P.ymin) * H;
+  P.ix = px => P.xmin + px / W * (P.xmax - P.xmin);
+  P.layer = svgEl("g", {}); P.top = svgEl("g", {});
+  const grid = svgEl("g", { class: "grid" });
+  const step = o.xstep || 1, ystep = o.ystep || niceStep(P.ymax - P.ymin);
+  for (let x = Math.ceil(P.xmin / step) * step; x <= P.xmax; x += step) {
+    grid.appendChild(svgEl("line", { x1: P.sx(x), x2: P.sx(x), y1: 0, y2: H }));
+    if (Math.abs(x) > 1e-9) { const t = svgEl("text", { x: P.sx(x), y: Math.min(H - 4, Math.max(12, P.sy(0) + 14)), "text-anchor": "middle", class: "tick" }); t.textContent = fmt(x); grid.appendChild(t); }
+  }
+  for (let y = Math.ceil(P.ymin / ystep) * ystep; y <= P.ymax; y += ystep) {
+    grid.appendChild(svgEl("line", { x1: 0, x2: W, y1: P.sy(y), y2: P.sy(y) }));
+    if (Math.abs(y) > 1e-9) { const t = svgEl("text", { x: Math.min(W - 4, Math.max(4, P.sx(0) - 5)), y: P.sy(y) + 4, "text-anchor": P.sx(0) < 30 ? "start" : "end", class: "tick" }); t.textContent = fmt(y); grid.appendChild(t); }
+  }
+  svg.appendChild(grid);
+  if (P.ymin < 0 && P.ymax > 0) svg.appendChild(svgEl("line", { x1: 0, x2: W, y1: P.sy(0), y2: P.sy(0), class: "axis" }));
+  if (P.xmin < 0 && P.xmax > 0) svg.appendChild(svgEl("line", { x1: P.sx(0), x2: P.sx(0), y1: 0, y2: H, class: "axis" }));
+  svg.appendChild(P.layer); svg.appendChild(P.top);
+  P.clear = () => { P.layer.innerHTML = ""; P.top.innerHTML = ""; };
+  P.curve = (f, cls = "c1", a = P.xmin, b = P.xmax, layer = P.layer) => {
+    let d = "", pen = false; const n = 400;
+    for (let i = 0; i <= n; i++) {
+      const x = a + (b - a) * i / n, y = f(x);
+      if (!isFinite(y) || y < P.ymin - (P.ymax - P.ymin) || y > P.ymax + (P.ymax - P.ymin)) { pen = false; continue; }
+      d += (pen ? "L" : "M") + P.sx(x).toFixed(1) + "," + P.sy(y).toFixed(1); pen = true;
+    }
+    const e = svgEl("path", { d, class: "curve " + cls }); layer.appendChild(e); return e;
+  };
+  P.dot = (x, y, cls = "d1", label, dx = 6, dy = -8) => {
+    P.top.appendChild(svgEl("circle", { cx: P.sx(x), cy: P.sy(y), r: 5, class: "dot " + cls }));
+    if (label) { const t = svgEl("text", { x: P.sx(x) + dx, y: P.sy(y) + dy, class: "lbl " + cls, "text-anchor": dx < 0 ? "end" : "start" }); t.textContent = label; P.top.appendChild(t); }
+  };
+  P.band = (a, b, cls) => P.layer.insertBefore(svgEl("rect", { x: P.sx(a), y: 0, width: Math.max(0, P.sx(b) - P.sx(a)), height: H, class: "band " + cls }), P.layer.firstChild);
+  P.seg = (x1, y1, x2, y2, cls) => P.top.appendChild(svgEl("line", { x1: P.sx(x1), y1: P.sy(y1), x2: P.sx(x2), y2: P.sy(y2), class: cls }));
+  return P;
+}
+function niceStep(span) { const r = span / 8, p = Math.pow(10, Math.floor(Math.log10(r))), m = r / p; return (m < 1.5 ? 1 : m < 3.5 ? 2 : m < 7.5 ? 5 : 10) * p; }
+function fitY(f, a, b, pad = 0.15, extra = []) {
+  let lo = Infinity, hi = -Infinity;
+  for (let i = 0; i <= 200; i++) { const y = f(a + (b - a) * i / 200); if (isFinite(y)) { lo = Math.min(lo, y); hi = Math.max(hi, y); } }
+  for (const y of extra) { lo = Math.min(lo, y); hi = Math.max(hi, y); }
+  const s = Math.max(hi - lo, 1); return [lo - s * pad, hi + s * pad];
+}
+function roots(f, a, b) { const r = []; const n = 800; let px = a, py = f(a); for (let i = 1; i <= n; i++) { const x = a + (b - a) * i / n, y = f(x); if (py === 0) r.push(px); else if (py * y < 0) { let l = px, hgh = x; for (let k = 0; k < 50; k++) { const m = (l + hgh) / 2; if (f(l) * f(m) <= 0) hgh = m; else l = m; } r.push((l + hgh) / 2); } px = x; py = y; } return r.filter((v, i, arr) => i === 0 || Math.abs(v - arr[i - 1]) > 1e-6); }
+const D = (f, x, e = 1e-4) => (f(x + e) - f(x - e)) / (2 * e);
+const D2 = (f, x, e = 1e-3) => (f(x + e) - 2 * f(x) + f(x - e)) / (e * e);
+
+/* ================= Κάρτα άσκησης ================= */
+function exerciseCard(ex, opts) {
+  const { title, onSolved, solved } = opts;
+  const card = h("div", { class: "ex" + (solved ? " solved" : "") });
+  const lv = LVL[ex.level] || null;
+  card.innerHTML = `<div class="exh"><span class="exn">${title}</span>${lv ? `<span class="lvl ${lv[1]}">${lv[0]}</span>` : ""}<span class="tick-ok">${solved ? "✓ Λυμένη" : ""}</span></div><div class="exq">${ex.q}</div>`;
+  const body = h("div", { class: "exb" });
+  const type = ex.type || (ex.fields ? "fields" : "mc");
+  let inputs = [];
+  if (type === "mc") {
+    const name = "mc" + Math.random().toString(36).slice(2);
+    ex.options.forEach((o, i) => { const l = h("label", { class: "opt" }, `<input type="radio" name="${name}" value="${i}"><span>${o}</span>`); body.appendChild(l); });
+  } else if (type === "fields") {
+    const g = h("div", { class: "fields" });
+    ex.fields.forEach(fd => { const l = h("label", { class: "fld" }, `<span>${fd.label}</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false">`); g.appendChild(l); inputs.push($("input", l)); });
+    body.appendChild(g);
+  } else {
+    const l = h("label", { class: "fld wide" }, `<span>${type === "expr" || type === "ivp" ? "f(x) =" : "Απάντηση:"}</span><input type="text" autocomplete="off" spellcheck="false" placeholder="π.χ. x^3/3 - 2x + 1">`);
+    body.appendChild(l); inputs.push($("input", l));
+    body.appendChild(h("div", { class: "preview muted" }));
+    inputs[0].addEventListener("input", () => { const pv = $(".preview", body); try { MathParse.parse(inputs[0].value); pv.textContent = inputs[0].value ? "✓ συντακτικά σωστή έκφραση" : ""; pv.className = "preview muted"; } catch (e) { pv.textContent = inputs[0].value ? "⚠ " + e.message : ""; pv.className = "preview warnc"; } });
+  }
+  const bar = h("div", { class: "exbar" });
+  const bCheck = h("button", { class: "btn primary" }, "Έλεγχος");
+  const bHint = h("button", { class: "btn ghost" }, "💡 Υπόδειξη");
+  const bSol = h("button", { class: "btn ghost" }, "📖 Λύση");
+  const fb = h("div", { class: "fb", "aria-live": "polite" });
+  const hint = h("div", { class: "hint hidden" }, ex.hint ? "<b>Υπόδειξη:</b> " + ex.hint : "");
+  const sol = h("div", { class: "sol hidden" }, "<b>Λύση:</b> " + ex.sol);
+  bar.append(bCheck); if (ex.hint) bar.append(bHint); bar.append(bSol);
+  body.append(bar, fb, hint, sol);
+  card.appendChild(body);
+  let tries = 0;
+  bHint.onclick = () => { hint.classList.toggle("hidden"); typeset(hint); };
+  bSol.onclick = () => {
+    sol.classList.toggle("hidden");
+    if (!sol.dataset.r) { sol.dataset.r = 1; typeset(sol); if (ex.graph) { const pl = h("div", { class: "pl solgraph" }); sol.appendChild(pl); drawGraph(pl, ex.graph); } }
+  };
+  bCheck.onclick = () => {
+    tries++; let ok = false;
+    try {
+      if (type === "mc") {
+        const sel = $("input:checked", body); if (!sel) { fb.className = "fb warnc"; fb.textContent = "Διάλεξε μια απάντηση."; return; }
+        ok = +sel.value === ex.correct;
+        body.querySelectorAll(".opt").forEach((o, i) => { o.classList.remove("right", "wrong"); if (i === +sel.value) o.classList.add(ok ? "right" : "wrong"); });
+      } else if (type === "fields") {
+        let all = true, empty = false;
+        ex.fields.forEach((fd, i) => {
+          const inp = inputs[i]; inp.classList.remove("right", "wrong");
+          if (!inp.value.trim()) { empty = true; all = false; return; }
+          let good = false; try { const want = typeof fd.ans === "string" ? numVal(fd.ans) : fd.ans; good = close(numVal(inp.value), want, fd.tol || 1e-6); } catch (e) { good = false; }
+          inp.classList.add(good ? "right" : "wrong"); if (!good) all = false;
+        });
+        ok = all; if (empty && !ok) { fb.className = "fb warnc"; fb.textContent = "Συμπλήρωσε όλα τα πεδία."; return; }
+      } else {
+        const v = inputs[0].value; if (!v.trim()) { fb.className = "fb warnc"; fb.textContent = "Γράψε την απάντησή σου."; return; }
+        if (type === "expr") ok = checkExpr(v, ex.ref, ex.pos);
+        else if (type === "anti") ok = checkAnti(v, ex.f, ex.pos);
+        else if (type === "ivp") ok = checkAnti(v, ex.f, ex.pos, ex.x0, ex.y0);
+        inputs[0].classList.remove("right", "wrong"); inputs[0].classList.add(ok ? "right" : "wrong");
+        if (!ok && type === "ivp") { try { if (checkAnti(v, ex.f, ex.pos)) { fb.className = "fb warnc"; fb.innerHTML = "Σχεδόν! Η παράγωγος είναι σωστή, αλλά δεν ικανοποιείται η αρχική συνθήκη — έλεγξε τη σταθερά c."; return; } } catch (e) {} }
+      }
+    } catch (e) { fb.className = "fb warnc"; fb.textContent = "Δεν μπορώ να διαβάσω την απάντηση: " + e.message; return; }
+    if (ok) {
+      fb.className = "fb okc"; fb.innerHTML = ["Σωστά! 🎉", "Μπράβο, σωστό!", "Τέλεια!"][tries % 3] + (tries > 1 ? ` <span class="muted">(${tries}η προσπάθεια)</span>` : "");
+      card.classList.add("solved"); $(".tick-ok", card).textContent = "✓ Λυμένη"; onSolved && onSolved();
+    } else {
+      fb.className = "fb badc"; fb.innerHTML = tries >= 2 && ex.hint && hint.classList.contains("hidden") ? "Όχι ακόμα. Δες την υπόδειξη!" : "Όχι ακόμα — ξαναπροσπάθησε.";
+    }
+  };
+  card.addEventListener("keydown", e => { if (e.key === "Enter" && e.target.tagName === "INPUT" && e.target.type === "text") bCheck.click(); });
+  return card;
+}
+function drawGraph(pl, g) {
+  const f = typeof g === "function" ? g : MathParse.parse(g);
+  const ex = roots(x => D(f, x), -6, 6); let a = -3, b = 3;
+  if (ex.length) { a = Math.min(...ex) - 1.8; b = Math.max(...ex) + 1.8; }
+  const [lo, hi] = fitY(f, a, b, 0.15);
+  const P = makePlot(pl, { xmin: a, xmax: b, ymin: lo, ymax: hi, H: 260 });
+  P.curve(f, "c1");
+  for (const r of ex) { const s1 = D(f, r - 0.02), s2 = D(f, r + 0.02); if (s1 * s2 < 0) P.dot(r, f(r), s1 > 0 ? "dmax" : "dmin", `(${fmt(r)}, ${fmt(f(r))})`, 6, s1 > 0 ? -8 : 18); }
+  for (const r of roots(x => D2(f, x), a, b)) if (D2(f, r - 0.05) * D2(f, r + 0.05) < 0) P.dot(r, f(r), "dinf", "καμπή");
+}
+
+/* ================= Σελίδες ================= */
+let CURRENT = null;
+function renderNav() {
+  const nav = $("#nav"); nav.innerHTML = "";
+  nav.appendChild(h("button", { class: "navit" + (CURRENT === "home" ? " on" : ""), onclick: () => go("home") }, `<span class="nid">⌂</span><span class="nt">Αρχική & πρόοδος</span>`));
+  for (const u of UNITS) {
+    nav.appendChild(h("div", { class: "navu" }, u.title.replace(" · ", "<br><small>") + "</small>"));
+    for (const s of SECTIONS.filter(s => s.unit === u.id)) {
+      const d = secDone(s), n = s.exercises.length, pct = Math.round(d / n * 100);
+      nav.appendChild(h("button", { class: "navit" + (CURRENT === s.id ? " on" : ""), onclick: () => go(s.id) },
+        `<span class="nid">${s.id}</span><span class="nt">${s.title}</span><span class="ring" style="--p:${pct}" title="${d}/${n}">${d === n ? "✓" : ""}</span>`));
+    }
+  }
+}
+function go(id, scroll = true) {
+  CURRENT = id; renderNav();
+  const main = $("#main"); main.innerHTML = "";
+  if (id === "home") renderHome(main); else renderSection(main, SECTIONS.find(s => s.id === id));
+  typeset(main);
+  try { history.replaceState(null, "", "#" + encodeURIComponent(id)); } catch (e) {}
+  if (scroll) { const top = $("#app").getBoundingClientRect().top + window.scrollY - 76; window.scrollTo({ top: Math.max(0, top), behavior: "smooth" }); }
+}
+function renderHome(main) {
+  const total = SECTIONS.reduce((a, s) => a + s.exercises.length, 0), done = SECTIONS.reduce((a, s) => a + secDone(s), 0);
+  main.appendChild(h("section", { class: "card hero" }, `<h2>${CONFIG.heroTitle}</h2>
+    <p>Διαδραστική θεωρία, γραφήματα που κινούνται και ασκήσεις με <b>άμεσο έλεγχο</b>, υποδείξεις και πλήρεις λύσεις για όλη την ύλη του ${CONFIG.tefxos}.</p>
+    <div class="bigprog"><div class="bar"><i style="width:${total ? done / total * 100 : 0}%"></i></div><span>${done} / ${total} ασκήσεις λυμένες</span></div>
+    <p class="muted small">Η πρόοδος αποθηκεύεται μόνο σε αυτή τη συσκευή.</p>`));
+  for (const u of UNITS) {
+    const grid = h("div", { class: "secgrid" });
+    for (const s of SECTIONS.filter(s => s.unit === u.id)) {
+      const d = secDone(s), n = s.exercises.length;
+      grid.appendChild(h("button", { class: "seccard", onclick: () => go(s.id) }, `<span class="sid">${s.id}</span><b>${s.title}</b><span class="bar"><i style="width:${d / n * 100}%"></i></span><small>${d}/${n} ασκήσεις${s.widget ? " · διαδραστικό γράφημα" : ""}${s.gen ? " · γεννήτρια" : ""}</small>`));
+    }
+    main.appendChild(h("h3", { class: "unith" }, u.title)); main.appendChild(grid);
+  }
+  main.appendChild(h("section", { class: "card howto" }, `<h3>Πώς γράφω απαντήσεις;</h3>
+    ${CONFIG.howto}
+    <button class="btn ghost small" id="resetp">Μηδενισμός προόδου</button>`));
+  $("#resetp", main).onclick = () => { if (confirm("Να διαγραφεί η πρόοδός σου σε αυτή τη συσκευή;")) { PROG = {}; saveProg(); go("home", false); } };
+}
+function renderSection(main, s) {
+  const idx = SECTIONS.indexOf(s);
+  main.appendChild(h("div", { class: "sechead" }, `<span class="sid big">${s.id}</span><div><h2>${s.title}</h2><div class="muted small">📘 ${s.book}</div></div>`));
+  const th = h("section", { class: "card" }, `<h3 class="blk">Θεωρία</h3>${s.theory}`);
+  main.appendChild(th);
+  if (s.widget) { const w = h("section", { class: "card widget" }, `<h3 class="blk">Πειραματίσου</h3><div class="wbody"></div>`); main.appendChild(w); WIDGETS[s.widget]($(".wbody", w)); }
+  const exs = h("section", { class: "card" }, `<h3 class="blk">Ασκήσεις <span class="muted small">— ${secDone(s)}/${s.exercises.length} λυμένες</span></h3>`);
+  s.exercises.forEach((ex, i) => exs.appendChild(exerciseCard(ex, { title: `Άσκηση ${i + 1}`, solved: !!PROG[exKey(s.id, i)], onSolved: () => { PROG[exKey(s.id, i)] = 1; saveProg(); renderNav(); $(".blk .muted", exs).textContent = `— ${secDone(s)}/${s.exercises.length} λυμένες`; } })));
+  main.appendChild(exs);
+  if (s.gen) {
+    const G = GENS[s.gen], gs = h("section", { class: "card gen" }, `<h3 class="blk">♾️ ${G.title}</h3><p class="muted small">Κάθε φορά καινούργια άσκηση — εξάσκηση χωρίς τέλος.</p><div class="gslot"></div><button class="btn primary newg">Νέα άσκηση ↻</button>`);
+    main.appendChild(gs);
+    let count = 0;
+    const fresh = () => { count++; const slot = $(".gslot", gs); slot.innerHTML = ""; const ex = G.make(); slot.appendChild(exerciseCard(ex, { title: `Εξάσκηση #${count}` })); typeset(slot); };
+    $(".newg", gs).onclick = fresh; fresh();
+  }
+  const nav = h("div", { class: "pager" });
+  if (idx > 0) nav.appendChild(h("button", { class: "btn ghost", onclick: () => go(SECTIONS[idx - 1].id) }, `← ${SECTIONS[idx - 1].id} ${SECTIONS[idx - 1].title}`)); else nav.appendChild(h("span"));
+  if (idx < SECTIONS.length - 1) nav.appendChild(h("button", { class: "btn primary", onclick: () => go(SECTIONS[idx + 1].id) }, `${SECTIONS[idx + 1].id} ${SECTIONS[idx + 1].title} →`));
+  main.appendChild(nav);
+}
+
+function boot() {
+  let start = "home";
+  try { const hsh = decodeURIComponent(location.hash.slice(1)); if (hsh && (hsh === "home" || SECTIONS.some(s => s.id === hsh))) start = hsh; } catch (e) {}
+  go(start, false);
+}
+if (window.renderMathInElement) boot(); else window.addEventListener("load", boot);
+
+</script>
+</body>
+</html>
