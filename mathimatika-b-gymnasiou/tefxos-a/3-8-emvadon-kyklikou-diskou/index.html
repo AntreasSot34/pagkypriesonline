@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Εμβαδόν κυκλικού δίσκου — Ασκήσεις με Λύσεις | Β΄ Γυμνασίου</title>
+<meta name="description" content="Εμβαδόν κυκλικού δίσκου — Μαθηματικά Β΄ Γυμνασίου: θεωρία, 9 λυμένες ασκήσεις με υποδείξεις, διαδραστικό γράφημα και γεννήτρια ασκήσεων και quiz. Δωρεάν.">
+<link rel="canonical" href="https://pagkypriesonline.com/mathimatika-b-gymnasiou/tefxos-a/3-8-emvadon-kyklikou-diskou/">
+<meta name="theme-color" content="#14171C">
+<link rel="icon" href="/favicon.png" type="image/png" sizes="64x64">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="el_CY">
+<meta property="og:site_name" content="Pagkypries Online">
+<meta property="og:title" content="Εμβαδόν κυκλικού δίσκου — Ασκήσεις με Λύσεις | Β΄ Γυμνασίου">
+<meta property="og:description" content="Εμβαδόν κυκλικού δίσκου — Μαθηματικά Β΄ Γυμνασίου: θεωρία, 9 λυμένες ασκήσεις με υποδείξεις, διαδραστικό γράφημα και γεννήτρια ασκήσεων και quiz. Δωρεάν.">
+<meta property="og:url" content="https://pagkypriesonline.com/mathimatika-b-gymnasiou/tefxos-a/3-8-emvadon-kyklikou-diskou/">
+<meta property="og:image" content="https://pagkypriesonline.com/g/g01.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<style>
+:root{
+  --navy:#1B2A4A;--blue:#0F6FD1;--green:#198754;--amber:#C77A0A;--red:#DC3545;--purple:#6F42C1;
+  --ink:#15233f;--muted:#5b6b86;--line:#dce3ef;--bg:#F4F7FA;--card:#fff;--soft:#f5f8fd;
+  --sans:"Commissioner",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;--ink2:#14171C;--grad:linear-gradient(100deg,#54EFA2 0%,#33CFD3 48%,#2D9AF5 100%);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px}
+.top{position:sticky;top:0;z-index:50;background:rgba(244,247,252,.9);backdrop-filter:saturate(160%) blur(14px);border-bottom:1px solid var(--line)}
+.top::before{content:"";display:block;height:3px;background:var(--grad)}
+.top .in{max-width:1180px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:14px;min-height:60px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink2);font-weight:900;letter-spacing:-.02em;font-size:17px;white-space:nowrap}
+.brand img{width:32px;height:auto;display:block}
+.top .crumb{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);border-left:1px solid var(--line);padding-left:14px}
+.top .links{margin-left:auto;display:flex;gap:8px}
+.top .links a{text-decoration:none;font-size:13.5px;font-weight:600;color:var(--ink2);border:1px solid var(--line);background:#fff;border-radius:10px;padding:7px 12px;white-space:nowrap}
+.top .links a:hover{border-color:#2D9AF5;color:var(--blue)}
+.top .links a.home{background:var(--blue);border-color:var(--blue);color:#fff}
+@media(max-width:860px){.top .crumb{display:none}}
+@media(max-width:480px){.brand span{display:none}.top .links a{padding:7px 10px;font-size:13px}}
+#app{max-width:1180px;margin:0 auto;padding:18px 16px 40px;display:grid;grid-template-columns:270px 1fr;gap:20px;align-items:start}
+#nav{position:sticky;top:76px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:10px;max-height:calc(100vh - 90px);overflow:auto}
+.navu{font-size:12px;font-weight:800;color:var(--blue);text-transform:uppercase;letter-spacing:.04em;padding:12px 8px 4px;line-height:1.3}
+.navu small{text-transform:none;letter-spacing:0;color:var(--navy);font-size:13px}
+.navit{display:flex;align-items:center;gap:9px;width:100%;text-align:left;background:none;border:0;border-radius:10px;padding:8px;cursor:pointer;font:inherit;color:var(--ink);font-size:14px;line-height:1.3}
+.navit:hover{background:var(--soft)}.navit.on{background:#e3eefb;font-weight:700}
+.nid{flex:none;min-width:34px;font-weight:800;color:var(--navy);font-size:12.5px}
+.nt{flex:1}
+.ring{flex:none;width:20px;height:20px;border-radius:50%;background:conic-gradient(var(--green) calc(var(--p)*1%),#dfe6f1 0);display:flex;align-items:center;justify-content:center;font-size:11px;color:#fff;font-weight:900;position:relative}
+.ring::before{content:"";position:absolute;inset:3px;border-radius:50%;background:#fff}
+.ring[style*="--p:100"]::before{background:var(--green)}
+.ring{isolation:isolate}.ring::before{z-index:-1}
+#main{min-width:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;margin-bottom:16px;box-shadow:0 10px 30px -22px rgba(27,42,74,.45)}
+h1,h2{color:var(--navy);font-size:24px;line-height:1.2;font-weight:900}
+h1{font-size:26px;overflow-wrap:anywhere;hyphens:auto}
+.sechead>div{min-width:0}
+a.navit,a.seccard,a.quizcta{text-decoration:none;color:var(--ink)}
+a.btn{text-decoration:none;display:inline-block}
+h3.blk{color:var(--navy);font-size:18px;font-weight:900;margin-bottom:12px}
+.unith{color:var(--navy);font-size:17px;font-weight:900;margin:22px 0 10px}
+.sechead{display:flex;gap:14px;align-items:center;margin:2px 0 14px}
+.sid{display:inline-block;background:var(--navy);color:#fff;font-weight:900;border-radius:8px;padding:2px 9px;font-size:13px}
+.sid.big{font-size:18px;padding:8px 12px;border-radius:12px}
+.muted{color:var(--muted)}.small{font-size:13px}
+.hero p{margin-top:8px}
+.bigprog{display:flex;align-items:center;gap:12px;margin-top:14px;font-weight:700;color:var(--navy);font-size:14px}
+.bar{display:block;flex:1;height:10px;border-radius:99px;background:#e3e9f3;overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--blue),var(--green));border-radius:99px}
+.secgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.seccard{display:flex;flex-direction:column;gap:8px;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;cursor:pointer;font:inherit;color:var(--ink);transition:.15s}
+.seccard:hover{border-color:var(--blue);transform:translateY(-2px);box-shadow:0 10px 24px -18px rgba(46,117,182,.8)}
+.seccard b{color:var(--navy);line-height:1.3}.seccard .bar{flex:none;width:100%}.seccard small{color:var(--muted)}.seccard .sid{align-self:flex-start}
+.howto ul{margin:8px 0 12px 20px}.howto li{margin:4px 0}
+code{font-family:"SF Mono",Consolas,Menlo,monospace;background:#eaf0fb;color:var(--navy);padding:1px 6px;border-radius:5px;font-size:.92em}
+.tbox{border:1px solid var(--line);border-left:5px solid var(--blue);background:var(--soft);border-radius:0 12px 12px 0;padding:12px 16px;margin:10px 0}
+.tbox.tip{border-left-color:var(--green);background:#f1faf4}.tbox.warn{border-left-color:var(--amber);background:#fdf6e9}
+.tbox h4{color:var(--navy);font-size:15.5px;margin-bottom:4px}
+/* --- εμπλουτισμένα πλαίσια θεωρίας (Ορισμός/Θεώρημα/Παράδειγμα/Παρατήρηση/Απόδειξη) --- */
+.tbox.def{border-left-color:var(--blue);background:linear-gradient(90deg,#eef5ff,#f7faff)}
+.tbox.thm{border-left-color:var(--purple);background:linear-gradient(90deg,#f4efff,#faf8ff)}
+.tbox.ex{border-left-color:var(--green);background:linear-gradient(90deg,#edf9f2,#f8fdfa)}
+.tbox.rem{border-left-color:#0d9488;background:#effaf8}
+.tbox.def h4::before,.tbox.thm h4::before,.tbox.ex h4::before,.tbox.rem h4::before{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#fff;border-radius:6px;padding:2px 7px;margin-right:8px;vertical-align:2px}
+.tbox.def h4::before{content:"Ορισμός";background:var(--blue)}.tbox.thm h4::before{content:"Θεώρημα";background:var(--purple)}
+.tbox.ex h4::before{content:"Παράδειγμα";background:var(--green)}.tbox.rem h4::before{content:"Παρατήρηση";background:#0d9488}
+details.proof,details.steps{border:1px dashed #c7d2e5;border-radius:10px;padding:6px 12px;margin:8px 0;background:#fff}
+details.proof>summary,details.steps>summary{cursor:pointer;font-weight:800;color:var(--navy);font-size:14px;list-style:none}
+details.proof>summary::before,details.steps>summary::before{content:"▸ ";color:var(--blue)}details[open].proof>summary::before,details[open].steps>summary::before{content:"▾ "}
+details.proof[open]{background:#fbfcff}details.proof p:last-child::after{content:" ∎";color:var(--navy);font-weight:900}
+figure.grfig{margin:10px auto;max-width:560px}figure.grfig svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;box-shadow:0 8px 22px -18px rgba(27,42,74,.5)}
+figure.grfig figcaption{text-align:center;color:var(--muted);font-size:13px;margin-top:6px}
+.figrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;align-items:start}
+.fbox{display:block;text-align:center;font-size:1.05em;background:#fff;border:1.5px solid #c9d8f0;border-radius:12px;padding:10px 12px;margin:8px auto;max-width:fit-content;box-shadow:0 6px 18px -16px rgba(15,111,209,.6)}
+.hero.art{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:18px;align-items:center;background:radial-gradient(120% 140% at 100% 0%,#e9f2ff 0%,#fff 55%)}
+.hero.art .heroart svg{width:100%;height:auto;display:block}
+@media(max-width:760px){.hero.art{grid-template-columns:1fr}.hero.art .heroart{max-width:320px;margin:0 auto}}
+.unith .uchip{display:inline-flex;align-items:center;justify-content:center;min-width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;font-size:14px;margin-right:8px;vertical-align:1px}
+.seccard{position:relative}.seccard .thumb{position:absolute;top:10px;right:12px;width:68px;height:40px;opacity:.9}
+.seccard:hover .thumb{opacity:1}
+.intro{font-size:15.5px;color:var(--ink);background:#fff8ec;border:1px solid #f3dcb3;border-radius:12px;padding:10px 14px;margin:0 0 14px}
+.tbox ul,.tbox ol{margin:4px 0 2px 22px}.tbox li{margin:3px 0}.tbox p{margin:4px 0}
+.katex-display{overflow-x:auto;overflow-y:hidden;padding:2px 0}
+#main .katex{max-width:100%;position:relative}
+#main :not(.katex-display) > .katex{display:inline-block;overflow-x:auto;overflow-y:hidden;vertical-align:middle;padding:1px 0}
+.wctl label{min-width:0;max-width:100%}
+.tblwrap{overflow-x:auto}
+table.vt{border-collapse:collapse;margin:8px 0;font-size:14px;white-space:nowrap}
+table.vt th,table.vt td{border:1px solid #c9d3e4;padding:4px 10px;text-align:center}table.vt th{background:#eaf1fb}
+/* widgets */
+.wctl{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;margin-bottom:10px;font-size:14px;font-weight:600;color:var(--navy)}
+.wctl label{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.wctl select{max-width:100%;min-width:0;font:inherit;font-weight:600;padding:6px 10px;border-radius:9px;border:1px solid var(--line);background:#fff;color:var(--navy)}
+input[type=range]{accent-color:var(--blue);width:170px;max-width:60vw}
+.cap{font-size:13px;color:var(--muted);margin:6px 0 2px}
+.t1{color:var(--blue)}.t2{color:var(--purple)}.t3{color:var(--amber)}
+.wout{margin-top:10px;font-size:14.5px;background:var(--soft);border-radius:10px;padding:10px 12px}
+.ok{color:var(--green)}.bad{color:var(--red)}
+.two{display:grid;grid-template-columns:1fr 1.6fr;gap:12px;align-items:center}
+.plot{width:100%;height:auto;display:block;background:#fff;border:1px solid var(--line);border-radius:12px;touch-action:pan-y}
+.plot .grid line{stroke:#edf1f7}.plot .tick{font-size:11px;fill:#8a97ad;font-family:var(--sans)}
+.plot .axis{stroke:var(--navy);stroke-width:1.4}
+.plot .curve{fill:none;stroke-width:3;stroke-linejoin:round;stroke-linecap:round}
+.c1{stroke:var(--blue)}.c2{stroke:var(--purple)}.c3{stroke:var(--amber)}.cfam{stroke:#c5cfdf;stroke-width:1.8!important}
+.plot .band.pos{fill:rgba(25,135,84,.09)}.plot .band.neg{fill:rgba(220,53,69,.08)}
+.plot .dot{stroke:#fff;stroke-width:2}.d1{fill:var(--blue)}.d2{fill:var(--navy)}.d3{fill:var(--amber)}.dmax{fill:var(--green)}.dmin{fill:var(--red)}.dinf{fill:var(--purple)}
+.plot .lbl{font-size:12.5px;font-weight:800;font-family:var(--sans)}.lbl.dmax{fill:var(--green)}.lbl.dmin{fill:var(--red)}.lbl.dinf{fill:var(--purple)}.lbl.d2,.lbl.d3,.lbl.d1{fill:var(--navy)}
+.plot .guide{stroke:#9aa8bf;stroke-dasharray:4 4}.plot .tangent{stroke:var(--red);stroke-width:2;stroke-dasharray:7 5}
+.plot .sheet{fill:#f3e7cf;stroke:#c9a86a}.plot .cut{fill:#fff;stroke:var(--red);stroke-dasharray:4 3}.plot .base{fill:#dbe8f8;stroke:var(--blue)}
+/* exercises */
+.ex{border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:12px 0;background:#fff;transition:border-color .2s}
+.ex.solved{border-color:#a9dcbf;background:#fbfefc}
+.exh{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.exn{font-weight:900;color:var(--navy)}
+.lvl{font-size:11.5px;font-weight:800;padding:2px 9px;border-radius:99px}
+.l1{background:#e7f6ee;color:var(--green)}.l2{background:#fdf1dd;color:var(--amber)}.l3{background:#fdeaec;color:var(--red)}
+.tick-ok{margin-left:auto;color:var(--green);font-weight:800;font-size:13px}
+.exq{margin-bottom:10px}
+.opt{display:flex;gap:10px;align-items:flex-start;padding:9px 12px;border:1px solid var(--line);border-radius:10px;margin:6px 0;cursor:pointer;background:#fff}
+.opt:hover{border-color:var(--blue)}.opt input{margin-top:5px;accent-color:var(--blue)}
+.opt.right{border-color:var(--green);background:#eef9f2}.opt.wrong{border-color:var(--red);background:#fdf0f1}
+.fields{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px 14px}
+.fld{display:flex;flex-direction:column;gap:3px;font-size:13.5px;color:var(--muted);font-weight:600}
+.fld.wide{max-width:560px}
+.fld input{font:inherit;font-size:16px;padding:9px 12px;border:1.5px solid var(--line);border-radius:10px;color:var(--ink);background:#fff;width:100%}
+.fld input:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(46,117,182,.15)}
+.fld input.right{border-color:var(--green);background:#f1faf4}.fld input.wrong{border-color:var(--red);background:#fdf3f4}
+.preview{font-size:12.5px;margin-top:4px;min-height:1em}.warnc{color:var(--amber)}
+.exbar{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.btn{font:inherit;font-size:14px;font-weight:700;border-radius:10px;padding:8px 14px;cursor:pointer;border:1.5px solid transparent;transition:.15s}
+.btn.primary{background:var(--blue);color:#fff}.btn.primary:hover{background:#245f94}
+.btn.ghost{background:#fff;color:var(--navy);border-color:var(--line)}.btn.ghost:hover{border-color:var(--blue)}
+.btn.small{font-size:13px;padding:6px 11px}
+.fb{margin-top:10px;font-weight:700;min-height:0}.fb:empty{display:none}
+.okc{color:var(--green)}.badc{color:var(--red)}
+.hint,.sol{margin-top:10px;padding:10px 14px;border-radius:10px;font-size:15px}
+.hint{background:#fff8e8;border:1px solid #f0d9a8}.sol{background:#f1faf4;border:1px solid #bfe6cf}
+.hidden{display:none}
+.solgraph{margin-top:10px;max-width:520px}
+.gen{border:2px dashed #b8cbe6}.gen .newg{margin-top:4px}
+.pager{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:6px}
+.chips{gap:6px}.chip{font:inherit;font-size:14px;font-weight:700;border:1.5px solid var(--line);background:#fff;color:var(--navy);border-radius:99px;padding:5px 12px;cursor:pointer}
+.chip.on{background:var(--blue);border-color:var(--blue);color:#fff}
+.wctl.col{flex-direction:column;align-items:flex-start;gap:6px}
+.plot .vnum{font-size:17px;font-weight:900;fill:var(--navy);text-anchor:middle;font-family:var(--sans)}
+.pills{display:flex;flex-wrap:wrap;gap:5px;margin:6px 0}.pills span{font-family:"SF Mono",Consolas,monospace;font-size:13px;background:#eef3fb;border:1px solid var(--line);border-radius:7px;padding:2px 7px;color:var(--navy)}
+.pills span.pm{background:var(--amber);color:#fff;border-color:var(--amber)}.pills span.pl1{background:#e3eefb}.pills span.pl2{background:#efe8fb}
+.dice{display:flex;align-items:center;gap:10px;margin:4px 0 8px;font-size:14px}
+.plot .theo{stroke:var(--red);stroke-width:2.5}.plot .whisk{stroke:var(--navy);stroke-width:2}.plot .medl{stroke:var(--red);stroke-width:3}
+.plot .sol-e{fill:none;stroke:var(--navy);stroke-width:2}.plot .sol-eb{fill:none;stroke:var(--navy);stroke-width:1.5;stroke-dasharray:5 4;opacity:.6}
+.plot .axisrot{stroke:var(--red);stroke-width:1.5;stroke-dasharray:8 5}.plot .gen2d{fill:rgba(46,117,182,.22);stroke:var(--blue);stroke-width:2}
+table.t2 input{width:72px;font:inherit;padding:4px 6px;border:1px solid var(--line);border-radius:7px;text-align:center}
+.sform{font-size:15px;line-height:2}
+.qhead{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.qchips{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:6px;margin-bottom:14px}
+.qchip{display:flex;gap:8px;align-items:flex-start;border:1px solid var(--line);border-radius:10px;padding:7px 10px;font-size:13.5px;cursor:pointer;background:#fff}
+.qchip input{margin-top:4px;accent-color:var(--blue)}.qchip b{color:var(--navy)}
+.qopts{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;margin-bottom:14px;font-size:14px;font-weight:600;color:var(--navy)}
+.qopts select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--line);margin-left:6px}
+.qbar{display:flex;justify-content:space-between;align-items:center;position:sticky;top:70px;z-index:5;padding:12px 18px}
+.qtime{font-family:"IBM Plex Mono",monospace;font-weight:600;color:var(--blue)}
+.qsub{width:100%;padding:13px;font-size:16px;margin:6px 0 18px}
+.qscore{display:flex;gap:20px;align-items:center;flex-wrap:wrap;border:2px solid var(--green);background:#f1faf4}
+.qbig{font-size:40px;font-weight:900;color:var(--green);line-height:1}
+.qscore .btn{margin-left:auto}
+.quizcta{display:flex;gap:16px;align-items:center;width:100%;text-align:left;cursor:pointer;font:inherit;color:var(--ink);border:2px dashed #b8cbe6}
+.quizcta:hover{border-color:var(--blue)}.quizcta .go{margin-left:auto;font-weight:800;color:var(--blue);white-space:nowrap}
+.navit.quizit{background:#fff8e8;margin:2px 0}
+input:disabled{opacity:.85}
+.plot .chord{stroke:var(--purple);stroke-width:2.2}.plot .tangent.ok{stroke:var(--green);stroke-dasharray:none;stroke-width:2.5}
+.plot .asl{stroke:var(--red);stroke-width:1.6;stroke-dasharray:7 5}
+.plot .circ{fill:rgba(15,111,209,.08);stroke:var(--blue);stroke-width:2.6}.plot .circ2{fill:rgba(199,122,10,.08);stroke:var(--amber);stroke-width:2.6}
+.plot .c1line{stroke:var(--purple);stroke-width:2.4}
+.plot .rect{fill:rgba(15,111,209,.18);stroke:var(--blue);stroke-width:1}.plot .area{fill:rgba(25,135,84,.22)}
+.plot .focus{fill:var(--red)}.plot .disk{fill:rgba(15,111,209,.12);stroke:var(--blue);stroke-width:.8}.plot .dir{stroke:var(--green);stroke-width:2;stroke-dasharray:6 4}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:24px 16px 34px}
+footer b{color:var(--navy)}footer a{color:var(--blue);font-weight:700;text-decoration:none}
+@media (max-width:860px){
+  #app{grid-template-columns:1fr;padding-top:10px}
+  #nav{position:static;display:flex;overflow-x:auto;gap:6px;padding:8px;max-height:none;scrollbar-width:thin}
+  .navu{display:none}
+  .navit{flex:none;width:auto;white-space:nowrap;border:1px solid var(--line);padding:6px 10px}
+  .navit .nt{display:none}.navit .nid{min-width:0}
+  .two{grid-template-columns:1fr}
+  .card{padding:16px}
+  h2{font-size:21px}h1{font-size:22px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+.plot.nogrid .grid,.plot.nogrid .axis{display:none}
+.plot .band.bandok{fill:rgba(25,135,84,.16)}
+table.mini{border-collapse:collapse;margin:.4rem 0;font-size:.95em;max-width:100%;display:block;overflow-x:auto}
+table.mini th,table.mini td{border:1px solid var(--line);padding:.3rem .55rem;text-align:center}
+table.mini th{background:var(--soft)}
+.exq svg.fig text{user-select:none}
+.ctaf{max-width:760px;margin:10px auto 0;padding:16px 18px;border:1px solid var(--line);border-radius:16px;background:var(--card);text-align:center;font-size:15px}.ctaf a{color:var(--blue);font-weight:700;text-decoration:none}.ctaf p{margin:4px 0}</style>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Αρχική", "item": "https://pagkypriesonline.com/"}, {"@type": "ListItem", "position": 2, "name": "Δωρεάν υλικό Μαθηματικών", "item": "https://pagkypriesonline.com/mathimatika/"}, {"@type": "ListItem", "position": 3, "name": "Μαθηματικά Β΄ Γυμνασίου — Α΄ Τεύχος", "item": "https://pagkypriesonline.com/mathimatika-b-gymnasiou/tefxos-a/"}, {"@type": "ListItem", "position": 4, "name": "Εμβαδόν κυκλικού δίσκου", "item": "https://pagkypriesonline.com/mathimatika-b-gymnasiou/tefxos-a/3-8-emvadon-kyklikou-diskou/"}]}, {"@type": "LearningResource", "name": "Εμβαδόν κυκλικού δίσκου", "description": "Εμβαδόν κυκλικού δίσκου — Μαθηματικά Β΄ Γυμνασίου: θεωρία, 9 λυμένες ασκήσεις με υποδείξεις, διαδραστικό γράφημα και γεννήτρια ασκήσεων και quiz. Δωρεάν.", "url": "https://pagkypriesonline.com/mathimatika-b-gymnasiou/tefxos-a/3-8-emvadon-kyklikou-diskou/", "inLanguage": "el", "isAccessibleForFree": true, "educationalLevel": "Β΄ Γυμνασίου", "learningResourceType": ["Θεωρία", "Ασκήσεις με λύσεις", "Διαδραστική εξάσκηση"], "teaches": "Εμβαδόν κυκλικού δίσκου", "isPartOf": {"@type": "Course", "name": "Μαθηματικά Β΄ Γυμνασίου — Α΄ Τεύχος", "url": "https://pagkypriesonline.com/mathimatika-b-gymnasiou/tefxos-a/"}, "provider": {"@type": "EducationalOrganization", "name": "Pagkypries Online", "url": "https://pagkypriesonline.com/"}, "author": {"@type": "Person", "name": "Αντρέας Σωτηρίου", "url": "https://antreassotiriou.com"}, "dateModified": "2026-10-23"}]}</script>
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<header class="top"><div class="in">
+  <a class="brand" href="/"><img src="/logo-mark.png" width="240" height="212" alt="PagkypriesOnline"><span>Pagkypries Online</span></a>
+  <div class="crumb">Μαθηματικά · Β΄ Γυμνασίου · Α΄ Τεύχος</div>
+  <nav class="links" aria-label="Σύνδεσμοι"><a href="/mathimatika-b-gymnasiou/tefxos-b/">Β΄ Τεύχος →</a><a class="home" href="/#yliko">← Αρχική</a></nav>
+</div></header>
+<div id="app"><nav id="nav" aria-label="Ενότητες"><a class="navit" href="/mathimatika-b-gymnasiou/tefxos-a/"><span class="nid">⌂</span><span class="nt">Αρχική &amp; πρόοδος</span></a><a class="navit quizit" href="/mathimatika-b-gymnasiou/tefxos-a/#quiz"><span class="nid">📝</span><span class="nt">Quiz — κάνε διαγώνισμα</span></a><div class="navu">Επανάληψη από την Α΄ Γυμνασίου</div><a class="navit" href="/mathimatika-b-gymnasiou/tefxos-a/0-1-epanalipsi-apo-tin-a-gymnasiou/"><span class="nid">0.1</span><span class="nt">Επανάληψη από την Α΄ Γυμνασίου</span><span class="ring" style="--p:0" title="0/8"></span></a><div class="navu">Ενότητα 1<br><small>Πραγματικοί αριθμοί</small></div><a class="navit" href="/mathimatika-b-gymnasiou/tefxos-a/1-1-idiotites-dynameon-me-ektheti-fysiko-arithmo/"><span class="nid">1.1</span><span class="nt">Ιδιότητες δυνάμεων με εκθέτη φυσικό αριθμό</span><span class="ring" style="--p:0" title="0/8"></span></a><a class="navit" href="/mathimatika-b-gymnasiou/tefxos-a/1-2-dynameis-riton-me-akeraio-ektheti/"><span class="nid">1.2</span><span class="nt">Δυνάμεις ρητών με ακέραιο εκθέτη</span><span class="ring" style="--p:0" title="0/8"></span></a><a class="navit" href="/mathimatika-b-gymnasiou/tefxos-a/1-3-tetragoniki-kai-kyviki-riza-arithmou/"><span class="nid">1.3</span><span class="nt">Τετραγωνική και κυβική ρίζα αριθμού</span><span class="ring" style="--p:0" title="0/8"></span></a><a class="navit" href="/mathimatika-b-gymnasiou/tefxos-a/1-4-idiotites-rizon/"><span class="nid">1.4</span><span class="nt">Ιδιότητες ριζών</span><span class="ring" style="--p:0" title="0/8"></span></a><a class="navit" href="/mathimatika-b-gymnasiou/tefxos-a/1-5-pythagoreio-theorima/"><span class="nid">1.5</span><span class="nt">Πυθαγόρειο θεώρημα</span><span class="ring" style="--p:0" title="0/8"></span></a><a class="navit" href="/mathimatika-b-gymnasiou/tefxos-a/1-6-pragmatikoi-arithmoi/"><span class="nid">1.6</span><span class="nt">Πραγματικοί αριθμοί</span><span class="ring" style="--p:0" title="0/8"></span></a><div class="navu">Ενότητα 2<br><small>Αλγεβρικές παραστάσεις</small></div><a class="navit" href="/mathimatika-b-gymnasiou/tefxos-a/2-1-algevrikes-parastaseis-mononyma/"><span class="nid">2.1</span><span class="nt">Αλγεβρικές παραστάσεις – Μονώνυμα</span><span class="ring" style="--p:0" title="0/9"></span></a><a class="navit" href="/mathimatika-b-gymnasiou/tefxos-a/2-2-praxeis-mononymon/"><span class="nid">2.2</span><span class="nt">Πράξεις μονωνύμων</span><span class="ring" style="--p:0" title="0/9"></span></a><a class="navit" href="/mathimatika-b-gymnasiou/tefxos-a/2-3-polyonyma-prosthesi-polyonymon/"><span class="nid">2.3</span><span class="nt">Πολυώνυμα – Πρόσθεση πολυωνύμων</span><span class="ring" style="--p:0" title="0/9"></span></a><a class="navit" href="/mathimatika-b-gymnasiou/tefxos-a/2-4-pollaplasiasmos-polyonymon/"><span class="nid">2.4</span><span class="nt">Πολλαπλασιασμός πολυωνύμων</span><span class="ring" style="--p:0" title="0/9"></span></a><a class="navit" href="/mathimatika-b-gymnasiou/tefxos-a/2-5-diairesi-polyonymon/"><span class="nid">2.5</span><span class="nt">Διαίρεση πολυωνύμων</span><span class="ring" style="--p:0" title="0/9"></span></a><div class="navu">Ενότητα 3<br><small>Γεωμετρία</small></div><a class="navit" href="/mathimatika-b-gymnasiou/tefxos-a/3-1-symmetria/"><span class="nid">3.1</span><span class="nt">Συμμετρία</span><span class="ring" style="--p:0" title="0/8"></span></a><a class="navit" href="/mathimatika-b-gymnasiou/tefxos-a/3-2-parallilogrammo/"><span class="nid">3.2</span><span class="nt">Παραλληλόγραμμο</span><span class="ring" style="--p:0" title="0/7"></span></a><a class="navit" href="/mathimatika-b-gymnasiou/tefxos-a/3-3-orthogonio-parallilogrammo/"><span class="nid">3.3</span><span class="nt">Ορθογώνιο παραλληλόγραμμο</span><span class="ring" style="--p:0" title="0/7"></span></a><a class="navit" href="/mathimatika-b-gymnasiou/tefxos-a/3-4-romvos/"><span class="nid">3.4</span><span class="nt">Ρόμβος</span><span class="ring" style="--p:0" title="0/7"></span></a><a class="navit" href="/mathimatika-b-gymnasiou/tefxos-a/3-5-tetragono/"><span class="nid">3.5</span><span class="nt">Τετράγωνο</span><span class="ring" style="--p:0" title="0/7"></span></a><a class="navit" href="/mathimatika-b-gymnasiou/tefxos-a/3-6-trapezio/"><span class="nid">3.6</span><span class="nt">Τραπέζιο</span><span class="ring" style="--p:0" title="0/8"></span></a><a class="navit" href="/mathimatika-b-gymnasiou/tefxos-a/3-7-mikos-kyklou/"><span class="nid">3.7</span><span class="nt">Μήκος κύκλου</span><span class="ring" style="--p:0" title="0/8"></span></a><a class="navit on" href="/mathimatika-b-gymnasiou/tefxos-a/3-8-emvadon-kyklikou-diskou/"><span class="nid">3.8</span><span class="nt">Εμβαδόν κυκλικού δίσκου</span><span class="ring" style="--p:0" title="0/9"></span></a></nav><main id="main"><div class="sechead"><span class="sid big">3.8</span><div><h1>Εμβαδόν κυκλικού δίσκου</h1><div class="muted small">📘 Α΄ Τεύχος §3 · σελ. 145 · Δραστηριότητες σελ. 149 · Ενότητας σελ. 151</div></div></div><section class="card"><h3 class="blk">Θεωρία</h3><div class="tbox tip"><h4>✓ Εξεταστέα ύλη</h4><p>Η παράγραφος περιλαμβάνεται στην εξεταστέα ύλη της ενιαίας τελικής γραπτής εξέτασης της Β΄ Γυμνασίου (2025–26).</p></div>
+<div class="tbox"><h4>Εμβαδόν κυκλικού δίσκου</h4>
+<p>Το εμβαδόν κυκλικού δίσκου (λέγεται και «εμβαδόν κύκλου») με ακτίνα $R$ είναι</p>
+$$E = \pi R^2.$$
+<p>Π.χ. $R = 9$ cm: $E = 81\pi \approx 254{,}34$ cm². Αν δίνεται η διάμετρος, βρίσκουμε πρώτα την ακτίνα $R = \frac{\delta}{2}$.</p></div>
+<div class="tbox"><h4>Εμβαδόν κυκλικού τομέα</h4>
+<p>Κυκλικός τομέας με ακτίνα $R$ και επίκεντρη γωνία $\mu^\circ$:</p>
+$$E_{\kappa.\tau.} = \frac{\mu}{360}\cdot\pi R^2 = \frac{\pi R^2\mu}{360}.$$
+<p>Π.χ. $R = 9$, $\mu = 60^\circ$: $E_{\kappa.\tau.} = \frac{81\pi}{6} = 13{,}5\pi$ cm².</p></div>
+<div class="tbox tip"><h4>Σύνθετα σχήματα</h4>
+<p>Για σκιασμένες επιφάνειες προσθέτουμε ή αφαιρούμε εμβαδά: π.χ. <b>κυκλικός δακτύλιος</b> (ανάμεσα σε ομόκεντρους κύκλους $R$, $\rho$): $E = \pi R^2 - \pi\rho^2$. Ημικύκλιο: $\frac{\pi R^2}{2}$, τεταρτοκύκλιο: $\frac{\pi R^2}{4}$.</p>
+<p>Προσοχή: αν η ακτίνα πολλαπλασιαστεί επί $\lambda$, το εμβαδόν πολλαπλασιάζεται επί $\lambda^2$.</p></div></section><section class="card widget"><h3 class="blk">Πειραματίσου</h3><div class="wbody"><div class="wctl"><label>ακτίνα R <input type="range" class="rr" min="1" max="20" value="6"><b class="vr">6</b></label>
+      <label>τομέας μ <input type="range" class="rm" min="0" max="360" step="5" value="60"><b class="vm">60°</b></label>
+      <label>εσωτερική ρ <input type="range" class="rp" min="0" max="19" value="0"><b class="vp">0</b></label></div><div class="pl"><svg viewBox="0 0 560 300" class="plot nogrid" role="img"><g class="grid"><line x1="10.769230769230777" x2="10.769230769230777" y1="0" y2="300"></line><text x="10.769230769230777" y="164" text-anchor="middle" class="tick">-2,5</text><line x1="64.61538461538461" x2="64.61538461538461" y1="0" y2="300"></line><text x="64.61538461538461" y="164" text-anchor="middle" class="tick">-2</text><line x1="118.46153846153847" x2="118.46153846153847" y1="0" y2="300"></line><text x="118.46153846153847" y="164" text-anchor="middle" class="tick">-1,5</text><line x1="172.30769230769232" x2="172.30769230769232" y1="0" y2="300"></line><text x="172.30769230769232" y="164" text-anchor="middle" class="tick">-1</text><line x1="226.15384615384616" x2="226.15384615384616" y1="0" y2="300"></line><text x="226.15384615384616" y="164" text-anchor="middle" class="tick">-0,5</text><line x1="280" x2="280" y1="0" y2="300"></line><line x1="333.84615384615387" x2="333.84615384615387" y1="0" y2="300"></line><text x="333.84615384615387" y="164" text-anchor="middle" class="tick">0,5</text><line x1="387.6923076923077" x2="387.6923076923077" y1="0" y2="300"></line><text x="387.6923076923077" y="164" text-anchor="middle" class="tick">1</text><line x1="441.53846153846143" x2="441.53846153846143" y1="0" y2="300"></line><text x="441.53846153846143" y="164" text-anchor="middle" class="tick">1,5</text><line x1="495.3846153846153" x2="495.3846153846153" y1="0" y2="300"></line><text x="495.3846153846153" y="164" text-anchor="middle" class="tick">2</text><line x1="549.2307692307692" x2="549.2307692307692" y1="0" y2="300"></line><text x="549.2307692307692" y="164" text-anchor="middle" class="tick">2,5</text><line x1="0" x2="560" y1="257.6923076923077" y2="257.6923076923077"></line><text x="275" y="261.6923076923077" text-anchor="end" class="tick">-1</text><line x1="0" x2="560" y1="203.84615384615387" y2="203.84615384615387"></line><text x="275" y="207.84615384615387" text-anchor="end" class="tick">-0,5</text><line x1="0" x2="560" y1="150" y2="150"></line><line x1="0" x2="560" y1="96.15384615384613" y2="96.15384615384613"></line><text x="275" y="100.15384615384613" text-anchor="end" class="tick">0,5</text><line x1="0" x2="560" y1="42.307692307692264" y2="42.307692307692264"></line><text x="275" y="46.307692307692264" text-anchor="end" class="tick">1</text></g><line x1="0" x2="560" y1="150" y2="150" class="axis"></line><line x1="280" x2="280" y1="0" y2="300" class="axis"></line><g><ellipse cx="280" cy="150" rx="129.23076923076923" ry="129.23076923076923" style="stroke:var(--blue);stroke-width:2.6;fill:rgba(15,111,209,.14)"></ellipse><path d="M280,150L409.2,150.0L409.2,147.7L409.2,145.5L409.1,143.2L408.9,141.0L408.7,138.7L408.5,136.5L408.3,134.3L408.0,132.0L407.6,129.8L407.3,127.6L406.9,125.3L406.4,123.1L405.9,120.9L405.4,118.7L404.8,116.6L404.2,114.4L403.6,112.2L402.9,110.1L402.2,107.9L401.4,105.8L400.6,103.7L399.8,101.6L399.0,99.5L398.1,97.4L397.1,95.4L396.2,93.3L395.1,91.3L394.1,89.3L393.0,87.3L391.9,85.4L390.8,83.4L389.6,81.5L388.4,79.6L387.1,77.7L385.9,75.9L384.5,74.0L383.2,72.2L381.8,70.4L380.4,68.7L379.0,66.9L377.5,65.2L376.0,63.5L374.5,61.9L373.0,60.2L371.4,58.6L369.8,57.0L368.1,55.5L366.5,54.0L364.8,52.5L363.1,51.0L361.3,49.6L359.6,48.2L357.8,46.8L356.0,45.5L354.1,44.1L352.3,42.9L350.4,41.6L348.5,40.4L346.6,39.2L344.6,38.1Z" style="fill:rgba(240,150,30,.55);stroke:var(--amber);stroke-width:2"></path></g><g><path d="M312.3,150.0L312.3,149.2L312.3,148.3L312.2,147.5L312.1,146.6L312.0,145.8L311.9,144.9L311.8,144.1L311.6,143.3L311.4,142.5L311.2,141.6L311.0,140.8L310.7,140.0L310.5,139.2L310.2,138.4L309.8,137.6L309.5,136.9L309.2,136.1L308.8,135.3L308.4,134.6L308.0,133.8L307.5,133.1L307.1,132.4L306.6,131.7L306.1,131.0L305.6,130.3L305.1,129.7L304.6,129.0L304.0,128.4L303.4,127.8L302.8,127.2L302.2,126.6L301.6,126.0L301.0,125.4L300.3,124.9L299.7,124.4L299.0,123.9L298.3,123.4L297.6,122.9L296.9,122.5L296.2,122.0" style="fill:none;stroke:var(--red);stroke-width:2.4"></path><text x="326.6321371268544" y="123.07692307692307" text-anchor="middle" dominant-baseline="middle" style="fill:var(--red);font-weight:800;font-size:14px;font-family:var(--sans)">60°</text><line x1="280" y1="150" x2="174.14035119957643" y2="224.12372408228902" style="stroke:var(--navy);stroke-width:2;stroke-linecap:round"></line><text x="199.8769230769231" y="212.8923076923077" text-anchor="middle" dominant-baseline="middle" style="fill:var(--navy);font-weight:800;font-size:14px;font-family:var(--sans)">R</text><circle cx="280" cy="150" r="5" class="dot d2"></circle><text x="286" y="166" class="lbl d2" text-anchor="start">Κ</text></g></svg></div><div class="wout">Εμβαδόν κυκλικού δίσκου: E = πR² = 36π ≈ <b>113,04</b> (π ≈ 3,14)
+        <br><span style="color:var(--amber)">Κυκλικός τομέας μ = 60°: E<sub>κ.τ.</sub> = (μ/360°)·πR² = (60/360)·36π ≈ <b>18,84</b></span><br><span class="muted">Αν διπλασιαστεί η ακτίνα, το εμβαδόν τετραπλασιάζεται (R² → 4R²), ενώ το μήκος του κύκλου διπλασιάζεται.</span></div></div></section><section class="card"><h3 class="blk">Ασκήσεις <span class="muted small">— 0/9 λυμένες</span></h3><div class="ex"><div class="exh"><span class="exn">Άσκηση 1</span><span class="lvl l1">Βασική</span><span class="tick-ok"></span></div><div class="exq">Να βρείτε το εμβαδόν κυκλικού δίσκου με ακτίνα $7$ cm ως $\kappa\pi$ και κατά προσέγγιση ($\pi \approx 3{,}14$).</div><div class="exb"><div class="fields"><label class="fld"><span>κ =</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label><label class="fld"><span>E (cm²) ≈</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label></div><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> $E = \pi R^2$.</div><div class="sol hidden"><b>Λύση:</b> $E = 49\pi \approx 49\cdot 3{,}14 = 153{,}86$ cm².</div></div></div><div class="ex"><div class="exh"><span class="exn">Άσκηση 2</span><span class="lvl l1">Βασική</span><span class="tick-ok"></span></div><div class="exq">Να βρείτε το εμβαδόν κυκλικού δίσκου με διάμετρο $12$ m ($\pi \approx 3{,}14$).</div><div class="exb"><div class="fields"><label class="fld"><span>E (m²) ≈</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label></div><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> $R = 6$ m.</div><div class="sol hidden"><b>Λύση:</b> $E = \pi\cdot 6^2 = 36\pi \approx 113{,}04$ m².</div></div></div><div class="ex"><div class="exh"><span class="exn">Άσκηση 3</span><span class="lvl l2">Μέτρια</span><span class="tick-ok"></span></div><div class="exq">Ένας κυκλικός δίσκος έχει εμβαδόν $64\pi$ cm². Να βρείτε την ακτίνα του και το μήκος του κύκλου ως $\kappa\pi$.</div><div class="exb"><div class="fields"><label class="fld"><span>R (cm) =</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label><label class="fld"><span>κ =</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label></div><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> $R^2 = 64$.</div><div class="sol hidden"><b>Λύση:</b> $\pi R^2 = 64\pi \Rightarrow R = 8$ cm, $\Gamma = 2\pi\cdot 8 = 16\pi$ cm.</div></div></div><div class="ex"><div class="exh"><span class="exn">Άσκηση 4</span><span class="lvl l2">Μέτρια</span><span class="tick-ok"></span></div><div class="exq">Ένας κύκλος έχει μήκος $18{,}84$ cm. Να βρείτε την ακτίνα του και το εμβαδόν του κυκλικού δίσκου ($\pi \approx 3{,}14$).</div><div class="exb"><div class="fields"><label class="fld"><span>R (cm) =</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label><label class="fld"><span>E (cm²) ≈</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label></div><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> Πρώτα $2\pi R = 18{,}84$.</div><div class="sol hidden"><b>Λύση:</b> $R = \frac{18{,}84}{6{,}28} = 3$ cm. $E = 9\pi \approx 28{,}26$ cm².</div></div></div><div class="ex"><div class="exh"><span class="exn">Άσκηση 5</span><span class="lvl l2">Μέτρια</span><span class="tick-ok"></span></div><div class="exq">Κυκλικός τομέας γωνίας $45^\circ$ έχει εμβαδόν $2\pi$ m². Να βρείτε την ακτίνα του κύκλου.</div><div class="exb"><div class="fields"><label class="fld"><span>R (m) =</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label></div><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> $\frac{45}{360}\pi R^2 = 2\pi$.</div><div class="sol hidden"><b>Λύση:</b> $\frac{\pi R^2}{8} = 2\pi \Rightarrow R^2 = 16 \Rightarrow R = 4$ m.</div></div></div><div class="ex"><div class="exh"><span class="exn">Άσκηση 6</span><span class="lvl l2">Μέτρια</span><span class="tick-ok"></span></div><div class="exq">Κυκλικός δίσκος έχει εμβαδόν $100\pi$ cm². Για επίκεντρη γωνία $72^\circ$ να βρείτε (ως $\kappa\pi$) το μήκος του τόξου και το εμβαδόν του κυκλικού τομέα.</div><div class="exb"><div class="fields"><label class="fld"><span>τόξο: κ =</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label><label class="fld"><span>τομέας: κ =</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label></div><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> $R = 10$, $\frac{72}{360} = \frac15$.</div><div class="sol hidden"><b>Λύση:</b> $R = 10$ cm. $\gamma = \frac15\cdot 20\pi = 4\pi$ cm, $E_{\kappa.\tau.} = \frac15\cdot 100\pi = 20\pi$ cm².</div></div></div><div class="ex"><div class="exh"><span class="exn">Άσκηση 7</span><span class="lvl l1">Βασική</span><span class="tick-ok"></span></div><div class="exq">Να βρείτε το εμβαδόν του κυκλικού δακτυλίου που σχηματίζουν δύο ομόκεντροι κύκλοι με ακτίνες $R = 5$ cm και $\rho = 3$ cm, ως $\kappa\pi$ και κατά προσέγγιση.</div><div class="exb"><div class="fields"><label class="fld"><span>κ =</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label><label class="fld"><span>E (cm²) ≈</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label></div><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> $\pi R^2 - \pi\rho^2$.</div><div class="sol hidden"><b>Λύση:</b> $25\pi - 9\pi = 16\pi \approx 50{,}24$ cm².</div></div></div><div class="ex"><div class="exh"><span class="exn">Άσκηση 8</span><span class="lvl l3">Απαιτητική</span><span class="tick-ok"></span></div><div class="exq">Σε τετράγωνο πλευράς $10$ cm είναι εγγεγραμμένος κύκλος (εφάπτεται και στις τέσσερις πλευρές). Να βρείτε το εμβαδόν του μέρους του τετραγώνου που μένει έξω από τον κύκλο ($\pi \approx 3{,}14$).</div><div class="exb"><div class="fields"><label class="fld"><span>E (cm²) ≈</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label></div><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> Η διάμετρος του κύκλου είναι ίση με την πλευρά: $R = 5$.</div><div class="sol hidden"><b>Λύση:</b> $E = 10^2 - \pi\cdot 5^2 = 100 - 25\pi \approx 100 - 78{,}5 = 21{,}5$ cm².</div></div></div><div class="ex"><div class="exh"><span class="exn">Άσκηση 9</span><span class="lvl l1">Βασική</span><span class="tick-ok"></span></div><div class="exq">Αν τριπλασιαστεί η ακτίνα ενός κύκλου, το εμβαδόν του κυκλικού δίσκου:</div><div class="exb"><label class="opt"><input type="radio" name="mci23i9gipuqe" value="0"><span>μένει ίδιο</span></label><label class="opt"><input type="radio" name="mci23i9gipuqe" value="1"><span>τριπλασιάζεται</span></label><label class="opt"><input type="radio" name="mci23i9gipuqe" value="2"><span>εννεαπλασιάζεται</span></label><label class="opt"><input type="radio" name="mci23i9gipuqe" value="3"><span>εξαπλασιάζεται</span></label><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> $\pi(3R)^2$.</div><div class="sol hidden"><b>Λύση:</b> $\pi(3R)^2 = 9\pi R^2$: εννεαπλασιάζεται, ενώ το μήκος του κύκλου μόνο τριπλασιάζεται.</div></div></div></section><section class="card gen"><h3 class="blk">♾️ Γεννήτρια — εμβαδόν κύκλου και κυκλικού τομέα</h3><p class="muted small">Κάθε φορά καινούργια άσκηση — εξάσκηση χωρίς τέλος.</p><div class="gslot"><div class="ex"><div class="exh"><span class="exn">Εξάσκηση #1</span><span class="tick-ok"></span></div><div class="exq">Κυκλικός δίσκος έχει εμβαδόν $81\pi$ m². Να βρείτε την ακτίνα του και το μήκος του κύκλου ως $\kappa\pi$.</div><div class="exb"><div class="fields"><label class="fld"><span>R (m) =</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label><label class="fld"><span>κ =</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label></div><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"></div><div class="sol hidden"><b>Λύση:</b> $\pi R^2 = 81\pi \Rightarrow R^2 = 81 \Rightarrow R = 9$ m. $\Gamma = 2\pi R = 18\pi$ m, άρα $\kappa = 18$.</div></div></div></div><button class="btn primary newg">Νέα άσκηση ↻</button></section><div class="pager"><a class="btn ghost" href="/mathimatika-b-gymnasiou/tefxos-a/3-7-mikos-kyklou/">← 3.7 Μήκος κύκλου</a></div></main></div>
+<aside class="ctaf" aria-label="Online μαθήματα"><p>Χρειάζεσαι βοήθεια; <a href="/online-mathimata/mathimatika-b-gymnasiou/">Online μαθήματα Μαθηματικών Β΄ Γυμνασίου</a> — ζωντανά, ένας προς έναν.</p><p><a href="/online-mathimata/mathimatika/">Online μαθήματα Μαθηματικών</a> για όλες τις τάξεις · <a href="/mathimatika/">Όλο το δωρεάν υλικό</a></p></aside>
+<footer><b>Pagkypries Online</b> · Αντρέας Σωτηρίου · <a href="/">pagkypriesonline.com</a> · <a href="/online-mathimata/">Ιδιαίτερα online μαθήματα</a><br>
+Πρωτότυπο εκπαιδευτικό υλικό που ακολουθεί τη δομή του βιβλίου «Μαθηματικά Β΄ Γυμνασίου» (ΥΑΠ, 2016).</footer>
+<script>window.ROUTE={"base": "/mathimatika-b-gymnasiou/tefxos-a/", "slugs": {"0.1": "0-1-epanalipsi-apo-tin-a-gymnasiou", "1.1": "1-1-idiotites-dynameon-me-ektheti-fysiko-arithmo", "1.2": "1-2-dynameis-riton-me-akeraio-ektheti", "1.3": "1-3-tetragoniki-kai-kyviki-riza-arithmou", "1.4": "1-4-idiotites-rizon", "1.5": "1-5-pythagoreio-theorima", "1.6": "1-6-pragmatikoi-arithmoi", "2.1": "2-1-algevrikes-parastaseis-mononyma", "2.2": "2-2-praxeis-mononymon", "2.3": "2-3-polyonyma-prosthesi-polyonymon", "2.4": "2-4-pollaplasiasmos-polyonymon", "2.5": "2-5-diairesi-polyonymon", "3.1": "3-1-symmetria", "3.2": "3-2-parallilogrammo", "3.3": "3-3-orthogonio-parallilogrammo", "3.4": "3-4-romvos", "3.5": "3-5-tetragono", "3.6": "3-6-trapezio", "3.7": "3-7-mikos-kyklou", "3.8": "3-8-emvadon-kyklikou-diskou"}, "titles": {"home": "Μαθηματικά Β΄ Γυμνασίου — Α΄ Τεύχος: Ασκήσεις & Θεωρία", "0.1": "Επανάληψη από την Α΄ Γυμνασίου — Ασκήσεις | Β΄ Γυμνασίου", "1.1": "Ιδιότητες δυνάμεων με εκθέτη φυσικό αριθμό | Β΄ Γυμνασίου", "1.2": "Δυνάμεις ρητών με ακέραιο εκθέτη — Ασκήσεις | Β΄ Γυμνασίου", "1.3": "Τετραγωνική και κυβική ρίζα αριθμού — Ασκήσεις | Β΄ Γυμνασίου", "1.4": "Ιδιότητες ριζών — Ασκήσεις με Λύσεις | Β΄ Γυμνασίου", "1.5": "Πυθαγόρειο θεώρημα — Ασκήσεις με Λύσεις | Β΄ Γυμνασίου", "1.6": "Πραγματικοί αριθμοί — Ασκήσεις με Λύσεις | Β΄ Γυμνασίου", "2.1": "Αλγεβρικές παραστάσεις – Μονώνυμα — Ασκήσεις | Β΄ Γυμνασίου", "2.2": "Πράξεις μονωνύμων — Ασκήσεις με Λύσεις | Β΄ Γυμνασίου", "2.3": "Πολυώνυμα – Πρόσθεση πολυωνύμων — Ασκήσεις | Β΄ Γυμνασίου", "2.4": "Πολλαπλασιασμός πολυωνύμων — Ασκήσεις με Λύσεις | Β΄ Γυμνασίου", "2.5": "Διαίρεση πολυωνύμων — Ασκήσεις με Λύσεις | Β΄ Γυμνασίου", "3.1": "Συμμετρία — Ασκήσεις με Λύσεις | Β΄ Γυμνασίου", "3.2": "Παραλληλόγραμμο — Ασκήσεις με Λύσεις | Β΄ Γυμνασίου", "3.3": "Ορθογώνιο παραλληλόγραμμο — Ασκήσεις με Λύσεις | Β΄ Γυμνασίου", "3.4": "Ρόμβος — Ασκήσεις με Λύσεις | Β΄ Γυμνασίου", "3.5": "Τετράγωνο — Ασκήσεις με Λύσεις | Β΄ Γυμνασίου", "3.6": "Τραπέζιο — Ασκήσεις με Λύσεις | Β΄ Γυμνασίου", "3.7": "Μήκος κύκλου — Ασκήσεις με Λύσεις | Β΄ Γυμνασίου", "3.8": "Εμβαδόν κυκλικού δίσκου — Ασκήσεις με Λύσεις | Β΄ Γυμνασίου", "quiz": "Quiz — Μαθηματικά Β΄ Γυμνασίου — Α΄ Τεύχος | PagkypriesOnline"}};window.START_SEC="3.8";</script>
+<script defer src="/mathimatika-b-gymnasiou/tefxos-a/app.js?v=62e60fe8"></script>
+</body>
+</html>

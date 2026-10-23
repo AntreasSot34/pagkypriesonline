@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Συσχέτιση – Συντελεστής συσχέτισης — Ασκήσεις | Γ΄ Λυκείου ΚΚ</title>
+<meta name="description" content="Συσχέτιση – Συντελεστής συσχέτισης — Μαθηματικά Γ΄ Λυκείου ΚΚ: θεωρία, 6 λυμένες ασκήσεις με υποδείξεις, διαδραστικό γράφημα και quiz. Δωρεάν.">
+<link rel="canonical" href="https://pagkypriesonline.com/mathimatika-g-lykeiou/tefxos-b/4-3-syschetisi-syntelestis-syschetisis/">
+<meta name="theme-color" content="#14171C">
+<link rel="icon" href="/favicon.png" type="image/png" sizes="64x64">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="el_CY">
+<meta property="og:site_name" content="Pagkypries Online">
+<meta property="og:title" content="Συσχέτιση – Συντελεστής συσχέτισης — Ασκήσεις | Γ΄ Λυκείου ΚΚ">
+<meta property="og:description" content="Συσχέτιση – Συντελεστής συσχέτισης — Μαθηματικά Γ΄ Λυκείου ΚΚ: θεωρία, 6 λυμένες ασκήσεις με υποδείξεις, διαδραστικό γράφημα και quiz. Δωρεάν.">
+<meta property="og:url" content="https://pagkypriesonline.com/mathimatika-g-lykeiou/tefxos-b/4-3-syschetisi-syntelestis-syschetisis/">
+<meta property="og:image" content="https://pagkypriesonline.com/g/g01.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<style>
+:root{
+  --navy:#1B2A4A;--blue:#0F6FD1;--green:#198754;--amber:#C77A0A;--red:#DC3545;--purple:#6F42C1;
+  --ink:#15233f;--muted:#5b6b86;--line:#dce3ef;--bg:#F4F7FA;--card:#fff;--soft:#f5f8fd;
+  --sans:"Commissioner",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;--ink2:#14171C;--grad:linear-gradient(100deg,#54EFA2 0%,#33CFD3 48%,#2D9AF5 100%);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px}
+.top{position:sticky;top:0;z-index:50;background:rgba(244,247,252,.9);backdrop-filter:saturate(160%) blur(14px);border-bottom:1px solid var(--line)}
+.top::before{content:"";display:block;height:3px;background:var(--grad)}
+.top .in{max-width:1180px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:14px;min-height:60px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink2);font-weight:900;letter-spacing:-.02em;font-size:17px;white-space:nowrap}
+.brand img{width:32px;height:auto;display:block}
+.top .crumb{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);border-left:1px solid var(--line);padding-left:14px}
+.top .links{margin-left:auto;display:flex;gap:8px}
+.top .links a{text-decoration:none;font-size:13.5px;font-weight:600;color:var(--ink2);border:1px solid var(--line);background:#fff;border-radius:10px;padding:7px 12px;white-space:nowrap}
+.top .links a:hover{border-color:#2D9AF5;color:var(--blue)}
+.top .links a.home{background:var(--blue);border-color:var(--blue);color:#fff}
+@media(max-width:860px){.top .crumb{display:none}}
+@media(max-width:480px){.brand span{display:none}.top .links a{padding:7px 10px;font-size:13px}}
+#app{max-width:1180px;margin:0 auto;padding:18px 16px 40px;display:grid;grid-template-columns:270px 1fr;gap:20px;align-items:start}
+#nav{position:sticky;top:76px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:10px;max-height:calc(100vh - 90px);overflow:auto}
+.navu{font-size:12px;font-weight:800;color:var(--blue);text-transform:uppercase;letter-spacing:.04em;padding:12px 8px 4px;line-height:1.3}
+.navu small{text-transform:none;letter-spacing:0;color:var(--navy);font-size:13px}
+.navit{display:flex;align-items:center;gap:9px;width:100%;text-align:left;background:none;border:0;border-radius:10px;padding:8px;cursor:pointer;font:inherit;color:var(--ink);font-size:14px;line-height:1.3}
+.navit:hover{background:var(--soft)}.navit.on{background:#e3eefb;font-weight:700}
+.nid{flex:none;min-width:34px;font-weight:800;color:var(--navy);font-size:12.5px}
+.nt{flex:1}
+.ring{flex:none;width:20px;height:20px;border-radius:50%;background:conic-gradient(var(--green) calc(var(--p)*1%),#dfe6f1 0);display:flex;align-items:center;justify-content:center;font-size:11px;color:#fff;font-weight:900;position:relative}
+.ring::before{content:"";position:absolute;inset:3px;border-radius:50%;background:#fff}
+.ring[style*="--p:100"]::before{background:var(--green)}
+.ring{isolation:isolate}.ring::before{z-index:-1}
+#main{min-width:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;margin-bottom:16px;box-shadow:0 10px 30px -22px rgba(27,42,74,.45)}
+h1,h2{color:var(--navy);font-size:24px;line-height:1.2;font-weight:900}
+h1{font-size:26px;overflow-wrap:anywhere;hyphens:auto}
+.sechead>div{min-width:0}
+a.navit,a.seccard,a.quizcta{text-decoration:none;color:var(--ink)}
+a.btn{text-decoration:none;display:inline-block}
+h3.blk{color:var(--navy);font-size:18px;font-weight:900;margin-bottom:12px}
+.unith{color:var(--navy);font-size:17px;font-weight:900;margin:22px 0 10px}
+.sechead{display:flex;gap:14px;align-items:center;margin:2px 0 14px}
+.sid{display:inline-block;background:var(--navy);color:#fff;font-weight:900;border-radius:8px;padding:2px 9px;font-size:13px}
+.sid.big{font-size:18px;padding:8px 12px;border-radius:12px}
+.muted{color:var(--muted)}.small{font-size:13px}
+.hero p{margin-top:8px}
+.bigprog{display:flex;align-items:center;gap:12px;margin-top:14px;font-weight:700;color:var(--navy);font-size:14px}
+.bar{display:block;flex:1;height:10px;border-radius:99px;background:#e3e9f3;overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--blue),var(--green));border-radius:99px}
+.secgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.seccard{display:flex;flex-direction:column;gap:8px;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;cursor:pointer;font:inherit;color:var(--ink);transition:.15s}
+.seccard:hover{border-color:var(--blue);transform:translateY(-2px);box-shadow:0 10px 24px -18px rgba(46,117,182,.8)}
+.seccard b{color:var(--navy);line-height:1.3}.seccard .bar{flex:none;width:100%}.seccard small{color:var(--muted)}.seccard .sid{align-self:flex-start}
+.howto ul{margin:8px 0 12px 20px}.howto li{margin:4px 0}
+code{font-family:"SF Mono",Consolas,Menlo,monospace;background:#eaf0fb;color:var(--navy);padding:1px 6px;border-radius:5px;font-size:.92em}
+.tbox{border:1px solid var(--line);border-left:5px solid var(--blue);background:var(--soft);border-radius:0 12px 12px 0;padding:12px 16px;margin:10px 0}
+.tbox.tip{border-left-color:var(--green);background:#f1faf4}.tbox.warn{border-left-color:var(--amber);background:#fdf6e9}
+.tbox h4{color:var(--navy);font-size:15.5px;margin-bottom:4px}
+/* --- εμπλουτισμένα πλαίσια θεωρίας (Ορισμός/Θεώρημα/Παράδειγμα/Παρατήρηση/Απόδειξη) --- */
+.tbox.def{border-left-color:var(--blue);background:linear-gradient(90deg,#eef5ff,#f7faff)}
+.tbox.thm{border-left-color:var(--purple);background:linear-gradient(90deg,#f4efff,#faf8ff)}
+.tbox.ex{border-left-color:var(--green);background:linear-gradient(90deg,#edf9f2,#f8fdfa)}
+.tbox.rem{border-left-color:#0d9488;background:#effaf8}
+.tbox.def h4::before,.tbox.thm h4::before,.tbox.ex h4::before,.tbox.rem h4::before{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#fff;border-radius:6px;padding:2px 7px;margin-right:8px;vertical-align:2px}
+.tbox.def h4::before{content:"Ορισμός";background:var(--blue)}.tbox.thm h4::before{content:"Θεώρημα";background:var(--purple)}
+.tbox.ex h4::before{content:"Παράδειγμα";background:var(--green)}.tbox.rem h4::before{content:"Παρατήρηση";background:#0d9488}
+details.proof,details.steps{border:1px dashed #c7d2e5;border-radius:10px;padding:6px 12px;margin:8px 0;background:#fff}
+details.proof>summary,details.steps>summary{cursor:pointer;font-weight:800;color:var(--navy);font-size:14px;list-style:none}
+details.proof>summary::before,details.steps>summary::before{content:"▸ ";color:var(--blue)}details[open].proof>summary::before,details[open].steps>summary::before{content:"▾ "}
+details.proof[open]{background:#fbfcff}details.proof p:last-child::after{content:" ∎";color:var(--navy);font-weight:900}
+figure.grfig{margin:10px auto;max-width:560px}figure.grfig svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;box-shadow:0 8px 22px -18px rgba(27,42,74,.5)}
+figure.grfig figcaption{text-align:center;color:var(--muted);font-size:13px;margin-top:6px}
+.figrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;align-items:start}
+.fbox{display:block;text-align:center;font-size:1.05em;background:#fff;border:1.5px solid #c9d8f0;border-radius:12px;padding:10px 12px;margin:8px auto;max-width:fit-content;box-shadow:0 6px 18px -16px rgba(15,111,209,.6)}
+.hero.art{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:18px;align-items:center;background:radial-gradient(120% 140% at 100% 0%,#e9f2ff 0%,#fff 55%)}
+.hero.art .heroart svg{width:100%;height:auto;display:block}
+@media(max-width:760px){.hero.art{grid-template-columns:1fr}.hero.art .heroart{max-width:320px;margin:0 auto}}
+.unith .uchip{display:inline-flex;align-items:center;justify-content:center;min-width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;font-size:14px;margin-right:8px;vertical-align:1px}
+.seccard{position:relative}.seccard .thumb{position:absolute;top:10px;right:12px;width:68px;height:40px;opacity:.9}
+.seccard:hover .thumb{opacity:1}
+.intro{font-size:15.5px;color:var(--ink);background:#fff8ec;border:1px solid #f3dcb3;border-radius:12px;padding:10px 14px;margin:0 0 14px}
+.tbox ul,.tbox ol{margin:4px 0 2px 22px}.tbox li{margin:3px 0}.tbox p{margin:4px 0}
+.katex-display{overflow-x:auto;overflow-y:hidden;padding:2px 0}
+#main .katex{max-width:100%;position:relative}
+#main :not(.katex-display) > .katex{display:inline-block;overflow-x:auto;overflow-y:hidden;vertical-align:middle;padding:1px 0}
+.wctl label{min-width:0;max-width:100%}
+.tblwrap{overflow-x:auto}
+table.vt{border-collapse:collapse;margin:8px 0;font-size:14px;white-space:nowrap}
+table.vt th,table.vt td{border:1px solid #c9d3e4;padding:4px 10px;text-align:center}table.vt th{background:#eaf1fb}
+/* widgets */
+.wctl{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;margin-bottom:10px;font-size:14px;font-weight:600;color:var(--navy)}
+.wctl label{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.wctl select{max-width:100%;min-width:0;font:inherit;font-weight:600;padding:6px 10px;border-radius:9px;border:1px solid var(--line);background:#fff;color:var(--navy)}
+input[type=range]{accent-color:var(--blue);width:170px;max-width:60vw}
+.cap{font-size:13px;color:var(--muted);margin:6px 0 2px}
+.t1{color:var(--blue)}.t2{color:var(--purple)}.t3{color:var(--amber)}
+.wout{margin-top:10px;font-size:14.5px;background:var(--soft);border-radius:10px;padding:10px 12px}
+.ok{color:var(--green)}.bad{color:var(--red)}
+.two{display:grid;grid-template-columns:1fr 1.6fr;gap:12px;align-items:center}
+.plot{width:100%;height:auto;display:block;background:#fff;border:1px solid var(--line);border-radius:12px;touch-action:pan-y}
+.plot .grid line{stroke:#edf1f7}.plot .tick{font-size:11px;fill:#8a97ad;font-family:var(--sans)}
+.plot .axis{stroke:var(--navy);stroke-width:1.4}
+.plot .curve{fill:none;stroke-width:3;stroke-linejoin:round;stroke-linecap:round}
+.c1{stroke:var(--blue)}.c2{stroke:var(--purple)}.c3{stroke:var(--amber)}.cfam{stroke:#c5cfdf;stroke-width:1.8!important}
+.plot .band.pos{fill:rgba(25,135,84,.09)}.plot .band.neg{fill:rgba(220,53,69,.08)}
+.plot .dot{stroke:#fff;stroke-width:2}.d1{fill:var(--blue)}.d2{fill:var(--navy)}.d3{fill:var(--amber)}.dmax{fill:var(--green)}.dmin{fill:var(--red)}.dinf{fill:var(--purple)}
+.plot .lbl{font-size:12.5px;font-weight:800;font-family:var(--sans)}.lbl.dmax{fill:var(--green)}.lbl.dmin{fill:var(--red)}.lbl.dinf{fill:var(--purple)}.lbl.d2,.lbl.d3,.lbl.d1{fill:var(--navy)}
+.plot .guide{stroke:#9aa8bf;stroke-dasharray:4 4}.plot .tangent{stroke:var(--red);stroke-width:2;stroke-dasharray:7 5}
+.plot .sheet{fill:#f3e7cf;stroke:#c9a86a}.plot .cut{fill:#fff;stroke:var(--red);stroke-dasharray:4 3}.plot .base{fill:#dbe8f8;stroke:var(--blue)}
+/* exercises */
+.ex{border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:12px 0;background:#fff;transition:border-color .2s}
+.ex.solved{border-color:#a9dcbf;background:#fbfefc}
+.exh{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.exn{font-weight:900;color:var(--navy)}
+.lvl{font-size:11.5px;font-weight:800;padding:2px 9px;border-radius:99px}
+.l1{background:#e7f6ee;color:var(--green)}.l2{background:#fdf1dd;color:var(--amber)}.l3{background:#fdeaec;color:var(--red)}
+.tick-ok{margin-left:auto;color:var(--green);font-weight:800;font-size:13px}
+.exq{margin-bottom:10px}
+.opt{display:flex;gap:10px;align-items:flex-start;padding:9px 12px;border:1px solid var(--line);border-radius:10px;margin:6px 0;cursor:pointer;background:#fff}
+.opt:hover{border-color:var(--blue)}.opt input{margin-top:5px;accent-color:var(--blue)}
+.opt.right{border-color:var(--green);background:#eef9f2}.opt.wrong{border-color:var(--red);background:#fdf0f1}
+.fields{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px 14px}
+.fld{display:flex;flex-direction:column;gap:3px;font-size:13.5px;color:var(--muted);font-weight:600}
+.fld.wide{max-width:560px}
+.fld input{font:inherit;font-size:16px;padding:9px 12px;border:1.5px solid var(--line);border-radius:10px;color:var(--ink);background:#fff;width:100%}
+.fld input:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(46,117,182,.15)}
+.fld input.right{border-color:var(--green);background:#f1faf4}.fld input.wrong{border-color:var(--red);background:#fdf3f4}
+.preview{font-size:12.5px;margin-top:4px;min-height:1em}.warnc{color:var(--amber)}
+.exbar{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.btn{font:inherit;font-size:14px;font-weight:700;border-radius:10px;padding:8px 14px;cursor:pointer;border:1.5px solid transparent;transition:.15s}
+.btn.primary{background:var(--blue);color:#fff}.btn.primary:hover{background:#245f94}
+.btn.ghost{background:#fff;color:var(--navy);border-color:var(--line)}.btn.ghost:hover{border-color:var(--blue)}
+.btn.small{font-size:13px;padding:6px 11px}
+.fb{margin-top:10px;font-weight:700;min-height:0}.fb:empty{display:none}
+.okc{color:var(--green)}.badc{color:var(--red)}
+.hint,.sol{margin-top:10px;padding:10px 14px;border-radius:10px;font-size:15px}
+.hint{background:#fff8e8;border:1px solid #f0d9a8}.sol{background:#f1faf4;border:1px solid #bfe6cf}
+.hidden{display:none}
+.solgraph{margin-top:10px;max-width:520px}
+.gen{border:2px dashed #b8cbe6}.gen .newg{margin-top:4px}
+.pager{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:6px}
+.chips{gap:6px}.chip{font:inherit;font-size:14px;font-weight:700;border:1.5px solid var(--line);background:#fff;color:var(--navy);border-radius:99px;padding:5px 12px;cursor:pointer}
+.chip.on{background:var(--blue);border-color:var(--blue);color:#fff}
+.wctl.col{flex-direction:column;align-items:flex-start;gap:6px}
+.plot .vnum{font-size:17px;font-weight:900;fill:var(--navy);text-anchor:middle;font-family:var(--sans)}
+.pills{display:flex;flex-wrap:wrap;gap:5px;margin:6px 0}.pills span{font-family:"SF Mono",Consolas,monospace;font-size:13px;background:#eef3fb;border:1px solid var(--line);border-radius:7px;padding:2px 7px;color:var(--navy)}
+.pills span.pm{background:var(--amber);color:#fff;border-color:var(--amber)}.pills span.pl1{background:#e3eefb}.pills span.pl2{background:#efe8fb}
+.dice{display:flex;align-items:center;gap:10px;margin:4px 0 8px;font-size:14px}
+.plot .theo{stroke:var(--red);stroke-width:2.5}.plot .whisk{stroke:var(--navy);stroke-width:2}.plot .medl{stroke:var(--red);stroke-width:3}
+.plot .sol-e{fill:none;stroke:var(--navy);stroke-width:2}.plot .sol-eb{fill:none;stroke:var(--navy);stroke-width:1.5;stroke-dasharray:5 4;opacity:.6}
+.plot .axisrot{stroke:var(--red);stroke-width:1.5;stroke-dasharray:8 5}.plot .gen2d{fill:rgba(46,117,182,.22);stroke:var(--blue);stroke-width:2}
+table.t2 input{width:72px;font:inherit;padding:4px 6px;border:1px solid var(--line);border-radius:7px;text-align:center}
+.sform{font-size:15px;line-height:2}
+.qhead{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.qchips{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:6px;margin-bottom:14px}
+.qchip{display:flex;gap:8px;align-items:flex-start;border:1px solid var(--line);border-radius:10px;padding:7px 10px;font-size:13.5px;cursor:pointer;background:#fff}
+.qchip input{margin-top:4px;accent-color:var(--blue)}.qchip b{color:var(--navy)}
+.qopts{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;margin-bottom:14px;font-size:14px;font-weight:600;color:var(--navy)}
+.qopts select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--line);margin-left:6px}
+.qbar{display:flex;justify-content:space-between;align-items:center;position:sticky;top:70px;z-index:5;padding:12px 18px}
+.qtime{font-family:"IBM Plex Mono",monospace;font-weight:600;color:var(--blue)}
+.qsub{width:100%;padding:13px;font-size:16px;margin:6px 0 18px}
+.qscore{display:flex;gap:20px;align-items:center;flex-wrap:wrap;border:2px solid var(--green);background:#f1faf4}
+.qbig{font-size:40px;font-weight:900;color:var(--green);line-height:1}
+.qscore .btn{margin-left:auto}
+.quizcta{display:flex;gap:16px;align-items:center;width:100%;text-align:left;cursor:pointer;font:inherit;color:var(--ink);border:2px dashed #b8cbe6}
+.quizcta:hover{border-color:var(--blue)}.quizcta .go{margin-left:auto;font-weight:800;color:var(--blue);white-space:nowrap}
+.navit.quizit{background:#fff8e8;margin:2px 0}
+input:disabled{opacity:.85}
+.plot .chord{stroke:var(--purple);stroke-width:2.2}.plot .tangent.ok{stroke:var(--green);stroke-dasharray:none;stroke-width:2.5}
+.plot .asl{stroke:var(--red);stroke-width:1.6;stroke-dasharray:7 5}
+.plot .circ{fill:rgba(15,111,209,.08);stroke:var(--blue);stroke-width:2.6}.plot .circ2{fill:rgba(199,122,10,.08);stroke:var(--amber);stroke-width:2.6}
+.plot .c1line{stroke:var(--purple);stroke-width:2.4}
+.plot .rect{fill:rgba(15,111,209,.18);stroke:var(--blue);stroke-width:1}.plot .area{fill:rgba(25,135,84,.22)}
+.plot .focus{fill:var(--red)}.plot .disk{fill:rgba(15,111,209,.12);stroke:var(--blue);stroke-width:.8}.plot .dir{stroke:var(--green);stroke-width:2;stroke-dasharray:6 4}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:24px 16px 34px}
+footer b{color:var(--navy)}footer a{color:var(--blue);font-weight:700;text-decoration:none}
+@media (max-width:860px){
+  #app{grid-template-columns:1fr;padding-top:10px}
+  #nav{position:static;display:flex;overflow-x:auto;gap:6px;padding:8px;max-height:none;scrollbar-width:thin}
+  .navu{display:none}
+  .navit{flex:none;width:auto;white-space:nowrap;border:1px solid var(--line);padding:6px 10px}
+  .navit .nt{display:none}.navit .nid{min-width:0}
+  .two{grid-template-columns:1fr}
+  .card{padding:16px}
+  h2{font-size:21px}h1{font-size:22px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+.plot.nogrid .grid,.plot.nogrid .axis{display:none}
+.plot .band.bandok{fill:rgba(25,135,84,.16)}
+table.mini{border-collapse:collapse;margin:.4rem 0;font-size:.95em;max-width:100%;display:block;overflow-x:auto}
+table.mini th,table.mini td{border:1px solid var(--line);padding:.3rem .55rem;text-align:center}
+table.mini th{background:var(--soft)}
+.exq svg.fig text{user-select:none}
+.ctaf{max-width:760px;margin:10px auto 0;padding:16px 18px;border:1px solid var(--line);border-radius:16px;background:var(--card);text-align:center;font-size:15px}.ctaf a{color:var(--blue);font-weight:700;text-decoration:none}.ctaf p{margin:4px 0}</style>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Αρχική", "item": "https://pagkypriesonline.com/"}, {"@type": "ListItem", "position": 2, "name": "Δωρεάν υλικό Μαθηματικών", "item": "https://pagkypriesonline.com/mathimatika/"}, {"@type": "ListItem", "position": 3, "name": "Μαθηματικά Γ΄ Λυκείου Κοινού Κορμού — Β΄ Τεύχος", "item": "https://pagkypriesonline.com/mathimatika-g-lykeiou/tefxos-b/"}, {"@type": "ListItem", "position": 4, "name": "Συσχέτιση – Συντελεστής συσχέτισης", "item": "https://pagkypriesonline.com/mathimatika-g-lykeiou/tefxos-b/4-3-syschetisi-syntelestis-syschetisis/"}]}, {"@type": "LearningResource", "name": "Συσχέτιση – Συντελεστής συσχέτισης", "description": "Συσχέτιση – Συντελεστής συσχέτισης — Μαθηματικά Γ΄ Λυκείου ΚΚ: θεωρία, 6 λυμένες ασκήσεις με υποδείξεις, διαδραστικό γράφημα και quiz. Δωρεάν.", "url": "https://pagkypriesonline.com/mathimatika-g-lykeiou/tefxos-b/4-3-syschetisi-syntelestis-syschetisis/", "inLanguage": "el", "isAccessibleForFree": true, "educationalLevel": "Γ΄ Λυκείου", "learningResourceType": ["Θεωρία", "Ασκήσεις με λύσεις", "Διαδραστική εξάσκηση"], "teaches": "Συσχέτιση – Συντελεστής συσχέτισης", "isPartOf": {"@type": "Course", "name": "Μαθηματικά Γ΄ Λυκείου Κοινού Κορμού — Β΄ Τεύχος", "url": "https://pagkypriesonline.com/mathimatika-g-lykeiou/tefxos-b/"}, "provider": {"@type": "EducationalOrganization", "name": "Pagkypries Online", "url": "https://pagkypriesonline.com/"}, "author": {"@type": "Person", "name": "Αντρέας Σωτηρίου", "url": "https://antreassotiriou.com"}, "dateModified": "2026-10-23"}]}</script>
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<header class="top"><div class="in">
+  <a class="brand" href="/"><img src="/logo-mark.png" width="240" height="212" alt="PagkypriesOnline"><span>Pagkypries Online</span></a>
+  <div class="crumb">Μαθηματικά ΚΚ · Γ΄ Λυκείου · Β΄ Τεύχος</div>
+  <nav class="links" aria-label="Σύνδεσμοι"><a href="/mathimatika-g-lykeiou/tefxos-a/">← Α΄ Τεύχος</a><a class="home" href="/#yliko">← Αρχική</a></nav>
+</div></header>
+<div id="app"><nav id="nav" aria-label="Ενότητες"><a class="navit" href="/mathimatika-g-lykeiou/tefxos-b/"><span class="nid">⌂</span><span class="nt">Αρχική &amp; πρόοδος</span></a><a class="navit quizit" href="/mathimatika-g-lykeiou/tefxos-b/#quiz"><span class="nid">📝</span><span class="nt">Quiz — κάνε διαγώνισμα</span></a><div class="navu">Ενότητα 3<br><small>Σύνολα – Συνδυαστική – Πιθανότητες</small></div><a class="navit" href="/mathimatika-g-lykeiou/tefxos-b/3-1–3-3-synola-archi-egkleismou-apokleismou/"><span class="nid">3.1–3.3</span><span class="nt">Σύνολα – Αρχή Εγκλεισμού–Αποκλεισμού</span><span class="ring" style="--p:0" title="0/6"></span></a><a class="navit" href="/mathimatika-g-lykeiou/tefxos-b/3-4-eisagogi-sti-syndyastiki/"><span class="nid">3.4</span><span class="nt">Εισαγωγή στη Συνδυαστική</span><span class="ring" style="--p:0" title="0/5"></span></a><a class="navit" href="/mathimatika-g-lykeiou/tefxos-b/3-5-metatheseis/"><span class="nid">3.5</span><span class="nt">Μεταθέσεις</span><span class="ring" style="--p:0" title="0/6"></span></a><a class="navit" href="/mathimatika-g-lykeiou/tefxos-b/3-6-diataxeis/"><span class="nid">3.6</span><span class="nt">Διατάξεις</span><span class="ring" style="--p:0" title="0/5"></span></a><a class="navit" href="/mathimatika-g-lykeiou/tefxos-b/3-7-syndyasmoi/"><span class="nid">3.7</span><span class="nt">Συνδυασμοί</span><span class="ring" style="--p:0" title="0/6"></span></a><a class="navit" href="/mathimatika-g-lykeiou/tefxos-b/3-8-i-ennoia-tis-pithanotitas/"><span class="nid">3.8</span><span class="nt">Η έννοια της Πιθανότητας</span><span class="ring" style="--p:0" title="0/7"></span></a><a class="navit" href="/mathimatika-g-lykeiou/tefxos-b/3-9-pithanotites-syndyasmenon-endechomenon/"><span class="nid">3.9</span><span class="nt">Πιθανότητες συνδυασμένων ενδεχομένων</span><span class="ring" style="--p:0" title="0/6"></span></a><div class="navu">Ενότητα 4<br><small>Στατιστική</small></div><a class="navit" href="/mathimatika-g-lykeiou/tefxos-b/4-1–4-2-metra-thesis-diasporas-tetartimoria/"><span class="nid">4.1–4.2</span><span class="nt">Μέτρα θέσης &amp; διασποράς – Τεταρτημόρια</span><span class="ring" style="--p:0" title="0/6"></span></a><a class="navit on" href="/mathimatika-g-lykeiou/tefxos-b/4-3-syschetisi-syntelestis-syschetisis/"><span class="nid">4.3</span><span class="nt">Συσχέτιση – Συντελεστής συσχέτισης</span><span class="ring" style="--p:0" title="0/6"></span></a><div class="navu">Ενότητα 5<br><small>Στερεομετρία</small></div><a class="navit" href="/mathimatika-g-lykeiou/tefxos-b/5-1–5-2α-kylindros-konos/"><span class="nid">5.1–5.2α</span><span class="nt">Κύλινδρος – Κώνος</span><span class="ring" style="--p:0" title="0/6"></span></a><a class="navit" href="/mathimatika-g-lykeiou/tefxos-b/5-2β-kolouros-konos-sfaira-peristrofi/"><span class="nid">5.2β</span><span class="nt">Κόλουρος κώνος – Σφαίρα – Περιστροφή</span><span class="ring" style="--p:0" title="0/6"></span></a></nav><main id="main"><div class="sechead"><span class="sid big">4.3</span><div><h1>Συσχέτιση – Συντελεστής συσχέτισης</h1><div class="muted small">📘 Β΄ Τεύχος §4.3 · Δραστηριότητες σελ. 100 · Ενότητας σελ. 102</div></div></div><section class="card"><h3 class="blk">Θεωρία</h3>
+<div class="tbox"><h4>Διάγραμμα διασποράς</h4>
+<p>Σημειώνουμε τα ζεύγη $(x_i, y_i)$ στο επίπεδο. Αν τα σημεία «ακολουθούν» μια ευθεία:</p>
+<ul><li><b>Θετική</b> συσχέτιση: όσο αυξάνεται το $x$, αυξάνεται και το $y$ (ανεβαίνει).</li>
+<li><b>Αρνητική</b>: όσο αυξάνεται το $x$, μειώνεται το $y$.</li>
+<li><b>Ισχυρή</b> / <b>ασθενής</b>: τα σημεία είναι κοντά / μακριά από την ευθεία· <b>τέλεια</b>: όλα πάνω της.</li></ul></div>
+<div class="tbox"><h4>Συντελεστής συσχέτισης $r$</h4>
+$$r = \frac{\Sigma_{xy} - \nu\,\bar x\,\bar y}{\nu\, s_x\, s_y}, \qquad \Sigma_{xy} = x_1 y_1 + x_2 y_2 + \dots + x_\nu y_\nu$$
+<p>όπου $s_x, s_y$ οι τυπικές αποκλίσεις. Πάντα $-1 \le r \le 1$ και δεν έχει μονάδες.</p>
+<ul><li>$r = 1$ / $r = -1$: τέλεια θετική / αρνητική γραμμική συσχέτιση · $r = 0$: καμία γραμμική.</li>
+<li>$r &gt; 0{,}7$: ένδειξη <b>ισχυρής θετικής</b> · $-1 \le r &lt; -0{,}7$: <b>ισχυρής αρνητικής</b>.</li></ul></div>
+<div class="tbox warn"><h4>⚠ Συσχέτιση ≠ αιτία</h4>
+<p>Ισχυρή συσχέτιση δεν σημαίνει ότι το ένα <b>προκαλεί</b> το άλλο — μπορεί και τα δύο να εξαρτώνται από έναν τρίτο παράγοντα.</p></div></section><section class="card widget"><h3 class="blk">Πειραματίσου</h3><div class="wbody"><div class="wctl"><label>Ισχύς/φορά (θεωρητικό ρ) <input type="range" class="rr" min="-1" max="1" step="0.05" value="0.8"><b class="vr">0,8</b></label>
+      <button class="btn ghost small nw">Νέο δείγμα ↻</button>
+      <label>ή δικά σου δεδομένα: <select class="ps"><option value="">— τυχαίο δείγμα —</option><option value="b">Μαθηματικά–Φυσική (12 μαθητές)</option><option value="c">x: 1..5, y: 2,4,5,4,5</option><option value="d">ώρες μελέτης–βαθμός</option></select></label></div>
+      <div class="pl"><svg viewBox="0 0 560 300" class="plot" role="img"><g class="grid"><line x1="25.851256740769955" x2="25.851256740769955" y1="0" y2="300"></line><text x="25.851256740769955" y="296" text-anchor="middle" class="tick">4</text><line x1="101.05809717579827" x2="101.05809717579827" y1="0" y2="300"></line><text x="101.05809717579827" y="296" text-anchor="middle" class="tick">6</text><line x1="176.26493761082654" x2="176.26493761082654" y1="0" y2="300"></line><text x="176.26493761082654" y="296" text-anchor="middle" class="tick">8</text><line x1="251.47177804585485" x2="251.47177804585485" y1="0" y2="300"></line><text x="251.47177804585485" y="296" text-anchor="middle" class="tick">10</text><line x1="326.67861848088313" x2="326.67861848088313" y1="0" y2="300"></line><text x="326.67861848088313" y="296" text-anchor="middle" class="tick">12</text><line x1="401.88545891591144" x2="401.88545891591144" y1="0" y2="300"></line><text x="401.88545891591144" y="296" text-anchor="middle" class="tick">14</text><line x1="477.09229935093975" x2="477.09229935093975" y1="0" y2="300"></line><text x="477.09229935093975" y="296" text-anchor="middle" class="tick">16</text><line x1="552.299139785968" x2="552.299139785968" y1="0" y2="300"></line><text x="552.299139785968" y="296" text-anchor="middle" class="tick">18</text><line x1="0" x2="560" y1="262.90479159572504" y2="262.90479159572504"></line><text x="4" y="266.90479159572504" text-anchor="start" class="tick">4</text><line x1="0" x2="560" y1="224.79582035341286" y2="224.79582035341286"></line><text x="4" y="228.79582035341286" text-anchor="start" class="tick">6</text><line x1="0" x2="560" y1="186.68684911110066" y2="186.68684911110066"></line><text x="4" y="190.68684911110066" text-anchor="start" class="tick">8</text><line x1="0" x2="560" y1="148.57787786878848" y2="148.57787786878848"></line><text x="4" y="152.57787786878848" text-anchor="start" class="tick">10</text><line x1="0" x2="560" y1="110.46890662647627" y2="110.46890662647627"></line><text x="4" y="114.46890662647627" text-anchor="start" class="tick">12</text><line x1="0" x2="560" y1="72.35993538416403" y2="72.35993538416403"></line><text x="4" y="76.35993538416403" text-anchor="start" class="tick">14</text><line x1="0" x2="560" y1="34.25096414185185" y2="34.25096414185185"></line><text x="4" y="38.25096414185185" text-anchor="start" class="tick">16</text></g><g><path d="M0.0,262.9L1.4,262.3L2.8,261.6L4.2,261.0L5.6,260.4L7.0,259.8L8.4,259.1L9.8,258.5L11.2,257.9L12.6,257.3L14.0,256.6L15.4,256.0L16.8,255.4L18.2,254.8L19.6,254.1L21.0,253.5L22.4,252.9L23.8,252.3L25.2,251.6L26.6,251.0L28.0,250.4L29.4,249.8L30.8,249.2L32.2,248.5L33.6,247.9L35.0,247.3L36.4,246.7L37.8,246.0L39.2,245.4L40.6,244.8L42.0,244.2L43.4,243.5L44.8,242.9L46.2,242.3L47.6,241.7L49.0,241.0L50.4,240.4L51.8,239.8L53.2,239.2L54.6,238.5L56.0,237.9L57.4,237.3L58.8,236.7L60.2,236.0L61.6,235.4L63.0,234.8L64.4,234.2L65.8,233.5L67.2,232.9L68.6,232.3L70.0,231.7L71.4,231.0L72.8,230.4L74.2,229.8L75.6,229.2L77.0,228.5L78.4,227.9L79.8,227.3L81.2,226.7L82.6,226.0L84.0,225.4L85.4,224.8L86.8,224.2L88.2,223.5L89.6,222.9L91.0,222.3L92.4,221.7L93.8,221.0L95.2,220.4L96.6,219.8L98.0,219.2L99.4,218.5L100.8,217.9L102.2,217.3L103.6,216.7L105.0,216.0L106.4,215.4L107.8,214.8L109.2,214.2L110.6,213.5L112.0,212.9L113.4,212.3L114.8,211.7L116.2,211.0L117.6,210.4L119.0,209.8L120.4,209.2L121.8,208.5L123.2,207.9L124.6,207.3L126.0,206.7L127.4,206.0L128.8,205.4L130.2,204.8L131.6,204.2L133.0,203.5L134.4,202.9L135.8,202.3L137.2,201.7L138.6,201.0L140.0,200.4L141.4,199.8L142.8,199.2L144.2,198.5L145.6,197.9L147.0,197.3L148.4,196.7L149.8,196.0L151.2,195.4L152.6,194.8L154.0,194.2L155.4,193.5L156.8,192.9L158.2,192.3L159.6,191.7L161.0,191.0L162.4,190.4L163.8,189.8L165.2,189.2L166.6,188.5L168.0,187.9L169.4,187.3L170.8,186.7L172.2,186.0L173.6,185.4L175.0,184.8L176.4,184.2L177.8,183.6L179.2,182.9L180.6,182.3L182.0,181.7L183.4,181.1L184.8,180.4L186.2,179.8L187.6,179.2L189.0,178.6L190.4,177.9L191.8,177.3L193.2,176.7L194.6,176.1L196.0,175.4L197.4,174.8L198.8,174.2L200.2,173.6L201.6,172.9L203.0,172.3L204.4,171.7L205.8,171.1L207.2,170.4L208.6,169.8L210.0,169.2L211.4,168.6L212.8,167.9L214.2,167.3L215.6,166.7L217.0,166.1L218.4,165.4L219.8,164.8L221.2,164.2L222.6,163.6L224.0,162.9L225.4,162.3L226.8,161.7L228.2,161.1L229.6,160.4L231.0,159.8L232.4,159.2L233.8,158.6L235.2,157.9L236.6,157.3L238.0,156.7L239.4,156.1L240.8,155.4L242.2,154.8L243.6,154.2L245.0,153.6L246.4,152.9L247.8,152.3L249.2,151.7L250.6,151.1L252.0,150.4L253.4,149.8L254.8,149.2L256.2,148.6L257.6,147.9L259.0,147.3L260.4,146.7L261.8,146.1L263.2,145.4L264.6,144.8L266.0,144.2L267.4,143.6L268.8,142.9L270.2,142.3L271.6,141.7L273.0,141.1L274.4,140.4L275.8,139.8L277.2,139.2L278.6,138.6L280.0,137.9L281.4,137.3L282.8,136.7L284.2,136.1L285.6,135.4L287.0,134.8L288.4,134.2L289.8,133.6L291.2,132.9L292.6,132.3L294.0,131.7L295.4,131.1L296.8,130.4L298.2,129.8L299.6,129.2L301.0,128.6L302.4,127.9L303.8,127.3L305.2,126.7L306.6,126.1L308.0,125.4L309.4,124.8L310.8,124.2L312.2,123.6L313.6,122.9L315.0,122.3L316.4,121.7L317.8,121.1L319.2,120.5L320.6,119.8L322.0,119.2L323.4,118.6L324.8,118.0L326.2,117.3L327.6,116.7L329.0,116.1L330.4,115.5L331.8,114.8L333.2,114.2L334.6,113.6L336.0,113.0L337.4,112.3L338.8,111.7L340.2,111.1L341.6,110.5L343.0,109.8L344.4,109.2L345.8,108.6L347.2,108.0L348.6,107.3L350.0,106.7L351.4,106.1L352.8,105.5L354.2,104.8L355.6,104.2L357.0,103.6L358.4,103.0L359.8,102.3L361.2,101.7L362.6,101.1L364.0,100.5L365.4,99.8L366.8,99.2L368.2,98.6L369.6,98.0L371.0,97.3L372.4,96.7L373.8,96.1L375.2,95.5L376.6,94.8L378.0,94.2L379.4,93.6L380.8,93.0L382.2,92.3L383.6,91.7L385.0,91.1L386.4,90.5L387.8,89.8L389.2,89.2L390.6,88.6L392.0,88.0L393.4,87.3L394.8,86.7L396.2,86.1L397.6,85.5L399.0,84.8L400.4,84.2L401.8,83.6L403.2,83.0L404.6,82.3L406.0,81.7L407.4,81.1L408.8,80.5L410.2,79.8L411.6,79.2L413.0,78.6L414.4,78.0L415.8,77.3L417.2,76.7L418.6,76.1L420.0,75.5L421.4,74.8L422.8,74.2L424.2,73.6L425.6,73.0L427.0,72.3L428.4,71.7L429.8,71.1L431.2,70.5L432.6,69.8L434.0,69.2L435.4,68.6L436.8,68.0L438.2,67.3L439.6,66.7L441.0,66.1L442.4,65.5L443.8,64.8L445.2,64.2L446.6,63.6L448.0,63.0L449.4,62.3L450.8,61.7L452.2,61.1L453.6,60.5L455.0,59.8L456.4,59.2L457.8,58.6L459.2,58.0L460.6,57.3L462.0,56.7L463.4,56.1L464.8,55.5L466.2,54.9L467.6,54.2L469.0,53.6L470.4,53.0L471.8,52.4L473.2,51.7L474.6,51.1L476.0,50.5L477.4,49.9L478.8,49.2L480.2,48.6L481.6,48.0L483.0,47.4L484.4,46.7L485.8,46.1L487.2,45.5L488.6,44.9L490.0,44.2L491.4,43.6L492.8,43.0L494.2,42.4L495.6,41.7L497.0,41.1L498.4,40.5L499.8,39.9L501.2,39.2L502.6,38.6L504.0,38.0L505.4,37.4L506.8,36.7L508.2,36.1L509.6,35.5L511.0,34.9L512.4,34.2L513.8,33.6L515.2,33.0L516.6,32.4L518.0,31.7L519.4,31.1L520.8,30.5L522.2,29.9L523.6,29.2L525.0,28.6L526.4,28.0L527.8,27.4L529.2,26.7L530.6,26.1L532.0,25.5L533.4,24.9L534.8,24.2L536.2,23.6L537.6,23.0L539.0,22.4L540.4,21.7L541.8,21.1L543.2,20.5L544.6,19.9L546.0,19.2L547.4,18.6L548.8,18.0L550.2,17.4L551.6,16.7L553.0,16.1L554.4,15.5L555.8,14.9L557.2,14.2L558.6,13.6L560.0,13.0" class="curve c3"></path></g><g><circle cx="427.4248988741911" cy="96.06207380215707" r="5" class="dot d1"></circle><circle cx="196.77067354086688" cy="166.0152829955141" r="5" class="dot d1"></circle><circle cx="69.3562178296428" cy="263.28448160437256" r="5" class="dot d1"></circle><circle cx="373.0750968158579" cy="101.84713112370284" r="5" class="dot d1"></circle><circle cx="285.4301196764593" cy="196.39840752104305" r="5" class="dot d1"></circle><circle cx="252.5745471700227" cy="112.2039979844595" r="5" class="dot d1"></circle><circle cx="312.47453772608304" cy="88.006497651724" r="5" class="dot d1"></circle><circle cx="382.7285108622139" cy="67.93993275380674" r="5" class="dot d1"></circle><circle cx="490.6437821703572" cy="36.7155183956275" r="5" class="dot d1"></circle><circle cx="201.93425409346057" cy="145.1696952563036" r="5" class="dot d1"></circle><circle cx="194.88204543475814" cy="159.6967541395594" r="5" class="dot d1"></circle><circle cx="93.58451491624372" cy="188.56671508529087" r="5" class="dot d1"></circle><circle cx="275.81296326881426" cy="138.90701776728076" r="5" class="dot d1"></circle><circle cx="160.00287890867946" cy="189.14052374720876" r="5" class="dot d1"></circle><circle cx="351.27225063719067" cy="77.07750419434518" r="5" class="dot d1"></circle><circle cx="322.3053295892613" cy="189.7075179919671" r="5" class="dot d1"></circle><circle cx="301.32656447430037" cy="134.95204116746487" r="5" class="dot d1"></circle><circle cx="147.56485117637897" cy="171.0126497551225" r="5" class="dot d1"></circle><circle cx="162.07569141782355" cy="151.53106574743228" r="5" class="dot d1"></circle><circle cx="263.31024544410525" cy="198.2962088118409" r="5" class="dot d1"></circle><circle cx="379.45550002894777" cy="59.72526122047992" r="5" class="dot d1"></circle><circle cx="189.8494867702596" cy="257.14283930903514" r="5" class="dot d1"></circle><circle cx="299.66042008092035" cy="101.526567618484" r="5" class="dot d1"></circle><circle cx="201.1628376164633" cy="191.14030836062886" r="5" class="dot d1"></circle><circle cx="143.9170892812867" cy="199.19892277367887" r="5" class="dot d1"></circle></g></svg></div><div class="wout">ν = 25 · x̄ = 10,2 · ȳ = 10,07 · Σxy = 2.738,35 · s<sub>x</sub> = 2,78 · s<sub>y</sub> = 3,05
+        <br><b>r ≈ 0,802</b> → ισχυρή θετική γραμμική συσχέτιση
+        <br><span class="muted">Μετακίνησε τον δείκτη προς το 1, το 0 και το −1 και παρατήρησε πώς «μαζεύονται» τα σημεία γύρω από την ευθεία.</span></div></div></section><section class="card"><h3 class="blk">Ασκήσεις <span class="muted small">— 0/6 λυμένες</span></h3><div class="ex"><div class="exh"><span class="exn">Άσκηση 1</span><span class="lvl l1">Βασική</span><span class="tick-ok"></span></div><div class="exq">Για δύο μεταβλητές βρέθηκε $r = -0{,}95$. Αυτό σημαίνει:</div><div class="exb"><label class="opt"><input type="radio" name="mc5hlazx76dn6" value="0"><span>καμία συσχέτιση</span></label><label class="opt"><input type="radio" name="mc5hlazx76dn6" value="1"><span>ισχυρή αρνητική γραμμική συσχέτιση</span></label><label class="opt"><input type="radio" name="mc5hlazx76dn6" value="2"><span>ασθενή θετική συσχέτιση</span></label><label class="opt"><input type="radio" name="mc5hlazx76dn6" value="3"><span>ότι έγινε λάθος στις πράξεις</span></label><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> Πρόσημο ⇒ φορά, απόλυτη τιμή ⇒ ισχύς.</div><div class="sol hidden"><b>Λύση:</b> Αρνητικό πρόσημο ⇒ όσο αυξάνεται το $x$ μειώνεται το $y$. $|r| = 0{,}95$ κοντά στο 1 ⇒ <b>ισχυρή αρνητική</b>.</div></div></div><div class="ex"><div class="exh"><span class="exn">Άσκηση 2</span><span class="lvl l1">Βασική</span><span class="tick-ok"></span></div><div class="exq">Ποια τιμή <b>δεν</b> μπορεί να είναι συντελεστής συσχέτισης;</div><div class="exb"><label class="opt"><input type="radio" name="mcqkul2wo80lc" value="0"><span>$r = 1{,}2$</span></label><label class="opt"><input type="radio" name="mcqkul2wo80lc" value="1"><span>$r = 0{,}99$</span></label><label class="opt"><input type="radio" name="mcqkul2wo80lc" value="2"><span>$r = 0$</span></label><label class="opt"><input type="radio" name="mcqkul2wo80lc" value="3"><span>$r = -1$</span></label><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> Σε ποιο διάστημα ανήκει πάντα το $r$;</div><div class="sol hidden"><b>Λύση:</b> Πάντα $-1 \le r \le 1$, άρα το $1{,}2$ είναι αδύνατο.</div></div></div><div class="ex"><div class="exh"><span class="exn">Άσκηση 3</span><span class="lvl l1">Βασική</span><span class="tick-ok"></span></div><div class="exq">Για τα ζεύγη $(1,3), (2,5), (3,7), (4,9)$ πόσος είναι ο συντελεστής συσχέτισης;</div><div class="exb"><div class="fields"><label class="fld"><span>r =</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label></div><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> Κοίτα αν τα σημεία βρίσκονται σε ευθεία: $y = 2x + 1$;</div><div class="sol hidden"><b>Λύση:</b> Όλα τα σημεία ικανοποιούν $y = 2x + 1$ (ευθεία με θετική κλίση) ⇒ τέλεια θετική συσχέτιση, $r = 1$.</div></div></div><div class="ex"><div class="exh"><span class="exn">Άσκηση 4</span><span class="lvl l2">Μέτρια</span><span class="tick-ok"></span></div><div class="exq">Να υπολογίσετε τον $r$ για $x$: $1, 2, 3, 4, 5$ και $y$: $2, 4, 5, 4, 5$ (στρογγυλοποίηση 2 δεκαδικών).</div><div class="exb"><div class="fields"><label class="fld"><span>x̄ =</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label><label class="fld"><span>ȳ =</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label><label class="fld"><span>Σxy =</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label><label class="fld"><span>r ≈</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label></div><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> $s_x = \sqrt{2}$, $s_y = \sqrt{1{,}2}$.</div><div class="sol hidden"><b>Λύση:</b> $\bar x = 3$, $\bar y = 4$, $\Sigma_{xy} = 2 + 8 + 15 + 16 + 25 = 66$.<br>$s_x^2 = \frac{4+1+0+1+4}{5} = 2$, $\;s_y^2 = \frac{4+0+1+0+1}{5} = 1{,}2$.<br>$r = \frac{66 - 5 \cdot 3 \cdot 4}{5 \sqrt{2}\sqrt{1{,}2}} = \frac{6}{7{,}746} \approx 0{,}77$ ⇒ ισχυρή θετική (πάνω από $0{,}7$).</div></div></div><div class="ex"><div class="exh"><span class="exn">Άσκηση 5</span><span class="lvl l2">Μέτρια</span><span class="tick-ok"></span></div><div class="exq">Ώρες μελέτης $x$: $1, 2, 3, 4, 5, 6$ και βαθμός $y$: $9, 11, 12, 14, 15, 18$. Να υπολογίσετε τον $r$ (2 δεκαδικά).</div><div class="exb"><div class="fields"><label class="fld"><span>Σxy =</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label><label class="fld"><span>r ≈</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label></div><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> $\bar x = 3{,}5$, $\bar y = \frac{79}{6}$, $s_x \approx 1{,}708$, $s_y \approx 2{,}911$.</div><div class="sol hidden"><b>Λύση:</b> $\Sigma_{xy} = 9 + 22 + 36 + 56 + 75 + 108 = 306$, $\bar x = 3{,}5$, $\bar y = \frac{79}{6} \approx 13{,}17$.<br>$s_x \approx 1{,}708$, $s_y \approx 2{,}911$. $\;r = \frac{306 - 6 \cdot 3{,}5 \cdot \frac{79}{6}}{6 \cdot 1{,}708 \cdot 2{,}911} = \frac{29{,}5}{29{,}83} \approx 0{,}99$ ⇒ πολύ ισχυρή θετική.</div></div></div><div class="ex"><div class="exh"><span class="exn">Άσκηση 6</span><span class="lvl l3">Απαιτητική</span><span class="tick-ok"></span></div><div class="exq">Σε μια πόλη βρέθηκε $r = 0{,}85$ μεταξύ των πωλήσεων παγωτού και του αριθμού πνιγμών ανά μήνα. Ποιο συμπέρασμα είναι σωστό;</div><div class="exb"><label class="opt"><input type="radio" name="mcrg0ilqgftze" value="0"><span>Δεν υπάρχει συσχέτιση</span></label><label class="opt"><input type="radio" name="mcrg0ilqgftze" value="1"><span>Οι πνιγμοί αυξάνουν τις πωλήσεις παγωτού</span></label><label class="opt"><input type="radio" name="mcrg0ilqgftze" value="2"><span>Το παγωτό προκαλεί πνιγμούς</span></label><label class="opt"><input type="radio" name="mcrg0ilqgftze" value="3"><span>Υπάρχει ισχυρή θετική συσχέτιση, πιθανότατα λόγω τρίτου παράγοντα (ζέστη/καλοκαίρι)</span></label><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> Τι αυξάνεται το καλοκαίρι;</div><div class="sol hidden"><b>Λύση:</b> Το $r = 0{,}85$ δείχνει ισχυρή θετική γραμμική συσχέτιση, όχι αιτιότητα. Και τα δύο αυξάνονται τους ζεστούς μήνες (περισσότερο κολύμπι, περισσότερο παγωτό).</div></div></div></section><div class="pager"><a class="btn ghost" href="/mathimatika-g-lykeiou/tefxos-b/4-1–4-2-metra-thesis-diasporas-tetartimoria/">← 4.1–4.2 Μέτρα θέσης &amp; διασποράς – Τεταρτημόρια</a><a class="btn primary" href="/mathimatika-g-lykeiou/tefxos-b/5-1–5-2α-kylindros-konos/">5.1–5.2α Κύλινδρος – Κώνος →</a></div></main></div>
+<aside class="ctaf" aria-label="Online μαθήματα"><p>Χρειάζεσαι βοήθεια; <a href="/online-mathimata/mathimatika-g-lykeiou/">Online μαθήματα Μαθηματικών Γ΄ Λυκείου ΚΚ</a> — ζωντανά, ένας προς έναν.</p><p><a href="/online-mathimata/mathimatika/">Online μαθήματα Μαθηματικών</a> για όλες τις τάξεις · <a href="/mathimatika/">Όλο το δωρεάν υλικό</a></p></aside>
+<footer><b>Pagkypries Online</b> · Αντρέας Σωτηρίου · <a href="/">pagkypriesonline.com</a> · <a href="/online-mathimata/">Ιδιαίτερα online μαθήματα</a><br>
+Πρωτότυπο εκπαιδευτικό υλικό που ακολουθεί τη δομή του βιβλίου «Μαθηματικά Γ΄ Λυκείου Κοινού Κορμού, Β΄ Τεύχος» (ΥΑΠ, 2019).</footer>
+<script>window.ROUTE={"base": "/mathimatika-g-lykeiou/tefxos-b/", "slugs": {"3.1–3.3": "3-1–3-3-synola-archi-egkleismou-apokleismou", "3.4": "3-4-eisagogi-sti-syndyastiki", "3.5": "3-5-metatheseis", "3.6": "3-6-diataxeis", "3.7": "3-7-syndyasmoi", "3.8": "3-8-i-ennoia-tis-pithanotitas", "3.9": "3-9-pithanotites-syndyasmenon-endechomenon", "4.1–4.2": "4-1–4-2-metra-thesis-diasporas-tetartimoria", "4.3": "4-3-syschetisi-syntelestis-syschetisis", "5.1–5.2α": "5-1–5-2α-kylindros-konos", "5.2β": "5-2β-kolouros-konos-sfaira-peristrofi"}, "titles": {"home": "Μαθηματικά Γ΄ Λυκείου ΚΚ — Β΄ Τεύχος: Ασκήσεις & Θεωρία", "3.1–3.3": "Σύνολα – Αρχή Εγκλεισμού–Αποκλεισμού — Ασκήσεις | Γ΄ Λυκείου ΚΚ", "3.4": "Εισαγωγή στη Συνδυαστική — Ασκήσεις με Λύσεις | Γ΄ Λυκείου ΚΚ", "3.5": "Μεταθέσεις — Ασκήσεις με Λύσεις | Γ΄ Λυκείου ΚΚ", "3.6": "Διατάξεις — Ασκήσεις με Λύσεις | Γ΄ Λυκείου ΚΚ", "3.7": "Συνδυασμοί — Ασκήσεις με Λύσεις | Γ΄ Λυκείου ΚΚ", "3.8": "Η έννοια της Πιθανότητας — Ασκήσεις με Λύσεις | Γ΄ Λυκείου ΚΚ", "3.9": "Πιθανότητες συνδυασμένων ενδεχομένων — Ασκήσεις | Γ΄ Λυκείου ΚΚ", "4.1–4.2": "Μέτρα θέσης & διασποράς – Τεταρτημόρια — Ασκήσεις | Γ΄ Λυκείου ΚΚ", "4.3": "Συσχέτιση – Συντελεστής συσχέτισης — Ασκήσεις | Γ΄ Λυκείου ΚΚ", "5.1–5.2α": "Κύλινδρος – Κώνος — Ασκήσεις με Λύσεις | Γ΄ Λυκείου ΚΚ", "5.2β": "Κόλουρος κώνος – Σφαίρα – Περιστροφή — Ασκήσεις | Γ΄ Λυκείου ΚΚ", "quiz": "Quiz — Μαθηματικά Γ΄ Λυκείου Κοινού Κορμού — Β΄ Τεύχος | PagkypriesOnline"}};window.START_SEC="4.3";</script>
+<script defer src="/mathimatika-g-lykeiou/tefxos-b/app.js?v=62e510a8"></script>
+</body>
+</html>

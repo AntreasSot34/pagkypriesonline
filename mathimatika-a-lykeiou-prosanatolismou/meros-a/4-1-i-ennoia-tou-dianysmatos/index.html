@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Η έννοια του διανύσματος — Ασκήσεις | Α΄ Λυκείου Προσανατολισμού</title>
+<meta name="description" content="Η έννοια του διανύσματος — Μαθηματικά Α΄ Λυκείου Προσανατολισμού: θεωρία, 5 λυμένες ασκήσεις με υποδείξεις, διαδραστικό γράφημα και quiz. Δωρεάν.">
+<link rel="canonical" href="https://pagkypriesonline.com/mathimatika-a-lykeiou-prosanatolismou/meros-a/4-1-i-ennoia-tou-dianysmatos/">
+<meta name="theme-color" content="#14171C">
+<link rel="icon" href="/favicon.png" type="image/png" sizes="64x64">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="el_CY">
+<meta property="og:site_name" content="Pagkypries Online">
+<meta property="og:title" content="Η έννοια του διανύσματος — Ασκήσεις | Α΄ Λυκείου Προσανατολισμού">
+<meta property="og:description" content="Η έννοια του διανύσματος — Μαθηματικά Α΄ Λυκείου Προσανατολισμού: θεωρία, 5 λυμένες ασκήσεις με υποδείξεις, διαδραστικό γράφημα και quiz. Δωρεάν.">
+<meta property="og:url" content="https://pagkypriesonline.com/mathimatika-a-lykeiou-prosanatolismou/meros-a/4-1-i-ennoia-tou-dianysmatos/">
+<meta property="og:image" content="https://pagkypriesonline.com/g/g01.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<style>
+:root{
+  --navy:#1B2A4A;--blue:#0F6FD1;--green:#198754;--amber:#C77A0A;--red:#DC3545;--purple:#6F42C1;
+  --ink:#15233f;--muted:#5b6b86;--line:#dce3ef;--bg:#F4F7FA;--card:#fff;--soft:#f5f8fd;
+  --sans:"Commissioner",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;--ink2:#14171C;--grad:linear-gradient(100deg,#54EFA2 0%,#33CFD3 48%,#2D9AF5 100%);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px}
+.top{position:sticky;top:0;z-index:50;background:rgba(244,247,252,.9);backdrop-filter:saturate(160%) blur(14px);border-bottom:1px solid var(--line)}
+.top::before{content:"";display:block;height:3px;background:var(--grad)}
+.top .in{max-width:1180px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:14px;min-height:60px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink2);font-weight:900;letter-spacing:-.02em;font-size:17px;white-space:nowrap}
+.brand img{width:32px;height:auto;display:block}
+.top .crumb{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);border-left:1px solid var(--line);padding-left:14px}
+.top .links{margin-left:auto;display:flex;gap:8px}
+.top .links a{text-decoration:none;font-size:13.5px;font-weight:600;color:var(--ink2);border:1px solid var(--line);background:#fff;border-radius:10px;padding:7px 12px;white-space:nowrap}
+.top .links a:hover{border-color:#2D9AF5;color:var(--blue)}
+.top .links a.home{background:var(--blue);border-color:var(--blue);color:#fff}
+@media(max-width:860px){.top .crumb{display:none}}
+@media(max-width:480px){.brand span{display:none}.top .links a{padding:7px 10px;font-size:13px}}
+#app{max-width:1180px;margin:0 auto;padding:18px 16px 40px;display:grid;grid-template-columns:270px 1fr;gap:20px;align-items:start}
+#nav{position:sticky;top:76px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:10px;max-height:calc(100vh - 90px);overflow:auto}
+.navu{font-size:12px;font-weight:800;color:var(--blue);text-transform:uppercase;letter-spacing:.04em;padding:12px 8px 4px;line-height:1.3}
+.navu small{text-transform:none;letter-spacing:0;color:var(--navy);font-size:13px}
+.navit{display:flex;align-items:center;gap:9px;width:100%;text-align:left;background:none;border:0;border-radius:10px;padding:8px;cursor:pointer;font:inherit;color:var(--ink);font-size:14px;line-height:1.3}
+.navit:hover{background:var(--soft)}.navit.on{background:#e3eefb;font-weight:700}
+.nid{flex:none;min-width:34px;font-weight:800;color:var(--navy);font-size:12.5px}
+.nt{flex:1}
+.ring{flex:none;width:20px;height:20px;border-radius:50%;background:conic-gradient(var(--green) calc(var(--p)*1%),#dfe6f1 0);display:flex;align-items:center;justify-content:center;font-size:11px;color:#fff;font-weight:900;position:relative}
+.ring::before{content:"";position:absolute;inset:3px;border-radius:50%;background:#fff}
+.ring[style*="--p:100"]::before{background:var(--green)}
+.ring{isolation:isolate}.ring::before{z-index:-1}
+#main{min-width:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;margin-bottom:16px;box-shadow:0 10px 30px -22px rgba(27,42,74,.45)}
+h1,h2{color:var(--navy);font-size:24px;line-height:1.2;font-weight:900}
+h1{font-size:26px;overflow-wrap:anywhere;hyphens:auto}
+.sechead>div{min-width:0}
+a.navit,a.seccard,a.quizcta{text-decoration:none;color:var(--ink)}
+a.btn{text-decoration:none;display:inline-block}
+h3.blk{color:var(--navy);font-size:18px;font-weight:900;margin-bottom:12px}
+.unith{color:var(--navy);font-size:17px;font-weight:900;margin:22px 0 10px}
+.sechead{display:flex;gap:14px;align-items:center;margin:2px 0 14px}
+.sid{display:inline-block;background:var(--navy);color:#fff;font-weight:900;border-radius:8px;padding:2px 9px;font-size:13px}
+.sid.big{font-size:18px;padding:8px 12px;border-radius:12px}
+.muted{color:var(--muted)}.small{font-size:13px}
+.hero p{margin-top:8px}
+.bigprog{display:flex;align-items:center;gap:12px;margin-top:14px;font-weight:700;color:var(--navy);font-size:14px}
+.bar{display:block;flex:1;height:10px;border-radius:99px;background:#e3e9f3;overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--blue),var(--green));border-radius:99px}
+.secgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.seccard{display:flex;flex-direction:column;gap:8px;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;cursor:pointer;font:inherit;color:var(--ink);transition:.15s}
+.seccard:hover{border-color:var(--blue);transform:translateY(-2px);box-shadow:0 10px 24px -18px rgba(46,117,182,.8)}
+.seccard b{color:var(--navy);line-height:1.3}.seccard .bar{flex:none;width:100%}.seccard small{color:var(--muted)}.seccard .sid{align-self:flex-start}
+.howto ul{margin:8px 0 12px 20px}.howto li{margin:4px 0}
+code{font-family:"SF Mono",Consolas,Menlo,monospace;background:#eaf0fb;color:var(--navy);padding:1px 6px;border-radius:5px;font-size:.92em}
+.tbox{border:1px solid var(--line);border-left:5px solid var(--blue);background:var(--soft);border-radius:0 12px 12px 0;padding:12px 16px;margin:10px 0}
+.tbox.tip{border-left-color:var(--green);background:#f1faf4}.tbox.warn{border-left-color:var(--amber);background:#fdf6e9}
+.tbox h4{color:var(--navy);font-size:15.5px;margin-bottom:4px}
+/* --- εμπλουτισμένα πλαίσια θεωρίας (Ορισμός/Θεώρημα/Παράδειγμα/Παρατήρηση/Απόδειξη) --- */
+.tbox.def{border-left-color:var(--blue);background:linear-gradient(90deg,#eef5ff,#f7faff)}
+.tbox.thm{border-left-color:var(--purple);background:linear-gradient(90deg,#f4efff,#faf8ff)}
+.tbox.ex{border-left-color:var(--green);background:linear-gradient(90deg,#edf9f2,#f8fdfa)}
+.tbox.rem{border-left-color:#0d9488;background:#effaf8}
+.tbox.def h4::before,.tbox.thm h4::before,.tbox.ex h4::before,.tbox.rem h4::before{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#fff;border-radius:6px;padding:2px 7px;margin-right:8px;vertical-align:2px}
+.tbox.def h4::before{content:"Ορισμός";background:var(--blue)}.tbox.thm h4::before{content:"Θεώρημα";background:var(--purple)}
+.tbox.ex h4::before{content:"Παράδειγμα";background:var(--green)}.tbox.rem h4::before{content:"Παρατήρηση";background:#0d9488}
+details.proof,details.steps{border:1px dashed #c7d2e5;border-radius:10px;padding:6px 12px;margin:8px 0;background:#fff}
+details.proof>summary,details.steps>summary{cursor:pointer;font-weight:800;color:var(--navy);font-size:14px;list-style:none}
+details.proof>summary::before,details.steps>summary::before{content:"▸ ";color:var(--blue)}details[open].proof>summary::before,details[open].steps>summary::before{content:"▾ "}
+details.proof[open]{background:#fbfcff}details.proof p:last-child::after{content:" ∎";color:var(--navy);font-weight:900}
+figure.grfig{margin:10px auto;max-width:560px}figure.grfig svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;box-shadow:0 8px 22px -18px rgba(27,42,74,.5)}
+figure.grfig figcaption{text-align:center;color:var(--muted);font-size:13px;margin-top:6px}
+.figrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;align-items:start}
+.fbox{display:block;text-align:center;font-size:1.05em;background:#fff;border:1.5px solid #c9d8f0;border-radius:12px;padding:10px 12px;margin:8px auto;max-width:fit-content;box-shadow:0 6px 18px -16px rgba(15,111,209,.6)}
+.hero.art{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:18px;align-items:center;background:radial-gradient(120% 140% at 100% 0%,#e9f2ff 0%,#fff 55%)}
+.hero.art .heroart svg{width:100%;height:auto;display:block}
+@media(max-width:760px){.hero.art{grid-template-columns:1fr}.hero.art .heroart{max-width:320px;margin:0 auto}}
+.unith .uchip{display:inline-flex;align-items:center;justify-content:center;min-width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;font-size:14px;margin-right:8px;vertical-align:1px}
+.seccard{position:relative}.seccard .thumb{position:absolute;top:10px;right:12px;width:68px;height:40px;opacity:.9}
+.seccard:hover .thumb{opacity:1}
+.intro{font-size:15.5px;color:var(--ink);background:#fff8ec;border:1px solid #f3dcb3;border-radius:12px;padding:10px 14px;margin:0 0 14px}
+.tbox ul,.tbox ol{margin:4px 0 2px 22px}.tbox li{margin:3px 0}.tbox p{margin:4px 0}
+.katex-display{overflow-x:auto;overflow-y:hidden;padding:2px 0}
+#main .katex{max-width:100%;position:relative}
+#main :not(.katex-display) > .katex{display:inline-block;overflow-x:auto;overflow-y:hidden;vertical-align:middle;padding:1px 0}
+.wctl label{min-width:0;max-width:100%}
+.tblwrap{overflow-x:auto}
+table.vt{border-collapse:collapse;margin:8px 0;font-size:14px;white-space:nowrap}
+table.vt th,table.vt td{border:1px solid #c9d3e4;padding:4px 10px;text-align:center}table.vt th{background:#eaf1fb}
+/* widgets */
+.wctl{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;margin-bottom:10px;font-size:14px;font-weight:600;color:var(--navy)}
+.wctl label{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.wctl select{max-width:100%;min-width:0;font:inherit;font-weight:600;padding:6px 10px;border-radius:9px;border:1px solid var(--line);background:#fff;color:var(--navy)}
+input[type=range]{accent-color:var(--blue);width:170px;max-width:60vw}
+.cap{font-size:13px;color:var(--muted);margin:6px 0 2px}
+.t1{color:var(--blue)}.t2{color:var(--purple)}.t3{color:var(--amber)}
+.wout{margin-top:10px;font-size:14.5px;background:var(--soft);border-radius:10px;padding:10px 12px}
+.ok{color:var(--green)}.bad{color:var(--red)}
+.two{display:grid;grid-template-columns:1fr 1.6fr;gap:12px;align-items:center}
+.plot{width:100%;height:auto;display:block;background:#fff;border:1px solid var(--line);border-radius:12px;touch-action:pan-y}
+.plot .grid line{stroke:#edf1f7}.plot .tick{font-size:11px;fill:#8a97ad;font-family:var(--sans)}
+.plot .axis{stroke:var(--navy);stroke-width:1.4}
+.plot .curve{fill:none;stroke-width:3;stroke-linejoin:round;stroke-linecap:round}
+.c1{stroke:var(--blue)}.c2{stroke:var(--purple)}.c3{stroke:var(--amber)}.cfam{stroke:#c5cfdf;stroke-width:1.8!important}
+.plot .band.pos{fill:rgba(25,135,84,.09)}.plot .band.neg{fill:rgba(220,53,69,.08)}
+.plot .dot{stroke:#fff;stroke-width:2}.d1{fill:var(--blue)}.d2{fill:var(--navy)}.d3{fill:var(--amber)}.dmax{fill:var(--green)}.dmin{fill:var(--red)}.dinf{fill:var(--purple)}
+.plot .lbl{font-size:12.5px;font-weight:800;font-family:var(--sans)}.lbl.dmax{fill:var(--green)}.lbl.dmin{fill:var(--red)}.lbl.dinf{fill:var(--purple)}.lbl.d2,.lbl.d3,.lbl.d1{fill:var(--navy)}
+.plot .guide{stroke:#9aa8bf;stroke-dasharray:4 4}.plot .tangent{stroke:var(--red);stroke-width:2;stroke-dasharray:7 5}
+.plot .sheet{fill:#f3e7cf;stroke:#c9a86a}.plot .cut{fill:#fff;stroke:var(--red);stroke-dasharray:4 3}.plot .base{fill:#dbe8f8;stroke:var(--blue)}
+/* exercises */
+.ex{border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:12px 0;background:#fff;transition:border-color .2s}
+.ex.solved{border-color:#a9dcbf;background:#fbfefc}
+.exh{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.exn{font-weight:900;color:var(--navy)}
+.lvl{font-size:11.5px;font-weight:800;padding:2px 9px;border-radius:99px}
+.l1{background:#e7f6ee;color:var(--green)}.l2{background:#fdf1dd;color:var(--amber)}.l3{background:#fdeaec;color:var(--red)}
+.tick-ok{margin-left:auto;color:var(--green);font-weight:800;font-size:13px}
+.exq{margin-bottom:10px}
+.opt{display:flex;gap:10px;align-items:flex-start;padding:9px 12px;border:1px solid var(--line);border-radius:10px;margin:6px 0;cursor:pointer;background:#fff}
+.opt:hover{border-color:var(--blue)}.opt input{margin-top:5px;accent-color:var(--blue)}
+.opt.right{border-color:var(--green);background:#eef9f2}.opt.wrong{border-color:var(--red);background:#fdf0f1}
+.fields{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px 14px}
+.fld{display:flex;flex-direction:column;gap:3px;font-size:13.5px;color:var(--muted);font-weight:600}
+.fld.wide{max-width:560px}
+.fld input{font:inherit;font-size:16px;padding:9px 12px;border:1.5px solid var(--line);border-radius:10px;color:var(--ink);background:#fff;width:100%}
+.fld input:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(46,117,182,.15)}
+.fld input.right{border-color:var(--green);background:#f1faf4}.fld input.wrong{border-color:var(--red);background:#fdf3f4}
+.preview{font-size:12.5px;margin-top:4px;min-height:1em}.warnc{color:var(--amber)}
+.exbar{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.btn{font:inherit;font-size:14px;font-weight:700;border-radius:10px;padding:8px 14px;cursor:pointer;border:1.5px solid transparent;transition:.15s}
+.btn.primary{background:var(--blue);color:#fff}.btn.primary:hover{background:#245f94}
+.btn.ghost{background:#fff;color:var(--navy);border-color:var(--line)}.btn.ghost:hover{border-color:var(--blue)}
+.btn.small{font-size:13px;padding:6px 11px}
+.fb{margin-top:10px;font-weight:700;min-height:0}.fb:empty{display:none}
+.okc{color:var(--green)}.badc{color:var(--red)}
+.hint,.sol{margin-top:10px;padding:10px 14px;border-radius:10px;font-size:15px}
+.hint{background:#fff8e8;border:1px solid #f0d9a8}.sol{background:#f1faf4;border:1px solid #bfe6cf}
+.hidden{display:none}
+.solgraph{margin-top:10px;max-width:520px}
+.gen{border:2px dashed #b8cbe6}.gen .newg{margin-top:4px}
+.pager{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:6px}
+.chips{gap:6px}.chip{font:inherit;font-size:14px;font-weight:700;border:1.5px solid var(--line);background:#fff;color:var(--navy);border-radius:99px;padding:5px 12px;cursor:pointer}
+.chip.on{background:var(--blue);border-color:var(--blue);color:#fff}
+.wctl.col{flex-direction:column;align-items:flex-start;gap:6px}
+.plot .vnum{font-size:17px;font-weight:900;fill:var(--navy);text-anchor:middle;font-family:var(--sans)}
+.pills{display:flex;flex-wrap:wrap;gap:5px;margin:6px 0}.pills span{font-family:"SF Mono",Consolas,monospace;font-size:13px;background:#eef3fb;border:1px solid var(--line);border-radius:7px;padding:2px 7px;color:var(--navy)}
+.pills span.pm{background:var(--amber);color:#fff;border-color:var(--amber)}.pills span.pl1{background:#e3eefb}.pills span.pl2{background:#efe8fb}
+.dice{display:flex;align-items:center;gap:10px;margin:4px 0 8px;font-size:14px}
+.plot .theo{stroke:var(--red);stroke-width:2.5}.plot .whisk{stroke:var(--navy);stroke-width:2}.plot .medl{stroke:var(--red);stroke-width:3}
+.plot .sol-e{fill:none;stroke:var(--navy);stroke-width:2}.plot .sol-eb{fill:none;stroke:var(--navy);stroke-width:1.5;stroke-dasharray:5 4;opacity:.6}
+.plot .axisrot{stroke:var(--red);stroke-width:1.5;stroke-dasharray:8 5}.plot .gen2d{fill:rgba(46,117,182,.22);stroke:var(--blue);stroke-width:2}
+table.t2 input{width:72px;font:inherit;padding:4px 6px;border:1px solid var(--line);border-radius:7px;text-align:center}
+.sform{font-size:15px;line-height:2}
+.qhead{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.qchips{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:6px;margin-bottom:14px}
+.qchip{display:flex;gap:8px;align-items:flex-start;border:1px solid var(--line);border-radius:10px;padding:7px 10px;font-size:13.5px;cursor:pointer;background:#fff}
+.qchip input{margin-top:4px;accent-color:var(--blue)}.qchip b{color:var(--navy)}
+.qopts{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;margin-bottom:14px;font-size:14px;font-weight:600;color:var(--navy)}
+.qopts select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--line);margin-left:6px}
+.qbar{display:flex;justify-content:space-between;align-items:center;position:sticky;top:70px;z-index:5;padding:12px 18px}
+.qtime{font-family:"IBM Plex Mono",monospace;font-weight:600;color:var(--blue)}
+.qsub{width:100%;padding:13px;font-size:16px;margin:6px 0 18px}
+.qscore{display:flex;gap:20px;align-items:center;flex-wrap:wrap;border:2px solid var(--green);background:#f1faf4}
+.qbig{font-size:40px;font-weight:900;color:var(--green);line-height:1}
+.qscore .btn{margin-left:auto}
+.quizcta{display:flex;gap:16px;align-items:center;width:100%;text-align:left;cursor:pointer;font:inherit;color:var(--ink);border:2px dashed #b8cbe6}
+.quizcta:hover{border-color:var(--blue)}.quizcta .go{margin-left:auto;font-weight:800;color:var(--blue);white-space:nowrap}
+.navit.quizit{background:#fff8e8;margin:2px 0}
+input:disabled{opacity:.85}
+.plot .chord{stroke:var(--purple);stroke-width:2.2}.plot .tangent.ok{stroke:var(--green);stroke-dasharray:none;stroke-width:2.5}
+.plot .asl{stroke:var(--red);stroke-width:1.6;stroke-dasharray:7 5}
+.plot .circ{fill:rgba(15,111,209,.08);stroke:var(--blue);stroke-width:2.6}.plot .circ2{fill:rgba(199,122,10,.08);stroke:var(--amber);stroke-width:2.6}
+.plot .c1line{stroke:var(--purple);stroke-width:2.4}
+.plot .rect{fill:rgba(15,111,209,.18);stroke:var(--blue);stroke-width:1}.plot .area{fill:rgba(25,135,84,.22)}
+.plot .focus{fill:var(--red)}.plot .disk{fill:rgba(15,111,209,.12);stroke:var(--blue);stroke-width:.8}.plot .dir{stroke:var(--green);stroke-width:2;stroke-dasharray:6 4}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:24px 16px 34px}
+footer b{color:var(--navy)}footer a{color:var(--blue);font-weight:700;text-decoration:none}
+@media (max-width:860px){
+  #app{grid-template-columns:1fr;padding-top:10px}
+  #nav{position:static;display:flex;overflow-x:auto;gap:6px;padding:8px;max-height:none;scrollbar-width:thin}
+  .navu{display:none}
+  .navit{flex:none;width:auto;white-space:nowrap;border:1px solid var(--line);padding:6px 10px}
+  .navit .nt{display:none}.navit .nid{min-width:0}
+  .two{grid-template-columns:1fr}
+  .card{padding:16px}
+  h2{font-size:21px}h1{font-size:22px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+.plot.nogrid .grid,.plot.nogrid .axis{display:none}
+.plot .band.bandok{fill:rgba(25,135,84,.16)}
+table.mini{border-collapse:collapse;margin:.4rem 0;font-size:.95em;max-width:100%;display:block;overflow-x:auto}
+table.mini th,table.mini td{border:1px solid var(--line);padding:.3rem .55rem;text-align:center}
+table.mini th{background:var(--soft)}
+.exq svg.fig text{user-select:none}
+.ctaf{max-width:760px;margin:10px auto 0;padding:16px 18px;border:1px solid var(--line);border-radius:16px;background:var(--card);text-align:center;font-size:15px}.ctaf a{color:var(--blue);font-weight:700;text-decoration:none}.ctaf p{margin:4px 0}</style>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Αρχική", "item": "https://pagkypriesonline.com/"}, {"@type": "ListItem", "position": 2, "name": "Δωρεάν υλικό Μαθηματικών", "item": "https://pagkypriesonline.com/mathimatika/"}, {"@type": "ListItem", "position": 3, "name": "Μαθηματικά Α΄ Λυκείου Προσανατολισμού — Μέρος Α (Α΄ τετράμηνο)", "item": "https://pagkypriesonline.com/mathimatika-a-lykeiou-prosanatolismou/meros-a/"}, {"@type": "ListItem", "position": 4, "name": "Η έννοια του διανύσματος", "item": "https://pagkypriesonline.com/mathimatika-a-lykeiou-prosanatolismou/meros-a/4-1-i-ennoia-tou-dianysmatos/"}]}, {"@type": "LearningResource", "name": "Η έννοια του διανύσματος", "description": "Η έννοια του διανύσματος — Μαθηματικά Α΄ Λυκείου Προσανατολισμού: θεωρία, 5 λυμένες ασκήσεις με υποδείξεις, διαδραστικό γράφημα και quiz. Δωρεάν.", "url": "https://pagkypriesonline.com/mathimatika-a-lykeiou-prosanatolismou/meros-a/4-1-i-ennoia-tou-dianysmatos/", "inLanguage": "el", "isAccessibleForFree": true, "educationalLevel": "Α΄ Λυκείου", "learningResourceType": ["Θεωρία", "Ασκήσεις με λύσεις", "Διαδραστική εξάσκηση"], "teaches": "Η έννοια του διανύσματος", "isPartOf": {"@type": "Course", "name": "Μαθηματικά Α΄ Λυκείου Προσανατολισμού — Μέρος Α (Α΄ τετράμηνο)", "url": "https://pagkypriesonline.com/mathimatika-a-lykeiou-prosanatolismou/meros-a/"}, "provider": {"@type": "EducationalOrganization", "name": "Pagkypries Online", "url": "https://pagkypriesonline.com/"}, "author": {"@type": "Person", "name": "Αντρέας Σωτηρίου", "url": "https://antreassotiriou.com"}, "dateModified": "2026-10-23"}]}</script>
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<header class="top"><div class="in">
+  <a class="brand" href="/"><img src="/logo-mark.png" width="240" height="212" alt="PagkypriesOnline"><span>Pagkypries Online</span></a>
+  <div class="crumb">Μαθηματικά Προσανατολισμού · Α΄ Λυκείου · Μέρος Α</div>
+  <nav class="links" aria-label="Σύνδεσμοι"><a href="/mathimatika-a-lykeiou-prosanatolismou/meros-b/">Μέρος Β →</a><a class="home" href="/#yliko">← Αρχική</a></nav>
+</div></header>
+<div id="app"><nav id="nav" aria-label="Ενότητες"><a class="navit" href="/mathimatika-a-lykeiou-prosanatolismou/meros-a/"><span class="nid">⌂</span><span class="nt">Αρχική &amp; πρόοδος</span></a><a class="navit quizit" href="/mathimatika-a-lykeiou-prosanatolismou/meros-a/#quiz"><span class="nid">📝</span><span class="nt">Quiz — κάνε διαγώνισμα</span></a><div class="navu">Ενότητα 1<br><small>Πραγματικοί Αριθμοί</small></div><a class="navit" href="/mathimatika-a-lykeiou-prosanatolismou/meros-a/1-1-i-ennoia-tis-niostis-rizas/"><span class="nid">1.1</span><span class="nt">Η έννοια της νιοστής ρίζας</span><span class="ring" style="--p:0" title="0/11"></span></a><a class="navit" href="/mathimatika-a-lykeiou-prosanatolismou/meros-a/1-2-idiotites-tis-niostis-rizas/"><span class="nid">1.2</span><span class="nt">Ιδιότητες της νιοστής ρίζας</span><span class="ring" style="--p:0" title="0/11"></span></a><a class="navit" href="/mathimatika-a-lykeiou-prosanatolismou/meros-a/1-3-dynameis-me-rito-ektheti/"><span class="nid">1.3</span><span class="nt">Δυνάμεις με ρητό εκθέτη</span><span class="ring" style="--p:0" title="0/10"></span></a><a class="navit" href="/mathimatika-a-lykeiou-prosanatolismou/meros-a/1-4-metatropi-arritou-paronomasti-se-rito/"><span class="nid">1.4</span><span class="nt">Μετατροπή άρρητου παρονομαστή σε ρητό</span><span class="ring" style="--p:0" title="0/9"></span></a><a class="navit" href="/mathimatika-a-lykeiou-prosanatolismou/meros-a/1-5-diataxi-pragmatikon-arithmon/"><span class="nid">1.5</span><span class="nt">Διάταξη πραγματικών αριθμών</span><span class="ring" style="--p:0" title="0/8"></span></a><div class="navu">Ενότητα 2<br><small>Τριγωνομετρία</small></div><a class="navit" href="/mathimatika-a-lykeiou-prosanatolismou/meros-a/2-1-to-aktinio-os-monada-metrisis-gonion/"><span class="nid">2.1</span><span class="nt">Το ακτίνιο ως μονάδα μέτρησης γωνιών</span><span class="ring" style="--p:0" title="0/8"></span></a><a class="navit" href="/mathimatika-a-lykeiou-prosanatolismou/meros-a/2-2-gonia-se-kanoniki-thesi/"><span class="nid">2.2</span><span class="nt">Γωνία σε κανονική θέση</span><span class="ring" style="--p:0" title="0/7"></span></a><a class="navit" href="/mathimatika-a-lykeiou-prosanatolismou/meros-a/2-3-trigonometrikoi-arithmoi-gonias-se-kanoniki-thesi/"><span class="nid">2.3</span><span class="nt">Τριγωνομετρικοί αριθμοί γωνίας σε κανονική θέση</span><span class="ring" style="--p:0" title="0/7"></span></a><a class="navit" href="/mathimatika-a-lykeiou-prosanatolismou/meros-a/2-4-trigonometrikos-kyklos/"><span class="nid">2.4</span><span class="nt">Τριγωνομετρικός κύκλος</span><span class="ring" style="--p:0" title="0/7"></span></a><a class="navit" href="/mathimatika-a-lykeiou-prosanatolismou/meros-a/2-5-1-trigonometrikes-synartiseis-periodos/"><span class="nid">2.5.1</span><span class="nt">Τριγωνομετρικές συναρτήσεις – περίοδος</span><span class="ring" style="--p:0" title="0/6"></span></a><a class="navit" href="/mathimatika-a-lykeiou-prosanatolismou/meros-a/2-5-2-anagogi-se-oxeia-gonia-ola-ta-tetartimoria/"><span class="nid">2.5.2</span><span class="nt">Αναγωγή σε οξεία γωνία (όλα τα τεταρτημόρια)</span><span class="ring" style="--p:0" title="0/8"></span></a><a class="navit" href="/mathimatika-a-lykeiou-prosanatolismou/meros-a/2-6-trigonometrikes-taytotites/"><span class="nid">2.6</span><span class="nt">Τριγωνομετρικές ταυτότητες</span><span class="ring" style="--p:0" title="0/14"></span></a><div class="navu">Ενότητα 3<br><small>Κύκλος</small></div><a class="navit" href="/mathimatika-a-lykeiou-prosanatolismou/meros-a/3-1-schetiki-thesi-dyo-kyklon/"><span class="nid">3.1</span><span class="nt">Σχετική θέση δύο κύκλων</span><span class="ring" style="--p:0" title="0/7"></span></a><a class="navit" href="/mathimatika-a-lykeiou-prosanatolismou/meros-a/3-2-eggegrammenes-epikentres-gonies/"><span class="nid">3.2</span><span class="nt">Εγγεγραμμένες – επίκεντρες γωνίες</span><span class="ring" style="--p:0" title="0/10"></span></a><a class="navit" href="/mathimatika-a-lykeiou-prosanatolismou/meros-a/3-3-theorima-chordis-kai-efaptomenis/"><span class="nid">3.3</span><span class="nt">Θεώρημα χορδής και εφαπτομένης</span><span class="ring" style="--p:0" title="0/6"></span></a><div class="navu">Ενότητα 4<br><small>Διανύσματα</small></div><a class="navit on" href="/mathimatika-a-lykeiou-prosanatolismou/meros-a/4-1-i-ennoia-tou-dianysmatos/"><span class="nid">4.1</span><span class="nt">Η έννοια του διανύσματος</span><span class="ring" style="--p:0" title="0/5"></span></a><a class="navit" href="/mathimatika-a-lykeiou-prosanatolismou/meros-a/4-2-praxeis-me-dianysmata/"><span class="nid">4.2</span><span class="nt">Πράξεις με διανύσματα</span><span class="ring" style="--p:0" title="0/7"></span></a><a class="navit" href="/mathimatika-a-lykeiou-prosanatolismou/meros-a/4-3-dianysmatiki-aktina-dianysmata-me-syntetagmenes/"><span class="nid">4.3</span><span class="nt">Διανυσματική ακτίνα – διανύσματα με συντεταγμένες</span><span class="ring" style="--p:0" title="0/11"></span></a><div class="navu">Ενότητα 8<br><small>Στατιστική</small></div><a class="navit" href="/mathimatika-a-lykeiou-prosanatolismou/meros-a/8-1-stathmismenos-mesos-kai-metra-diasporas/"><span class="nid">8.1</span><span class="nt">Σταθμισμένος μέσος και μέτρα διασποράς</span><span class="ring" style="--p:0" title="0/16"></span></a><a class="navit" href="/mathimatika-a-lykeiou-prosanatolismou/meros-a/8-2-tetartimoria-endotetartimoriako-eyros/"><span class="nid">8.2</span><span class="nt">Τεταρτημόρια – ενδοτεταρτημοριακό εύρος</span><span class="ring" style="--p:0" title="0/6"></span></a><a class="navit" href="/mathimatika-a-lykeiou-prosanatolismou/meros-a/8-3-fyllografima-kai-thikogramma/"><span class="nid">8.3</span><span class="nt">Φυλλογράφημα και θηκόγραμμα</span><span class="ring" style="--p:0" title="0/5"></span></a><div class="navu">Ενότητα 5<br><small>Ορίζουσες (αρχή)</small></div><a class="navit" href="/mathimatika-a-lykeiou-prosanatolismou/meros-a/5-1-orizouses-2-2-kai-3-3/"><span class="nid">5.1</span><span class="nt">Ορίζουσες 2 × 2 και 3 × 3</span><span class="ring" style="--p:0" title="0/8"></span></a></nav><main id="main"><div class="sechead"><span class="sid big">4.1</span><div><h1>Η έννοια του διανύσματος</h1><div class="muted small">📘 Α΄ Τεύχος §4.1 · Δραστηριότητες σελ. 188</div></div></div><section class="card"><h3 class="blk">Θεωρία</h3>
+<div class="tbox"><h4>Μονόμετρα και διανυσματικά μεγέθη</h4>
+<p><b>Μονόμετρο</b> μέγεθος: ορίζεται μόνο από έναν αριθμό (μάζα, θερμοκρασία, χρόνος, απόσταση).</p>
+<p><b>Διανυσματικό</b>: χρειάζεται και <b>κατεύθυνση</b> (μετατόπιση, ταχύτητα με κατεύθυνση, δύναμη).</p></div>
+
+<div class="tbox"><h4>Διάνυσμα $\vec{AB}$</h4>
+<p>Προσανατολισμένο ευθύγραμμο τμήμα με <b>αρχή</b> $A$ και <b>πέρας</b> $B$. Χαρακτηρίζεται από:</p>
+<ul><li><b>Μέτρο</b> $|\vec{AB}|$: το μήκος του τμήματος $AB$.</li>
+<li><b>Διεύθυνση</b>: η ευθεία $AB$ (ή κάθε παράλληλή της).</li>
+<li><b>Φορά</b>: από το $A$ προς το $B$.</li></ul>
+<p>Το <b>μηδενικό</b> διάνυσμα $\vec0$ έχει αρχή και πέρας το ίδιο σημείο.</p></div>
+
+<div class="tbox tip"><h4>Σχέσεις διανυσμάτων</h4>
+<ul><li><b>Παράλληλα</b>: ίδια διεύθυνση. Αν έχουν και ίδια φορά λέγονται <b>ομόρροπα</b>, αλλιώς <b>αντίρροπα</b>.</li>
+<li><b>Ίσα</b> ($\vec\alpha = \vec\beta$): ομόρροπα με ίσα μέτρα.</li>
+<li><b>Αντίθετα</b> ($\vec\beta = -\vec\alpha$): αντίρροπα με ίσα μέτρα. Π.χ. $\vec{BA} = -\vec{AB}$.</li></ul>
+<p>Σε παραλληλόγραμμο $AB\Gamma\Delta$: $\vec{AB} = \vec{\Delta\Gamma}$ και $\vec{A\Delta} = \vec{B\Gamma}$.</p></div></section><section class="card widget"><h3 class="blk">Πειραματίσου</h3><div class="wbody"><div class="wctl"><label>α: οριζόντια <input type="range" class="ax" min="-4" max="4" step="1" value="3"></label><label>κατακόρυφα <input type="range" class="ay" min="-4" max="4" step="1" value="1"></label>
+      <label>β: οριζόντια <input type="range" class="bx" min="-6" max="6" step="1" value="-3"></label><label>κατακόρυφα <input type="range" class="by" min="-6" max="6" step="1" value="-1"></label></div><div class="pl"><svg viewBox="0 0 560 320" class="plot" role="img"><g class="grid"><line x1="31.11111111111111" x2="31.11111111111111" y1="0" y2="320"></line><text x="31.11111111111111" y="174" text-anchor="middle" class="tick">-8</text><line x1="93.33333333333333" x2="93.33333333333333" y1="0" y2="320"></line><text x="93.33333333333333" y="174" text-anchor="middle" class="tick">-6</text><line x1="155.55555555555557" x2="155.55555555555557" y1="0" y2="320"></line><text x="155.55555555555557" y="174" text-anchor="middle" class="tick">-4</text><line x1="217.77777777777777" x2="217.77777777777777" y1="0" y2="320"></line><text x="217.77777777777777" y="174" text-anchor="middle" class="tick">-2</text><line x1="280" x2="280" y1="0" y2="320"></line><line x1="342.22222222222223" x2="342.22222222222223" y1="0" y2="320"></line><text x="342.22222222222223" y="174" text-anchor="middle" class="tick">2</text><line x1="404.44444444444446" x2="404.44444444444446" y1="0" y2="320"></line><text x="404.44444444444446" y="174" text-anchor="middle" class="tick">4</text><line x1="466.6666666666667" x2="466.6666666666667" y1="0" y2="320"></line><text x="466.6666666666667" y="174" text-anchor="middle" class="tick">6</text><line x1="528.8888888888889" x2="528.8888888888889" y1="0" y2="320"></line><text x="528.8888888888889" y="174" text-anchor="middle" class="tick">8</text><line x1="0" x2="560" y1="284.44444444444446" y2="284.44444444444446"></line><text x="275" y="288.44444444444446" text-anchor="end" class="tick">-4</text><line x1="0" x2="560" y1="222.22222222222223" y2="222.22222222222223"></line><text x="275" y="226.22222222222223" text-anchor="end" class="tick">-2</text><line x1="0" x2="560" y1="160" y2="160"></line><line x1="0" x2="560" y1="97.77777777777777" y2="97.77777777777777"></line><text x="275" y="101.77777777777777" text-anchor="end" class="tick">2</text><line x1="0" x2="560" y1="35.5555555555556" y2="35.5555555555556"></line><text x="275" y="39.5555555555556" text-anchor="end" class="tick">4</text></g><line x1="0" x2="560" y1="160" y2="160" class="axis"></line><line x1="280" x2="280" y1="0" y2="320" class="axis"></line><g></g><g><line x1="93.33333333333333" y1="222.22222222222223" x2="186.66666666666666" y2="191.11111111111111" style="stroke:var(--blue);stroke-width:3;stroke-linecap:round"></line><path d="M186.66666666666666,191.11111111111111L177.6588631979215,199.0395079647293L174.70338577949963,190.17307570946366Z" style="fill:var(--blue)"></path><text x="124.44444444444444" y="188" text-anchor="middle" dominant-baseline="middle" style="fill:var(--blue);font-weight:800;font-size:14px;font-family:var(--sans)">α</text><line x1="342.22222222222223" y1="160" x2="248.88888888888889" y2="191.11111111111111" style="stroke:var(--purple);stroke-width:3;stroke-linecap:round"></line><path d="M248.88888888888889,191.11111111111111L257.89669235763404,183.18271425749293L260.8521697760559,192.04914651275857Z" style="fill:var(--purple)"></path><text x="311.11111111111114" y="156.8888888888889" text-anchor="middle" dominant-baseline="middle" style="fill:var(--purple);font-weight:800;font-size:14px;font-family:var(--sans)">β</text></g></svg></div><div class="wout">|α| = √(3² + 1²) = <b>√10</b> &nbsp;·&nbsp; |β| = √((-3)² + (-1)²) = <b>√10</b><br><b>Αντίθετα</b>: ίδια διεύθυνση, αντίθετη φορά, ίδιο μέτρο (β = −α).
+        <br><span class="muted">Κάθε τετραγωνάκι = 1 μονάδα. Το μέτρο βγαίνει από το Πυθαγόρειο θεώρημα.</span></div></div></section><section class="card"><h3 class="blk">Ασκήσεις <span class="muted small">— 0/5 λυμένες</span></h3><div class="ex"><div class="exh"><span class="exn">Άσκηση 1</span><span class="lvl l1">Βασική</span><span class="tick-ok"></span></div><div class="exq">Ποια πρόταση περιγράφει <b>διανυσματικό</b> μέγεθος;</div><div class="exb"><label class="opt"><input type="radio" name="mcn9vy9rm6gi7" value="0"><span>Ένα καρπούζι ζυγίζει 8 kg.</span></label><label class="opt"><input type="radio" name="mcn9vy9rm6gi7" value="1"><span>Το σπίτι του Ανδρέα βρίσκεται 1,5 km δυτικά από το δικό μου.</span></label><label class="opt"><input type="radio" name="mcn9vy9rm6gi7" value="2"><span>Το σπίτι του Ανδρέα βρίσκεται 1,5 km μακριά από το δικό μου.</span></label><label class="opt"><input type="radio" name="mcn9vy9rm6gi7" value="3"><span>Ο πυρετός μου έφτασε τους 39 °C.</span></label><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> Ποια πρόταση δίνει και <b>κατεύθυνση</b>;</div><div class="sol hidden"><b>Λύση:</b> «1,5 km <b>δυτικά</b>» δίνει μέτρο και κατεύθυνση ⇒ διανυσματικό (μετατόπιση). Το «1,5 km μακριά» είναι μόνο απόσταση ⇒ μονόμετρο.</div></div></div><div class="ex"><div class="exh"><span class="exn">Άσκηση 2</span><span class="lvl l1">Βασική</span><span class="tick-ok"></span></div><div class="exq">Δίνεται παραλληλόγραμμο $EZH\Theta$. Ποιο διάνυσμα είναι <b>ίσο</b> με το $\vec{EZ}$;<svg class="fig" viewBox="0 0 300 161.53846153846155" role="img" aria-label="σχήμα" style="display:block;width:100%;max-width:340px;height:auto;margin:.6rem auto"><line x1="30" y1="131.5" x2="214.6" y2="131.5" stroke="#1f2a44" stroke-width="2" stroke-linecap="round"></line><line x1="214.6" y1="131.5" x2="270" y2="30" stroke="#1f2a44" stroke-width="2" stroke-linecap="round"></line><line x1="270" y1="30" x2="85.4" y2="30" stroke="#1f2a44" stroke-width="2" stroke-linecap="round"></line><line x1="85.4" y1="30" x2="30" y2="131.5" stroke="#1f2a44" stroke-width="2" stroke-linecap="round"></line><circle cx="30" cy="131.5" r="3.2" fill="#1f2a44"></circle><text x="17.1" y="137" font-size="15" font-weight="700" fill="#1f2a44" text-anchor="middle" dominant-baseline="middle" font-family="Commissioner,system-ui,sans-serif">E</text><circle cx="214.6" cy="131.5" r="3.2" fill="#1f2a44"></circle><text x="225.6" y="140.2" font-size="15" font-weight="700" fill="#1f2a44" text-anchor="middle" dominant-baseline="middle" font-family="Commissioner,system-ui,sans-serif">Z</text><circle cx="270" cy="30" r="3.2" fill="#1f2a44"></circle><text x="282.9" y="24.5" font-size="15" font-weight="700" fill="#1f2a44" text-anchor="middle" dominant-baseline="middle" font-family="Commissioner,system-ui,sans-serif">H</text><circle cx="85.4" cy="30" r="3.2" fill="#1f2a44"></circle><text x="74.4" y="21.4" font-size="15" font-weight="700" fill="#1f2a44" text-anchor="middle" dominant-baseline="middle" font-family="Commissioner,system-ui,sans-serif">Θ</text></svg></div><div class="exb"><label class="opt"><input type="radio" name="mcfwme5f6r7st" value="0"><span>$\vec{ZE}$</span></label><label class="opt"><input type="radio" name="mcfwme5f6r7st" value="1"><span>$\vec{H\Theta}$</span></label><label class="opt"><input type="radio" name="mcfwme5f6r7st" value="2"><span>$\vec{ZH}$</span></label><label class="opt"><input type="radio" name="mcfwme5f6r7st" value="3"><span>$\vec{\Theta H}$</span></label><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> Ίσα: ίδια διεύθυνση, ίδια φορά, ίδιο μέτρο.</div><div class="sol hidden"><b>Λύση:</b> Οι $EZ$ και $\Theta H$ είναι απέναντι πλευρές (ίσες και παράλληλες) και η φορά $E \to Z$ είναι ίδια με $\Theta \to H$. Άρα $\vec{EZ} = \vec{\Theta H}$. Το $\vec{H\Theta}$ είναι <b>αντίθετο</b>.</div></div></div><div class="ex"><div class="exh"><span class="exn">Άσκηση 3</span><span class="lvl l1">Βασική</span><span class="tick-ok"></span></div><div class="exq">Ποια πρόταση είναι <b>σωστή</b>;</div><div class="exb"><label class="opt"><input type="radio" name="mc80ylyuu0tti" value="0"><span>Το $\vec{AB}$ έχει αρχή το $B$.</span></label><label class="opt"><input type="radio" name="mc80ylyuu0tti" value="1"><span>Τα $\vec{AB}$ και $\vec{BA}$ είναι αντίθετα.</span></label><label class="opt"><input type="radio" name="mc80ylyuu0tti" value="2"><span>Δύο διανύσματα με ίσα μέτρα είναι πάντα ίσα.</span></label><label class="opt"><input type="radio" name="mc80ylyuu0tti" value="3"><span>Δύο παράλληλα διανύσματα είναι πάντα ομόρροπα.</span></label><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> Σκέψου μέτρο, διεύθυνση και φορά.</div><div class="sol hidden"><b>Λύση:</b> Τα $\vec{AB}$, $\vec{BA}$ έχουν το ίδιο μέτρο και διεύθυνση, αλλά αντίθετη φορά: αντίθετα. Τα άλλα είναι λάθος: ίσα μέτρα δεν αρκούν (χρειάζεται και ίδια κατεύθυνση), τα παράλληλα μπορεί να είναι αντίρροπα, και η αρχή του $\vec{AB}$ είναι το $A$.</div></div></div><div class="ex"><div class="exh"><span class="exn">Άσκηση 4</span><span class="lvl l1">Βασική</span><span class="tick-ok"></span></div><div class="exq">Σε τετραγωνισμένο χαρτί (πλευρά τετραγώνου 1 μονάδα), το διάνυσμα $\vec\alpha$ ξεκινά από ένα σημείο και καταλήγει $3$ τετράγωνα δεξιά και $4$ πάνω. Το $\vec\beta$ πηγαίνει $6$ αριστερά και $8$ κάτω. Να βρείτε τα μέτρα τους.</div><div class="exb"><div class="fields"><label class="fld"><span>|α| =</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label><label class="fld"><span>|β| =</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label></div><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> Πυθαγόρειο θεώρημα: $\sqrt{3^2 + 4^2}$.</div><div class="sol hidden"><b>Λύση:</b> $|\vec\alpha| = \sqrt{9 + 16} = 5$, $|\vec\beta| = \sqrt{36 + 64} = 10$. Τα $\vec\alpha$, $\vec\beta$ είναι αντίρροπα και $\vec\beta = -2\vec\alpha$.</div></div></div><div class="ex"><div class="exh"><span class="exn">Άσκηση 5</span><span class="lvl l2">Μέτρια</span><span class="tick-ok"></span></div><div class="exq">Σε κανονικό εξάγωνο $AB\Gamma\Delta EZ$ με κέντρο $O$, ποιο διάνυσμα είναι ίσο με το $\vec{OA}$;<svg class="fig" viewBox="0 0 256.30484988452656 230" role="img" aria-label="σχήμα" style="display:block;width:100%;max-width:296.30484988452656px;height:auto;margin:.6rem auto"><line x1="226.3" y1="115" x2="177.2" y2="30" stroke="#1f2a44" stroke-width="2" stroke-linecap="round"></line><line x1="177.2" y1="30" x2="79.1" y2="30" stroke="#1f2a44" stroke-width="2" stroke-linecap="round"></line><line x1="79.1" y1="30" x2="30" y2="115" stroke="#1f2a44" stroke-width="2" stroke-linecap="round"></line><line x1="30" y1="115" x2="79.1" y2="200" stroke="#1f2a44" stroke-width="2" stroke-linecap="round"></line><line x1="79.1" y1="200" x2="177.2" y2="200" stroke="#1f2a44" stroke-width="2" stroke-linecap="round"></line><line x1="177.2" y1="200" x2="226.3" y2="115" stroke="#1f2a44" stroke-width="2" stroke-linecap="round"></line><line x1="128.2" y1="115" x2="226.3" y2="115" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5 4" stroke-linecap="round"></line><line x1="128.2" y1="115" x2="79.1" y2="30" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5 4" stroke-linecap="round"></line><line x1="128.2" y1="115" x2="79.1" y2="200" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5 4" stroke-linecap="round"></line><circle cx="226.3" cy="115" r="3.2" fill="#1f2a44"></circle><text x="240.3" y="115" font-size="15" font-weight="700" fill="#1f2a44" text-anchor="middle" dominant-baseline="middle" font-family="Commissioner,system-ui,sans-serif">A</text><circle cx="177.2" cy="30" r="3.2" fill="#1f2a44"></circle><text x="184.2" y="17.9" font-size="15" font-weight="700" fill="#1f2a44" text-anchor="middle" dominant-baseline="middle" font-family="Commissioner,system-ui,sans-serif">B</text><circle cx="79.1" cy="30" r="3.2" fill="#1f2a44"></circle><text x="72.1" y="17.9" font-size="15" font-weight="700" fill="#1f2a44" text-anchor="middle" dominant-baseline="middle" font-family="Commissioner,system-ui,sans-serif">Γ</text><circle cx="30" cy="115" r="3.2" fill="#1f2a44"></circle><text x="16" y="115" font-size="15" font-weight="700" fill="#1f2a44" text-anchor="middle" dominant-baseline="middle" font-family="Commissioner,system-ui,sans-serif">Δ</text><circle cx="79.1" cy="200" r="3.2" fill="#1f2a44"></circle><text x="72.1" y="212.1" font-size="15" font-weight="700" fill="#1f2a44" text-anchor="middle" dominant-baseline="middle" font-family="Commissioner,system-ui,sans-serif">E</text><circle cx="177.2" cy="200" r="3.2" fill="#1f2a44"></circle><text x="184.2" y="212.1" font-size="15" font-weight="700" fill="#1f2a44" text-anchor="middle" dominant-baseline="middle" font-family="Commissioner,system-ui,sans-serif">Z</text><circle cx="128.2" cy="115" r="3.2" fill="#1f2a44"></circle><text x="118.2" y="127" font-size="15" font-weight="700" fill="#1f2a44" text-anchor="middle" dominant-baseline="middle" font-family="Commissioner,system-ui,sans-serif">O</text></svg></div><div class="exb"><label class="opt"><input type="radio" name="mc70t0bmgko8b" value="0"><span>$\vec{\Gamma B}$</span></label><label class="opt"><input type="radio" name="mc70t0bmgko8b" value="1"><span>$\vec{ZE}$</span></label><label class="opt"><input type="radio" name="mc70t0bmgko8b" value="2"><span>$\vec{O\Delta}$</span></label><label class="opt"><input type="radio" name="mc70t0bmgko8b" value="3"><span>$\vec{AO}$</span></label><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> Το κανονικό εξάγωνο χωρίζεται σε 6 ισόπλευρα τρίγωνα. Ποια πλευρά είναι παράλληλη με την $OA$ και ίδιας φοράς;</div><div class="sol hidden"><b>Λύση:</b> Το $OAB\Gamma$ είναι ρόμβος (όλες οι πλευρές ίσες με την ακτίνα), άρα $\vec{\Gamma B} = \vec{OA}$: ίδιο μέτρο, ίδια διεύθυνση, ίδια φορά. Το $\vec{O\Delta}$ και το $\vec{AO}$ είναι <b>αντίθετα</b> του $\vec{OA}$, όπως και το $\vec{ZE}$ (το $\vec{EZ}$ θα ήταν ίσο).</div></div></div></section><div class="pager"><a class="btn ghost" href="/mathimatika-a-lykeiou-prosanatolismou/meros-a/3-3-theorima-chordis-kai-efaptomenis/">← 3.3 Θεώρημα χορδής και εφαπτομένης</a><a class="btn primary" href="/mathimatika-a-lykeiou-prosanatolismou/meros-a/4-2-praxeis-me-dianysmata/">4.2 Πράξεις με διανύσματα →</a></div></main></div>
+<aside class="ctaf" aria-label="Online μαθήματα"><p>Χρειάζεσαι βοήθεια; <a href="/online-mathimata/mathimatika-a-lykeiou/">Online μαθήματα Μαθηματικών Α΄ Λυκείου Προσανατολισμού</a> — ζωντανά, ένας προς έναν.</p><p><a href="/online-mathimata/mathimatika/">Online μαθήματα Μαθηματικών</a> για όλες τις τάξεις · <a href="/mathimatika/">Όλο το δωρεάν υλικό</a></p></aside>
+<footer><b>Pagkypries Online</b> · Αντρέας Σωτηρίου · <a href="/">pagkypriesonline.com</a> · <a href="/online-mathimata/">Ιδιαίτερα online μαθήματα</a><br>
+Πρωτότυπο εκπαιδευτικό υλικό που ακολουθεί τη δομή του βιβλίου «Μαθηματικά Α΄ Λυκείου Προσανατολισμού», Τεύχη Α΄–Β΄ (ΥΠΑΝ).</footer>
+<script>window.ROUTE={"base": "/mathimatika-a-lykeiou-prosanatolismou/meros-a/", "slugs": {"1.1": "1-1-i-ennoia-tis-niostis-rizas", "1.2": "1-2-idiotites-tis-niostis-rizas", "1.3": "1-3-dynameis-me-rito-ektheti", "1.4": "1-4-metatropi-arritou-paronomasti-se-rito", "1.5": "1-5-diataxi-pragmatikon-arithmon", "2.1": "2-1-to-aktinio-os-monada-metrisis-gonion", "2.2": "2-2-gonia-se-kanoniki-thesi", "2.3": "2-3-trigonometrikoi-arithmoi-gonias-se-kanoniki-thesi", "2.4": "2-4-trigonometrikos-kyklos", "2.5.1": "2-5-1-trigonometrikes-synartiseis-periodos", "2.5.2": "2-5-2-anagogi-se-oxeia-gonia-ola-ta-tetartimoria", "2.6": "2-6-trigonometrikes-taytotites", "3.1": "3-1-schetiki-thesi-dyo-kyklon", "3.2": "3-2-eggegrammenes-epikentres-gonies", "3.3": "3-3-theorima-chordis-kai-efaptomenis", "4.1": "4-1-i-ennoia-tou-dianysmatos", "4.2": "4-2-praxeis-me-dianysmata", "4.3": "4-3-dianysmatiki-aktina-dianysmata-me-syntetagmenes", "8.1": "8-1-stathmismenos-mesos-kai-metra-diasporas", "8.2": "8-2-tetartimoria-endotetartimoriako-eyros", "8.3": "8-3-fyllografima-kai-thikogramma", "5.1": "5-1-orizouses-2-2-kai-3-3"}, "titles": {"home": "Μαθηματικά Α΄ Λυκείου Προσανατολισμού Μέρος Α: Ασκήσεις", "1.1": "Η έννοια της νιοστής ρίζας | Α΄ Λυκείου Προσανατολισμού", "1.2": "Ιδιότητες της νιοστής ρίζας | Α΄ Λυκείου Προσανατολισμού", "1.3": "Δυνάμεις με ρητό εκθέτη — Ασκήσεις | Α΄ Λυκείου Προσανατολισμού", "1.4": "Μετατροπή άρρητου παρονομαστή σε… | Α΄ Λυκείου Προσανατολισμού", "1.5": "Διάταξη πραγματικών αριθμών | Α΄ Λυκείου Προσανατολισμού", "2.1": "Το ακτίνιο ως μονάδα μέτρησης γωνιών | Α΄ Λυκείου Προσανατολισμού", "2.2": "Γωνία σε κανονική θέση — Ασκήσεις | Α΄ Λυκείου Προσανατολισμού", "2.3": "Τριγωνομετρικοί αριθμοί γωνίας σε… | Α΄ Λυκείου Προσανατολισμού", "2.4": "Τριγωνομετρικός κύκλος — Ασκήσεις | Α΄ Λυκείου Προσανατολισμού", "2.5.1": "Τριγωνομετρικές συναρτήσεις… | Α΄ Λυκείου Προσανατολισμού", "2.5.2": "Αναγωγή σε οξεία γωνία (όλα τα… | Α΄ Λυκείου Προσανατολισμού", "2.6": "Τριγωνομετρικές ταυτότητες | Α΄ Λυκείου Προσανατολισμού", "3.1": "Σχετική θέση δύο κύκλων — Ασκήσεις | Α΄ Λυκείου Προσανατολισμού", "3.2": "Εγγεγραμμένες – επίκεντρες γωνίες | Α΄ Λυκείου Προσανατολισμού", "3.3": "Θεώρημα χορδής και εφαπτομένης | Α΄ Λυκείου Προσανατολισμού", "4.1": "Η έννοια του διανύσματος — Ασκήσεις | Α΄ Λυκείου Προσανατολισμού", "4.2": "Πράξεις με διανύσματα — Ασκήσεις | Α΄ Λυκείου Προσανατολισμού", "4.3": "Διανυσματική ακτίνα – διανύσματα με… | Α΄ Λυκείου Προσανατολισμού", "8.1": "Σταθμισμένος μέσος και μέτρα… | Α΄ Λυκείου Προσανατολισμού", "8.2": "Τεταρτημόρια – ενδοτεταρτημοριακό… | Α΄ Λυκείου Προσανατολισμού", "8.3": "Φυλλογράφημα και θηκόγραμμα | Α΄ Λυκείου Προσανατολισμού", "5.1": "Ορίζουσες 2 × 2 και 3 × 3 — Ασκήσεις | Α΄ Λυκείου Προσανατολισμού", "quiz": "Quiz — Μαθηματικά Α΄ Λυκείου Προσανατολισμού — Μέρος Α (Α΄ τετράμηνο) | PagkypriesOnline"}};window.START_SEC="4.1";</script>
+<script defer src="/mathimatika-a-lykeiou-prosanatolismou/meros-a/app.js?v=5a2cbe10"></script>
+</body>
+</html>

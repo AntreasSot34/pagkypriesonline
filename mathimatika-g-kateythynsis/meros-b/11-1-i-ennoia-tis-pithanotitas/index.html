@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Η έννοια της Πιθανότητας — Ασκήσεις | Γ΄ Λυκείου Κατεύθυνσης</title>
+<meta name="description" content="Η έννοια της Πιθανότητας — Μαθηματικά Γ΄ Λυκείου Κατεύθυνσης: θεωρία, 8 λυμένες ασκήσεις, διαδραστικό γράφημα και γεννήτρια ασκήσεων. Δωρεάν.">
+<link rel="canonical" href="https://pagkypriesonline.com/mathimatika-g-kateythynsis/meros-b/11-1-i-ennoia-tis-pithanotitas/">
+<meta name="theme-color" content="#14171C">
+<link rel="icon" href="/favicon.png" type="image/png" sizes="64x64">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="el_CY">
+<meta property="og:site_name" content="Pagkypries Online">
+<meta property="og:title" content="Η έννοια της Πιθανότητας — Ασκήσεις | Γ΄ Λυκείου Κατεύθυνσης">
+<meta property="og:description" content="Η έννοια της Πιθανότητας — Μαθηματικά Γ΄ Λυκείου Κατεύθυνσης: θεωρία, 8 λυμένες ασκήσεις, διαδραστικό γράφημα και γεννήτρια ασκήσεων. Δωρεάν.">
+<meta property="og:url" content="https://pagkypriesonline.com/mathimatika-g-kateythynsis/meros-b/11-1-i-ennoia-tis-pithanotitas/">
+<meta property="og:image" content="https://pagkypriesonline.com/g/g01.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<style>
+:root{
+  --navy:#1B2A4A;--blue:#0F6FD1;--green:#198754;--amber:#C77A0A;--red:#DC3545;--purple:#6F42C1;
+  --ink:#15233f;--muted:#5b6b86;--line:#dce3ef;--bg:#F4F7FA;--card:#fff;--soft:#f5f8fd;
+  --sans:"Commissioner",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;--ink2:#14171C;--grad:linear-gradient(100deg,#54EFA2 0%,#33CFD3 48%,#2D9AF5 100%);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px}
+.top{position:sticky;top:0;z-index:50;background:rgba(244,247,252,.9);backdrop-filter:saturate(160%) blur(14px);border-bottom:1px solid var(--line)}
+.top::before{content:"";display:block;height:3px;background:var(--grad)}
+.top .in{max-width:1180px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:14px;min-height:60px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink2);font-weight:900;letter-spacing:-.02em;font-size:17px;white-space:nowrap}
+.brand img{width:32px;height:auto;display:block}
+.top .crumb{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);border-left:1px solid var(--line);padding-left:14px}
+.top .links{margin-left:auto;display:flex;gap:8px}
+.top .links a{text-decoration:none;font-size:13.5px;font-weight:600;color:var(--ink2);border:1px solid var(--line);background:#fff;border-radius:10px;padding:7px 12px;white-space:nowrap}
+.top .links a:hover{border-color:#2D9AF5;color:var(--blue)}
+.top .links a.home{background:var(--blue);border-color:var(--blue);color:#fff}
+@media(max-width:860px){.top .crumb{display:none}}
+@media(max-width:480px){.brand span{display:none}.top .links a{padding:7px 10px;font-size:13px}}
+#app{max-width:1180px;margin:0 auto;padding:18px 16px 40px;display:grid;grid-template-columns:270px 1fr;gap:20px;align-items:start}
+#nav{position:sticky;top:76px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:10px;max-height:calc(100vh - 90px);overflow:auto}
+.navu{font-size:12px;font-weight:800;color:var(--blue);text-transform:uppercase;letter-spacing:.04em;padding:12px 8px 4px;line-height:1.3}
+.navu small{text-transform:none;letter-spacing:0;color:var(--navy);font-size:13px}
+.navit{display:flex;align-items:center;gap:9px;width:100%;text-align:left;background:none;border:0;border-radius:10px;padding:8px;cursor:pointer;font:inherit;color:var(--ink);font-size:14px;line-height:1.3}
+.navit:hover{background:var(--soft)}.navit.on{background:#e3eefb;font-weight:700}
+.nid{flex:none;min-width:34px;font-weight:800;color:var(--navy);font-size:12.5px}
+.nt{flex:1}
+.ring{flex:none;width:20px;height:20px;border-radius:50%;background:conic-gradient(var(--green) calc(var(--p)*1%),#dfe6f1 0);display:flex;align-items:center;justify-content:center;font-size:11px;color:#fff;font-weight:900;position:relative}
+.ring::before{content:"";position:absolute;inset:3px;border-radius:50%;background:#fff}
+.ring[style*="--p:100"]::before{background:var(--green)}
+.ring{isolation:isolate}.ring::before{z-index:-1}
+#main{min-width:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;margin-bottom:16px;box-shadow:0 10px 30px -22px rgba(27,42,74,.45)}
+h1,h2{color:var(--navy);font-size:24px;line-height:1.2;font-weight:900}
+h1{font-size:26px;overflow-wrap:anywhere;hyphens:auto}
+.sechead>div{min-width:0}
+a.navit,a.seccard,a.quizcta{text-decoration:none;color:var(--ink)}
+a.btn{text-decoration:none;display:inline-block}
+h3.blk{color:var(--navy);font-size:18px;font-weight:900;margin-bottom:12px}
+.unith{color:var(--navy);font-size:17px;font-weight:900;margin:22px 0 10px}
+.sechead{display:flex;gap:14px;align-items:center;margin:2px 0 14px}
+.sid{display:inline-block;background:var(--navy);color:#fff;font-weight:900;border-radius:8px;padding:2px 9px;font-size:13px}
+.sid.big{font-size:18px;padding:8px 12px;border-radius:12px}
+.muted{color:var(--muted)}.small{font-size:13px}
+.hero p{margin-top:8px}
+.bigprog{display:flex;align-items:center;gap:12px;margin-top:14px;font-weight:700;color:var(--navy);font-size:14px}
+.bar{display:block;flex:1;height:10px;border-radius:99px;background:#e3e9f3;overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--blue),var(--green));border-radius:99px}
+.secgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.seccard{display:flex;flex-direction:column;gap:8px;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;cursor:pointer;font:inherit;color:var(--ink);transition:.15s}
+.seccard:hover{border-color:var(--blue);transform:translateY(-2px);box-shadow:0 10px 24px -18px rgba(46,117,182,.8)}
+.seccard b{color:var(--navy);line-height:1.3}.seccard .bar{flex:none;width:100%}.seccard small{color:var(--muted)}.seccard .sid{align-self:flex-start}
+.howto ul{margin:8px 0 12px 20px}.howto li{margin:4px 0}
+code{font-family:"SF Mono",Consolas,Menlo,monospace;background:#eaf0fb;color:var(--navy);padding:1px 6px;border-radius:5px;font-size:.92em}
+.tbox{border:1px solid var(--line);border-left:5px solid var(--blue);background:var(--soft);border-radius:0 12px 12px 0;padding:12px 16px;margin:10px 0}
+.tbox.tip{border-left-color:var(--green);background:#f1faf4}.tbox.warn{border-left-color:var(--amber);background:#fdf6e9}
+.tbox h4{color:var(--navy);font-size:15.5px;margin-bottom:4px}
+/* --- εμπλουτισμένα πλαίσια θεωρίας (Ορισμός/Θεώρημα/Παράδειγμα/Παρατήρηση/Απόδειξη) --- */
+.tbox.def{border-left-color:var(--blue);background:linear-gradient(90deg,#eef5ff,#f7faff)}
+.tbox.thm{border-left-color:var(--purple);background:linear-gradient(90deg,#f4efff,#faf8ff)}
+.tbox.ex{border-left-color:var(--green);background:linear-gradient(90deg,#edf9f2,#f8fdfa)}
+.tbox.rem{border-left-color:#0d9488;background:#effaf8}
+.tbox.def h4::before,.tbox.thm h4::before,.tbox.ex h4::before,.tbox.rem h4::before{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#fff;border-radius:6px;padding:2px 7px;margin-right:8px;vertical-align:2px}
+.tbox.def h4::before{content:"Ορισμός";background:var(--blue)}.tbox.thm h4::before{content:"Θεώρημα";background:var(--purple)}
+.tbox.ex h4::before{content:"Παράδειγμα";background:var(--green)}.tbox.rem h4::before{content:"Παρατήρηση";background:#0d9488}
+details.proof,details.steps{border:1px dashed #c7d2e5;border-radius:10px;padding:6px 12px;margin:8px 0;background:#fff}
+details.proof>summary,details.steps>summary{cursor:pointer;font-weight:800;color:var(--navy);font-size:14px;list-style:none}
+details.proof>summary::before,details.steps>summary::before{content:"▸ ";color:var(--blue)}details[open].proof>summary::before,details[open].steps>summary::before{content:"▾ "}
+details.proof[open]{background:#fbfcff}details.proof p:last-child::after{content:" ∎";color:var(--navy);font-weight:900}
+figure.grfig{margin:10px auto;max-width:560px}figure.grfig svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;box-shadow:0 8px 22px -18px rgba(27,42,74,.5)}
+figure.grfig figcaption{text-align:center;color:var(--muted);font-size:13px;margin-top:6px}
+.figrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;align-items:start}
+.fbox{display:block;text-align:center;font-size:1.05em;background:#fff;border:1.5px solid #c9d8f0;border-radius:12px;padding:10px 12px;margin:8px auto;max-width:fit-content;box-shadow:0 6px 18px -16px rgba(15,111,209,.6)}
+.hero.art{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:18px;align-items:center;background:radial-gradient(120% 140% at 100% 0%,#e9f2ff 0%,#fff 55%)}
+.hero.art .heroart svg{width:100%;height:auto;display:block}
+@media(max-width:760px){.hero.art{grid-template-columns:1fr}.hero.art .heroart{max-width:320px;margin:0 auto}}
+.unith .uchip{display:inline-flex;align-items:center;justify-content:center;min-width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;font-size:14px;margin-right:8px;vertical-align:1px}
+.seccard{position:relative}.seccard .thumb{position:absolute;top:10px;right:12px;width:68px;height:40px;opacity:.9}
+.seccard:hover .thumb{opacity:1}
+.intro{font-size:15.5px;color:var(--ink);background:#fff8ec;border:1px solid #f3dcb3;border-radius:12px;padding:10px 14px;margin:0 0 14px}
+.tbox ul,.tbox ol{margin:4px 0 2px 22px}.tbox li{margin:3px 0}.tbox p{margin:4px 0}
+.katex-display{overflow-x:auto;overflow-y:hidden;padding:2px 0}
+#main .katex{max-width:100%;position:relative}
+#main :not(.katex-display) > .katex{display:inline-block;overflow-x:auto;overflow-y:hidden;vertical-align:middle;padding:1px 0}
+.wctl label{min-width:0;max-width:100%}
+.tblwrap{overflow-x:auto}
+table.vt{border-collapse:collapse;margin:8px 0;font-size:14px;white-space:nowrap}
+table.vt th,table.vt td{border:1px solid #c9d3e4;padding:4px 10px;text-align:center}table.vt th{background:#eaf1fb}
+/* widgets */
+.wctl{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;margin-bottom:10px;font-size:14px;font-weight:600;color:var(--navy)}
+.wctl label{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.wctl select{max-width:100%;min-width:0;font:inherit;font-weight:600;padding:6px 10px;border-radius:9px;border:1px solid var(--line);background:#fff;color:var(--navy)}
+input[type=range]{accent-color:var(--blue);width:170px;max-width:60vw}
+.cap{font-size:13px;color:var(--muted);margin:6px 0 2px}
+.t1{color:var(--blue)}.t2{color:var(--purple)}.t3{color:var(--amber)}
+.wout{margin-top:10px;font-size:14.5px;background:var(--soft);border-radius:10px;padding:10px 12px}
+.ok{color:var(--green)}.bad{color:var(--red)}
+.two{display:grid;grid-template-columns:1fr 1.6fr;gap:12px;align-items:center}
+.plot{width:100%;height:auto;display:block;background:#fff;border:1px solid var(--line);border-radius:12px;touch-action:pan-y}
+.plot .grid line{stroke:#edf1f7}.plot .tick{font-size:11px;fill:#8a97ad;font-family:var(--sans)}
+.plot .axis{stroke:var(--navy);stroke-width:1.4}
+.plot .curve{fill:none;stroke-width:3;stroke-linejoin:round;stroke-linecap:round}
+.c1{stroke:var(--blue)}.c2{stroke:var(--purple)}.c3{stroke:var(--amber)}.cfam{stroke:#c5cfdf;stroke-width:1.8!important}
+.plot .band.pos{fill:rgba(25,135,84,.09)}.plot .band.neg{fill:rgba(220,53,69,.08)}
+.plot .dot{stroke:#fff;stroke-width:2}.d1{fill:var(--blue)}.d2{fill:var(--navy)}.d3{fill:var(--amber)}.dmax{fill:var(--green)}.dmin{fill:var(--red)}.dinf{fill:var(--purple)}
+.plot .lbl{font-size:12.5px;font-weight:800;font-family:var(--sans)}.lbl.dmax{fill:var(--green)}.lbl.dmin{fill:var(--red)}.lbl.dinf{fill:var(--purple)}.lbl.d2,.lbl.d3,.lbl.d1{fill:var(--navy)}
+.plot .guide{stroke:#9aa8bf;stroke-dasharray:4 4}.plot .tangent{stroke:var(--red);stroke-width:2;stroke-dasharray:7 5}
+.plot .sheet{fill:#f3e7cf;stroke:#c9a86a}.plot .cut{fill:#fff;stroke:var(--red);stroke-dasharray:4 3}.plot .base{fill:#dbe8f8;stroke:var(--blue)}
+/* exercises */
+.ex{border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:12px 0;background:#fff;transition:border-color .2s}
+.ex.solved{border-color:#a9dcbf;background:#fbfefc}
+.exh{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.exn{font-weight:900;color:var(--navy)}
+.lvl{font-size:11.5px;font-weight:800;padding:2px 9px;border-radius:99px}
+.l1{background:#e7f6ee;color:var(--green)}.l2{background:#fdf1dd;color:var(--amber)}.l3{background:#fdeaec;color:var(--red)}
+.tick-ok{margin-left:auto;color:var(--green);font-weight:800;font-size:13px}
+.exq{margin-bottom:10px}
+.opt{display:flex;gap:10px;align-items:flex-start;padding:9px 12px;border:1px solid var(--line);border-radius:10px;margin:6px 0;cursor:pointer;background:#fff}
+.opt:hover{border-color:var(--blue)}.opt input{margin-top:5px;accent-color:var(--blue)}
+.opt.right{border-color:var(--green);background:#eef9f2}.opt.wrong{border-color:var(--red);background:#fdf0f1}
+.fields{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px 14px}
+.fld{display:flex;flex-direction:column;gap:3px;font-size:13.5px;color:var(--muted);font-weight:600}
+.fld.wide{max-width:560px}
+.fld input{font:inherit;font-size:16px;padding:9px 12px;border:1.5px solid var(--line);border-radius:10px;color:var(--ink);background:#fff;width:100%}
+.fld input:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(46,117,182,.15)}
+.fld input.right{border-color:var(--green);background:#f1faf4}.fld input.wrong{border-color:var(--red);background:#fdf3f4}
+.preview{font-size:12.5px;margin-top:4px;min-height:1em}.warnc{color:var(--amber)}
+.exbar{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.btn{font:inherit;font-size:14px;font-weight:700;border-radius:10px;padding:8px 14px;cursor:pointer;border:1.5px solid transparent;transition:.15s}
+.btn.primary{background:var(--blue);color:#fff}.btn.primary:hover{background:#245f94}
+.btn.ghost{background:#fff;color:var(--navy);border-color:var(--line)}.btn.ghost:hover{border-color:var(--blue)}
+.btn.small{font-size:13px;padding:6px 11px}
+.fb{margin-top:10px;font-weight:700;min-height:0}.fb:empty{display:none}
+.okc{color:var(--green)}.badc{color:var(--red)}
+.hint,.sol{margin-top:10px;padding:10px 14px;border-radius:10px;font-size:15px}
+.hint{background:#fff8e8;border:1px solid #f0d9a8}.sol{background:#f1faf4;border:1px solid #bfe6cf}
+.hidden{display:none}
+.solgraph{margin-top:10px;max-width:520px}
+.gen{border:2px dashed #b8cbe6}.gen .newg{margin-top:4px}
+.pager{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:6px}
+.chips{gap:6px}.chip{font:inherit;font-size:14px;font-weight:700;border:1.5px solid var(--line);background:#fff;color:var(--navy);border-radius:99px;padding:5px 12px;cursor:pointer}
+.chip.on{background:var(--blue);border-color:var(--blue);color:#fff}
+.wctl.col{flex-direction:column;align-items:flex-start;gap:6px}
+.plot .vnum{font-size:17px;font-weight:900;fill:var(--navy);text-anchor:middle;font-family:var(--sans)}
+.pills{display:flex;flex-wrap:wrap;gap:5px;margin:6px 0}.pills span{font-family:"SF Mono",Consolas,monospace;font-size:13px;background:#eef3fb;border:1px solid var(--line);border-radius:7px;padding:2px 7px;color:var(--navy)}
+.pills span.pm{background:var(--amber);color:#fff;border-color:var(--amber)}.pills span.pl1{background:#e3eefb}.pills span.pl2{background:#efe8fb}
+.dice{display:flex;align-items:center;gap:10px;margin:4px 0 8px;font-size:14px}
+.plot .theo{stroke:var(--red);stroke-width:2.5}.plot .whisk{stroke:var(--navy);stroke-width:2}.plot .medl{stroke:var(--red);stroke-width:3}
+.plot .sol-e{fill:none;stroke:var(--navy);stroke-width:2}.plot .sol-eb{fill:none;stroke:var(--navy);stroke-width:1.5;stroke-dasharray:5 4;opacity:.6}
+.plot .axisrot{stroke:var(--red);stroke-width:1.5;stroke-dasharray:8 5}.plot .gen2d{fill:rgba(46,117,182,.22);stroke:var(--blue);stroke-width:2}
+table.t2 input{width:72px;font:inherit;padding:4px 6px;border:1px solid var(--line);border-radius:7px;text-align:center}
+.sform{font-size:15px;line-height:2}
+.qhead{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.qchips{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:6px;margin-bottom:14px}
+.qchip{display:flex;gap:8px;align-items:flex-start;border:1px solid var(--line);border-radius:10px;padding:7px 10px;font-size:13.5px;cursor:pointer;background:#fff}
+.qchip input{margin-top:4px;accent-color:var(--blue)}.qchip b{color:var(--navy)}
+.qopts{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;margin-bottom:14px;font-size:14px;font-weight:600;color:var(--navy)}
+.qopts select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--line);margin-left:6px}
+.qbar{display:flex;justify-content:space-between;align-items:center;position:sticky;top:70px;z-index:5;padding:12px 18px}
+.qtime{font-family:"IBM Plex Mono",monospace;font-weight:600;color:var(--blue)}
+.qsub{width:100%;padding:13px;font-size:16px;margin:6px 0 18px}
+.qscore{display:flex;gap:20px;align-items:center;flex-wrap:wrap;border:2px solid var(--green);background:#f1faf4}
+.qbig{font-size:40px;font-weight:900;color:var(--green);line-height:1}
+.qscore .btn{margin-left:auto}
+.quizcta{display:flex;gap:16px;align-items:center;width:100%;text-align:left;cursor:pointer;font:inherit;color:var(--ink);border:2px dashed #b8cbe6}
+.quizcta:hover{border-color:var(--blue)}.quizcta .go{margin-left:auto;font-weight:800;color:var(--blue);white-space:nowrap}
+.navit.quizit{background:#fff8e8;margin:2px 0}
+input:disabled{opacity:.85}
+.plot .chord{stroke:var(--purple);stroke-width:2.2}.plot .tangent.ok{stroke:var(--green);stroke-dasharray:none;stroke-width:2.5}
+.plot .asl{stroke:var(--red);stroke-width:1.6;stroke-dasharray:7 5}
+.plot .circ{fill:rgba(15,111,209,.08);stroke:var(--blue);stroke-width:2.6}.plot .circ2{fill:rgba(199,122,10,.08);stroke:var(--amber);stroke-width:2.6}
+.plot .c1line{stroke:var(--purple);stroke-width:2.4}
+.plot .rect{fill:rgba(15,111,209,.18);stroke:var(--blue);stroke-width:1}.plot .area{fill:rgba(25,135,84,.22)}
+.plot .focus{fill:var(--red)}.plot .disk{fill:rgba(15,111,209,.12);stroke:var(--blue);stroke-width:.8}.plot .dir{stroke:var(--green);stroke-width:2;stroke-dasharray:6 4}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:24px 16px 34px}
+footer b{color:var(--navy)}footer a{color:var(--blue);font-weight:700;text-decoration:none}
+@media (max-width:860px){
+  #app{grid-template-columns:1fr;padding-top:10px}
+  #nav{position:static;display:flex;overflow-x:auto;gap:6px;padding:8px;max-height:none;scrollbar-width:thin}
+  .navu{display:none}
+  .navit{flex:none;width:auto;white-space:nowrap;border:1px solid var(--line);padding:6px 10px}
+  .navit .nt{display:none}.navit .nid{min-width:0}
+  .two{grid-template-columns:1fr}
+  .card{padding:16px}
+  h2{font-size:21px}h1{font-size:22px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+.plot.nogrid .grid,.plot.nogrid .axis{display:none}
+.plot .band.bandok{fill:rgba(25,135,84,.16)}
+table.mini{border-collapse:collapse;margin:.4rem 0;font-size:.95em;max-width:100%;display:block;overflow-x:auto}
+table.mini th,table.mini td{border:1px solid var(--line);padding:.3rem .55rem;text-align:center}
+table.mini th{background:var(--soft)}
+.exq svg.fig text{user-select:none}
+.ctaf{max-width:760px;margin:10px auto 0;padding:16px 18px;border:1px solid var(--line);border-radius:16px;background:var(--card);text-align:center;font-size:15px}.ctaf a{color:var(--blue);font-weight:700;text-decoration:none}.ctaf p{margin:4px 0}</style>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Αρχική", "item": "https://pagkypriesonline.com/"}, {"@type": "ListItem", "position": 2, "name": "Δωρεάν υλικό Μαθηματικών", "item": "https://pagkypriesonline.com/mathimatika/"}, {"@type": "ListItem", "position": 3, "name": "Μαθηματικά Κατεύθυνσης Γ΄ Λυκείου (Παγκύπριες) — Μέρος Β", "item": "https://pagkypriesonline.com/mathimatika-g-kateythynsis/meros-b/"}, {"@type": "ListItem", "position": 4, "name": "Η έννοια της Πιθανότητας", "item": "https://pagkypriesonline.com/mathimatika-g-kateythynsis/meros-b/11-1-i-ennoia-tis-pithanotitas/"}]}, {"@type": "LearningResource", "name": "Η έννοια της Πιθανότητας", "description": "Η έννοια της Πιθανότητας — Μαθηματικά Γ΄ Λυκείου Κατεύθυνσης: θεωρία, 8 λυμένες ασκήσεις, διαδραστικό γράφημα και γεννήτρια ασκήσεων. Δωρεάν.", "url": "https://pagkypriesonline.com/mathimatika-g-kateythynsis/meros-b/11-1-i-ennoia-tis-pithanotitas/", "inLanguage": "el", "isAccessibleForFree": true, "educationalLevel": "Γ΄ Λυκείου", "learningResourceType": ["Θεωρία", "Ασκήσεις με λύσεις", "Διαδραστική εξάσκηση"], "teaches": "Η έννοια της Πιθανότητας", "isPartOf": {"@type": "Course", "name": "Μαθηματικά Κατεύθυνσης Γ΄ Λυκείου (Παγκύπριες) — Μέρος Β", "url": "https://pagkypriesonline.com/mathimatika-g-kateythynsis/meros-b/"}, "provider": {"@type": "EducationalOrganization", "name": "Pagkypries Online", "url": "https://pagkypriesonline.com/"}, "author": {"@type": "Person", "name": "Αντρέας Σωτηρίου", "url": "https://antreassotiriou.com"}, "dateModified": "2026-10-23"}]}</script>
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<header class="top"><div class="in">
+  <a class="brand" href="/"><img src="/logo-mark.png" width="240" height="212" alt="PagkypriesOnline"><span>Pagkypries Online</span></a>
+  <div class="crumb">Παγκύπριες · Μαθηματικά Κατεύθυνσης · Μέρος Β</div>
+  <nav class="links" aria-label="Σύνδεσμοι"><a href="/mathimatika-g-kateythynsis/meros-a/">← Μέρος Α</a><a class="home" href="/#yliko">← Αρχική</a></nav>
+</div></header>
+<div id="app"><nav id="nav" aria-label="Ενότητες"><a class="navit" href="/mathimatika-g-kateythynsis/meros-b/"><span class="nid">⌂</span><span class="nt">Αρχική &amp; πρόοδος</span></a><a class="navit quizit" href="/mathimatika-g-kateythynsis/meros-b/#quiz"><span class="nid">📝</span><span class="nt">Quiz — κάνε διαγώνισμα</span></a><div class="navu">Ενότητα 7<br><small>Αναλυτική Γεωμετρία – Παραβολή</small></div><a class="navit" href="/mathimatika-g-kateythynsis/meros-b/7-1–7-2-paravoli-exisosi-parametrikes/"><span class="nid">7.1–7.2</span><span class="nt">Παραβολή – Εξίσωση – Παραμετρικές</span><span class="ring" style="--p:0" title="0/6"></span></a><a class="navit" href="/mathimatika-g-kateythynsis/meros-b/7-3–7-5-theseis-os-pros-paravoli-efaptomeni-katheti/"><span class="nid">7.3–7.5</span><span class="nt">Θέσεις ως προς παραβολή – Εφαπτομένη &amp; κάθετη</span><span class="ring" style="--p:0" title="0/6"></span></a><div class="navu">Ενότητα 4<br><small>Σειρές</small></div><a class="navit" href="/mathimatika-g-kateythynsis/meros-b/4-1–4-3-seires-s-symvolismos-sygklisi/"><span class="nid">4.1–4.3</span><span class="nt">Σειρές – Σ-συμβολισμός – Σύγκλιση</span><span class="ring" style="--p:0" title="0/6"></span></a><a class="navit" href="/mathimatika-g-kateythynsis/meros-b/4-4–4-5-eidika-athroismata-methodoi-ypologismou/"><span class="nid">4.4–4.5</span><span class="nt">Ειδικά αθροίσματα – Μέθοδοι υπολογισμού</span><span class="ring" style="--p:0" title="0/5"></span></a><div class="navu">Ενότητα 5<br><small>Ορισμένο Ολοκλήρωμα</small></div><a class="navit" href="/mathimatika-g-kateythynsis/meros-b/5-1–5-2-orismeno-olokliroma-orismos-idiotites/"><span class="nid">5.1–5.2</span><span class="nt">Ορισμένο ολοκλήρωμα – Ορισμός &amp; ιδιότητες</span><span class="ring" style="--p:0" title="0/6"></span></a><a class="navit" href="/mathimatika-g-kateythynsis/meros-b/5-3-themeliodes-theorima-oloklirotikou-logismou/"><span class="nid">5.3</span><span class="nt">Θεμελιώδες Θεώρημα Ολοκληρωτικού Λογισμού</span><span class="ring" style="--p:0" title="0/9"></span></a><a class="navit" href="/mathimatika-g-kateythynsis/meros-b/5-4-1-ypologismos-emvadou/"><span class="nid">5.4.1</span><span class="nt">Υπολογισμός εμβαδού</span><span class="ring" style="--p:0" title="0/6"></span></a><a class="navit" href="/mathimatika-g-kateythynsis/meros-b/5-4-2-ogkos-stereou-ek-peristrofis/"><span class="nid">5.4.2</span><span class="nt">Όγκος στερεού εκ περιστροφής</span><span class="ring" style="--p:0" title="0/6"></span></a><div class="navu">Ενότητα 9<br><small>Σύνολα</small></div><a class="navit" href="/mathimatika-g-kateythynsis/meros-b/9-synola-archi-egkleismou-apokleismou/"><span class="nid">9</span><span class="nt">Σύνολα – Αρχή Εγκλεισμού–Αποκλεισμού</span><span class="ring" style="--p:0" title="0/6"></span></a><div class="navu">Ενότητα 10<br><small>Συνδυαστική</small></div><a class="navit" href="/mathimatika-g-kateythynsis/meros-b/10-1-eisagogi-sti-syndyastiki/"><span class="nid">10.1</span><span class="nt">Εισαγωγή στη Συνδυαστική</span><span class="ring" style="--p:0" title="0/5"></span></a><a class="navit" href="/mathimatika-g-kateythynsis/meros-b/10-2-metatheseis/"><span class="nid">10.2</span><span class="nt">Μεταθέσεις</span><span class="ring" style="--p:0" title="0/6"></span></a><a class="navit" href="/mathimatika-g-kateythynsis/meros-b/10-3-diataxeis/"><span class="nid">10.3</span><span class="nt">Διατάξεις</span><span class="ring" style="--p:0" title="0/5"></span></a><a class="navit" href="/mathimatika-g-kateythynsis/meros-b/10-4-syndyasmoi/"><span class="nid">10.4</span><span class="nt">Συνδυασμοί</span><span class="ring" style="--p:0" title="0/7"></span></a><div class="navu">Ενότητα 11<br><small>Πιθανότητες</small></div><a class="navit on" href="/mathimatika-g-kateythynsis/meros-b/11-1-i-ennoia-tis-pithanotitas/"><span class="nid">11.1</span><span class="nt">Η έννοια της Πιθανότητας</span><span class="ring" style="--p:0" title="0/8"></span></a><a class="navit" href="/mathimatika-g-kateythynsis/meros-b/11-2-pithanotites-syndyasmenon-endechomenon/"><span class="nid">11.2</span><span class="nt">Πιθανότητες συνδυασμένων ενδεχομένων</span><span class="ring" style="--p:0" title="0/6"></span></a></nav><main id="main"><div class="sechead"><span class="sid big">11.1</span><div><h1>Η έννοια της Πιθανότητας</h1><div class="muted small">📘 Δ΄ Τεύχος §11.1 · Δραστηριότητες σελ. 72, 81</div></div></div><section class="card"><h3 class="blk">Θεωρία</h3>
+<div class="tbox"><h4>Βασικές έννοιες</h4>
+<ul><li><b>Πείραμα τύχης</b>: δεν μπορούμε να προβλέψουμε το αποτέλεσμα (ρίψη ζαριού).</li>
+<li><b>Δειγματικός χώρος</b> $\Omega$: το σύνολο όλων των δυνατών αποτελεσμάτων. Για ένα ζάρι $\Omega = \{1,\dots,6\}$, για δύο ζάρια $\nu(\Omega) = 36$.</li>
+<li><b>Ενδεχόμενο</b>: κάθε υποσύνολο του $\Omega$. <b>Ασυμβίβαστα</b>: $A \cap B = \varnothing$ (δεν πραγματοποιούνται μαζί).</li></ul></div>
+<div class="tbox"><h4>Κλασικός ορισμός</h4>
+<p>Αν όλα τα αποτελέσματα είναι <b>ισοπίθανα</b>:</p>
+$$P(A) = \frac{\nu(A)}{\nu(\Omega)} = \frac{\text{ευνοϊκές περιπτώσεις}}{\text{δυνατές περιπτώσεις}}$$</div>
+<div class="tbox"><h4>Ιδιότητες (αξιωματικός ορισμός)</h4>
+<p>$0 \le P(A) \le 1$, $\;P(\Omega) = 1$, $\;P(\varnothing) = 0$</p>
+<p>$P(A') = 1 - P(A)$ &nbsp;·&nbsp; $P(A \cup B) = P(A) + P(B) - P(A \cap B)$</p>
+<p>Για ασυμβίβαστα: $P(A \cup B) = P(A) + P(B)$.</p></div>
+<div class="tbox tip"><h4>Συνδυαστική + Πιθανότητες</h4><p>Όταν τα $\nu(A)$ και $\nu(\Omega)$ είναι μεγάλα, τα μετράμε με μεταθέσεις, διατάξεις ή συνδυασμούς.</p></div></section><section class="card widget"><h3 class="blk">Πειραματίσου</h3><div class="wbody"><div class="wctl"><label>Ενδεχόμενο: άθροισμα = <select class="ts"><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option selected="">7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option></select></label>
+      <button class="btn primary small" data-n="1">Ρίξε 1</button><button class="btn ghost small" data-n="100">+100</button><button class="btn ghost small" data-n="1000">+1000</button><button class="btn ghost small rs">Μηδενισμός</button></div>
+      <div class="dlast"></div><div class="pl"><svg viewBox="0 0 560 230" class="plot" role="img"><g class="grid"><line x1="30.000000000000007" x2="30.000000000000007" y1="0" y2="230"></line><text x="30.000000000000007" y="226" text-anchor="middle" class="tick">2</text><line x1="80.00000000000001" x2="80.00000000000001" y1="0" y2="230"></line><text x="80.00000000000001" y="226" text-anchor="middle" class="tick">3</text><line x1="130.00000000000003" x2="130.00000000000003" y1="0" y2="230"></line><text x="130.00000000000003" y="226" text-anchor="middle" class="tick">4</text><line x1="180" x2="180" y1="0" y2="230"></line><text x="180" y="226" text-anchor="middle" class="tick">5</text><line x1="230" x2="230" y1="0" y2="230"></line><text x="230" y="226" text-anchor="middle" class="tick">6</text><line x1="280" x2="280" y1="0" y2="230"></line><text x="280" y="226" text-anchor="middle" class="tick">7</text><line x1="330" x2="330" y1="0" y2="230"></line><text x="330" y="226" text-anchor="middle" class="tick">8</text><line x1="380" x2="380" y1="0" y2="230"></line><text x="380" y="226" text-anchor="middle" class="tick">9</text><line x1="430" x2="430" y1="0" y2="230"></line><text x="430" y="226" text-anchor="middle" class="tick">10</text><line x1="480.00000000000006" x2="480.00000000000006" y1="0" y2="230"></line><text x="480.00000000000006" y="226" text-anchor="middle" class="tick">11</text><line x1="530" x2="530" y1="0" y2="230"></line><text x="530" y="226" text-anchor="middle" class="tick">12</text><line x1="0" x2="560" y1="230" y2="230"></line><line x1="0" x2="560" y1="177.72727272727272" y2="177.72727272727272"></line><text x="4" y="181.72727272727272" text-anchor="start" class="tick">0,05</text><line x1="0" x2="560" y1="125.45454545454544" y2="125.45454545454544"></line><text x="4" y="129.45454545454544" text-anchor="start" class="tick">0,1</text><line x1="0" x2="560" y1="73.18181818181816" y2="73.18181818181816"></line><text x="4" y="77.18181818181816" text-anchor="start" class="tick">0,15</text><line x1="0" x2="560" y1="20.909090909090878" y2="20.909090909090878"></line><text x="4" y="24.909090909090878" text-anchor="start" class="tick">0,2</text></g><g><rect x="11.00000000000001" y="230" width="38" height="0" fill="var(--blue)" opacity="0.8"></rect><rect x="61.000000000000014" y="230" width="37.999999999999986" height="0" fill="var(--blue)" opacity="0.8"></rect><rect x="111.00000000000001" y="230" width="37.999999999999986" height="0" fill="var(--blue)" opacity="0.8"></rect><rect x="161.00000000000003" y="230" width="37.99999999999997" height="0" fill="var(--blue)" opacity="0.8"></rect><rect x="211.00000000000006" y="230" width="38" height="0" fill="var(--blue)" opacity="0.8"></rect><rect x="261.00000000000006" y="230" width="38" height="0" fill="var(--amber)" opacity="0.8"></rect><rect x="311.00000000000006" y="230" width="38" height="0" fill="var(--blue)" opacity="0.8"></rect><rect x="360.99999999999994" y="230" width="38.000000000000114" height="0" fill="var(--blue)" opacity="0.8"></rect><rect x="410.99999999999994" y="230" width="38.00000000000006" height="0" fill="var(--blue)" opacity="0.8"></rect><rect x="461" y="230" width="38.00000000000006" height="0" fill="var(--blue)" opacity="0.8"></rect><rect x="511" y="230" width="38" height="0" fill="var(--blue)" opacity="0.8"></rect></g><g><line x1="9.000000000000009" y1="200.95959595959596" x2="51.00000000000001" y2="200.95959595959596" class="theo"></line><line x1="59.00000000000001" y1="171.91919191919192" x2="101.00000000000001" y2="171.91919191919192" class="theo"></line><line x1="109.00000000000001" y1="142.87878787878788" x2="151.00000000000003" y2="142.87878787878788" class="theo"></line><line x1="159.00000000000003" y1="113.83838383838386" x2="201" y2="113.83838383838386" class="theo"></line><line x1="209" y1="84.79797979797979" x2="251" y2="84.79797979797979" class="theo"></line><line x1="259" y1="55.75757575757575" x2="301" y2="55.75757575757575" class="theo"></line><line x1="309" y1="84.79797979797979" x2="351" y2="84.79797979797979" class="theo"></line><line x1="359.00000000000006" y1="113.83838383838386" x2="401" y2="113.83838383838386" class="theo"></line><line x1="409.00000000000006" y1="142.87878787878788" x2="451" y2="142.87878787878788" class="theo"></line><line x1="459" y1="171.91919191919192" x2="501" y2="171.91919191919192" class="theo"></line><line x1="509" y1="200.95959595959596" x2="551" y2="200.95959595959596" class="theo"></line></g></svg></div><div class="wout">Ρίψεις: <b>0</b> · Σχετική συχνότητα «άθροισμα 7»: <b>0%</b> · Θεωρητική πιθανότητα: <b>6/36 ≈ 16,67%</b>
+        <br><span class="muted">Οι μπάρες είναι οι συχνότητες, οι κόκκινες γραμμές οι πιθανότητες. Με πολλές ρίψεις πλησιάζουν μεταξύ τους — νόμος των μεγάλων αριθμών.</span></div></div></section><section class="card"><h3 class="blk">Ασκήσεις <span class="muted small">— 0/8 λυμένες</span></h3><div class="ex"><div class="exh"><span class="exn">Άσκηση 1</span><span class="lvl l1">Βασική</span><span class="tick-ok"></span></div><div class="exq">Ρίχνουμε ένα ζάρι. Ποια η πιθανότητα να φέρουμε άρτιο αριθμό; Και ποια η πιθανότητα να φέρουμε αριθμό μεγαλύτερο του 4;</div><div class="exb"><div class="fields"><label class="fld"><span>P(άρτιος) =</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label><label class="fld"><span>P(&gt;4) =</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label></div><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> Άρτιοι: $\{2,4,6\}$. Μεγαλύτεροι του 4: $\{5,6\}$.</div><div class="sol hidden"><b>Λύση:</b> $P(A) = \frac36 = \frac12$, $\;P(B) = \frac26 = \frac13$.</div></div></div><div class="ex"><div class="exh"><span class="exn">Άσκηση 2</span><span class="lvl l1">Βασική</span><span class="tick-ok"></span></div><div class="exq">Ρίχνουμε δύο ζάρια. Ποια η πιθανότητα το άθροισμα να είναι $7$;</div><div class="exb"><div class="fields"><label class="fld"><span>P =</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label></div><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> $\nu(\Omega) = 36$. Ζευγάρια με άθροισμα 7: $(1,6), (2,5), \dots$</div><div class="sol hidden"><b>Λύση:</b> Ευνοϊκά: $(1,6),(2,5),(3,4),(4,3),(5,2),(6,1)$ — 6 περιπτώσεις. $P = \frac{6}{36} = \frac16$.</div></div></div><div class="ex"><div class="exh"><span class="exn">Άσκηση 3</span><span class="lvl l2">Μέτρια</span><span class="tick-ok"></span></div><div class="exq">Ρίχνουμε δύο ζάρια. Ποια η πιθανότητα το άθροισμα να είναι <b>τουλάχιστον 10</b>;</div><div class="exb"><div class="fields"><label class="fld"><span>P =</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label></div><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> Άθροισμα 10: 3 τρόποι, 11: 2 τρόποι, 12: 1 τρόπος.</div><div class="sol hidden"><b>Λύση:</b> $\nu(A) = 3 + 2 + 1 = 6$, άρα $P(A) = \frac{6}{36} = \frac16$.</div></div></div><div class="ex"><div class="exh"><span class="exn">Άσκηση 4</span><span class="lvl l2">Μέτρια</span><span class="tick-ok"></span></div><div class="exq">Αν $P(A) = 0{,}5$, $P(B) = 0{,}4$ και $P(A \cap B) = 0{,}2$, να βρείτε:</div><div class="exb"><div class="fields"><label class="fld"><span>P(A ∪ B) =</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label><label class="fld"><span>P(A′) =</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label><label class="fld"><span>P(κανένα από τα δύο) =</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label></div><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> «Κανένα» $= (A \cup B)'$.</div><div class="sol hidden"><b>Λύση:</b> $P(A \cup B) = 0{,}5 + 0{,}4 - 0{,}2 = 0{,}7$. $\;P(A') = 1 - 0{,}5 = 0{,}5$. $\;P((A \cup B)') = 1 - 0{,}7 = 0{,}3$.</div></div></div><div class="ex"><div class="exh"><span class="exn">Άσκηση 5</span><span class="lvl l2">Μέτρια</span><span class="tick-ok"></span></div><div class="exq">Ρίχνουμε τρία νομίσματα. Ποια η πιθανότητα να φέρουμε <b>τουλάχιστον μία</b> κορώνα;</div><div class="exb"><div class="fields"><label class="fld"><span>P =</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label></div><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> Συμπλήρωμα: «καμία κορώνα» = ΓΓΓ.</div><div class="sol hidden"><b>Λύση:</b> $\nu(\Omega) = 2^3 = 8$. $P(\text{καμία κορώνα}) = \frac18$, άρα $P = 1 - \frac18 = \frac78$.</div></div></div><div class="ex"><div class="exh"><span class="exn">Άσκηση 6</span><span class="lvl l3">Απαιτητική</span><span class="tick-ok"></span></div><div class="exq">Ένα κουτί έχει $4$ άσπρες και $6$ μαύρες μπάλες. Παίρνουμε τυχαία $2$ μπάλες μαζί. Ποια η πιθανότητα να είναι και οι δύο άσπρες;</div><div class="exb"><div class="fields"><label class="fld"><span>P =</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label></div><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> $\nu(\Omega) = \binom{10}{2}$, $\nu(A) = \binom{4}{2}$.</div><div class="sol hidden"><b>Λύση:</b> $P = \frac{\binom42}{\binom{10}{2}} = \frac{6}{45} = \frac{2}{15}$.</div></div></div><div class="ex"><div class="exh"><span class="exn">Άσκηση 7</span><span class="lvl l3">Απαιτητική</span><span class="tick-ok"></span></div><div class="exq">Γράφουμε τυχαία έναν αναγραμματισμό της λέξης <b>ΜΑΘΗΜΑ</b>. Ποια η πιθανότητα να αρχίζει από Μ;</div><div class="exb"><div class="fields"><label class="fld"><span>P =</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label></div><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> Όλοι: $\frac{6!}{2!\,2!} = 180$. Με Μ πρώτο μένουν ΑΘΗΜΑ (δύο Α).</div><div class="sol hidden"><b>Λύση:</b> Με Μ πρώτο: $\frac{5!}{2!} = 60$. $\;P = \frac{60}{180} = \frac13$. (Λογικό: 2 από τα 6 γράμματα είναι Μ.)</div></div></div><div class="ex"><div class="exh"><span class="exn">Άσκηση 8</span><span class="lvl l3">Απαιτητική</span><span class="tick-ok"></span></div><div class="exq">Σε μια κλήρωση υπάρχουν $10$ λαχνοί, από τους οποίους κερδίζουν οι $3$. Αγοράζουμε $2$ λαχνούς. Ποια η πιθανότητα να κερδίσει τουλάχιστον ένας;</div><div class="exb"><div class="fields"><label class="fld"><span>P =</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label></div><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> Συμπλήρωμα: κανένας δεν κερδίζει ⇒ και οι δύο από τους 7 «χαμένους».</div><div class="sol hidden"><b>Λύση:</b> $P(\text{κανένας}) = \frac{\binom72}{\binom{10}{2}} = \frac{21}{45} = \frac{7}{15}$. Άρα $P = 1 - \frac{7}{15} = \frac{8}{15}$.</div></div></div></section><section class="card gen"><h3 class="blk">♾️ Γεννήτρια — πιθανότητες με δύο ζάρια</h3><p class="muted small">Κάθε φορά καινούργια άσκηση — εξάσκηση χωρίς τέλος.</p><div class="gslot"><div class="ex"><div class="exh"><span class="exn">Εξάσκηση #1</span><span class="tick-ok"></span></div><div class="exq">Ρίχνουμε δύο ζάρια. Ποια η πιθανότητα το άθροισμα να είναι <b>το πολύ</b> $5$;</div><div class="exb"><div class="fields"><label class="fld"><span>P =</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label></div><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"></div><div class="sol hidden"><b>Λύση:</b> $\nu(\Omega) = 36$. Ευνοϊκά (10): (1,1), (1,2), (1,3), (1,4), (2,1), (2,2), (2,3), (3,1), (3,2), (4,1).<br>$P = \frac{10}{36} = \frac{5}{18}$.</div></div></div></div><button class="btn primary newg">Νέα άσκηση ↻</button></section><div class="pager"><a class="btn ghost" href="/mathimatika-g-kateythynsis/meros-b/10-4-syndyasmoi/">← 10.4 Συνδυασμοί</a><a class="btn primary" href="/mathimatika-g-kateythynsis/meros-b/11-2-pithanotites-syndyasmenon-endechomenon/">11.2 Πιθανότητες συνδυασμένων ενδεχομένων →</a></div></main></div>
+<aside class="ctaf" aria-label="Online μαθήματα"><p>Χρειάζεσαι βοήθεια; <a href="/online-mathimata/mathimatika-pagkypries/">Online μαθήματα Μαθηματικών Παγκύπριες</a> — ζωντανά, ένας προς έναν.</p><p><a href="/online-mathimata/mathimatika/">Online μαθήματα Μαθηματικών</a> για όλες τις τάξεις · <a href="/mathimatika/">Όλο το δωρεάν υλικό</a></p></aside>
+<footer><b>Pagkypries Online</b> · Αντρέας Σωτηρίου · <a href="/">pagkypriesonline.com</a> · <a href="/online-mathimata/">Ιδιαίτερα online μαθήματα</a><br>
+Πρωτότυπο εκπαιδευτικό υλικό που ακολουθεί τη δομή του βιβλίου «Μαθηματικά Γ΄ Λυκείου Κατεύθυνσης», Τεύχη Β΄–Δ΄ (ΥΑΠ, 2019).</footer>
+<script>window.ROUTE={"base": "/mathimatika-g-kateythynsis/meros-b/", "slugs": {"7.1–7.2": "7-1–7-2-paravoli-exisosi-parametrikes", "7.3–7.5": "7-3–7-5-theseis-os-pros-paravoli-efaptomeni-katheti", "4.1–4.3": "4-1–4-3-seires-s-symvolismos-sygklisi", "4.4–4.5": "4-4–4-5-eidika-athroismata-methodoi-ypologismou", "5.1–5.2": "5-1–5-2-orismeno-olokliroma-orismos-idiotites", "5.3": "5-3-themeliodes-theorima-oloklirotikou-logismou", "5.4.1": "5-4-1-ypologismos-emvadou", "5.4.2": "5-4-2-ogkos-stereou-ek-peristrofis", "9": "9-synola-archi-egkleismou-apokleismou", "10.1": "10-1-eisagogi-sti-syndyastiki", "10.2": "10-2-metatheseis", "10.3": "10-3-diataxeis", "10.4": "10-4-syndyasmoi", "11.1": "11-1-i-ennoia-tis-pithanotitas", "11.2": "11-2-pithanotites-syndyasmenon-endechomenon"}, "titles": {"home": "Μαθηματικά Γ΄ Λυκείου Κατεύθυνσης — Μέρος Β: Ασκήσεις & Θεωρία", "7.1–7.2": "Παραβολή – Εξίσωση – Παραμετρικές | Γ΄ Λυκείου Κατεύθυνσης", "7.3–7.5": "Θέσεις ως προς παραβολή – Εφαπτομένη &… | Παγκύπριες Μαθηματικά", "4.1–4.3": "Σειρές – Σ-συμβολισμός – Σύγκλιση | Γ΄ Λυκείου Κατεύθυνσης", "4.4–4.5": "Ειδικά αθροίσματα – Μέθοδοι υπολογισμού | Γ΄ Λυκείου Κατεύθυνσης", "5.1–5.2": "Ορισμένο ολοκλήρωμα – Ορισμός & ιδιότητες | Παγκύπριες Μαθηματικά", "5.3": "Θεμελιώδες Θεώρημα Ολοκληρωτικού Λογισμού | Παγκύπριες Μαθηματικά", "5.4.1": "Υπολογισμός εμβαδού — Ασκήσεις με Λύσεις | Γ΄ Λυκείου Κατεύθυνσης", "5.4.2": "Όγκος στερεού εκ περιστροφής — Ασκήσεις | Γ΄ Λυκείου Κατεύθυνσης", "9": "Σύνολα – Αρχή Εγκλεισμού–Αποκλεισμού | Γ΄ Λυκείου Κατεύθυνσης", "10.1": "Εισαγωγή στη Συνδυαστική — Ασκήσεις | Γ΄ Λυκείου Κατεύθυνσης", "10.2": "Μεταθέσεις — Ασκήσεις με Λύσεις | Γ΄ Λυκείου Κατεύθυνσης", "10.3": "Διατάξεις — Ασκήσεις με Λύσεις | Γ΄ Λυκείου Κατεύθυνσης", "10.4": "Συνδυασμοί — Ασκήσεις με Λύσεις | Γ΄ Λυκείου Κατεύθυνσης", "11.1": "Η έννοια της Πιθανότητας — Ασκήσεις | Γ΄ Λυκείου Κατεύθυνσης", "11.2": "Πιθανότητες συνδυασμένων ενδεχομένων | Γ΄ Λυκείου Κατεύθυνσης", "quiz": "Quiz — Μαθηματικά Κατεύθυνσης Γ΄ Λυκείου (Παγκύπριες) — Μέρος Β | PagkypriesOnline"}};window.START_SEC="11.1";</script>
+<script defer src="/mathimatika-g-kateythynsis/meros-b/app.js?v=4a23183c"></script>
+</body>
+</html>
