@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Μετατροπή δεκαδικού σε δυαδικό (διαδοχικές διαιρέσεις με το 2)</title>
+<meta name="description" content="Μετατροπή δεκαδικού σε δυαδικό (διαδοχικές διαιρέσεις με το 2) — Πληροφορική Γ΄ Λυκείου: θεωρία και 10 λυμένες ασκήσεις. Δωρεάν.">
+<link rel="canonical" href="https://pagkypriesonline.com/pliroforiki-g-lykeiou/meros-a/1-2-metatropi-dekadikou-se-dyadiko-diadochikes-diaireseis-me/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#14171C">
+<link rel="icon" href="/favicon.png" type="image/png" sizes="64x64">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="el_CY">
+<meta property="og:site_name" content="Pagkypries Online">
+<meta property="og:title" content="Μετατροπή δεκαδικού σε δυαδικό (διαδοχικές διαιρέσεις με το 2)">
+<meta property="og:description" content="Μετατροπή δεκαδικού σε δυαδικό (διαδοχικές διαιρέσεις με το 2) — Πληροφορική Γ΄ Λυκείου: θεωρία και 10 λυμένες ασκήσεις. Δωρεάν.">
+<meta property="og:url" content="https://pagkypriesonline.com/pliroforiki-g-lykeiou/meros-a/1-2-metatropi-dekadikou-se-dyadiko-diadochikes-diaireseis-me/">
+<meta property="og:image" content="https://pagkypriesonline.com/g/g01.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<style>
+:root{
+  --navy:#1B2A4A;--blue:#0F6FD1;--green:#198754;--amber:#C77A0A;--red:#DC3545;--purple:#6F42C1;
+  --ink:#15233f;--muted:#5b6b86;--line:#dce3ef;--bg:#F4F7FA;--card:#fff;--soft:#f5f8fd;
+  --sans:"Commissioner",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;--ink2:#14171C;--grad:linear-gradient(100deg,#54EFA2 0%,#33CFD3 48%,#2D9AF5 100%);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px}
+.top{position:sticky;top:0;z-index:50;background:rgba(244,247,252,.9);backdrop-filter:saturate(160%) blur(14px);border-bottom:1px solid var(--line)}
+.top::before{content:"";display:block;height:3px;background:var(--grad)}
+.top .in{max-width:1180px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:14px;min-height:60px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink2);font-weight:900;letter-spacing:-.02em;font-size:17px;white-space:nowrap}
+.brand img{width:32px;height:auto;display:block}
+.top .crumb{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);border-left:1px solid var(--line);padding-left:14px}
+.top .links{margin-left:auto;display:flex;gap:8px}
+.top .links a{text-decoration:none;font-size:13.5px;font-weight:600;color:var(--ink2);border:1px solid var(--line);background:#fff;border-radius:10px;padding:7px 12px;white-space:nowrap}
+.top .links a:hover{border-color:#2D9AF5;color:var(--blue)}
+.top .links a.home{background:var(--blue);border-color:var(--blue);color:#fff}
+@media(max-width:860px){.top .crumb{display:none}}
+@media(max-width:480px){.brand span{display:none}.top .links a{padding:7px 10px;font-size:13px}}
+#app{max-width:1180px;margin:0 auto;padding:18px 16px 40px;display:grid;grid-template-columns:270px 1fr;gap:20px;align-items:start}
+#nav{position:sticky;top:76px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:10px;max-height:calc(100vh - 90px);overflow:auto}
+.navu{font-size:12px;font-weight:800;color:var(--blue);text-transform:uppercase;letter-spacing:.04em;padding:12px 8px 4px;line-height:1.3}
+.navu small{text-transform:none;letter-spacing:0;color:var(--navy);font-size:13px}
+.navit{display:flex;align-items:center;gap:9px;width:100%;text-align:left;background:none;border:0;border-radius:10px;padding:8px;cursor:pointer;font:inherit;color:var(--ink);font-size:14px;line-height:1.3}
+.navit:hover{background:var(--soft)}.navit.on{background:#e3eefb;font-weight:700}
+.nid{flex:none;min-width:34px;font-weight:800;color:var(--navy);font-size:12.5px}
+.nt{flex:1}
+.ring{flex:none;width:20px;height:20px;border-radius:50%;background:conic-gradient(var(--green) calc(var(--p)*1%),#dfe6f1 0);display:flex;align-items:center;justify-content:center;font-size:11px;color:#fff;font-weight:900;position:relative}
+.ring::before{content:"";position:absolute;inset:3px;border-radius:50%;background:#fff}
+.ring[style*="--p:100"]::before{background:var(--green)}
+.ring{isolation:isolate}.ring::before{z-index:-1}
+#main{min-width:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;margin-bottom:16px;box-shadow:0 10px 30px -22px rgba(27,42,74,.45)}
+h1,h2{color:var(--navy);font-size:24px;line-height:1.2;font-weight:900}
+h1{font-size:26px;overflow-wrap:anywhere;hyphens:auto}
+.sechead>div{min-width:0}
+a.navit,a.seccard,a.quizcta{text-decoration:none;color:var(--ink)}
+a.btn{text-decoration:none;display:inline-block}
+h3.blk{color:var(--navy);font-size:18px;font-weight:900;margin-bottom:12px}
+.unith{color:var(--navy);font-size:17px;font-weight:900;margin:22px 0 10px}
+.sechead{display:flex;gap:14px;align-items:center;margin:2px 0 14px}
+.sid{display:inline-block;background:var(--navy);color:#fff;font-weight:900;border-radius:8px;padding:2px 9px;font-size:13px}
+.sid.big{font-size:18px;padding:8px 12px;border-radius:12px}
+.muted{color:var(--muted)}.small{font-size:13px}
+.hero p{margin-top:8px}
+.bigprog{display:flex;align-items:center;gap:12px;margin-top:14px;font-weight:700;color:var(--navy);font-size:14px}
+.bar{display:block;flex:1;height:10px;border-radius:99px;background:#e3e9f3;overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--blue),var(--green));border-radius:99px}
+.secgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.seccard{display:flex;flex-direction:column;gap:8px;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;cursor:pointer;font:inherit;color:var(--ink);transition:.15s}
+.seccard:hover{border-color:var(--blue);transform:translateY(-2px);box-shadow:0 10px 24px -18px rgba(46,117,182,.8)}
+.seccard b{color:var(--navy);line-height:1.3}.seccard .bar{flex:none;width:100%}.seccard small{color:var(--muted)}.seccard .sid{align-self:flex-start}
+.howto ul{margin:8px 0 12px 20px}.howto li{margin:4px 0}
+code{font-family:"SF Mono",Consolas,Menlo,monospace;background:#eaf0fb;color:var(--navy);padding:1px 6px;border-radius:5px;font-size:.92em}
+.tbox{border:1px solid var(--line);border-left:5px solid var(--blue);background:var(--soft);border-radius:0 12px 12px 0;padding:12px 16px;margin:10px 0}
+.tbox.tip{border-left-color:var(--green);background:#f1faf4}.tbox.warn{border-left-color:var(--amber);background:#fdf6e9}
+.tbox h4{color:var(--navy);font-size:15.5px;margin-bottom:4px}
+/* --- εμπλουτισμένα πλαίσια θεωρίας (Ορισμός/Θεώρημα/Παράδειγμα/Παρατήρηση/Απόδειξη) --- */
+.tbox.def{border-left-color:var(--blue);background:linear-gradient(90deg,#eef5ff,#f7faff)}
+.tbox.thm{border-left-color:var(--purple);background:linear-gradient(90deg,#f4efff,#faf8ff)}
+.tbox.ex{border-left-color:var(--green);background:linear-gradient(90deg,#edf9f2,#f8fdfa)}
+.tbox.rem{border-left-color:#0d9488;background:#effaf8}
+.tbox.def h4::before,.tbox.thm h4::before,.tbox.ex h4::before,.tbox.rem h4::before{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#fff;border-radius:6px;padding:2px 7px;margin-right:8px;vertical-align:2px}
+.tbox.def h4::before{content:"Ορισμός";background:var(--blue)}.tbox.thm h4::before{content:"Θεώρημα";background:var(--purple)}
+.tbox.ex h4::before{content:"Παράδειγμα";background:var(--green)}.tbox.rem h4::before{content:"Παρατήρηση";background:#0d9488}
+details.proof,details.steps{border:1px dashed #c7d2e5;border-radius:10px;padding:6px 12px;margin:8px 0;background:#fff}
+details.proof>summary,details.steps>summary{cursor:pointer;font-weight:800;color:var(--navy);font-size:14px;list-style:none}
+details.proof>summary::before,details.steps>summary::before{content:"▸ ";color:var(--blue)}details[open].proof>summary::before,details[open].steps>summary::before{content:"▾ "}
+details.proof[open]{background:#fbfcff}details.proof p:last-child::after{content:" ∎";color:var(--navy);font-weight:900}
+figure.grfig{margin:10px auto;max-width:560px}figure.grfig svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;box-shadow:0 8px 22px -18px rgba(27,42,74,.5)}
+figure.grfig figcaption{text-align:center;color:var(--muted);font-size:13px;margin-top:6px}
+.figrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;align-items:start}
+.fbox{display:block;text-align:center;font-size:1.05em;background:#fff;border:1.5px solid #c9d8f0;border-radius:12px;padding:10px 12px;margin:8px auto;max-width:fit-content;box-shadow:0 6px 18px -16px rgba(15,111,209,.6)}
+.hero.art{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:18px;align-items:center;background:radial-gradient(120% 140% at 100% 0%,#e9f2ff 0%,#fff 55%)}
+.hero.art .heroart svg{width:100%;height:auto;display:block}
+@media(max-width:760px){.hero.art{grid-template-columns:1fr}.hero.art .heroart{max-width:320px;margin:0 auto}}
+.unith .uchip{display:inline-flex;align-items:center;justify-content:center;min-width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;font-size:14px;margin-right:8px;vertical-align:1px}
+.seccard{position:relative}.seccard .thumb{position:absolute;top:10px;right:12px;width:68px;height:40px;opacity:.9}
+.seccard:hover .thumb{opacity:1}
+.intro{font-size:15.5px;color:var(--ink);background:#fff8ec;border:1px solid #f3dcb3;border-radius:12px;padding:10px 14px;margin:0 0 14px}
+.tbox ul,.tbox ol{margin:4px 0 2px 22px}.tbox li{margin:3px 0}.tbox p{margin:4px 0}
+.katex-display{overflow-x:auto;overflow-y:hidden;padding:2px 0}
+#main .katex{max-width:100%;position:relative}
+#main :not(.katex-display) > .katex{display:inline-block;overflow-x:auto;overflow-y:hidden;vertical-align:middle;padding:1px 0}
+.wctl label{min-width:0;max-width:100%}
+.tblwrap{overflow-x:auto}
+table.vt{border-collapse:collapse;margin:8px 0;font-size:14px;white-space:nowrap}
+table.vt th,table.vt td{border:1px solid #c9d3e4;padding:4px 10px;text-align:center}table.vt th{background:#eaf1fb}
+/* widgets */
+.wctl{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;margin-bottom:10px;font-size:14px;font-weight:600;color:var(--navy)}
+.wctl label{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.wctl select{max-width:100%;min-width:0;font:inherit;font-weight:600;padding:6px 10px;border-radius:9px;border:1px solid var(--line);background:#fff;color:var(--navy)}
+input[type=range]{accent-color:var(--blue);width:170px;max-width:60vw}
+.cap{font-size:13px;color:var(--muted);margin:6px 0 2px}
+.t1{color:var(--blue)}.t2{color:var(--purple)}.t3{color:var(--amber)}
+.wout{margin-top:10px;font-size:14.5px;background:var(--soft);border-radius:10px;padding:10px 12px}
+.ok{color:var(--green)}.bad{color:var(--red)}
+.two{display:grid;grid-template-columns:1fr 1.6fr;gap:12px;align-items:center}
+.plot{width:100%;height:auto;display:block;background:#fff;border:1px solid var(--line);border-radius:12px;touch-action:pan-y}
+.plot .grid line{stroke:#edf1f7}.plot .tick{font-size:11px;fill:#8a97ad;font-family:var(--sans)}
+.plot .axis{stroke:var(--navy);stroke-width:1.4}
+.plot .curve{fill:none;stroke-width:3;stroke-linejoin:round;stroke-linecap:round}
+.c1{stroke:var(--blue)}.c2{stroke:var(--purple)}.c3{stroke:var(--amber)}.cfam{stroke:#c5cfdf;stroke-width:1.8!important}
+.plot .band.pos{fill:rgba(25,135,84,.09)}.plot .band.neg{fill:rgba(220,53,69,.08)}
+.plot .dot{stroke:#fff;stroke-width:2}.d1{fill:var(--blue)}.d2{fill:var(--navy)}.d3{fill:var(--amber)}.dmax{fill:var(--green)}.dmin{fill:var(--red)}.dinf{fill:var(--purple)}
+.plot .lbl{font-size:12.5px;font-weight:800;font-family:var(--sans)}.lbl.dmax{fill:var(--green)}.lbl.dmin{fill:var(--red)}.lbl.dinf{fill:var(--purple)}.lbl.d2,.lbl.d3,.lbl.d1{fill:var(--navy)}
+.plot .guide{stroke:#9aa8bf;stroke-dasharray:4 4}.plot .tangent{stroke:var(--red);stroke-width:2;stroke-dasharray:7 5}
+.plot .sheet{fill:#f3e7cf;stroke:#c9a86a}.plot .cut{fill:#fff;stroke:var(--red);stroke-dasharray:4 3}.plot .base{fill:#dbe8f8;stroke:var(--blue)}
+/* exercises */
+.ex{border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:12px 0;background:#fff;transition:border-color .2s}
+.ex.solved{border-color:#a9dcbf;background:#fbfefc}
+.exh{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.exn{font-weight:900;color:var(--navy)}
+.lvl{font-size:11.5px;font-weight:800;padding:2px 9px;border-radius:99px}
+.l1{background:#e7f6ee;color:var(--green)}.l2{background:#fdf1dd;color:var(--amber)}.l3{background:#fdeaec;color:var(--red)}
+.tick-ok{margin-left:auto;color:var(--green);font-weight:800;font-size:13px}
+.exq{margin-bottom:10px}
+.opt{display:flex;gap:10px;align-items:flex-start;padding:9px 12px;border:1px solid var(--line);border-radius:10px;margin:6px 0;cursor:pointer;background:#fff}
+.opt:hover{border-color:var(--blue)}.opt input{margin-top:5px;accent-color:var(--blue)}
+.opt.right{border-color:var(--green);background:#eef9f2}.opt.wrong{border-color:var(--red);background:#fdf0f1}
+.fields{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px 14px}
+.fld{display:flex;flex-direction:column;gap:3px;font-size:13.5px;color:var(--muted);font-weight:600}
+.fld.wide{max-width:560px}
+.fld input{font:inherit;font-size:16px;padding:9px 12px;border:1.5px solid var(--line);border-radius:10px;color:var(--ink);background:#fff;width:100%}
+.fld input:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(46,117,182,.15)}
+.fld input.right{border-color:var(--green);background:#f1faf4}.fld input.wrong{border-color:var(--red);background:#fdf3f4}
+.preview{font-size:12.5px;margin-top:4px;min-height:1em}.warnc{color:var(--amber)}
+.exbar{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.btn{font:inherit;font-size:14px;font-weight:700;border-radius:10px;padding:8px 14px;cursor:pointer;border:1.5px solid transparent;transition:.15s}
+.btn.primary{background:var(--blue);color:#fff}.btn.primary:hover{background:#245f94}
+.btn.ghost{background:#fff;color:var(--navy);border-color:var(--line)}.btn.ghost:hover{border-color:var(--blue)}
+.btn.small{font-size:13px;padding:6px 11px}
+.fb{margin-top:10px;font-weight:700;min-height:0}.fb:empty{display:none}
+.okc{color:var(--green)}.badc{color:var(--red)}
+.hint,.sol{margin-top:10px;padding:10px 14px;border-radius:10px;font-size:15px}
+.hint{background:#fff8e8;border:1px solid #f0d9a8}.sol{background:#f1faf4;border:1px solid #bfe6cf}
+.hidden{display:none}
+.solgraph{margin-top:10px;max-width:520px}
+.gen{border:2px dashed #b8cbe6}.gen .newg{margin-top:4px}
+.pager{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:6px}
+.chips{gap:6px}.chip{font:inherit;font-size:14px;font-weight:700;border:1.5px solid var(--line);background:#fff;color:var(--navy);border-radius:99px;padding:5px 12px;cursor:pointer}
+.chip.on{background:var(--blue);border-color:var(--blue);color:#fff}
+.wctl.col{flex-direction:column;align-items:flex-start;gap:6px}
+.plot .vnum{font-size:17px;font-weight:900;fill:var(--navy);text-anchor:middle;font-family:var(--sans)}
+.pills{display:flex;flex-wrap:wrap;gap:5px;margin:6px 0}.pills span{font-family:"SF Mono",Consolas,monospace;font-size:13px;background:#eef3fb;border:1px solid var(--line);border-radius:7px;padding:2px 7px;color:var(--navy)}
+.pills span.pm{background:var(--amber);color:#fff;border-color:var(--amber)}.pills span.pl1{background:#e3eefb}.pills span.pl2{background:#efe8fb}
+.dice{display:flex;align-items:center;gap:10px;margin:4px 0 8px;font-size:14px}
+.plot .theo{stroke:var(--red);stroke-width:2.5}.plot .whisk{stroke:var(--navy);stroke-width:2}.plot .medl{stroke:var(--red);stroke-width:3}
+.plot .sol-e{fill:none;stroke:var(--navy);stroke-width:2}.plot .sol-eb{fill:none;stroke:var(--navy);stroke-width:1.5;stroke-dasharray:5 4;opacity:.6}
+.plot .axisrot{stroke:var(--red);stroke-width:1.5;stroke-dasharray:8 5}.plot .gen2d{fill:rgba(46,117,182,.22);stroke:var(--blue);stroke-width:2}
+table.t2 input{width:72px;font:inherit;padding:4px 6px;border:1px solid var(--line);border-radius:7px;text-align:center}
+.sform{font-size:15px;line-height:2}
+.qhead{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.qchips{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:6px;margin-bottom:14px}
+.qchip{display:flex;gap:8px;align-items:flex-start;border:1px solid var(--line);border-radius:10px;padding:7px 10px;font-size:13.5px;cursor:pointer;background:#fff}
+.qchip input{margin-top:4px;accent-color:var(--blue)}.qchip b{color:var(--navy)}
+.qopts{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;margin-bottom:14px;font-size:14px;font-weight:600;color:var(--navy)}
+.qopts select{font:inherit;padding:5px 8px;border-radius:8px;border:1px solid var(--line);margin-left:6px}
+.qbar{display:flex;justify-content:space-between;align-items:center;position:sticky;top:70px;z-index:5;padding:12px 18px}
+.qtime{font-family:"IBM Plex Mono",monospace;font-weight:600;color:var(--blue)}
+.qsub{width:100%;padding:13px;font-size:16px;margin:6px 0 18px}
+.qscore{display:flex;gap:20px;align-items:center;flex-wrap:wrap;border:2px solid var(--green);background:#f1faf4}
+.qbig{font-size:40px;font-weight:900;color:var(--green);line-height:1}
+.qscore .btn{margin-left:auto}
+.quizcta{display:flex;gap:16px;align-items:center;width:100%;text-align:left;cursor:pointer;font:inherit;color:var(--ink);border:2px dashed #b8cbe6}
+.quizcta:hover{border-color:var(--blue)}.quizcta .go{margin-left:auto;font-weight:800;color:var(--blue);white-space:nowrap}
+.navit.quizit{background:#fff8e8;margin:2px 0}
+input:disabled{opacity:.85}
+.plot .chord{stroke:var(--purple);stroke-width:2.2}.plot .tangent.ok{stroke:var(--green);stroke-dasharray:none;stroke-width:2.5}
+.plot .asl{stroke:var(--red);stroke-width:1.6;stroke-dasharray:7 5}
+.plot .circ{fill:rgba(15,111,209,.08);stroke:var(--blue);stroke-width:2.6}.plot .circ2{fill:rgba(199,122,10,.08);stroke:var(--amber);stroke-width:2.6}
+.plot .c1line{stroke:var(--purple);stroke-width:2.4}
+.plot .rect{fill:rgba(15,111,209,.18);stroke:var(--blue);stroke-width:1}.plot .area{fill:rgba(25,135,84,.22)}
+.plot .focus{fill:var(--red)}.plot .disk{fill:rgba(15,111,209,.12);stroke:var(--blue);stroke-width:.8}.plot .dir{stroke:var(--green);stroke-width:2;stroke-dasharray:6 4}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:24px 16px 34px}
+footer b{color:var(--navy)}footer a{color:var(--blue);font-weight:700;text-decoration:none}
+@media (max-width:860px){
+  #app{grid-template-columns:1fr;padding-top:10px}
+  #nav{position:static;display:flex;overflow-x:auto;gap:6px;padding:8px;max-height:none;scrollbar-width:thin}
+  .navu{display:none}
+  .navit{flex:none;width:auto;white-space:nowrap;border:1px solid var(--line);padding:6px 10px}
+  .navit .nt{display:none}.navit .nid{min-width:0}
+  .two{grid-template-columns:1fr}
+  .card{padding:16px}
+  h2{font-size:21px}h1{font-size:22px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+.plot.nogrid .grid,.plot.nogrid .axis{display:none}
+.plot .band.bandok{fill:rgba(25,135,84,.16)}
+table.mini{border-collapse:collapse;margin:.4rem 0;font-size:.95em;max-width:100%;display:block;overflow-x:auto}
+table.mini th,table.mini td{border:1px solid var(--line);padding:.3rem .55rem;text-align:center}
+table.mini th{background:var(--soft)}
+table.tbl{border-collapse:collapse;margin:.5rem 0;font-size:.95em;max-width:100%;display:block;overflow-x:auto}table.tbl th,table.tbl td{border:1px solid var(--line);padding:.35rem .6rem;text-align:center}table.tbl th{background:var(--soft);color:var(--navy)}
+.exq svg.fig text{user-select:none}
+
+.cppbox,.conbox{margin:12px 0;border-radius:12px;overflow:hidden;border:1px solid #23314f;background:#0f1a2e;box-shadow:0 10px 26px -20px rgba(15,26,46,.9);max-width:100%}
+.cpptitle{font:600 11.5px "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.06em;color:#9fb3d9;background:#16233d;padding:6px 12px;border-bottom:1px solid #23314f}
+pre.cpp,pre.con{margin:0;padding:10px 0;overflow-x:auto;font:13.5px/1.55 "SF Mono",Consolas,Menlo,monospace;color:#e6edf7;tab-size:4}
+pre.cpp code,pre.con code{background:none;color:inherit;padding:0;font:inherit;border-radius:0}
+pre.cpp .cl{display:block;padding:0 14px 0 0;white-space:pre;min-height:1.55em}
+pre.cpp .cl i{display:inline-block;width:2.6em;padding-right:.9em;text-align:right;color:#5d6f93;font-style:normal;user-select:none}
+pre.cpp.nonum .cl{padding-left:14px}
+pre.cpp .cl.on{background:rgba(84,239,162,.14);box-shadow:inset 3px 0 0 #54EFA2}
+pre.con{padding:10px 14px;white-space:pre;color:#b8f5cf}
+.conbox{background:#08120c;border-color:#1d3a28}.conbox .cpptitle{background:#0f2418;color:#7fd9a3;border-color:#1d3a28}
+.cppbox.sm pre.cpp{font-size:12.5px}
+.cpp-kw{color:#c792ea;font-weight:600}.cpp-ty{color:#82aaff;font-weight:600}.cpp-st{color:#c3e88d}.cpp-nu{color:#f78c6c}.cpp-cm{color:#7f8fb0;font-style:italic}.cpp-pp{color:#ffcb6b}.cpp-fn{color:#89ddff}
+.q .cppbox,.sol .cppbox,.hint .cppbox{font-size:inherit}
+
+.nepass{margin:12px 0;padding:14px 18px;background:#fffdfb;border:1px solid #ecd9d4;border-left:5px solid var(--blue);border-radius:0 12px 12px 0;font-family:Georgia,"Times New Roman",serif;font-size:16px;line-height:1.7;max-width:100%}
+.nepass p{margin:0 0 .7em;text-indent:1.4em}.nepass p:last-of-type{margin-bottom:0}
+.nepass .nepn{font:700 11.5px "IBM Plex Mono",monospace;color:var(--blue);margin-right:8px;text-indent:0;display:inline-block}
+.netitle{font:800 15px var(--sans);color:var(--navy);margin-bottom:8px;text-align:center}
+.nesrc{font:italic 13px var(--sans);color:var(--muted);margin-top:8px;text-align:right}
+.nepoem{display:block}.nel{display:block;padding-left:2.6em;position:relative;white-space:pre-wrap}.nel.gap{height:.8em}
+.nel i{position:absolute;left:0;width:2em;text-align:right;font:600 11px "IBM Plex Mono",monospace;color:#b08a84;top:.35em}
+u.neu{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px;text-decoration-color:var(--blue)}
+.ctaf{max-width:760px;margin:10px auto 0;padding:16px 18px;border:1px solid var(--line);border-radius:16px;background:var(--card);text-align:center;font-size:15px}.ctaf a{color:var(--blue);font-weight:700;text-decoration:none}.ctaf p{margin:4px 0}</style>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Αρχική", "item": "https://pagkypriesonline.com/"}, {"@type": "ListItem", "position": 2, "name": "Πληροφορική Γ΄ Λυκείου (Παγκύπριες)", "item": "https://pagkypriesonline.com/pliroforiki-g-lykeiou/"}, {"@type": "ListItem", "position": 3, "name": "Πληροφορική Γ΄ Λυκείου (Παγκύπριες) — Μέρος Α", "item": "https://pagkypriesonline.com/pliroforiki-g-lykeiou/meros-a/"}, {"@type": "ListItem", "position": 4, "name": "Μετατροπή δεκαδικού σε δυαδικό (διαδοχικές διαιρέσεις με το 2)", "item": "https://pagkypriesonline.com/pliroforiki-g-lykeiou/meros-a/1-2-metatropi-dekadikou-se-dyadiko-diadochikes-diaireseis-me/"}]}, {"@type": "LearningResource", "name": "Μετατροπή δεκαδικού σε δυαδικό (διαδοχικές διαιρέσεις με το 2)", "description": "Μετατροπή δεκαδικού σε δυαδικό (διαδοχικές διαιρέσεις με το 2) — Πληροφορική Γ΄ Λυκείου: θεωρία και 10 λυμένες ασκήσεις. Δωρεάν.", "url": "https://pagkypriesonline.com/pliroforiki-g-lykeiou/meros-a/1-2-metatropi-dekadikou-se-dyadiko-diadochikes-diaireseis-me/", "inLanguage": "el", "isAccessibleForFree": true, "educationalLevel": "Γ΄ Λυκείου", "learningResourceType": ["Θεωρία", "Ασκήσεις με λύσεις", "Διαδραστική εξάσκηση"], "teaches": "Μετατροπή δεκαδικού σε δυαδικό (διαδοχικές διαιρέσεις με το 2)", "isPartOf": {"@type": "Course", "name": "Πληροφορική Γ΄ Λυκείου (Παγκύπριες) — Μέρος Α", "url": "https://pagkypriesonline.com/pliroforiki-g-lykeiou/meros-a/"}, "provider": {"@type": "EducationalOrganization", "name": "Pagkypries Online", "url": "https://pagkypriesonline.com/"}, "author": {"@type": "Person", "name": "Αντρέας Σωτηρίου", "url": "https://antreassotiriou.com"}, "dateModified": "2026-10-23"}]}</script>
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<header class="top"><div class="in">
+  <a class="brand" href="/"><img src="/logo-mark.png" width="240" height="212" alt="PagkypriesOnline"><span>Pagkypries Online</span></a>
+  <div class="crumb">Παγκύπριες · Πληροφορική Γ΄ Λυκείου · Μέρος Α</div>
+  <nav class="links" aria-label="Σύνδεσμοι"><a href="/pliroforiki-g-lykeiou/meros-b/">Μέρος Β →</a><a class="home" href="/#yliko">← Αρχική</a></nav>
+</div></header>
+<div id="app"><nav id="nav" aria-label="Ενότητες"><a class="navit" href="/pliroforiki-g-lykeiou/meros-a/"><span class="nid">⌂</span><span class="nt">Αρχική &amp; πρόοδος</span></a><a class="navit quizit" href="/pliroforiki-g-lykeiou/meros-a/#quiz"><span class="nid">📝</span><span class="nt">Quiz — κάνε διαγώνισμα</span></a><div class="navu">Γ1.1<br><small>Δυαδικό σύστημα αρίθμησης</small></div><a class="navit" href="/pliroforiki-g-lykeiou/meros-a/1-1-dyadiko-systima-arithmisis-metatropi-dyadikou-se/"><span class="nid">1.1</span><span class="nt">Δυαδικό σύστημα αρίθμησης: μετατροπή δυαδικού σε δεκαδικό</span><span class="ring" style="--p:0" title="0/11"></span></a><a class="navit on" href="/pliroforiki-g-lykeiou/meros-a/1-2-metatropi-dekadikou-se-dyadiko-diadochikes-diaireseis-me/"><span class="nid">1.2</span><span class="nt">Μετατροπή δεκαδικού σε δυαδικό (διαδοχικές διαιρέσεις με το 2)</span><span class="ring" style="--p:0" title="0/10"></span></a><a class="navit" href="/pliroforiki-g-lykeiou/meros-a/1-3-metatropi-dekadikou-arithmou-me-ypodiastoli-se-dyadiko/"><span class="nid">1.3</span><span class="nt">Μετατροπή δεκαδικού αριθμού με υποδιαστολή σε δυαδικό</span><span class="ring" style="--p:0" title="0/10"></span></a><a class="navit" href="/pliroforiki-g-lykeiou/meros-a/1-4-prosthesi-kai-afairesi-dyadikon-arithmon-kratoumeno/"><span class="nid">1.4</span><span class="nt">Πρόσθεση και αφαίρεση δυαδικών αριθμών (κρατούμενο, δανεικό, υπερχείλιση)</span><span class="ring" style="--p:0" title="0/9"></span></a><a class="navit" href="/pliroforiki-g-lykeiou/meros-a/1-5-sympliroma-os-pros-1-kai-os-pros-2-afairesi-me/"><span class="nid">1.5</span><span class="nt">Συμπλήρωμα ως προς 1 και ως προς 2 – αφαίρεση με συμπληρώματα</span><span class="ring" style="--p:0" title="0/11"></span></a><a class="navit" href="/pliroforiki-g-lykeiou/meros-a/1-6-dyadikoi-arithmoi-me-prosimo-prosimasmeno-metro-kai/"><span class="nid">1.6</span><span class="nt">Δυαδικοί αριθμοί με πρόσημο: προσημασμένο μέτρο και συμπλήρωμα ως προς 2</span><span class="ring" style="--p:0" title="0/10"></span></a><div class="navu">Γ2.1<br><small>Άλγεβρα Boole και λογικά κυκλώματα</small></div><a class="navit" href="/pliroforiki-g-lykeiou/meros-a/2-1-algevra-boole-orismos-axiomata-huntington-kai-archi-tou/"><span class="nid">2.1</span><span class="nt">Άλγεβρα Boole: ορισμός, αξιώματα Huntington και αρχή του δυϊσμού</span><span class="ring" style="--p:0" title="0/10"></span></a><a class="navit" href="/pliroforiki-g-lykeiou/meros-a/2-2-theorimata-tis-algevras-boole-de-morgan-kai-algevriki/"><span class="nid">2.2</span><span class="nt">Θεωρήματα της άλγεβρας Boole, De Morgan και αλγεβρική απλοποίηση</span><span class="ring" style="--p:0" title="0/10"></span></a><a class="navit" href="/pliroforiki-g-lykeiou/meros-a/2-3-logikes-pyles-and-or-not-nand-nor-xor-xnor-kai-pinakes/"><span class="nid">2.3</span><span class="nt">Λογικές πύλες AND, OR, NOT, NAND, NOR, XOR, XNOR και πίνακες αλήθειας</span><span class="ring" style="--p:0" title="0/10"></span></a><a class="navit" href="/pliroforiki-g-lykeiou/meros-a/2-4-logikes-synartiseis-kai-logika-kyklomata-apo-ti/"><span class="nid">2.4</span><span class="nt">Λογικές συναρτήσεις και λογικά κυκλώματα: από τη συνάρτηση στο κύκλωμα</span><span class="ring" style="--p:0" title="0/10"></span></a><a class="navit" href="/pliroforiki-g-lykeiou/meros-a/2-5-elachistoroi-kai-megistoroi-athroisma-elachistoron-s-kai/"><span class="nid">2.5</span><span class="nt">Ελαχιστόροι και μεγιστόροι: άθροισμα ελαχιστόρων Σ και γινόμενο μεγιστόρων Π</span><span class="ring" style="--p:0" title="0/10"></span></a><a class="navit" href="/pliroforiki-g-lykeiou/meros-a/2-6-chartes-karnaugh-aplopoiisi-logikis-synartisis-2-3-kai-4/"><span class="nid">2.6</span><span class="nt">Χάρτες Karnaugh: απλοποίηση λογικής συνάρτησης 2, 3 και 4 μεταβλητών</span><span class="ring" style="--p:0" title="0/10"></span></a><a class="navit" href="/pliroforiki-g-lykeiou/meros-a/2-7-imiathroistis-kai-pliris-athroistis-half-adder-full/"><span class="nid">2.7</span><span class="nt">Ημιαθροιστής και πλήρης αθροιστής (half adder, full adder) — δυαδικός αθροιστής 4 bit</span><span class="ring" style="--p:0" title="0/10"></span></a><div class="navu">Γ7.1<br><small>C++: βασικές δομές (επανάληψη Β΄)</small></div><a class="navit" href="/pliroforiki-g-lykeiou/meros-a/3-1-metavlites-typoi-dedomenon-eisodos-kai-exodos-sti-cpp/"><span class="nid">3.1</span><span class="nt">Μεταβλητές, τύποι δεδομένων, είσοδος και έξοδος στη C++ (cin, cout, setw, setprecision)</span><span class="ring" style="--p:0" title="0/10"></span></a><a class="navit" href="/pliroforiki-g-lykeiou/meros-a/3-2-telestes-sti-cpp-kai-proteraiotita-kai-logikoi-telestes/"><span class="nid">3.2</span><span class="nt">Τελεστές στη C++: / και %, προτεραιότητα, ++ και --, λογικοί τελεστές και έτοιμες συναρτήσεις cmath</span><span class="ring" style="--p:0" title="0/11"></span></a><a class="navit" href="/pliroforiki-g-lykeiou/meros-a/3-3-domi-diakladosis-sti-cpp-if-else-entheta-if-kai-i-entoli/"><span class="nid">3.3</span><span class="nt">Δομή διακλάδωσης στη C++: if, else, ένθετα if και η εντολή switch</span><span class="ring" style="--p:0" title="0/9"></span></a><a class="navit" href="/pliroforiki-g-lykeiou/meros-a/3-4-domes-epanalipsis-sti-cpp-vrochoi-for-while-kai-do-while/"><span class="nid">3.4</span><span class="nt">Δομές επανάληψης στη C++: βρόχοι for, while και do…while</span><span class="ring" style="--p:0" title="0/10"></span></a><a class="navit" href="/pliroforiki-g-lykeiou/meros-a/3-5-logika-diagrammata-kai-prokatarktiki-ektelesi-pinakas/"><span class="nid">3.5</span><span class="nt">Λογικά διαγράμματα και προκαταρκτική εκτέλεση (πίνακας τιμών) – έλεγχος προγράμματος</span><span class="ring" style="--p:0" title="0/10"></span></a><a class="navit" href="/pliroforiki-g-lykeiou/meros-a/3-6-monodiastatoi-pinakes-1d-arrays-sti-cpp-athroisma/"><span class="nid">3.6</span><span class="nt">Μονοδιάστατοι πίνακες (1D arrays) στη C++: άθροισμα, μέγιστο, ελάχιστο, μέτρηση, παράλληλοι πίνακες</span><span class="ring" style="--p:0" title="0/10"></span></a></nav><main id="main"><div class="sechead"><span class="sid big">1.2</span><div><h1>Μετατροπή δεκαδικού σε δυαδικό (διαδοχικές διαιρέσεις με το 2)</h1><div class="muted small">📘 Βιβλίο Γ΄ Λυκείου: Γ1.1 §1, αλγόριθμος και παράδειγμα 1.2 (σ. 13)</div></div></div><p class="intro">Πώς μετατρέπουμε έναν δεκαδικό ακέραιο, π.χ. το 23, σε δυαδικό με τη μέθοδο των διαδοχικών διαιρέσεων με το 2;</p><section class="card"><h3 class="blk">Θεωρία</h3>
+<p>Η <b>μετατροπή δεκαδικού σε δυαδικό</b> για ακέραιους γίνεται με τη μέθοδο των <b>διαδοχικών διαιρέσεων με το 2</b>. Κάθε διαίρεση δίνει ένα υπόλοιπο 0 ή 1, και τα υπόλοιπα —διαβασμένα <b>από κάτω προς τα πάνω</b>— σχηματίζουν τον δυαδικό αριθμό. Αυτός είναι ο αλγόριθμος του βιβλίου και πρέπει να φαίνεται ο πίνακας των διαιρέσεων στην απάντησή σας στις Παγκύπριες.</p>
+<div class="tbox def"><h4>Αλγόριθμος μετατροπής δεκαδικού ακέραιου σε δυαδικό</h4>
+<p><b>Βήμα 1:</b> Διαιρούμε τον αριθμό με το 2.<br><b>Βήμα 2:</b> Σημειώνουμε το υπόλοιπο και διαιρούμε το πηλίκο που προέκυψε με το 2.<br><b>Βήμα 3:</b> Επαναλαμβάνουμε το βήμα 2 για όσο το πηλίκο είναι μεγαλύτερο από το 0.<br><b>Βήμα 4:</b> Ο δυαδικός αριθμός προκύπτει από τα υπόλοιπα των διαιρέσεων, βάζοντάς τα σε <b>αντίστροφη σειρά</b>.</p></div>
+<div class="tbox ex"><h4>Μετατροπή του 23 σε δυαδικό</h4>
+<div class="figrow"><div><table class="tbl "><tbody><tr><th>Αριθμός</th><th>Πηλίκο</th><th>Υπόλοιπο</th></tr><tr><td>23/2 =</td><td>11</td><td><b>1</b></td></tr><tr><td>11/2 =</td><td>5</td><td><b>1</b></td></tr><tr><td>5/2 =</td><td>2</td><td><b>1</b></td></tr><tr><td>2/2 =</td><td>1</td><td><b>0</b></td></tr><tr><td>1/2 =</td><td>0</td><td><b>1</b></td></tr></tbody></table></div><div><p>Διαβάζουμε τα υπόλοιπα από την τελευταία διαίρεση προς την πρώτη: <b>1 0 1 1 1</b>.</p><div class="fbox">$$(23)_{10} = (10111)_2$$</div><p>Επαλήθευση: $16 + 4 + 2 + 1 = 23$ ✓</p></div></div></div>
+<div class="tbox ex"><h4>Μετατροπή του 36 σε δυαδικό (θέμα Παγκυπρίων)</h4>
+<details class="steps"><summary>Λύση βήμα-βήμα</summary>
+<table class="tbl "><tbody><tr><th>Αριθμός</th><th>Πηλίκο</th><th>Υπόλοιπο</th></tr><tr><td>36/2 =</td><td>18</td><td><b>0</b></td></tr><tr><td>18/2 =</td><td>9</td><td><b>0</b></td></tr><tr><td>9/2 =</td><td>4</td><td><b>1</b></td></tr><tr><td>4/2 =</td><td>2</td><td><b>0</b></td></tr><tr><td>2/2 =</td><td>1</td><td><b>0</b></td></tr><tr><td>1/2 =</td><td>0</td><td><b>1</b></td></tr></tbody></table>
+<p>Υπόλοιπα από κάτω προς τα πάνω: $100100$. Άρα $(36)_{10} = (100100)_2$. Επαλήθευση: $32 + 4 = 36$.</p></details></div>
+<div class="tbox tip"><h4>Γιατί δουλεύει η μέθοδος;</h4>
+<p>Το υπόλοιπο της διαίρεσης με το 2 μάς λέει αν ο αριθμός είναι άρτιος (0) ή περιττός (1), δηλαδή μας δίνει το <b>λιγότερο σημαντικό ψηφίο</b> $b_0$ (το δεξιότερο). Το πηλίκο είναι ο αριθμός «μετατοπισμένος» μία θέση δεξιά, οπότε η επόμενη διαίρεση δίνει το $b_1$ κ.ο.κ. Γι’ αυτό το <i>πρώτο</i> υπόλοιπο γράφεται <i>τελευταίο</i> (δεξιά). Συνέπεια: κάθε <b>περιττός</b> αριθμός τελειώνει σε 1 και κάθε <b>άρτιος</b> σε 0.</p></div>
+<div class="tbox rem"><h4>Εναλλακτικός έλεγχος με δυνάμεις του 2</h4>
+<p>Μπορούμε να ελέγξουμε το αποτέλεσμα αφαιρώντας τη μεγαλύτερη δύναμη του 2 που χωρά: $23 = 16 + 7 = 16 + 4 + 3 = 16 + 4 + 2 + 1 \Rightarrow 10111$. Το πλήθος των bits που χρειάζεται ένας ακέραιος $N \ge 1$ είναι το μικρότερο $n$ με $2^n &gt; N$ (π.χ. για το 200 χρειάζονται 8 bits, αφού $2^7 = 128 \le 200 &lt; 256 = 2^8$).</p>
+<p>Σε <b>8 bits</b> συμπληρώνουμε με μηδενικά αριστερά: $(23)_{10} = 00010111$.</p></div>
+<div class="tbox warn"><h4>Συχνά λάθη στις Παγκύπριες</h4>
+<p>• Γράφουμε τα υπόλοιπα από πάνω προς τα κάτω (ανάποδα!).<br>• Σταματάμε όταν το πηλίκο γίνει 1, ξεχνώντας την τελευταία διαίρεση $1/2 = 0$ υπόλοιπο <b>1</b>.<br>• Δεν δείχνουμε τον πίνακα διαιρέσεων: χάνονται μονάδες, γιατί ζητείται «σημειώνοντας τα βήματα».</p></div>
+</section><section class="card widget"><h3 class="blk">Πειραματίσου</h3><div class="wbody"><div class="wctl"><label>Δεκαδικός ακέραιος: <input class="ia1in sm n" type="number" min="0" max="65535" value="23"></label>
+      <button class="btn primary st">▶ Βήμα</button><button class="btn ghost all">⏩ Όλα</button><button class="btn ghost rs">↺</button></div>
+      <div class="figrow"><div class="ia1tw tb"><table class="tbl"><tbody><tr><th>Αριθμός</th><th>Πηλίκο</th><th>Υπόλοιπο</th></tr></tbody></table></div><div class="res"><p class="muted">Πάτησε <b>▶ Βήμα</b>: διαιρούμε με το 2 και σημειώνουμε το υπόλοιπο, όσο το πηλίκο είναι μεγαλύτερο από 0.</p></div></div></div></section><section class="card"><h3 class="blk">Ασκήσεις <span class="muted small">— 0/10 λυμένες</span></h3><div class="ex"><div class="exh"><span class="exn">Άσκηση 1</span><span class="lvl l1">Βασική</span><span class="tick-ok"></span></div><div class="exq">Να μετατρέψετε τον δεκαδικό αριθμό $19$ σε δυαδικό.</div><div class="exb"><div class="fields"><label class="fld wide"><span>(19)₁₀ =</span><input type="text" autocapitalize="off" autocomplete="off" spellcheck="false" placeholder="π.χ. 1010"></label></div><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> 19/2 = 9 υπ. 1, 9/2 = 4 υπ. 1, …</div><div class="sol hidden"><b>Λύση:</b> <table class="tbl "><tbody><tr><th>Αριθμός</th><th>Πηλίκο</th><th>Υπόλοιπο</th></tr><tr><td>19/2 =</td><td>9</td><td><b>1</b></td></tr><tr><td>9/2 =</td><td>4</td><td><b>1</b></td></tr><tr><td>4/2 =</td><td>2</td><td><b>0</b></td></tr><tr><td>2/2 =</td><td>1</td><td><b>0</b></td></tr><tr><td>1/2 =</td><td>0</td><td><b>1</b></td></tr></tbody></table> Υπόλοιπα από κάτω προς τα πάνω: $(19)_{10} = (10011)_2$.</div></div></div><div class="ex"><div class="exh"><span class="exn">Άσκηση 2</span><span class="lvl l1">Βασική</span><span class="tick-ok"></span></div><div class="exq">Να μετατρέψετε τον δεκαδικό αριθμό $48$ σε δυαδικό.</div><div class="exb"><div class="fields"><label class="fld wide"><span>(48)₁₀ =</span><input type="text" autocapitalize="off" autocomplete="off" spellcheck="false"></label></div><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> Το 48 είναι άρτιο — τελειώνει σε 0.</div><div class="sol hidden"><b>Λύση:</b> <table class="tbl "><tbody><tr><th>Αριθμός</th><th>Πηλίκο</th><th>Υπόλοιπο</th></tr><tr><td>48/2 =</td><td>24</td><td><b>0</b></td></tr><tr><td>24/2 =</td><td>12</td><td><b>0</b></td></tr><tr><td>12/2 =</td><td>6</td><td><b>0</b></td></tr><tr><td>6/2 =</td><td>3</td><td><b>0</b></td></tr><tr><td>3/2 =</td><td>1</td><td><b>1</b></td></tr><tr><td>1/2 =</td><td>0</td><td><b>1</b></td></tr></tbody></table> Άρα $(48)_{10} = (110000)_2$ $(= 32 + 16)$.</div></div></div><div class="ex"><div class="exh"><span class="exn">Άσκηση 3</span><span class="lvl l1">Βασική</span><span class="tick-ok"></span></div><div class="exq">Ένας περιττός δεκαδικός ακέραιος έχει πάντα 1 ως δεξιότερο (λιγότερο σημαντικό) ψηφίο στο δυαδικό.</div><div class="exb"><label class="opt"><input type="radio" name="mcd1818358704" value="0"><span>ΣΩΣΤΟ</span></label><label class="opt"><input type="radio" name="mcd1818358704" value="1"><span>ΛΑΘΟΣ</span></label><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> Ποιο είναι το υπόλοιπο της διαίρεσης ενός περιττού με το 2;</div><div class="sol hidden"><b>Λύση:</b> Σωστό: το δεξιότερο ψηφίο είναι το υπόλοιπο της διαίρεσης με το 2, που για περιττό αριθμό είναι 1.</div></div></div><div class="ex"><div class="exh"><span class="exn">Άσκηση 4</span><span class="lvl l2">Μέτρια</span><span class="tick-ok"></span></div><div class="exq">Να μετατρέψετε τον δεκαδικό αριθμό $254$ σε δυαδικό.</div><div class="exb"><div class="fields"><label class="fld"><span>(254)₁₀ =</span><input type="text" autocapitalize="off" autocomplete="off" spellcheck="false"></label></div><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> $254 = 255 - 1$ και $255 = (11111111)_2$.</div><div class="sol hidden"><b>Λύση:</b> <table class="tbl "><tbody><tr><th>Αριθμός</th><th>Πηλίκο</th><th>Υπόλοιπο</th></tr><tr><td>254/2 =</td><td>127</td><td><b>0</b></td></tr><tr><td>127/2 =</td><td>63</td><td><b>1</b></td></tr><tr><td>63/2 =</td><td>31</td><td><b>1</b></td></tr><tr><td>31/2 =</td><td>15</td><td><b>1</b></td></tr><tr><td>15/2 =</td><td>7</td><td><b>1</b></td></tr><tr><td>7/2 =</td><td>3</td><td><b>1</b></td></tr><tr><td>3/2 =</td><td>1</td><td><b>1</b></td></tr><tr><td>1/2 =</td><td>0</td><td><b>1</b></td></tr></tbody></table> Άρα $(254)_{10} = (11111110)_2$.</div></div></div><div class="ex"><div class="exh"><span class="exn">Άσκηση 5</span><span class="lvl l2">Μέτρια</span><span class="tick-ok"></span></div><div class="exq"><i>(Παγκύπριες)</i> Να δείξετε ότι η τιμή του δεκαδικού αριθμού $Α = 36$ στο δυαδικό είναι $(100100)_2$. Πόσες διαιρέσεις με το 2 χρειάζονται και ποιο είναι το υπόλοιπο της <b>τελευταίας</b> διαίρεσης;</div><div class="exb"><div class="fields"><label class="fld"><span>διαιρέσεις:</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label><label class="fld"><span>τελευταίο υπόλοιπο:</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label></div><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> Σταματάμε όταν το πηλίκο γίνει 0.</div><div class="sol hidden"><b>Λύση:</b> <table class="tbl "><tbody><tr><th>Αριθμός</th><th>Πηλίκο</th><th>Υπόλοιπο</th></tr><tr><td>36/2 =</td><td>18</td><td><b>0</b></td></tr><tr><td>18/2 =</td><td>9</td><td><b>0</b></td></tr><tr><td>9/2 =</td><td>4</td><td><b>1</b></td></tr><tr><td>4/2 =</td><td>2</td><td><b>0</b></td></tr><tr><td>2/2 =</td><td>1</td><td><b>0</b></td></tr><tr><td>1/2 =</td><td>0</td><td><b>1</b></td></tr></tbody></table> Έξι διαιρέσεις (36, 18, 9, 4, 2, 1). Η τελευταία, $1/2$, δίνει πηλίκο 0 και υπόλοιπο <b>1</b>, το οποίο γίνεται το αριστερότερο ψηφίο: $100100$.</div></div></div><div class="ex"><div class="exh"><span class="exn">Άσκηση 6</span><span class="lvl l2">Μέτρια</span><span class="tick-ok"></span></div><div class="exq">Να μετατρέψετε τον δεκαδικό αριθμό $100$ σε δυαδικό <b>8 bits</b> (με τα αρχικά μηδενικά).</div><div class="exb"><div class="fields"><label class="fld"><span>8 bits:</span><input type="text" autocapitalize="off" autocomplete="off" spellcheck="false"></label></div><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> Βρες πρώτα τον δυαδικό και συμπλήρωσε μηδενικά αριστερά μέχρι να γίνουν 8 ψηφία.</div><div class="sol hidden"><b>Λύση:</b> <table class="tbl "><tbody><tr><th>Αριθμός</th><th>Πηλίκο</th><th>Υπόλοιπο</th></tr><tr><td>100/2 =</td><td>50</td><td><b>0</b></td></tr><tr><td>50/2 =</td><td>25</td><td><b>0</b></td></tr><tr><td>25/2 =</td><td>12</td><td><b>1</b></td></tr><tr><td>12/2 =</td><td>6</td><td><b>0</b></td></tr><tr><td>6/2 =</td><td>3</td><td><b>0</b></td></tr><tr><td>3/2 =</td><td>1</td><td><b>1</b></td></tr><tr><td>1/2 =</td><td>0</td><td><b>1</b></td></tr></tbody></table> $(100)_{10} = (1100100)_2$, δηλαδή 7 ψηφία· σε 8 bits: $01100100$.</div></div></div><div class="ex"><div class="exh"><span class="exn">Άσκηση 7</span><span class="lvl l2">Μέτρια</span><span class="tick-ok"></span></div><div class="exq">Πόσα bits χρειάζονται (τουλάχιστον) για να γραφτεί ο ακέραιος $200$ στο δυαδικό;</div><div class="exb"><div class="fields"><label class="fld"><span>bits:</span><input type="text" inputmode="decimal" autocomplete="off" spellcheck="false"></label></div><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> Ποια είναι η μεγαλύτερη δύναμη του 2 που δεν ξεπερνά το 200;</div><div class="sol hidden"><b>Λύση:</b> $2^7 = 128 \le 200 &lt; 256 = 2^8$, άρα χρειάζονται $8$ bits: $(200)_{10} = (11001000)_2$.</div></div></div><div class="ex"><div class="exh"><span class="exn">Άσκηση 8</span><span class="lvl l2">Μέτρια</span><span class="tick-ok"></span></div><div class="exq">Στη μέθοδο των διαδοχικών διαιρέσεων, το υπόλοιπο της διαίρεσης του αρχικού αριθμού με το 2 γίνεται:</div><div class="exb"><label class="opt"><input type="radio" name="mc8y3o3fkuuau" value="0"><span>δεν χρησιμοποιείται</span></label><label class="opt"><input type="radio" name="mc8y3o3fkuuau" value="1"><span>το λιγότερο σημαντικό (δεξιότερο) ψηφίο</span></label><label class="opt"><input type="radio" name="mc8y3o3fkuuau" value="2"><span>το περισσότερο σημαντικό (αριστερότερο) ψηφίο</span></label><label class="opt"><input type="radio" name="mc8y3o3fkuuau" value="3"><span>το ψηφίο της μεσαίας θέσης</span></label><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> Τα υπόλοιπα γράφονται σε αντίστροφη σειρά.</div><div class="sol hidden"><b>Λύση:</b> Τα υπόλοιπα διαβάζονται από κάτω προς τα πάνω, οπότε το υπόλοιπο της διαίρεσης του αρχικού αριθμού καταλήγει δεξιά: είναι το λιγότερο σημαντικό ψηφίο $b_0$.</div></div></div><div class="ex"><div class="exh"><span class="exn">Άσκηση 9</span><span class="lvl l3">Απαιτητική</span><span class="tick-ok"></span></div><div class="exq">Να μετατρέψετε σε δυαδικό τον αριθμό $2^7 = 128$ και τον αριθμό $127$.</div><div class="exb"><div class="fields"><label class="fld"><span>(128)₁₀ =</span><input type="text" autocapitalize="off" autocomplete="off" spellcheck="false"></label><label class="fld wide"><span>(127)₁₀ =</span><input type="text" autocapitalize="off" autocomplete="off" spellcheck="false"></label></div><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> $2^n$ = 1 και $n$ μηδενικά, $2^n - 1$ = $n$ άσσοι.</div><div class="sol hidden"><b>Λύση:</b> $128 = 2^7 = (10000000)_2$ και $127 = 2^7 - 1 = 64 + 32 + 16 + 8 + 4 + 2 + 1 = (1111111)_2$ (σε 8 bits: $01111111$).</div></div></div><div class="ex"><div class="exh"><span class="exn">Άσκηση 10</span><span class="lvl l3">Απαιτητική</span><span class="tick-ok"></span></div><div class="exq">Ένας δεκαδικός ακέραιος $N$ γράφεται στο δυαδικό ως $(101101)_2$. Να γράψετε τον $2N$ και τον $N + 1$ στο δυαδικό.</div><div class="exb"><div class="fields"><label class="fld wide"><span>2N =</span><input type="text" autocapitalize="off" autocomplete="off" spellcheck="false"></label><label class="fld wide"><span>N + 1 =</span><input type="text" autocapitalize="off" autocomplete="off" spellcheck="false"></label></div><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> Πολλαπλασιασμός με 2 = προσθήκη ενός 0 στο τέλος (όπως ×10 στο δεκαδικό).</div><div class="sol hidden"><b>Λύση:</b> $N = 45$. $2N = 90 = (1011010)_2$: προσθέτουμε ένα 0 δεξιά. $N + 1 = 46 = (101110)_2$: το τελευταίο 1 γίνεται 0 με κρατούμενο που κάνει το προηγούμενο 0 σε 1.</div></div></div></section><section class="card gen"><h3 class="blk">♾️ Γεννήτρια — δεκαδικός σε δυαδικό</h3><p class="muted small">Κάθε φορά καινούργια άσκηση — εξάσκηση χωρίς τέλος.</p><div class="gslot"><div class="ex"><div class="exh"><span class="exn">Εξάσκηση #1</span><span class="tick-ok"></span></div><div class="exq">Να μετατρέψετε τον δεκαδικό αριθμό $21$ σε δυαδικό.</div><div class="exb"><div class="fields"><label class="fld wide"><span>(21)₁₀ =</span><input type="text" autocapitalize="off" autocomplete="off" spellcheck="false"></label></div><div class="exbar"><button class="btn primary">Έλεγχος</button><button class="btn ghost">💡 Υπόδειξη</button><button class="btn ghost">📖 Λύση</button></div><div class="fb" aria-live="polite"></div><div class="hint hidden"><b>Υπόδειξη:</b> Διαδοχικές διαιρέσεις με το 2· τα υπόλοιπα από κάτω προς τα πάνω.</div><div class="sol hidden"><b>Λύση:</b> <table class="tbl "><tbody><tr><th>Αριθμός</th><th>Πηλίκο</th><th>Υπόλοιπο</th></tr><tr><td>21/2 =</td><td>10</td><td><b>1</b></td></tr><tr><td>10/2 =</td><td>5</td><td><b>0</b></td></tr><tr><td>5/2 =</td><td>2</td><td><b>1</b></td></tr><tr><td>2/2 =</td><td>1</td><td><b>0</b></td></tr><tr><td>1/2 =</td><td>0</td><td><b>1</b></td></tr></tbody></table> Υπόλοιπα από κάτω προς τα πάνω: $(21)_{10} = (10101)_2$. Επαλήθευση: 2<sup>4</sup> + 2<sup>2</sup> + 2<sup>0</sup> $= 21$.</div></div></div></div><button class="btn primary newg">Νέα άσκηση ↻</button></section><div class="pager"><a class="btn ghost" href="/pliroforiki-g-lykeiou/meros-a/1-1-dyadiko-systima-arithmisis-metatropi-dyadikou-se/">← 1.1 Δυαδικό σύστημα αρίθμησης: μετατροπή δυαδικού σε δεκαδικό</a><a class="btn primary" href="/pliroforiki-g-lykeiou/meros-a/1-3-metatropi-dekadikou-arithmou-me-ypodiastoli-se-dyadiko/">1.3 Μετατροπή δεκαδικού αριθμού με υποδιαστολή σε δυαδικό →</a></div></main></div>
+<aside class="ctaf" aria-label="Online μαθήματα"><p>Χρειάζεσαι βοήθεια; <a href="/online-mathimata/pliroforiki-pagkypries/">Online μαθήματα Πληροφορικής Παγκύπριες</a> — ζωντανά, ένας προς έναν.</p><p><a href="/online-mathimata/mathimatika/">Online μαθήματα Μαθηματικών</a> για όλες τις τάξεις · <a href="/mathimatika/">Όλο το δωρεάν υλικό</a></p></aside>
+<footer><b>Pagkypries Online</b> · Αντρέας Σωτηρίου · <a href="/">pagkypriesonline.com</a> · <a href="/online-mathimata/">Ιδιαίτερα online μαθήματα</a><br>
+Πρωτότυπο εκπαιδευτικό υλικό που ακολουθεί τη δομή του βιβλίου «Πληροφορική και Επιστήμη Ηλεκτρονικών Υπολογιστών Γ΄ Λυκείου» (ΥΠΑΝ).</footer>
+<script>window.ROUTE={"base": "/pliroforiki-g-lykeiou/meros-a/", "slugs": {"1.1": "1-1-dyadiko-systima-arithmisis-metatropi-dyadikou-se", "1.2": "1-2-metatropi-dekadikou-se-dyadiko-diadochikes-diaireseis-me", "1.3": "1-3-metatropi-dekadikou-arithmou-me-ypodiastoli-se-dyadiko", "1.4": "1-4-prosthesi-kai-afairesi-dyadikon-arithmon-kratoumeno", "1.5": "1-5-sympliroma-os-pros-1-kai-os-pros-2-afairesi-me", "1.6": "1-6-dyadikoi-arithmoi-me-prosimo-prosimasmeno-metro-kai", "2.1": "2-1-algevra-boole-orismos-axiomata-huntington-kai-archi-tou", "2.2": "2-2-theorimata-tis-algevras-boole-de-morgan-kai-algevriki", "2.3": "2-3-logikes-pyles-and-or-not-nand-nor-xor-xnor-kai-pinakes", "2.4": "2-4-logikes-synartiseis-kai-logika-kyklomata-apo-ti", "2.5": "2-5-elachistoroi-kai-megistoroi-athroisma-elachistoron-s-kai", "2.6": "2-6-chartes-karnaugh-aplopoiisi-logikis-synartisis-2-3-kai-4", "2.7": "2-7-imiathroistis-kai-pliris-athroistis-half-adder-full", "3.1": "3-1-metavlites-typoi-dedomenon-eisodos-kai-exodos-sti-cpp", "3.2": "3-2-telestes-sti-cpp-kai-proteraiotita-kai-logikoi-telestes", "3.3": "3-3-domi-diakladosis-sti-cpp-if-else-entheta-if-kai-i-entoli", "3.4": "3-4-domes-epanalipsis-sti-cpp-vrochoi-for-while-kai-do-while", "3.5": "3-5-logika-diagrammata-kai-prokatarktiki-ektelesi-pinakas", "3.6": "3-6-monodiastatoi-pinakes-1d-arrays-sti-cpp-athroisma"}, "titles": {"home": "Πληροφορική Γ΄ Λυκείου Παγκύπριες — Μέρος Α: Θεωρία & Ασκήσεις", "1.1": "Δυαδικό σύστημα αρίθμησης: μετατροπή δυαδικού σε δεκαδικό", "1.2": "Μετατροπή δεκαδικού σε δυαδικό (διαδοχικές διαιρέσεις με το 2)", "1.3": "Μετατροπή δεκαδικού αριθμού με υποδιαστολή σε δυαδικό", "1.4": "Πρόσθεση και αφαίρεση δυαδικών αριθμών… | Πληροφορική Γ΄ Λυκείου", "1.5": "Συμπλήρωμα ως προς 1 και ως προς 2 – αφαίρεση με συμπληρώματα", "1.6": "Δυαδικοί αριθμοί με πρόσημο… | Πληροφορική Γ΄ Λυκείου", "2.1": "Άλγεβρα Boole: ορισμός, αξιώματα Huntington και αρχή του δυϊσμού", "2.2": "Θεωρήματα της άλγεβρας Boole, De Morgan και αλγεβρική απλοποίηση", "2.3": "Λογικές πύλες AND, OR, NOT, NAND, NOR… | Πληροφορική Γ΄ Λυκείου", "2.4": "Λογικές συναρτήσεις και λογικά κυκλώματα… | Πληροφορική Γ΄ Λυκείου", "2.5": "Ελαχιστόροι και μεγιστόροι: άθροισμα… | Πληροφορική Γ΄ Λυκείου", "2.6": "Χάρτες Karnaugh: απλοποίηση λογικής… | Πληροφορική Γ΄ Λυκείου", "2.7": "Ημιαθροιστής και πλήρης αθροιστής (half… | Πληροφορική Γ΄ Λυκείου", "3.1": "Μεταβλητές, τύποι δεδομένων, είσοδος και… | Πληροφορική Γ΄ Λυκείου", "3.2": "Τελεστές στη C++: / και %, προτεραιότητα… | Πληροφορική Γ΄ Λυκείου", "3.3": "Δομή διακλάδωσης στη C++: if, else, ένθετα if και η εντολή switch", "3.4": "Δομές επανάληψης στη C++: βρόχοι for, while και do…while", "3.5": "Λογικά διαγράμματα και προκαταρκτική… | Πληροφορική Γ΄ Λυκείου", "3.6": "Μονοδιάστατοι πίνακες (1D arrays) στη… | Πληροφορική Γ΄ Λυκείου", "quiz": "Quiz — Πληροφορική Γ΄ Λυκείου (Παγκύπριες) — Μέρος Α | PagkypriesOnline"}};window.START_SEC="1.2";</script>
+<script defer src="/pliroforiki-g-lykeiou/meros-a/app.js?v=0d89367f"></script>
+</body>
+</html>
